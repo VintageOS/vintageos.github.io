@@ -1,0 +1,137 @@
+/* --------------------------------------------------------------------+
+|   FRN2000 & VintageOS v1528471431, all rights reserved, 1997-2018    |
+|             frn2000.com | vintageos.com | vintageos.org              |
+|                                                                      |
+| 1.  Close to three decades fucking around with technology,  breaking |
+|     and crashing every operating system that I have gotten my wicked |
+|     hands on from C64 (1984) to Linux (nowadays)  as well as fucking |
+|     with source code, teaching and advocating for open source;  more |
+|     information available  at  http://www.vintageos.org/frn2000.html |
+| 2.  Disclaimer and terms of use for this site and/or related domains |
+|     found and explained at  http://www.vintageos.org/disclaimer.html |
+| 3.  File `robots.txt` to block certain robots/spiders from accessing |
+|     files and subdirectories; instructions and information on how to |
+|     code this file found at  http://www.robotstxt.org/robotstxt.html |
++ ------------------------------------------------------------------- */
+
+body
+  {
+    /* background-color: #002232; */
+    background-color: #F5F5F5;
+    width: 100%;
+    /* margin: 0px; */
+    /* padding: 0px; */
+    color: #000000;
+    font-family: arial, helvetica, sans-serif; monospace;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    text-align: left;
+  }
+
+h1
+  {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+h2
+  {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+h3
+  {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+h4
+  {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+  }
+
+hr
+  {
+    color: #C0C0C0;
+    background-color: #C0C0C0;
+    border: 0px;
+    height: 1px;
+  }
+
+p ol ul li
+ {
+  color: #000000;
+  font-family: arial, helvetica, sans-serif; monospace;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: left;
+}
+
+pre tt
+  {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    background: |FFFFFF;
+    border: 1pt solid |C0C0C0;
+  }
+
+a:link
+  {
+    color: #003366;
+    text-decoration: underline;
+  }
+
+a:visited
+  {
+    color: #336699;
+    text-decoration: none;
+  }
+
+a:hover
+  {
+    color: #336666;
+    text-decoration: underline;
+  }
+
+.banner
+  {
+    background: |F7F7F7;
+  }
+
+.regTXT
+  {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+.smTXT
+  {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+.boxes
+  {
+    font-size: 12px;
+    line-height: 14px;
+    border: 1pt solid |C0C0C0;
+  }
+
+.buttons
+  {
+    background-color: #F7F7F7;
+    font-size: 12px;
+    line-height: 14px;
+    border: 1pt solid |C0C0C0;
+  }
+
+/* ------------------------------ EOF ------------------------------- */

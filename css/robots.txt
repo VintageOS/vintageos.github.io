@@ -1,0 +1,18 @@
+########################################################################
+#     FRN2000 & VintageOS v5B1A9F87, all rights reserved, 1997-2018    #
+#             frn2000.com | vintageos.com | vintageos.org              #
+#                                                                      #
+# 1.  Close to three decades fucking around with technology,  breaking #
+#     and crashing every operating system that I have gotten my wicked #
+#     hands on from C64 (1984) to Linux (nowadays)  as well as fucking #
+#     with source code, teaching and advocating for open source;  more #
+#     information  available  at  http://www.vintageos.org/frn2000.php #
+# 2.  Disclaimer and terms of use for this site and/or related domains #
+#     found and  explained at  http://www.vintageos.org/disclaimer.php #
+# 3.  File `robots.txt` to block certain robots/spiders from accessing #
+#     files and subdirectories; instructions and information on how to #
+#     code this file found at  http://www.robotstxt.org/robotstxt.html #
+########################################################################
+
+User-agent: *
+Disallow:

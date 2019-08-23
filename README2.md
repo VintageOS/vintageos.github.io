@@ -1,5 +1,7 @@
-# FRN2000 & VintageOS v5B1A9F87, all rights reserved, 1997-2018
-### frn2000.com · vintageos.com · vintageos.org
+# FRN2000 & VintageOS v5D5B3801, all rights reserved, 1997-2019
+## [frn2000.com](http://vintageos.org/frn2000.html) ·
+[vintageos.com](http://vintageos.org/) ·
+[vintageos.org](http://vintageos.org/)
 
 [VintageOS](https://vintageos.org/) is the source for information on 
 different operating systems and also offers computer consulting 
@@ -9,8 +11,8 @@ services.  This website is completely coded by hand using
 [Linux](https://kernel.org/) and/or
 [Notepad++](http://notepad-plus-plus.org/) on
 [Windows](https://microsoft.com/en-us/windows/) with help from
-[Tidy](http://www.html-tidy.org/) on [Linux](https://kernel.org/) and
-[Cygwin](https;//www.cygwin.com/).
+[Tidy](http://html-tidy.org/) on [Linux](https://kernel.org/) and
+[Cygwin](https://cygwin.com/).
 
 In the simplest definition, an operating system (OS) is a set of 
 instructions (software) that controls some hardware.  These instructions 
@@ -47,3 +49,6 @@ fun while doing the latter.
 If you are interested in experimenting with any of the operating systems 
 covered in [VintageOS](https://vintageos.org/), you can create a VDI 
 with VirtualBox (free) or similar application.
+
+[Go back to the prior page](README.md) of
+[VintageOS](https://vintageos.org/).

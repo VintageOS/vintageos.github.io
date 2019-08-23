@@ -1,0 +1,22 @@
+########################################################################
+#     FRN2000 & VintageOS v5D5B3801, all rights reserved, 1997-2019    #
+#             frn2000.com | vintageos.com | vintageos.org              #
+#                                                                      #
+# 1.  close to three decades fucking around with technology,  breaking #
+#     and crashing every operating system that I have gotten my wicked #
+#     hands  on  from  C64 (1984;  http://vintageos.org/basic.html) to #
+#     Linux  (currently;  http://vintageos.org/linux.html)  as well as #
+#     fucking  with,  teaching  and  advocating for source code;  more #
+#     information   available   at   http://vintageos.org/frn2000.html #
+# 2.  disclaimer and terms of use for this site and/or related domains #
+#     found  and  explained  at   http://vintageos.org/disclaimer.html #
+# 3.  files `README.md` and `README2.md` written using  Markdown 1.0.1 #
+#     (https://daringfireball.net/projects/markdown/)  as specified by #
+#     GitHub at https://guides.github.com/features/mastering-markdown/ #
+# 4.  file `robots.txt` to block certain robots/spiders from accessing #
+#     files and subdirectories; instructions and information on how to #
+#     code  this  file  found  at  http://robotstxt.org/robotstxt.html #
+########################################################################
+
+User-agent: *
+Disallow:

@@ -51,5 +51,4 @@ If you are interested in experimenting with any of the operating systems
 covered in [VintageOS](https://vintageos.org/), you can create a VDI
 with VirtualBox (free) or similar application.
 
-[Go back to the prior page](README.md) of
-[VintageOS](https://vintageos.org/).
+<=  [Go back to the prior page](README.md).

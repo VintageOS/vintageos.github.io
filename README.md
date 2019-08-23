@@ -36,4 +36,4 @@ files and subdirectories; instructions and information on how to code
 this file found at the
 [`robotstxt.html`](http://robotstxt.org/robotstxt.html) page.
 
-[Read more](README2.md) about [VintageOS](https://vintageos.org/).
+[Read more about VintageOS](README2.md)]  =>.

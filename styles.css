@@ -97,6 +97,7 @@ article body main select p ol option ul li
 
 pre tt
   {
+    font-family: monospace;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;

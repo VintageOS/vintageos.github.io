@@ -2,20 +2,32 @@
 #     FRN2000 & VintageOS v5D5B3801, all rights reserved, 1997-2019    #
 #             frn2000.com | vintageos.com | vintageos.org              #
 #                                                                      #
-# 1.  close to three decades fucking around with technology,  breaking #
-#     and crashing every operating system that I have gotten my wicked #
-#     hands  on  from  C64 (1984;  http://vintageos.org/basic.html) to #
-#     Linux  (currently;  http://vintageos.org/linux.html)  as well as #
-#     fucking  with,  teaching  and  advocating for source code;  more #
-#     information   available   at   http://vintageos.org/frn2000.html #
+# 1.  over three decades destroying various technologies, breaking and #
+#     crashing every operating system that I have ever touched from    #
+#     BASIC on C64 and TRS-80 (http://vintageos.org/basic.html) to     #
+#     Linux (http://vintageos.org/linux.html) as well as teaching and  #
+#     advocating for source code;  more information available at       #
+#     http://vintageos.org/frn2000.html                                #
 # 2.  disclaimer and terms of use for this site and/or related domains #
-#     found  and  explained  at   http://vintageos.org/disclaimer.html #
-# 3.  files `README.md` and `README2.md` written using  Markdown 1.0.1 #
-#     (https://daringfireball.net/projects/markdown/)  as specified by #
-#     GitHub at https://guides.github.com/features/mastering-markdown/ #
-# 4.  file `robots.txt` to block certain robots/spiders from accessing #
-#     files and subdirectories; instructions and information on how to #
-#     code  this  file  found  at  http://robotstxt.org/robotstxt.html #
+#     found and explained at http://vintageos.org/disclaimer.html      #
+# 3.  website and related files completely coded by hand using         #
+#     3.1.  Gedit (https://wiki.gnome.org/Apps/Gedit) on Linux         #
+#           (https://kernel.org/),                                     #
+#     3.2.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      #
+#           (https://www.google.com/chromebook/)                       #
+#     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Windows       #
+#           (https://microsoft.com/en-us/windows/)                     #
+#     3.4.  Nano (https://nano-editor.org/) on Linux                   #
+#           (https://kernel.org/) and Cygwin (https://cygwin.com/),    #
+#     3.5.  Tidy (http://html-tidy.org/) on both Linux                 #
+#           (https://kernel.org/) and Cygwin (https://cygwin.com/)     #
+# 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      #
+#     Markdown 1.0.1 (https://daringfireball.net/projects/markdown/)   #
+#     as specified by current web host GitHub Pages                    #
+#     (https://guides.github.com/features/mastering-markdown/)         #
+# 5.  file `robots.txt` to block certain robots/spiders from accessing #
+#     files and subdirectories;  instructions and information on how   #
+#     to code this file found at http://robotstxt.org/robotstxt.html   #
 ########################################################################
 
 User-agent: *

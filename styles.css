@@ -2,32 +2,44 @@
 |     FRN2000 & VintageOS v5D5B3801, all rights reserved, 1997-2019    |
 |             frn2000.com | vintageos.com | vintageos.org              |
 |                                                                      |
-| 1.  close to three decades fucking around with technology,  breaking |
-|     and crashing every operating system that I have gotten my wicked |
-|     hands  on  from  C64 (1984;  http://vintageos.org/basic.html) to |
-|     Linux  (currently;  http://vintageos.org/linux.html)  as well as |
-|     fucking  with,  teaching  and  advocating for source code;  more |
-|     information   available   at   http://vintageos.org/frn2000.html |
+| 1.  over three decades destroying various technologies, breaking and |
+|     crashing every operating system that I have ever touched from    |
+|     BASIC on C64 and TRS-80 (http://vintageos.org/basic.html) to     |
+|     Linux (http://vintageos.org/linux.html) as well as teaching and  |
+|     advocating for source code;  more information available at       |
+|     http://vintageos.org/frn2000.html                                |
 | 2.  disclaimer and terms of use for this site and/or related domains |
-|     found  and  explained  at   http://vintageos.org/disclaimer.html |
-| 3.  files `README.md` and `README2.md` written using  Markdown 1.0.1 |
-|     (https://daringfireball.net/projects/markdown/)  as specified by |
-|     GitHub at https://guides.github.com/features/mastering-markdown/ |
-| 4.  file `robots.txt` to block certain robots/spiders from accessing |
-|     files and subdirectories; instructions and information on how to |
-|     code  this  file  found  at  http://robotstxt.org/robotstxt.html |
+|     found and explained at http://vintageos.org/disclaimer.html      |
+| 3.  website and related files completely coded by hand using         |
+|     3.1.  Gedit (https://wiki.gnome.org/Apps/Gedit) on Linux         |
+|           (https://kernel.org/),                                     |
+|     3.2.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      |
+|           (https://www.google.com/chromebook/)                       |
+|     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Windows       |
+|           (https://microsoft.com/en-us/windows/)                     |
+|     3.4.  Nano (https://nano-editor.org/) on Linux                   |
+|           (https://kernel.org/) and Cygwin (https://cygwin.com/),    |
+|     3.5.  Tidy (http://html-tidy.org/) on both Linux                 |
+|           (https://kernel.org/) and Cygwin (https://cygwin.com/)     |
+| 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      |
+|     Markdown 1.0.1 (https://daringfireball.net/projects/markdown/)   |
+|     as specified by current web host GitHub Pages                    |
+|     (https://guides.github.com/features/mastering-markdown/)         |
+| 5.  file `robots.txt` to block certain robots/spiders from accessing |
+|     files and subdirectories;  instructions and information on how   |
+|     to code this file found at http://robotstxt.org/robotstxt.html   |
 +-------------------------------------------------------------------- */
 
 body
   {
     /* background-color: #002232; */
     background-color: #F5F5F5;
+    margin: 50px, 50px, 50px, 50px;
+    padding: 30px 30px 30px 30px;
     width: 75%;
-    /* margin: 50px, 50px, 50px, 50px;
-       padding: 50px, 50px, 50px, 50px; */
     color: #000000;
     font-family: arial, helvetica, sans-serif; monospace;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 16px;
     text-align: left;
@@ -36,7 +48,7 @@ body
 h1
   {
     font-family: arial, helvetica, sans-serif; monospace;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 22px;
   }
@@ -44,7 +56,7 @@ h1
 h2
   {
     font-family: arial, helvetica, sans-serif; monospace;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 20px;
   }
@@ -52,7 +64,7 @@ h2
 h3
   {
     font-family: arial, helvetica, sans-serif; monospace;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 18px;
   }
@@ -60,9 +72,9 @@ h3
 h4
   {
   font-family: arial, helvetica, sans-serif; monospace;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    line-height: 16px;
+    line-height: 18px;
   }
 
 hr
@@ -77,7 +89,7 @@ article body main select p ol option ul li
   {
     color: #000000;
     font-family: arial, helvetica, sans-serif; monospace;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 16px;
     text-align: left;
@@ -85,9 +97,9 @@ article body main select p ol option ul li
 
 pre tt
   {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
-    line-height: 16px;
+    line-height: 18px;
     background: #FFFFFF;
     border: 1pt solid #C0C0C0;
   }
@@ -115,9 +127,30 @@ a:hover
     background: #F7F7F7;
   }
 
+.boxes
+  {
+    font-size: 14px;
+    line-height: 18px;
+    border: 1pt solid #C0C0C0;
+  }
+
+.buttons
+  {
+    background-color: #F7F7F7;
+    font-size: 14px;
+    line-height: 18px;
+    border: 1pt solid #C0C0C0;
+  }
+
+.padded
+  {
+    margin: 50px, 50px, 50px, 50px;
+    padding: 50px, 50px, 50px, 50px;
+  }
+
 .regTXT
   {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
   }
 
@@ -126,20 +159,5 @@ a:hover
     font-size: 10px;
     line-height: 13px;
   }
-
-.boxes
-  {
-    font-size: 12px;
-    line-height: 14px;
-    border: 1pt solid #C0C0C0;
-  }
-
-.buttons
-  {
-    background-color: #F7F7F7;
-    font-size: 12px;
-    line-height: 14px;
-    border: 1pt solid #C0C0C0;
-  }
-
+  
 /* ------------------------------- EOF ------------------------------ */

@@ -1,8 +1,6 @@
-# FRN2000 & VintageOS v5D5B3801
-[frn2000.com](http://vintageos.org/frn2000.html) ·
-[vintageos.com](http://vintageos.org/) ·
-[vintageos.org](http://vintageos.org/) ·
-all rights reserved, 1997-2019
+                    FRN2000 & VintageOS v5D5B3801
+                    all rights reserved, 1997-2019
+             http://vintageos.org/ · http://vintageos.org/
 
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting
@@ -51,4 +49,4 @@ If you are interested in experimenting with any of the operating systems
 covered in [VintageOS](https://vintageos.org/), you can create a VDI
 with VirtualBox (free) or similar application.
 
-<=  [Go back to the prior page](README.md).
+[« « «  Go back to the prior page.](README.md)

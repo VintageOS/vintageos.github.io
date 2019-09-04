@@ -1,9 +1,7 @@
-# FRN2000 & VintageOS v5D5B3801
-[frn2000.com](http://vintageos.org/frn2000.html) ·
-[vintageos.com](http://vintageos.org/) ·
-[vintageos.org](http://vintageos.org/) ·
-all rights reserved, 1997-2019
-
+                    FRN2000 & VintageOS v5D5B3801
+                    all rights reserved, 1997-2019
+             http://vintageos.org/ · http://vintageos.org/
+             
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting
 services.  This website is completely coded by hand using
@@ -27,7 +25,8 @@ Refer to the disclaimer and terms of use for this site and/or related
 domains found and explained in the
 [`disclaimer.html`](http://vintageos.org/disclaimer.html) file.
 
-## Reference
+        Reference
+
 * The `README.md` and `README2.md` files are written using the
 [Markdown](https://daringfireball.net/projects/markdown/) as specified
 by [GitHub](https://guides.github.com/features/mastering-markdown/).
@@ -36,4 +35,4 @@ files and subdirectories; instructions and information on how to code
 this file found at the
 [`robotstxt.html`](http://robotstxt.org/robotstxt.html) page.
 
-[Read more about VintageOS](README2.md).  =>.
+[Read more about VintageOS.  » » »](README2.md)

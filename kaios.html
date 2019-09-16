@@ -201,7 +201,10 @@
       rel="nofollow" title="Smartphone">smartphone</a>), <a
       href="https://en.wikipedia.org/wiki/Clamshell_design"
       target="_blank" rel="nofollow" title="Source code">clamshell
-      design</a> with a 320x240 <a
+      design</a> with a 320x240 (<a
+      href="https://en.wikipedia.org/wiki/Graphics_display_resolution"
+      target="_blank" rel="nofollow" title="Graphics display
+      resolution">QVGA</a>) <a
       href="https://en.wikipedia.org/wiki/Thin-film-transistor_liquid-crystal_display"
       target="_blank" rel="nofollow" title="Thin-film-transistor
       liquid-crystal display">TFT</a> screen and usually a low quality
@@ -278,7 +281,7 @@
       href="https://en.wikipedia.org/wiki/Mobile_app" target="_blank"
       rel="nofollow" title="Mobile app">app</a> is simply labeled as
       <tt>Browser</tt>.</p>
-      <p>There are several companies that are working with and have
+      <p>There are several companies that are working with and/or have
       invested over $50 million in <a
       href="https://en.wikipedia.org/wiki/KaiOS" target="_blank"
       rel="nofollow" title="KaiOS">KaiOS</a> (as of May 2019) including
@@ -449,22 +452,28 @@
       (Unix)">mounted</a>.</p>
       <pre id="KaiOS_storage">
         Internal
-          + .gallery        <em>(hidden in File Manager)</em>
-            + previous
-            + tmp
-          + 0               <em>(hidden in File Manager)</em>
+          + 0                   <em>(hidden in File Manager)</em>
+          + audio
+            + <em>.RCD audio files</em>
           + DCIM
             + 100KAIOS
-              + <em>images</em>
+              + <em>.JPG images &amp; .GP3 videos</em>
+            + screenshots
           + downloads
-              + Bluetooth   <em>(if used)</em>
+              + Bluetooth       <em>(if used)</em>
           + music
-          + obb             <em>(hidden in File Manager)</em>
+          + obb                 <em>(hidden in File Manager)</em>
           + others
           + photos
           + videos
           + <em>[third-party app subdirectories if any]</em>
           + <em>[user-defined subdirectories]</em>
+          + .gallery            <em>(hidden in File Manager)</em>
+            + previews
+              + downloads
+                + Bluetooth     <em>(if used)</em>
+            + tmp
+              + <em>[including wallpapers]</em>
         SD Card
           + <em>[user-defined subdirectories]</em>
       </pre>
@@ -552,24 +561,18 @@
       href="https://en.wikipedia.org/wiki/Jio#JioPhone" target="_blank"
       rel="nofollow" title="Jio &raquo; JioPhone">JioPhone</a>
       (India).</p>
-      <p> <a href="https://en.wikipedia.org/wiki/Video" target="_blank"
-      rel="nofollow" title="Video">Videos</a> are recorded in 320x240
-      <tt><a href="https://en.wikipedia.org/wiki/3GPP" target="_blank"
-      rel="nofollow" title="Timestamp">3GPP</a></tt>. By the way, <a
-      href="https://en.wikipedia.org/wiki/Sound">audio</a> is recorded
-      in either at 8 <a href="https://en.wikipedia.org/wiki/Hertz"
-      target="_blank" rel="nofollow" title="Hertz">KHz</a> or 44 <a
+      <p><a href="https://en.wikipedia.org/wiki/Sound">Audio</a> is
+      recorded in either at 8 <a
+      href="https://en.wikipedia.org/wiki/Hertz" target="_blank"
+      rel="nofollow" title="Hertz">KHz</a> or 44 <a
       href="https://en.wikipedia.org/wiki/Hertz" target="_blank"
       rel="nofollow" title="Hertz">KHz</a> <a
       href="https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate"
       target="_blank" rel="nofollow" title="Sampling (signal processing)
-      &raquo; Sampling rate">sample rate</a> <tt>RCD</tt>.  The <a
+      &raquo; Sampling rate">sample rate</a> <tt>.RCD</tt>.  The <a
       href="https://en.wikipedia.org/wiki/Naming_convention_(programming)"
       target="_blank" rel="nofollow" title="Naming convention
-      (programming)">naming convention</a> of <a
-      href="https://en.wikipedia.org/wiki/Video" target="_blank"
-      rel="nofollow" title="Video">videos</a> is the suffix
-      <tt>record_</tt> and the <a
+      (programming)">naming convention</a> is basically the <a
       href="https://en.wikipedia.org/wiki/Timestamp" target="_blank"
       rel="nofollow" title="Timestamp">timestamp</a> as
       <tt>yyyy-mm-dd_HHmmss</tt>
@@ -577,9 +580,9 @@
       <p>The <a
       href="https://en.wikipedia.org/wiki/Naming_convention_(programming)"
       target="_blank" rel="nofollow" title="Naming convention
-      (programming)">naming convention</a> of pictures (only portrait,
-      not landscape) is fairly annoying where the prefix <tt>IMG_</tt>
-      comes before an incremental <a
+      (programming)">naming convention</a> of the 320x240 pictures (only
+      portrait, not landscape) is fairly annoying where the prefix
+      <tt>IMG_</tt> comes before an incremental <a
       href="https://en.wikipedia.org/wiki/Integer" target="_blank"
       rel="nofollow" title="Integer">integer</a> from <tt>0001</tt>
       (<tt>IMG_0001.jpg</tt>) to <tt>9999</tt> (<tt>IMG_9999.jpg</tt>)
@@ -597,7 +600,17 @@
       href="https://en.wikipedia.org/wiki/Timestamp" target="_blank"
       rel="nofollow" title="Timestamp">timestamp</a> &mdash;
       <tt>yyyy-MM-dd-HH-mm-ss</tt>
-      (<tt>2019-09-04-17-29-58.jpg</tt>).</p>
+      (<tt>2019-09-04-17-29-58.png</tt>).</p>
+      <p><a href="https://en.wikipedia.org/wiki/Video" target="_blank"
+      rel="nofollow" title="Video">Videos</a> are recorded in 320x240
+      <tt><a href="https://en.wikipedia.org/wiki/3GP_and_3G2"
+      target="_blank" rel="nofollow" title="3GP and 3G2">.GPP</a></tt>
+      and saved with the same <a
+      href="https://en.wikipedia.org/wiki/Naming_convention_(programming)"
+      target="_blank" rel="nofollow" title="Naming convention
+      (programming)">naming convention</a> as pictures starting with the
+      suffix <tt>VID_</tt> instead of <tt>IMG_</tt> &mdash; in other
+      words, just as annoying.</p>
       <p>Other than <a href="/frn2000.html" target="_self" rel="me"
       title="frn2000@VintageOS v5D5B3801">my</a> complaint about
       pictures (not <a href="https://en.wikipedia.org/wiki/Screenshot"
@@ -609,15 +622,15 @@
       rel="nofollow" title="Web browser">Browser</a></tt>.  I could not
       get <tt>E-Mail</tt> <a
       href="https://en.wikipedia.org/wiki/Mobile_app" target="_blank"
-      rel="nofollow" title="Mobile app">apps</a>to work with <a
+      rel="nofollow" title="Mobile app">apps</a> to work with <a
       href="https://en.wikipedia.org/wiki/Gmail" target="_blank"
       rel="nofollow" title="Web browser">Gmail</a> maybe because of the
       account security.</p>
       <pre id="Gmail">
-        From:    Google (no-reply@accounts.google.com)
-        Date:    Sat, Aug 31, 2019 at 2:48 PM
+        From:     Google (no-reply@accounts.google.com)
+        Date:     Sat, Aug 31, 2019 at 2:48 PM
         Subject:  Security alert for your linked Google Account
-        To:      ********@gmail.com
+        To:       ********@gmail.com
         <!-- spacer #1 for email formatting -->
         Your account ********@foobar.com is listed as the
         recovery email for ********@gmail.com.  Don't recognize
@@ -654,10 +667,10 @@
       href="https://en.wikipedia.org/wiki/KaiOS" target="_blank"
       rel="nofollow" title="KaiOS">KaiOS</a>.</p>
       <pre id="Yahoo">
-        From:    Yahoo <no-reply@cc.yahoo-inc.com>
-        Date:    Sat, Aug 31, 2019 at at 9:19 PM
+        From:     Yahoo <no-reply@cc.yahoo-inc.com>
+        Date:     Sat, Aug 31, 2019 at at 9:19 PM
         Subject:  Unexpected sign-in attempt
-        To:      <********@********.***>
+        To:       <********@********.***>
         <!-- spacer #1 for email formatting -->
         Hi ********,
         ********@yahoo.com
@@ -689,6 +702,18 @@
         *Location is approximate based on the IP address it
         originated from.
       </pre>
+      <p>One little issue that drives <a href="/frn2000.html"
+      target="_self" rel="me" title="frn2000@VintageOS v5D5B3801">me</a>
+      crazy accessing my email in <tt>Browser</tt> is to logging again
+      periodically.  <a href="/frn2000.html"  target="_self" rel="me"
+      title="frn2000@VintageOS v5D5B3801">I</a> understand having to log
+      in to <a href="https://en.wikipedia.org/wiki/IEEE_802.11"
+      target="_blank" rel="nofollow" title="IEEE 802.11">802.11</a>
+      every time <a href="/frn2000.html" target="_self" rel="me"
+      title="frn2000@VintageOS v5D5B3801">I</a> move from one <a
+      href="https://en.wikipedia.org/wiki/Computer_network"
+      target="_blank" rel="nofollow" title="Computer
+      network">network</a> to another (home to work and vice versa).</p>
       <p>From what <a href="/frn2000.html" target="_self" rel="me"
       title="frn2000@VintageOS v5D5B3801">I</a> can see so far, the <a
       href="https://en.wikipedia.org/wiki/Mobile_phone" target="_blank"
@@ -702,36 +727,37 @@
       href="https://en.wikipedia.org/wiki/KaiOS" target="_blank"
       rel="nofollow" title="KaiOS">KaiOS 2.5</a> can play <tt><a
       href="https://en.wikipedia.org/wiki/MP3" target="_blank"
-      rel="nofollow" title="MP3">MP3</a></tt> (music), <tt><a
+      rel="nofollow" title="MP3">.MP3</a></tt> (music), <tt><a
       href="https://en.wikipedia.org/wiki/Ogg" target="_blank"
-      rel="nofollow" title="Oog">OOG</a></tt> (music), <tt><a
+      rel="nofollow" title="Oog">.OOG</a></tt> (music), <tt><a
       href="https://en.wikipedia.org/wiki/MPEG-4_Part_14"
-      target="_blank" rel="nofollow" title="MPEG-4 Part 14">MP4</a></tt>
-      (<a href="https://en.wikipedia.org/wiki/Video" target="_blank"
+      target="_blank" rel="nofollow" title="MPEG-4 Part
+      14">.MP4</a></tt> (<a
+      href="https://en.wikipedia.org/wiki/Video" target="_blank"
       rel="nofollow" title="Video">videos</a>), <tt><a
-      href="https://en.wikipedia.org/wiki/3GPP" rel="nofollow"
-      title="3GP">3GPP</a></tt> (<a
+      href="https://en.wikipedia.org/wiki/3GP_and_3G2" target="_blank"
+      rel="nofollow" title="3GP and 3G2">.GPP</a></tt> (<a
       href="https://en.wikipedia.org/wiki/Video" target="_blank"
       rel="nofollow" title="Video">videos</a>), <tt><a
       href="https://en.wikipedia.org/wiki/Theora" target="_blank"
-      rel="nofollow" title="Theora">OGV</a></tt> (<a
+      rel="nofollow" title="Theora">.OGV</a></tt> (<a
       href="https://en.wikipedia.org/wiki/Video" target="_blank"
       rel="nofollow" title="Video">videos</a>), <tt><a
-      href="https://en.wikipedia.org/wiki/3GP_and_3G2"  target="_blank"
-      rel="nofollow" title="3GP and 3G2">GPP</a></tt> (<a
+      href="https://en.wikipedia.org/wiki/3GP_and_3G2" target="_blank"
+      rel="nofollow" title="3GP and 3G2">.GPP</a></tt> (<a
       href="https://en.wikipedia.org/wiki/Video" target="_blank"
       rel="nofollow" title="Video">videos</a>), <tt><a
       href="https://en.wikipedia.org/wiki/JPEG" target="_blank"
-      rel="nofollow" title="JPEG">JPEG</a></tt> (<a
+      rel="nofollow" title="JPEG">.JPEG</a></tt> (<a
       href="https://en.wikipedia.org/wiki/Photography"target="_blank"
       rel="nofollow" title="Photography">photos</a>), <tt><a
       href="https://en.wikipedia.org/wiki/BMP_file_format"
-      target="_blank"  rel="nofollow" title="BMP">BMP</a></tt> (<a
+      target="_blank"  rel="nofollow" title="BMP">.BMP</a></tt> (<a
       href="https://en.wikipedia.org/wiki/Image_file_formats"
       target="_blank" rel="nofollow" title="Image file
       formats">images</a>) and <tt><a
       href="https://en.wikipedia.org/wiki/Text_file" target="_blank"
-      rel="nofollow" title="Text file">TXT</a></tt> (<a
+      rel="nofollow" title="Text file">.TXT</a></tt> (<a
       href="https://en.wikipedia.org/wiki/Text_file" target="_blank"
       rel="nofollow" title="Text file">texts</a>) <a
       href="https://en.wikipedia.org/wiki/Computer_file" target="_blank"

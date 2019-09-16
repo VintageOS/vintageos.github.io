@@ -2,17 +2,6 @@
                     all rights reserved, 1997-2019
              http://vintageos.org/ · http://vintageos.org/
 
-[VintageOS](https://vintageos.org/) is the source for information on
-different operating systems and also offers computer consulting
-services.  This website is completely coded by hand using
-[Nano](https://nano-editor.org/),
-[Gedit](https://wiki.gnome.org/Apps/Gedit) on
-[Linux](https://kernel.org/) and/or
-[Notepad++](http://notepad-plus-plus.org/) on
-[Windows](https://microsoft.com/en-us/windows/) with help from
-[Tidy](http://html-tidy.org/) on [Linux](https://kernel.org/) and
-[Cygwin](https://cygwin.com/).
-
 In the simplest definition, an operating system (OS) is a set of
 instructions (software) that controls some hardware.  These instructions
 are layered over the kernel accessing the hardware directly and the

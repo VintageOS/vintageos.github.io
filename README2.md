@@ -1,6 +1,6 @@
                     FRN2000 & VintageOS v5D5B3801
-                    all rights reserved, 1997-2019
-             http://vintageos.org/ · http://vintageos.org/
+                   all rights reserved,  1997-2019
+              frn2000.com · vintageos.org · vintageos.org
 
 In the simplest definition, an operating system (OS) is a set of
 instructions (software) that controls some hardware.  These instructions
@@ -13,8 +13,8 @@ languages (like machine language and assembler) to high-level languages
 
 Operating systems have evolved from their early days and surprisingly
 most modern operating systems were made a good time ago like MVS in
-1964, Unix in 1969, BSD in 1977, DOS in 1980, Macintosh (or Mac) in
-1984, Windows in 1985 and Linux in 1991.
+1964, Unix in 1969, BSD in 1977, DOS in 1980, Macintosh (or macOS) in
+1984, Microsoft Windows in 1985 and GNU Linux in 1991.
 
 In the past couple of years, a different approach to operating systems
 and management of resources uses thin-clients (practically dumb
@@ -39,3 +39,5 @@ covered in [VintageOS](https://vintageos.org/), you can create a VDI
 with VirtualBox (free) or similar application.
 
 [« « «  Go back to the prior page.](README.md)
+
+        frn2000.com · vintageos.org · vintageos.org · 1997-2019

@@ -1,4 +1,4 @@
-                    FRN2000 & VintageOS v5D5B3801
+                    FRN2000 & VintageOS v5D8BBEDD
                    all rights reserved,  1997-2019
               frn2000.com · vintageos.org · vintageos.org
 

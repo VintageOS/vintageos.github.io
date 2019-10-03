@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +100,7 @@
         title="Unix">Unix</option>
       <option value="/windows.html" target="_self" rel="dofollow"
         title="Microsoft Windows">Windows</option>
-      <!-- section 02, other systems &amp; technologies &mdash; -->
+      <!-- section 02, other systems & technologies -->
       <option value="/web.html" target="_self" rel="dofollow"
         title="Web Platforms">Web Platforms</option>
       <option value="/opensource.html" target="_self" rel="dofollow"
@@ -160,7 +161,7 @@
       that can interpret DOS exist and are commonly used.</p>
       <p>What is left of <a href="/dos.html#MSDOS" target="_self"
       rel="dofollow" title="Disk Operating System &raquo;
-      MS-DOS">MS-DOS</a>" is reduced and buried in
+      MS-DOS">MS-DOS</a> is reduced and buried in
       <tt>C:\WINDOWS\COMMAND</tt> in <a href="/windows.html"
       target="_self" rel="dofollow" title="Microsoft Windows">Windows
       9x</a>, <tt>C:\WINNT\SYSTEM32</tt> in <a href="/windows.html"
@@ -294,12 +295,12 @@
       target="_self" rel="dofollow" title="Disk Operating System &raquo;
       MS-DOS">MS-DOS</a>. The latter is the foundation of <a
       href="/windows.html" target="_self" rel="dofollow"
-      title="Microsoft Windows">Windows 4.x</a>. <a
-      href="/windows.html" target="_self" rel="dofollow"
-      title="Microsoft Windows">Windows NT 4 and up</a> are based on a
-      different kernel and its <tt>CMD.EXE</tt> file merely emulates <a
-      href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-      Operating System &raquo; MS-DOS">MS-DOS 5.0</a>.</p>
+      title="Microsoft Windows">Windows 4.x</a>. <a href="/windows.html"
+      target="_self" rel="dofollow" title="Microsoft Windows">Windows NT
+      4 and up</a> are based on a different kernel and its
+      <tt>CMD.EXE</tt> file merely emulates <a href="/dos.html#MSDOS"
+      target="_self" rel="dofollow" title="Disk Operating System &raquo;
+      MS-DOS">MS-DOS 5.0</a>.</p>
       <p>Maybe you can get your hands on any used copy of <a
       href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
       Operating System &raquo; MS-DOS">MS-DOS 5.0</a> (1991) or <a
@@ -336,10 +337,10 @@
       <p>The installation procedure, explained in this site, is
       different from what most books might tell you. Both
       <tt>CONFIG.SYS</tt> and <tt>AUTOEXEC.BAT</tt> are changed. RAM is
-      improved. By using this technique, a DOS and <a
+      improved. By using this technique, a DOS and early versions of <a
       href="/windows.html" target="_self" rel="dofollow"
       title="Microsoft Windows">Windows</a> set-up would work almost as
-      well as <tt>/swap</tt> <a href="/unix.html" target="_self"
+      well as a <tt>/swap</tt> <a href="/unix.html" target="_self"
       rel="dofollow" title="Unix">Unix</a>.</p>
       <p>Run <tt>FDISK.EXE</tt> from the boot disk.</p>
       <pre>
@@ -384,10 +385,14 @@
       <tt>AUTOEXEC.BAK</tt> back to <tt>CONFIG.SYS</tt> and
       <tt>AUTOEXEC.BAT</tt> accordingly. It is better to be safe than
       sorry.</p>
+      <pre>
+        REN AUTOEXEC.BAK AUTOEXEC.BAT
+        REN CONFIG.BAK CONFIG.SYS
+      </pre>
       <p>Open <tt>CONFIG.SYS</tt> and <tt>AUTOEXEC.BAT</tt> with
-      <tt>EDIT</tt> on <a href="/dos.html#MSDOS" target="_self"
+      <tt>EDIT</tt> in <a href="/dos.html#MSDOS" target="_self"
       rel="dofollow" title="Disk Operating System &raquo;
-      MS-DOS">MS-DOS</a> or <tt>E</tt> on <a href="/dos.html#PCDOS"
+      MS-DOS">MS-DOS</a> or <tt>E</tt> in <a href="/dos.html#PCDOS"
       target="_self" rel="dofollow" title="Disk Operating System &raquo;
       Versions of DOS Compatible with MS-DOS &raquo; PC DOS
       (International Business Machines)">PC DOS</a>. Then save them with
@@ -460,10 +465,9 @@
       not. If you do, you need to load to memory the correct packet
       driver for the network interface card (NIC) on boot. Note that the
       packet driver is a <tt>.COM</tt> file ending on
-      <em><tt>PD</tt></em> (for <em>packet driver</em>). Add the
-      following line to <tt>AUTOEXEC.BAT</tt> replacing
-      <tt><em>FOOBAR</em>PD.COM</tt> with the correct packet driver file
-      name.</p>
+      <em><tt>PD</tt></em> (for packet driver). Add the following line
+      to <tt>AUTOEXEC.BAT</tt> replacing <tt><em>FOOBAR</em>PD.COM</tt>
+      with the correct packet driver file name.</p>
       <pre>
         LH <em>FOOBAR</em>PD.COM 0X60 5 0X300
       </pre>
@@ -569,17 +573,17 @@
       below, but the one below is easier on the eyes.</p>
       <pre>
         ECHO OFF
-
+        <!-- spacer, extra line to format batch -->
         ECHO %DATE% %TIME% &gt; FOO.TXT
-
+        <!-- spacer, extra line to format batch -->
         DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
         DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
-
+        <!-- spacer, extra line to format batch -->
         ECHO. &gt; FOO.TXT
-
+        <!-- spacer, extra line to format batch -->
         DEFRAG /F/U/SE/SKIPHIGH C: &gt; FOO.TXT
         SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE &gt; FOO.TXT
-
+        <!-- spacer, extra line to format batch -->
         ECHO. &gt; FOO.TXT
         ECHO. &gt; FOO.TXT
       </pre>
@@ -602,7 +606,7 @@
         (International Business Machines)">PC DOS</a> during the DOS
         heyday in the 1980's. It has changed owners in the past two
         decades from Digital Research toNovell as Novell DOS (1991), to
-        Caldera as  OpenDOS (1996), to DeviceLogics once again as DR-DOS
+        Caldera as OpenDOS (1996), to DeviceLogics once again as DR-DOS
         (2002). Since its last incarnation, DR-DOS/OpenDOS Enhancement
         Project was started as a community initiative to keep its <a
         href="/opensource.html" target="_self" rel="dofollow"
@@ -612,7 +616,11 @@
     <!-- CONTINUE? -->
       <section role="section">
         <h3 id="FreeDOS">FreeDOS</h3>
-        <p>FreeDOS (Free-DOS, PD-DOS) by Jim Hall is a 16/32-bit <a
+        <p><a href="https://freedos.org/" target="_blank" rel="nofollow"
+        title="FreeDOS">FreeDOS</a> (<a href="https://freedos.org/"
+        target="_blank" rel="nofollow" title="FreeDOS">Free-DOS</a>, <a
+        href="https://freedos.org/" target="_blank" rel="nofollow"
+        title="FreeDOS">PD-DOS</a>) by Jim Hall is a 16/32-bit <a
         href="/opensource.html" target="_self" rel="dofollow"
         title="Open Source">open source</a> <a href="/dos.html#MSDOS"
         target="_self" rel="dofollow" title="Disk Operating System
@@ -861,7 +869,7 @@
               <br/>&mdash; control and check <tt>switchar</tt> and
               keyboard (<tt>num</tt>/...)  lock states &mdash; control
               keyboard repeat rate and delay
-              <br/>&mdash;can also display and set the
+              <br/>&mdash; can also display and set the
               <tt>switchar</tt>.
             </li>
             <li>
@@ -946,13 +954,17 @@
         software">http://freedos.org/software/?cat=base</a>.</p>
       </section>
       <section role="section">
-        <h3 id="MDOS">Multiuser DOS</h3>
-        <p>Multiuser DOS (MDOS) is a real-time OS.</p>
+        <h3 id="MDOS">Multiuser DOS Federation</h3>
+        <p>Multiuser DOS Federation (MDOS) was a real-time OS.</p>
       </section>
       <section role="section">
         <h3 id="MSXDOS">MSX-DOS</h3>
-        <p>MSX-DOS was a version of DOS developed by Microsoft in 1984
-        for MSX systems, which combined MS-DOS 1.0 and CP/M.</p>
+        <p><a href="https://msx.org/" target="_blank" rel="nofollow"
+        title="MSX-DOS">MSX-DOS</a> (unofficial website) was a version
+        of DOS developed by Microsoft in 1984 for MSX systems, which
+        combined MS-DOS 1.0 and CP/M and came with <a href="/basic.html"
+        target="_self" rel="dofollow" title="Beginner's All-purpose
+        Symbolic Instruction Code (BASIC)">MSX BASIC</a>.</p>
       </section>
       <section role="section">
         <h3 id="New-DOS">New-DOS</h3>
@@ -968,8 +980,8 @@
         built-in menus and even a built-in text-only web browser.</p>
       </section>
       <section role="section">
-        <h3 id="NewDOS">NewDOS</h3>
-        <p>NewDOS (not to be confused with <a
+        <h3 id="NewDOS">NewDos/80</h3>
+        <p>NewDos/80 (not to be confused with <a
         href="/dos.html#New-DOS" target="_self" rel="dofollow"
         title="Disk Operating System &raquo; Versions of DOS Compatible
         with MS-DOS &raquo; New-DOS">New-DOS</a> or <a
@@ -1169,81 +1181,27 @@
         </section>
         <section role="section">
           <h3 id="CommodoreDOS">Commodore DOS</h3>
-          <p><a href="https://en.wikipedia.org/wiki/Commodore_DOS"
-          target="_blank" rel="nofollow" title="Commodore DOS">Commodore
-          DOS</a> (<a href="https://en.wikipedia.org/wiki/Commodore_DOS"
-          target="_blank" rel="nofollow" title="Commodore DOS">CBM
-          DOS</a>) was a beast of its own running from <a
-          href="https://en.wikipedia.org/wiki/Read-only_memory"
-          target="_blank" rel="nofollow" title="Read-only
-          memory">ROM</a>.</p>
+          <p>Commodore DOS (CBM DOS) was a beast of its own running from
+          ROM.</p>
         </section>
         <section role="section">
           <h3 id="VSE">DOS/VSE</h3>
-          <p><a
-          href="https://en.wikipedia.org/wiki/VSE_%28operating_system%29"
-          target="_blank" rel="nofollow" title="VSE (operating
-          system)">DOS/VSE</a> is <em>&quot;<a
-          href="https://en.wikipedia.org/wiki/DOS" target="_blank"
-          rel="dofollow" title="Disk Operating System">DOS</a> then <a
-          href="https://en.wikipedia.org/wiki/DOS%2F360_and_successors#DOS.2FVS"
-          target="_blank" rel="nofollow" title="360 and successors
-          &raquo; DOS/VS">DOS/VS</a> then <a
-          href="https://en.wikipedia.org/wiki/VSE_%28operating_system%29"
-          target="_blank" rel="nofollow" title="VSE (operating
-          system)">DOS/VSE</a> then <a
-          href="https://en.wikipedia.org/wiki/DOS%2F360_and_successors#DOS.2FSP"
-          target="_blank" rel="nofollow" title="360 and successors
-          &raquo; VSE/SP">VSE/SP</a> then <a
-          href="https://en.wikipedia.org/wiki/DOS%2F360_and_successors#DOS.2FESA"
-          target="_blank" rel="nofollow" title="360 and successors
-          &raquo; VSE/ESA">VSE/ESA</a> (current) <a
-          href="https://en.wikipedia.org/wiki/Mainframe_computer"
-          target="_blank" rel="nofollow" title="Mainframe
-          computer">mainframe</a> OS
-          from 1964 till today [which] has its own half dozen <a
-          href="https://en.wikipedia.org/wiki/File_system"
-          target="_blank" rel="nofollow" title="File system">file
-          systems</a> neither <a
-          href="https://en.wikipedia.org/wiki/File_Allocation_Table"
-          target="_blank" rel="nofollow" title="File Allocation
-          Table">FAT</a> <a
-          href="https://en.wikipedia.org/wiki/16-bit" target="_blank"
-          rel="nofollow" title="16-bit">16-bit</a>/<a
-          href="https://en.wikipedia.org/wiki/32-bit" target="_blank"
-          rel="nofollow" title="32-bit">32</a> nor <a
-          href="https://en.wikipedia.org/wiki/NTFS" target="_blank"
-          rel="nofollow" title="NTFS">NTFS</a>, not <a
-          href="/linux.html" target="_self" rel="dofollow"
-          title="Linux">Linux</a> <a
-          href="https://en.wikipedia.org/wiki/Compatibility_layer"
-          target="_blank" rel="nofollow" title="Compatibility
-          layer">compatible</a>&quot;</em> (thanks Pete).</p>
+          <p>DOS/VSE is <em>&quot;DOS then DOS/VS then DOS/VSE then
+          VSE/SP then VSE/ESA (current) mainframe OS from 1964 till
+          today [which] has its own half dozen file systems neither FAT
+          16/32 nor NTFS, not <a href="/linux.html" target="_self"
+          rel="dofollow" title="Linux">Linux</a> compatible&quot;</em>
+          (thanks Pete).</p>
         </section>
         <section role="section">
           <h3 id="RXDOS">RX-DOS</h3>
-          <p><a href="http://rxdos.sourceforge.net/"
-          target="_blank" rel="nofollow" title="RX-DOS">RX-DOS</a> (with
-          only eight <a href="https://en.wikipedia.org/wiki/File_format"
-          target="_blank" rel="nofollow" title="File format">files</a>)
-          supports <a
-          href="https://en.wikipedia.org/wiki/File_Allocation_Table"
-          target="_blank" rel="nofollow" title="File Allocation
-          Table">FAT</a> <a href="https://en.wikipedia.org/wiki/12-bit"
-          target="_blank" rel="nofollow" title="12-bit">12</a>, <a
-          href="https://en.wikipedia.org/wiki/16-bit" target="_blank"
-          rel="nofollow" title="16-bit">16</a> and <a
-          href="https://en.wikipedia.org/wiki/32-bit" target="_blank"
-          rel="nofollow" title="32-bit">32-bit</a>. <a
-          href="http://rxdos.sourceforge.net/" target="_blank"
-          rel="nofollow" title="RX-DOS">RX-DOS</a> does not support <a
+          <p><a href="http://rxdos.sourceforge.net/" target="_blank"
+          rel="nofollow" title="RX-DOS">RX-DOS</a> (with only eight
+          files) supports FAT 12/16/32. RX-DOS does not support <a
           href="/windows.html" target="_self" rel="dofollow"
           title="Microsoft Windows">Windows</a> and may support <a
           href="/linux.html" target="_self" rel="dofollow"
-          title="Linux">Linux</a>. The OS
-          has some <a href="https://en.wikipedia.org/wiki/Software_bug"
-          target="_blank" rel="nofollow" title="Software
-          bug">bugs</a>.</p>
+          title="Linux">Linux</a>. The OS is fairly buggy.</p>
         </section>
     </article>
     <article role="article">
@@ -1251,28 +1209,19 @@
       Interpreters):</h2>
       <section role="section">
         <h3 id="4DOS">4DOS</h3>
-        <p><a href="https://en.wikipedia.org/wiki/4DOS" target="_blank"
-        rel="nofollow" title="4DOS">4DOS</a> was a <a
-        href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-        Operating System &raquo; MS-DOS">MS-DOS 5.0</a> emulator and <tt><a
-        href="https://en.wikipedia.org/wiki/COMMAND.COM" target="_blank"
-        rel="nofollow" title="COMMAND.COM">COMMAND.COM</a></tt>
-        replacement by <a href="http://jpsoft.com/" target="_blank"
-        rel="nofollow" title="JP Software">JP Software</a>. Nowadays
-        the vendor markets its <tt><a
-        href="https://en.wikipedia.org/wiki/Command_Prompt"
-        target="_blank" rel="nofollow" title="Command
-        Prompt">CMD.EXE</a></tt> replacement for <a href="/windows.html"
-        target="_self" rel="dofollow" title="Microsoft Windows">Windows NT</a>
-        named Take Command (TCC).</p>
+        <p>4DOS was a <a href="/dos.html#MSDOS" target="_self"
+        rel="dofollow" title="Disk Operating System &raquo;
+        MS-DOS">MS-DOS 5.0</a> emulator and <tt>COMMAND.COM</tt>
+        replacement by JP Software. Nowadays the vendor markets its
+        <tt>CMD.EXE</tt> replacement for <a href="/windows.html"
+        target="_self" rel="dofollow" title="Microsoft Windows">Windows
+        NT</a> named Take Command (TCC).</p>
       </section>
       <section role="section">
         <h3 id="DOSBox">DOSBox</h3>
-        <p><a href="https://en.wikipedia.org/wiki/DOSBox"
-        target="_blank" rel="nofollow" title="DOSBox">DOSBox</a> is a <a
-        href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-        Operating System &raquo; MS-DOS">MS-DOS 5.0</a> emulator released in 2002
-        for <a href="/beos.html" target="_self" rel="dofollow"
+        <p><a href="https://dosbox.com/" target="_blank" rel="nofollow"
+        title="DOSBox">DOSBox</a> is a MS-DOS 5.0 emulator released in
+        2002 for <a href="/beos.html" target="_self" rel="dofollow"
         title="BeOS">BeOS</a> (<a href="/beos.html" target="_self"
         rel="dofollow" title="BeOS">Haiku</a> nowadays) <a
         href="/bsd.html" target="_self" rel="dofollow" title="Berkeley
@@ -1280,100 +1229,43 @@
         target="_self" rel="dofollow" title="Linux">Linux</a>, <a
         href="/macos.html" target="_self" rel="dofollow"
         title="macOS">macOS</a>, <a href="/os2.html" target="_self"
-        rel="dofollow" title="Operating System/2">OS/2</a>, <a
-        href="https://en.wikipedia.org/wiki/RISC_OS" target="_blank"
-        rel="nofollow" title="RISC OS">RISC OS</a>, <a
-        href="https://en.wikipedia.org/wiki/Solaris_%28operating_system%29"
-        target="_blank" rel="nofollow" title="Solaris">Solaris</a>, and
-        especially <a href="/windows.html" target="_self" rel="dofollow"
-        title="Microsoft Windows">Windows</a>. Since its source code is available
-        to install <a
-        href="https://en.wikipedia.org/wiki/DOSBox"
-        target="_blank" rel="nofollow" title="DOSBox">DOSBox</a>. In
-        theory, it can be <a
-        href="https://en.wikipedia.org/wiki/Porting"
-        target="_blank" rel="nofollow" title="Porting">ported</a> to
-        any OS.
-        Since old DOS <a
-        href="https://en.wikipedia.org/wiki/Computer_program"
-        target="_blank" rel="nofollow" title="Computer
-        programming">programs</a> (even those written (<a
-        href="https://en.wikipedia.org/wiki/Source_code"
-        target="_blank" rel="nofollow" title="Source code">coded</a>) by
-        <a href="https://en.wikipedia.org/wiki/Microsoft"
-        target="_blank" rel="nofollow" title="Microsoft">Microsoft</a>)
-        may not run properly or at all in new versions of <a
+        rel="dofollow" title="Operating System/2">OS/2</a>, RISK OS,
+        Solaris and especially <a href="/windows.html" target="_self"
+        rel="dofollow" title="Microsoft Windows">Windows</a>. Since its
+        source code is available to install DOSBox, in theory, it can be
+        ported to any OS. Since old DOS programs (even those coded) by
+        Microsoft) may not run properly or at all in new versions of <a
         href="/windows.html" target="_self" rel="dofollow"
-        title="Microsoft Windows">Windows</a>, <a
-        href="https://en.wikipedia.org/wiki/DOSBox" target="_blank"
-        rel="nofollow" title="DOSBox">DOSBox</a> is a practical tool,
-        not only to run DOS <a
-        href="https://en.wikipedia.org/wiki/Video_game" target="_blank"
-        rel="nofollow" title="Video game">games</a> (not limited to <a
-        href="https://en.wikipedia.org/wiki/Abandonware" target="_blank"
-        rel="nofollow" title="Abandonware">abandonware</a>) as marketed
-        by the developers.</p>
-        <p>Note that this emulator runs from the
-        <tt>Z:</tt> <a href="https://en.wikipedia.org/wiki/Vdisk"
-        target="_blank" rel="nofollow" title="Vdisk">virtual disk</a>
-        (<a href="https://en.wikipedia.org/wiki/Vdisk" target="_blank"
-        rel="nofollow" title="Vdisk">virtual disk</a>) as seen
-        below.</p>
+        title="Microsoft Windows">Windows</a>, DOSBox is a practical
+        tool, not only to run DOS games (not limited to abandonware) as
+        marketed by the developers.</p>
+        <p>Note that this emulator runs from the <tt>Z:</tt> virtual
+        disk as seen below.</p>
         <p align="center"><img src="/img/DOSBox074(VOSC).png"
         height="252" width="320" border="0" class="boxes" alt="DOSBox
         0.74 (PortableApps)" title="DOSBox 0.74 (PortableApps)"></p><!--
         upload image to Wikipedia? -->
-        <p>In order to access any files
-        anywhere in the <a href="https://en.wikipedia.org/wiki/Computer"
-        target="_blank" rel="nofollow" title="Computer">system</a>, <a
-        href="https://en.wikipedia.org/wiki/DOSBox" target="_blank"
-        rel="nofollow" title="DOSBox">DOSBox</a> needs the <a
-        href="https://en.wikipedia.org/wiki/Directory_%28computing%29"
-        target="_blank" rel="nofollow" title="Directory
-        (computing)">directories</a> to be mounted
-        in order to access them (similar to <a href="/unix.html"
-        target="_self" rel="dofollow" title="Unix">Unix</a>).</p>
+        <p>In order to access any files anywhere in the system, DOSBox
+        needs the directories to be mounted in order to access them
+        (similar to <a href="/unix.html" target="_self" rel="dofollow"
+        title="Unix">Unix</a>).</p>
         <pre>
           MOUNT X X:\GAMES
         </pre>
-        <p>The latter <a
-        href="https://en.wikipedia.org/wiki/Command_line_interface"
-        target="_blank" rel="nofollow" title="Command line
-        interface">command</a> can be added after the line
+        <p>The latter command can be added after the line
         <tt>[autoexec]</tt> in the <tt>DOSBOX.CONF</tt>, which serves
-        as both <tt><a href="https://en.wikipedia.org/wiki/CONFIG.SYS"
-        target="_blank" rel="nofollow"
-        title="CONFIG.SYS">CONFIG.SYS</a></tt> and <tt><a
-        href="https://en.wikipedia.org/wiki/AUTOEXEC.BAT"
-        target="_blank" rel="nofollow"
-        title="AUTOEXEC.BAT">AUTOEXEC.BAT</a></tt>. Whether <a
-        href="https://en.wikipedia.org/wiki/Mount_%28Unix%29"
-        target="_blank" rel="nofollow" title="Mount (Unix)">mounting</a>
-        the <a
-        href="https://en.wikipedia.org/wiki/Directory_%28computing%29"
-        target="_blank" rel="nofollow" title="Directory
-        (computing)">subdirectory</a> every time you need it or calling
-        it from <tt>DOSBOX.CONF</tt>, at that point, go to the new <a
-        href="https://en.wikipedia.org/wiki/Vdisk" target="_blank"
-        rel="nofollow" title="Vdisk">virtual disk</a> (<tt>X:</tt>) in
-        order to access the contents of the mounted
-        <a
-        href="https://en.wikipedia.org/wiki/Directory_%28computing%29"
-        target="_blank" rel="nofollow" title="Directory
-        (computing)">directory</a> (<tt>GAMES</tt>) as normally done in
-        <a href="https://en.wikipedia.org/wiki/DOS" target="_blank"
-        rel="dofollow" title="Disk Operating System">DOS</a>.</p>
+        as both <tt>CONFIG.SYS</tt> and <tt>AUTOEXEC.BAT</tt>. Whether
+        mounting the subdirectory every time you need it or calling it
+        from <tt>DOSBOX.CONF</tt>, at that point, go to the new virtual
+        disk (<tt>X:</tt> in the example above) in order to access the
+        contents of the mounted directory (<tt>GAMES</tt>) as normally
+        done in DOS.</p>
         <pre>
           X:
         </pre>
-        <p>Just as with a real <tt><a
-        href="https://en.wikipedia.org/wiki/AUTOEXEC.BAT"
-        target="_blank" rel="nofollow"
-        title="AUTOEXEC.BAT">AUTOEXEC.BAT</a></tt>, in the
-        <tt>DOSBOX.CONF</tt>, you can call commands turning <tt><a
-        href="https://en.wikipedia.org/wiki/Echo_%28command%29"
-        target="_blank" rel="nofollow" title="Echo
-        (command)">ECHO</a></tt> off.</p>
+        <p>Just as with a real <tt>AUTOEXEC.BAT</tt>, in the
+        <tt>DOSBOX.CONF</tt>, you can call commands turning
+        <tt>ECHO</tt> off.</p>
         <pre>
           [autoexec]
           ECHO OFF
@@ -1387,28 +1279,20 @@
               directory.
             </li>
             <li>
-              <tt>ATTRIB</tt> &mdash; Does nothing. Provided for <a
-              href="https://en.wikipedia.org/wiki/Compatibility_layer"
-              target="_blank" rel="nofollow" title="Compatibility
-              layer">compatibility</a>.
+              <tt>ATTRIB</tt> &mdash; Does nothing. Provided for
+              compatibility.
             </li>
             <li>
-              <tt>CALL</tt> &mdash; Start a <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch format">batch
-              file</a> from within another <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch format">batch
-              file</a>.
+              <tt>CALL</tt> &mdash; Start a batch from within another
+              batch.
             </li>
             <li>
-              <tt>CD</tt> &mdash; Displays/changes the current directory.
+              <tt>CD</tt> &mdash; Displays/changes the current
+              directory.
             </li>
             <li>
               <tt>CHOICE</tt> &mdash; Waits for a keypress and sets
-              <tt><a href="https://en.wikipedia.org/wiki/Exit_status"
-              target="_blank" rel="nofollow" title="Exit
-              status">ERRORLEVEL</a></tt>.
+              <tt>ERRORLEVEL</tt>.
               </li>
             <li>
               <tt>CLS</tt> &mdash; Clear screen.
@@ -1417,84 +1301,37 @@
               <tt>COPY</tt> &mdash; Copy files.
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Del_%28command%29"
-              target="_blank" rel="nofollow" title="Del
-              (command)">DEL</a></tt> &mdash; Removes one or more files.
+              <tt>DEL</tt> &mdash; Removes one or more files.
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Del_%28command%29"
-              target="_blank" rel="nofollow" title="Del
-              (command)">DELETE</a></tt> &mdash; Removes one or more files.
+              <tt>DELETE</tt> &mdash; Removes one or more files.
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Del_%28command%29"
-              target="_blank" rel="nofollow" title="Del
-              (command)">ERASE</a></tt> &mdash; Removes one or more files.
+              <tt>ERASE</tt> &mdash; Removes one or more files.
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Echo_%28command%29"
-              target="_blank" rel="nofollow" title="Echo
-              (command)">ECHO</a></tt> &mdash; Display messages and
-              enable/disable <a
-              href="https://en.wikipedia.org/wiki/Command_line_interface"
-              target="_blank" rel="nofollow" title="Command line
-              interface">command</a> <a
-              href="https://en.wikipedia.org/wiki/Echo_%28command%29"
-              target="_blank" rel="nofollow" title="Echo
-              (command)">echoing</a>.
+              <tt>ECHO &mdash; Display messages and enable/disable
+              command echoing.
             </li>
             <li>
-              <tt>EXIT</tt> &mdash; Exit from the <a
-              href="https://en.wikipedia.org/wiki/Shell_%28computing%29"
-              target="_blank" rel="nofollow" title="Shell
-              (computing)">shell</a>.
+              <tt>EXIT</tt> &mdash; Exit from the shell.
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/List_of_DOS_commands#GOTO"
-              target="_blank" rel="nofollow" title="List of DOS
-              commands, GOTO">GOTO</a></tt> &mdash; Jump to a labeled
-              line in a <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              file">batch</a> <a
-              href="https://en.wikipedia.org/wiki/Scripting_language"
-              target="_blank" rel="nofollow" title="Scripting
-              language">script</a>.
+              <tt>GOTO</tt> &mdash; Jump to a labeled line in a batch
+              script.
             </li>
             <li><tt>HELP</tt> &mdash; Show help.</li>
             <li>
               <tt>IF</tt> &mdash; Performs conditional processing in
-              <a href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              file">batch</a> programs.
+              batch programs.
             </li>
             <li>
-              <tt>LOADHIGH</tt> &mdash; Loads a program into <a
-              href="https://en.wikipedia.org/wiki/Upper_memory_area"
-              target="_blank" rel="nofollow" title="Upper memory
-              area">upper memory</a> (requires <tt><a
-              href="https://en.wikipedia.org/wiki/Extended_memory#eXtended_Memory_Specification_.28XMS.29"
-              target="_blank" rel="nofollow" title="Extended memory
-              &raquo; eXtended Memory Specification
-              (XMS)">xms</a>=true</tt>,<tt>umb=true</tt>).
+              <tt>LOADHIGH</tt> &mdash; Loads a program into upper
+              memory (requires <tt>xms=true</tt>,<tt>umb=true</tt>).
             </li>
             <li>
-              <tt>LH</tt> &mdash; Loads a program into <a
-              href="https://en.wikipedia.org/wiki/Upper_memory_area"
-              target="_blank" rel="nofollow" title="Upper memory
-              area">upper memory</a> (requires <tt><a
-              href="https://en.wikipedia.org/wiki/Extended_memory#eXtended_Memory_Specification_.28XMS.29"
-              target="_blank" rel="nofollow" title="Extended memory
-              &raquo; eXtended Memory Specification
-              (XMS)">xms</a>=true</tt>,<tt><a
-              href="https://en.wikipedia.org/wiki/Upper_memory_area"
-              target="_blank" rel="nofollow" title="Upper memory
-              area">umb</a>=true</tt>).
+              <tt>LH</tt> &mdash; Loads a program into upper memory
+              (requires <tt>xms=true</tt>,<tt>umb=true</tt>).
             </li>
             <li>
               <tt>MKDIR</tt> &mdash; Make Directory.
@@ -1503,13 +1340,7 @@
               <tt>MD</tt> &mdash; Make Directory.
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Path_%28computing%29"
-              target="_blank" rel="nofollow" title="PATH
-              (computing)">PATH</a></tt> &mdash; Provided for <a
-              href="https://en.wikipedia.org/wiki/Compatibility_layer"
-              target="_blank" rel="nofollow" title="Compatibility
-              layer">compatibility</a>.
+              <tt>PATH</tt> &mdash; Provided for compatibility.
             </li>
             <li>
               <tt>PAUSE</tt> &mdash; Waits for 1 keystroke to continue.
@@ -1521,10 +1352,7 @@
               <tt>RD</tt> &mdash; Remove Directory.
             </li>
             <li>
-              <tt>REM</tt> &mdash; Add comments in a <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch file">batch
-              file</a>.
+              <tt>REM</tt> &mdash; Add comments in a batch file.
             </li>
             <li>
               <tt>RENAME</tt> &mdash; Renames one or more files.
@@ -1533,30 +1361,18 @@
               <tt>REN</tt> &mdash; Renames one or more files.
             </li>
             <li>
-              <tt>SET</tt> &mdash; Change <a
-              href="https://en.wikipedia.org/wiki/Environment_variable"
-              target="_self" rel="dofollow" title="Environment
-              variable">environment variables</a>.
+              <tt>SET</tt> &mdash; Change environment variables.
             </li>
             <li>
-              <tt>SHIFT</tt> &mdash; Leftshift <a
-              href="https://en.wikipedia.org/wiki/Command_line_interface"
-              target="_blank" rel="nofollow" title="Command line
-              interface">commandline</a> parameters in a <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch file">batch</a>
-              <a href="https://en.wikipedia.org/wiki/Scripting_language"
-              target="_blank" rel="nofollow" title="Scripting
-              language">script</a>.
+              <tt>SHIFT</tt> &mdash; Leftshift commandline parameters in
+              a batch script.
             </li>
             <li>
-              <tt>SUBST</tt> &mdash; Assign an internal directory to a drive.
+              <tt>SUBST</tt> &mdash; Assign an internal directory to a
+              drive.
             </li>
             <li>
-              <tt>TYPE</tt> &mdash; Display the contents of a <a
-              href="https://en.wikipedia.org/wiki/Text_file"
-              target="_blank" rel="nofollow" title="Text
-              file">text-file</a>.
+              <tt>TYPE</tt> &mdash; text-file.
             </li>
             <li>
               <tt>VER</tt> &mdash; View and set the reported DOS
@@ -1567,58 +1383,30 @@
       </section>
       <section role="section">
         <h3 id="DOSEMU">DOSEMU</h3>
-        <p><a href="https://en.wikipedia.org/wiki/DOSEMU"
-        target="_blank" rel="nofollow" title="DOSEMU">DOSEMU</a> is a <a
-        href="https://en.wikipedia.org/wiki/Command_Prompt"
-        target="_blank" rel="nofollow" title="Command Prompt">command
-        prompt</a> emulator,
-        which allows you to run <a href="/dos.html#FreeDOS"
+        <p><a href="http://www.dosemu.org/" target="_blank"
+        rel="nofollow" title="DOSEMU">DOSEMU</a> is a command prompt
+        emulator, which allows you to run <a href="/dos.html#FreeDOS"
         target="_self" rel="dofollow" title="Disk Operating System
         &raquo; Versions of DOS Compatible with MS-DOS &raquo;
         FreeDOS">FreeDOS</a> on <a href="/linux.html" target="_self"
         rel="dofollow" title="Linux">Linux</a>. This is more practical
-        if you need to run DOS applications, other than just <a
-        href="https://en.wikipedia.org/wiki/Video_game" target="_blank"
-        rel="nofollow" title="Video game">games</a>. According to the
-        <a href="https://en.wikipedia.org/wiki/Software_developer"
-        target="_blank" rel="nofollow" title="Software
-        developer">developers</a>, it is <em>&quot;for DOS emulation, and is a <a
+        if you need to run DOS applications, other than just games.
+        According to the developer, it is <em>&quot;for DOS emulation,
+        and is a <a href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Linux</a> application that enables <a
         href="/linux.html" target="_self" rel="dofollow"
-        title="Linux">Linux</a> <a
-        href="https://en.wikipedia.org/wiki/Application_software"
-        target="_blank" rel="nofollow" title="Application
-        software">application</a> that enables <a href="/linux.html"
-        target="_self" rel="dofollow" title="Linux">Linux</a> to run
-        many <a href="https://en.wikipedia.org/wiki/DOS" target="_blank"
-        rel="dofollow" title="Disk Operating System">DOS</a> <a
-        href="https://en.wikipedia.org/wiki/Computer_program"
-        target="_blank" rel="nofollow" title="Computer
-        programming">programs</a> &mdash; including some <a
-        href="https://en.wikipedia.org/wiki/DOS_Protected_Mode_Interface"
-        target="_blank" rel="nofollow" title="DOS Protected Mode
-        Interface">DPMI</a> [applications].&quot;</em></p>
+        title="Linux">Linux</a> to run many DOS programs &mdash;
+        including some DPMI [applications].&quot;</em></p>
         <p align="center"><img src="/img/DOSEMU_boot(VOSC).png"
         height="192" width="320" border="0" class="boxes" alt="DOSEMU
         1.4.0 after boot (Ubuntu GNOME Linux)" title="DOSEMU 1.4.0 after
         boot (Ubuntu GNOME Linux)"></p>
         <!-- upload image to Wikipedia? -->
-        <p><a href="https://en.wikipedia.org/wiki/DOSEMU"
-        target="_blank" rel="nofollow" title="DOSEMU">DOSEMU</a>
-        <em>&quot;uses <a href="/dos.html#FreeDOS" target="_self"
+        <p>DOSEMU uses <a href="/dos.html#FreeDOS" target="_self"
         rel="dofollow" title="Disk Operating System &raquo; Versions of
         DOS Compatible with MS-DOS &raquo; FreeDOS">FreeDOS</a> as the
-        default DOS&quot;</em> (<a
-        href="http://sourceforge.net/apps/mediawiki/freedos/index.php?title=Main_Page#Who_uses_FreeDOS"
-        target="_blank" rel="nofollow" title="Main Page, Who uses
-        FreeDOS">Who uses FreeDOS</a>). Therefore it comes with the <a
-        href="https://en.wikipedia.org/wiki/FreeDOS#Features"
-        target="_blank" rel="nofollow" title="FreeDOS &raquo;
-        Features">FreeCOM</a> <a
-        href="https://en.wikipedia.org/wiki/Shell_%28computing%29"
-        target="_self" rel="dofollow" title="Shell (computing)">shell</a>, a
-        replacement for <tt><a
-        href="https://en.wikipedia.org/wiki/COMMAND.COM" target="_blank"
-        rel="nofollow" title="COMMAND.COM">COMMAND.COM</a></tt>.</p>
+        default DOS. Therefore it comes with the FreeCOM shell, a
+        replacement for <tt>COMMAND.COM</tt>.</p>
         <p align="center"><img
         src="/img/DOSEMU_drive_c_with_FreeGEM(VOSC).png" height="190"
         width="320" border="0" class="boxes" alt="DOSEMU 1.4.0 drive C
@@ -1630,35 +1418,16 @@
         1.4.0 drive Z (Ubuntu GNOME Linux)" title="DOSEMU 1.4.0 drive Z
         (Ubuntu GNOME Linux)"></p>
         <!-- upload image to Wikipedia? -->
-        <p><a href="https://en.wikipedia.org/wiki/DOSEMU"
-        target="_blank" rel="nofollow" title="DOSEMU">DOSEMU</a> <a
-        href="https://en.wikipedia.org/wiki/Mount_%28Unix%29"
-        target="_blank" rel="nofollow" title="Mount (Unix)">mounts</a>
-        <tt>A:</tt> to access the floppy (<tt>B:</tt> reserved
-        for second floppy),
-        <tt>C:</tt> to access the <a
-        href="https://en.wikipedia.org/wiki/DOSEMU" target="_blank"
-        rel="nofollow" title="DOSEMU">DOSEMU</a> environment including <a
-        href="https://en.wikipedia.org/wiki/Computer_program"
-        target="_blank" rel="nofollow" title="Computer
-        programming">programs</a> you install like <a href="/dos.html#OpenGEM"
-        target="_self" rel="dofollow" title="Disk Operating System
-        &raquo; Graphic User Interfaces for MS-DOS &raquo;
-        OpenGEM">OpenGEM</a> in <a href="/frn2000.html" target="_self"
-        rel="dofollow" title="frn2000@VintageOS v5D8BBEDD">my</a> example,
-        <tt>D:</tt> to access the <a href="/linux.html" target="_self"
-        rel="dofollow" title="Linux">Linux</a> <a
-        href="https://en.wikipedia.org/wiki/Home_directory"
-        target="_blank" rel="nofollow" title="Home directory">home
-        directory</a> (<tt><a
-        href="https://en.wikipedia.org/wiki/Home_directory"
-        target="_blank" rel="nofollow" title="Home
-        directory">~\</a></tt>), <tt>E:</tt> to access the CD-ROM, <tt>Z:</tt> where <a
-        href="https://en.wikipedia.org/wiki/DOSEMU" target="_blank"
-        rel="nofollow" title="DOSEMU">DOSEMU</a> and all its <a
-        href="https://en.wikipedia.org/wiki/Command_line_interface"
-        target="_blank" rel="nofollow" title="Command line
-        interface">commands</a> reside.</p>
+        <p>DOSEMU mounts <tt>A:</tt> to access the floppy (<tt>B:</tt>
+        reserved for second floppy), <tt>C:</tt> to access the DOSEMU
+        environment including programs you install like <a
+        href="/dos.html#OpenGEM" target="_self" rel="dofollow"
+        title="Disk Operating System &raquo; Graphic User Interfaces for
+        MS-DOS &raquo; OpenGEM">OpenGEM</a> in my example, <tt>D:</tt>
+        to access the <a href="/linux.html" target="_self"
+        rel="dofollow" title="Linux">Linux</a> home directory
+        (<tt>~\</tt>), <tt>E:</tt> to access the CD-ROM, <tt>Z:</tt>
+        where DOSEMU and all its commands reside.</p>
         <p align="center"><img src="/img/DOSEMU_OpenGEM6(VOSC).png"
         height="256" width="320" border="0" class="boxes" alt="OpenGEM 6
         on DOSEMU 1.4.0" title="OpenGEM 6 on DOSEMU 1.4.0"></p><!--
@@ -1666,48 +1435,32 @@
         <nav role="navigation" id="DOSEMU_CMD">
           <ul>
             <li>
-              <tt><a href="https://en.wikipedia.org/wiki/ATTRIB"
-              target="_blank" rel="nofollow"
-              title="ATTRIB">attrib</a></tt> &mdash; set and get <a
-              href="https://en.wikipedia.org/wiki/File_format"
-              target="_blank" rel="nofollow" title="File
-              format">file</a> attributes
+              <tt>attrib</tt> &mdash; set and get file attributes
             </li>
             <li>
-              <tt>assign</tt> &mdash; assign a drive letter to a different drive
+              <tt>assign</tt> &mdash; assign a drive letter to a
+              different drive
             </li>
             <li>
-              <tt>bwbasic</tt> &mdash; <a
-              href="http://bwbasic.sourceforge.net/" target="_blank"
-              rel="nofollow" title="Bywater BASIC
-              Interpreter">bywater</a> <a href="/basic.html"
-              target="_self" rel="dofollow" title="Beginner's
-              All-purpose  Symbolic Instruction Code (BASIC)">BASIC</a> <a
-              href="https://en.wikipedia.org/wiki/Interpreter_%28computing%29"
-              target="_blank" rel="nofollow" title="Interpreter
-              (computing)">Interpreter</a>/Shell, version 2.20
+              <tt>bwbasic</tt> &mdash; <tt>bywater</tt> <a
+              href="/basic.html" target="_self" rel="dofollow"
+              title="Beginner's All-purpose  Symbolic Instruction Code
+              (BASIC)">BASIC</a> Interpreter/Shell, version 2.20
             </li>
             <li>
-              <tt>choice</tt> &mdash; waits for the user to press a key, from a list of
-              choices
+              <tt>choice</tt> &mdash; waits for the user to press a key,
+              from a list of choices
             </li>
             <li>
-              <tt>comp</tt> &mdash; <a
-              href="https://en.wikipedia.org/wiki/Binary_file"
-              target="_blank" rel="nofollow" title="Binary
-              file">binary</a> comparison of files
+              <tt>comp</tt> &mdash; binary comparison of files
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Debug_%28command%29"
-              target="_blank" rel="nofollow" title="Debug
-              (command)">debug</a></tt> &mdash; this is a clone of the DOS <tt>DEBUG</tt> <a
-              href="https://en.wikipedia.org/wiki/Command_line_interface"
-              target="_blank" rel="nofollow" title="Command line
-              interface">command</a>
+              <tt>debug</tt> &mdash; this is a clone of the DOS
+              <tt>DEBUG</tt> command
             </li>
             <li>
-              <tt>deltree</tt> &mdash; utility for deleting files and subdirectories
+              <tt>deltree</tt> &mdash; utility for deleting files and
+              subdirectories
             </li>
             <li>
               <tt>diskcopy</tt> &mdash; copy whole disks
@@ -1716,107 +1469,62 @@
               <tt>diskcomp</tt> &mdash; compare whole disks
             </li>
             <li>
-              <tt>edit</tt> &mdash; fullscreen <a
-              href="https://en.wikipedia.org/wiki/Text_editor"
-              target="_blank" rel="nofollow" title="Text editor">text
-              editor</a>
+              <tt>edit</tt> &mdash; fullscreen text editor
             </li>
             <li>
-              <tt><a href="https://en.wikipedia.org/wiki/Edlin"
-              target="_blank" rel="nofollow"
-              title="Edlin">edlin</a></tt> &mdash; line-oriented <a
-              href="https://en.wikipedia.org/wiki/Text_editor"
-              target="_blank" rel="nofollow" title="Text editor">text
-              editor</a>
+              <tt>edlin</tt> &mdash; line-oriented text editor
             </li>
             <li>
               <tt>fc</tt> &mdash; compares two files or sets of files
             </li>
             <li>
-              <tt>find</tt> &mdash; display all lines from a text file that contain '<a
-              href="https://en.wikipedia.org/wiki/String_%28computer_science%29"
-              target="_blank" rel="nofollow" title="String
-              (computer science)">string</a>'
+              <tt>find</tt> &mdash; display all lines from a text file
+              that contain 'string'
               <br/>(NOTE: this is not the <a href="/unix.html"
               target="_self" rel="dofollow" title="Unix">Unix</a>
               <tt>find</tt>)
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/FORMAT_%28command%29"
-              target="_blank" rel="nofollow" title="FORMAT
-              (command)">format</a></tt> &mdash; disk <a
-              href="https://en.wikipedia.org/wiki/FORMAT_%28command%29"
-              target="_blank" rel="nofollow" title="FORMAT
-              (command)">format</a> utility
+              <tt>format</tt> &mdash; disk format utility
             </li>
             <li>
-              <tt><a href="https://en.wikipedia.org/wiki/Help_%28command%29"
-              target="_blank" rel="nofollow" title="help
-              (command)">help</a></tt> &mdash; you just called this one
+              <tt>help</tt> &mdash; you just called this one
             </li>
             <li>
-              <tt>join</tt> &mdash; <a
-              href="https://en.wikipedia.org/wiki/Mount_%28Unix%29"
-              target="_blank" rel="nofollow" title="Mount
-              (Unix)">mount</a> a drive letter into a directory
+              <tt>join</tt> &mdash; mount a drive letter into a
+              directory
             </li>
             <li>
-              <tt>lib</tt> &mdash; librarian for <a
-              href="https://en.wikipedia.org/wiki/Wavefront_.obj_file"
-              target="_blank" rel="nofollow" title="Wavefront
-              .obj file">OBJ</a> files, creating a <a
-              href="https://en.wikipedia.org/wiki/Library_%28computing%29"
-              target="_blank" rel="nofollow" title="Library
-              (computing)">LIB</a> <a
-              href="https://en.wikipedia.org/wiki/File_format"
-              target="_blank" rel="nofollow" title="File
-              format">file</a>
+              <tt>lib</tt> &mdash; librarian for OBJ files, creating a
+              LIB file
             </li>
             <li>
-              <tt>loadhi</tt> &mdash; loads a program into the <a
-              href="https://en.wikipedia.org/wiki/Upper_memory_area"
-              target="_blank" rel="nofollow" title="Upper
-              memory area">upper memory</a>
+              <tt>loadhi</tt> &mdash; loads a program into the upper
+              memory
             </li>
             <li>
               <tt>mem</tt> &mdash; displays the amount of DOS memory used
             </li>
             <li>
-              <tt>more</tt> &mdash; displays a text file one screen at a time
+              <tt>more</tt> &mdash; displays a text file one screen at a
+              time
             </li>
             <li>
               <tt>nansi</tt> &mdash; <tt>nansi.sys</tt>, an enhanced
               <a href="/dos.html#MSDOS" target="_self"
               rel="dofollow" title="Disk Operating System &raquo;
-              MS-DOS">MS-DOS</a> <a
-              href="https://en.wikipedia.org/wiki/System_console"
-              target="_blank" rel="nofollow" title="System
-              console">console</a> driver
+              MS-DOS">MS-DOS</a> console driver
             </li>
             <li>
               <tt>pause</tt> &mdash; will suspend execution of a
-              <a href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              file">batch</a> program
+              batch program
             </li>
             <li>
-              <tt>shsucdx</tt> &mdash; <a
-              href="https://en.wikipedia.org/wiki/CD-ROM"
-              target="_blank" rel="nofollow" title="CD-ROM">CDROM</a>
-              redirector (<a
-              href="https://en.wikipedia.org/wiki/Loader_%28computing%29"
-              target="_blank" rel="nofollow" title="Loader
-              (computing)">load</a> <tt>cdrom.sys</tt>, use with
-              <tt>/d:mscd0001</tt>)
+              <tt>shsucdx</tt> &mdash; CDROM redirector (load
+              <tt>cdrom.sys</tt>, use with <tt>/d:mscd0001</tt>)
             </li>
             <li>
-              <tt>sort</tt> &mdash; <a
-              href="https://en.wikipedia.org/wiki/ASCII" target="_blank"
-              rel="nofollow" title="ASCII">ASCII</a> sort <a
-              href="https://en.wikipedia.org/wiki/File_format"
-              target="_blank" rel="nofollow" title="File
-              format">file</a>
+              <tt>sort</tt> &mdash; ASCII sort file
             </li>
             <li>
               <tt>subst</tt> &mdash; substitute a path by a drive letter
@@ -1825,13 +1533,8 @@
               <tt>swsubst</tt> &mdash; CDS manipulator
             </li>
             <li>
-              <tt>.SYS</tt> &mdash; create <a
-              href="https://en.wikipedia.org/wiki/Booting"
-              target="_blank" rel="nofollow"
-              title="Booting">bootable</a> DOS floppy
-              or <a href="https://en.wikipedia.org/wiki/Hard_disk_drive"
-              target="_blank" rel="nofollow" title="Hard disk
-              drive">hd</a>image
+              <tt>.SYS</tt> &mdash; create bootable DOS floppy or
+              hdimage
             </li>
             <li>
               <tt>tail</tt> &mdash; displays the tail of a text file
@@ -1841,13 +1544,7 @@
               file and to standard output
             </li>
             <li>
-              <tt>touch</tt> &mdash; <tt>touch</tt> a <a
-              href="https://en.wikipedia.org/wiki/File_format"
-              target="_blank" rel="nofollow" title="File
-              format">file</a>'s <a
-              href="https://en.wikipedia.org/wiki/Timestamp"
-              target="_blank" rel="nofollow"
-              title="Timestamp">timestamp</a>
+              <tt>touch</tt> &mdash; <tt>touch</tt> a file's timestamp
             </li>
             <li>
               <tt>verify</tt> &mdash; tells DOS to
@@ -1859,10 +1556,7 @@
               keys, <tt>ENTER</tt> and <tt>ESC</tt>)
             </li>
             <li>
-              <tt>xcopy</tt> &mdash; full-featured copy <a
-              href="https://en.wikipedia.org/wiki/Command_line_interface"
-              target="_blank" rel="nofollow" title="Command line
-              interface">command</a>
+              <tt>xcopy</tt> &mdash; full-featured copy command
             </li>
           </ul>
         </nav>
@@ -1875,108 +1569,53 @@
               <tt>chdir</tt> &mdash; (the same)
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/List_of_DOS_commands#GOTO"
-              target="_blank" rel="nofollow" title="List of DOS
-              commands, GOTO">goto</a></tt> &mdash; with <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              format">batchfiles</a>: jump to label
+              <tt>goto</tt> &mdash; with batchfiles: jump to label
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Echo_%28command%29"
-              target="_blank" rel="nofollow" title="Echo
-              (command)">echo</a></tt> &mdash; display text
+              <tt>echo</tt> &mdash; display text
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Echo_%28command%29"
-              target="_blank" rel="nofollow" title="Echo
-              (command)">@echo</a></tt> &mdash; switch logging of
-              executed commands on/off
+              <tt>@echo &mdash; switch logging of executed commands
+              on/off
             </li>
             <li>
-              <tt>pause</tt> &mdash; suspend <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              format">batchfile</a> execution until any key pressed
+              <tt>pause</tt> &mdash; suspend batchfile execution until
+              any key pressed
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Comment_%28computer_programming%29"
-              target="_blank" rel="nofollow" title="Comment
-              (computer programming)">rem</a></tt> &mdash; <a
-              href="https://en.wikipedia.org/wiki/Comment_%28computer_programming%29"
-              target="_blank" rel="nofollow" title="Comment
-              (computer programming)">remark</a>, <a
-              href="https://en.wikipedia.org/wiki/Comment_%28computer_programming%29"
-              target="_blank" rel="nofollow" title="Comment
-              (computer programming)">comment</a> within <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              format">batchfile</a>
+              <tt>rem</tt> &mdash; remark, comment within batchfile
             </li>
             <li>
-              <tt>if</tt> &mdash; conditional execution of <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              file">batch</a> commands
+              <tt>if</tt> &mdash; conditional execution of batch
+              commands
             </li>
             <li>
-              <tt>for</tt> &mdash; loop execution of <a
-              href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              file">batch</a> commands
+              <tt>for</tt> &mdash; loop execution of batch commands
             </li>
             <li>
-              <tt>shift</tt> &mdash; <tt>shift</tt> the position parameters, $2 &mdash;&gt;
-              $1, $3 &mdash;&gt; $2, ...
+              <tt>shift</tt> &mdash; <tt>shift</tt> the position
+              parameters, $2 &mdash;&gt; $1, $3 &mdash;&gt; $2, ...
             </li>
             <li>
-              <tt>call</tt> &mdash; call (instead of pass control to) a
-              <a href="https://en.wikipedia.org/wiki/Batch_file"
-              target="_blank" rel="nofollow" title="Batch
-              format">batchfile</a>
+              <tt>call</tt> &mdash; call (instead of pass control to)
+              batchfile
             </li>
             <li>
-              <tt>type</tt> &mdash; display <a
-              href="https://en.wikipedia.org/wiki/File_format"
-              target="_blank" rel="nofollow" title="File
-              format">file</a> on screen
+              <tt>type</tt> &mdash; display file on screen
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Del_%28command%29"
-              target="_blank" rel="nofollow" title="Del
-              (command)">del</a></tt> &mdash; <a
-              href="https://en.wikipedia.org/wiki/Del_%28command%29"
-              target="_blank" rel="nofollow" title="Del
-              (command)">delete</a> <a
-              href="https://en.wikipedia.org/wiki/File_format"
-              target="_blank" rel="nofollow" title="File
-              format">file(s)</a>
+              <tt>del</tt> &mdash; delete file(s)
             </li>
             <li><tt>erase</tt> &mdash; (the same)</li>
             <li>
-              <tt>set</tt> &mdash; set/display <a
-              href="https://en.wikipedia.org/wiki/Environment_variable"
-              target="_self" rel="dofollow" title="Environment
-              variable">environment variables</a>
+              <tt>set</tt> &mdash; set/display environment variables
             </li>
             <li>
               <tt>path</tt> &mdash; set/display the
               execution path
             </li>
             <li>
-              <tt><a
-              href="https://en.wikipedia.org/wiki/Command-line_interface#Command_prompt"
-              target="_blank" rel="nofollow" title="Command-line
-              interface, Command prompt">prompt</a></tt> &mdash; set the
-              <a
-              href="https://en.wikipedia.org/wiki/Command-line_interface#Command_prompt"
-              target="_blank" rel="nofollow" title="Command-line
-              interface &raquo; Command prompt">prompt mode</a>
+              <tt>prompt</tt> &mdash; set the prompt mode
             </li>
             <li>
               <tt>break</tt> &mdash; set/display the status of the <a
@@ -2001,10 +1640,8 @@
               verify mode for block devices
             </li>
             <li>
-              <tt>ver</tt> &mdash; display version numbers of running <a
-              href="https://en.wikipedia.org/wiki/Software"
-              target="_blank" rel="nofollow"
-              title="Software">software</a>
+              <tt>ver</tt> &mdash; display version numbers of running
+              software
             </li>
             <li>
               <tt>ren</tt> &mdash; rename a files
@@ -2016,160 +1653,84 @@
               <tt>time</tt> &mdash; set/display time
             </li>
             <li>
-              <tt>dir</tt> &mdash; display directory contents (<a
-              href="https://en.wikipedia.org/wiki/File_format"
-              target="_blank" rel="nofollow" title="File
-              format">file</a> listing)
+              <tt>dir</tt> &mdash; display directory contents (file
+              listing)
             </li>
             <li>
               <tt>copy</tt> &mdash; copy files
             </li>
             <li>
-              <tt>which</tt> &mdash; display full <a
-              href="https://en.wikipedia.org/wiki/Path_%28computing%29"
-              target="_blank" rel="nofollow" title="PATH
-              (computing)">pathname</a> for <a
-              href="https://en.wikipedia.org/wiki/Executable"
-              target="_blank" rel="nofollow"
-              title="Executable">executable</a> commands
+              <tt>which</tt> &mdash; display full pathname for
+              executable commands
             </li>
             <li>
-              <tt>exitemu</tt> &mdash; exit <a
-              href="https://en.wikipedia.org/wiki/DOSEMU"
-              target="_blank" rel="nofollow" title="DOSEMU">DOSEMU</a>
+              <tt>exitemu</tt> &mdash; exit DOSEMU
             </li>
             <li>
               <tt>speed</tt> &mdash; set/display speed (hogthreshold)
             </li>
             <li>
-              <tt>booton</tt> &mdash; make drive <tt>A:</tt> the <a
-              href="https://en.wikipedia.org/wiki/Vdisk" target="_blank"
-              rel="nofollow" title="Vdisk">virtual</a> (image) boot<a
-              href="https://en.wikipedia.org/wiki/Computer_appliance"
-              target="_blank" rel="nofollow" title="Computer
-              appliance">device</a>
+              <tt>booton</tt> &mdash; make drive <tt>A:</tt> the virtual
+              (image) bootdevice
             </li>
             <li>
-              <tt>bootoff</tt> &mdash; make re-appear the physical drive <tt>A:</tt>
+              <tt>bootoff</tt> &mdash; make re-appear the physical drive
+              <tt>A:</tt>
             </li>
             <li>
-              <tt>ecpuon</tt> &mdash; switch <a
-              href="https://en.wikipedia.org/wiki/Central_processing_unit"
-              target="_blank" rel="nofollow" title="Central processing
-              unit">cpu</a> <a
-              href="https://en.wikipedia.org/wiki/Emulator"
-              target="_blank" rel="nofollow"
-              title="Emulator">emulation</a> on (only for <a
-              href="https://en.wikipedia.org/wiki/Hacker_%28computer_security%29"
-              target="_blank" rel="nofollow" title="Hacker (computer
-              security)">hacker</a>-<a
-              href="https://en.wikipedia.org/wiki/DOSEMU"
-              target="_blank" rel="nofollow" title="DOSEMU">DOSEMU</a>
-              versions)
+              <tt>ecpuon</tt> &mdash; switch cpu emulation on (only for
+              hacker-DOSEMU versions)
             </li>
             <li>
-              <tt>ecpuoff</tt> &mdash; switch <a
-              href="https://en.wikipedia.org/wiki/Central_processing_unit"
-              target="_blank" rel="nofollow" title="Central
-              processing unit">cpu</a> <a
-              href="https://en.wikipedia.org/wiki/Emulator"
-              target="_blank" rel="nofollow"
-              title="Emulator">emulation</a> off
+              <tt>ecpuoff</tt> &mdash; switch cpu emulation off
             </li>
             <li>
-              <tt>eject</tt> &mdash; eject <a
-              href="https://en.wikipedia.org/wiki/CD-ROM"
-              target="_blank" rel="nofollow"
-              title="CD-ROM">CD</a>, if <tt>cdrom.sys</tt> is loaded
+              <tt>eject</tt> &mdash; eject CD, if <tt>cdrom.sys</tt> is
+              loaded
             </li>
             <li>
-              <tt>emumouse</tt> &mdash; set/display internal <a
-              href="https://en.wikipedia.org/wiki/Mouse_%28computing%29"
-              target="_blank" rel="nofollow" title="Mouse
-              (computing)">mouse</a> parameters
+              <tt>emumouse</tt> &mdash; set/display internal mouse
+              parameters
             </li>
             <li>
               <tt>ugetcwd</tt> &mdash; display the current <a
               href="/linux.html" target="_self" rel="dofollow"
-              title="Linux">Linux</a> (not <a
-              href="https://en.wikipedia.org/wiki/DOS" target="_blank" r
-              el="nofollow" title="Disk Operating System">DOS</a>) directory
+              title="Linux">Linux</a> (not DOS) directory
             </li>
             <li>
-              <tt>vgaoff</tt> &mdash; only for <tt>'<a
-              href="https://en.wikipedia.org/wiki/Superuser#Unix_and_Unix-like"
-              target="_blank" rel="nofollow" title="Superuser &raquo;
-              Unix and Unix-like">root</a>'</tt>!!  switch <a
-              href="https://en.wikipedia.org/wiki/Video_Graphics_Array"
-              target="_blank" rel="nofollow" title="Video Graphics
-              Array">vga</a> mode off (when on <a
-              href="https://en.wikipedia.org/wiki/System_console"
-              target="_blank" rel="nofollow" title="System
-              console">console</a>)
+              <tt>vgaoff</tt> &mdash; only for <tt>'root'</tt>!!  switch
+              vga mode off (when on console)
             </li>
             <li>
-              <tt>vgaon</tt> &mdash; only for <tt>'<a
-              href="https://en.wikipedia.org/wiki/Superuser#Unix_and_Unix-like"
-              target="_blank" rel="nofollow" title="Superuser,
-              Unix and Unix-like">root</a>'</tt>!! switch on <a
-              href="https://en.wikipedia.org/wiki/System_console"
-              target="_blank" rel="nofollow" title="System
-              console">console</a> <a
-              href="https://en.wikipedia.org/wiki/Video_Graphics_Array"
-              target="_blank" rel="nofollow" title="Video Graphics
-              Array">vga</a> graphics mode
-              <br/>NOTE: <tt>vgaoff/on</tt> may be dangerous on <a
-              href="https://en.wikipedia.org/wiki/System_console"
-              target="_blank" rel="nofollow" title="System
-              console">console</a>, but do nothing important on <a
-              href="https://en.wikipedia.org/wiki/X_Window_System"
-              target="_blank" rel="nofollow" title="X Windows
-              System">X</a>.
+              <tt>vgaon</tt> &mdash; only for <tt>'root'</tt>!! switch
+              on console vga graphics mode
+              <br/>NOTE: <tt>vgaoff/on</tt> may be dangerous on console,
+              but do nothing important on X.
             </li>
             <li>
-              <tt>lredir</tt> &mdash; set/display redirection of a
-              <a href="/linux.html" target="_self" rel="dofollow"
+              <tt>lredir</tt> &mdash; set/display redirection of a <a
+              href="/linux.html" target="_self" rel="dofollow"
               title="Linux">Linux</a> directory to a DOS drive
             </li>
             <li>
               <tt>unix</tt> &mdash; take over <a href="/linux.html"
-              target="_self" rel="dofollow" title="Linux">Linux</a> <a
-              href="https://en.wikipedia.org/wiki/Environment_variable"
-              target="_self" rel="dofollow" title="Environment
-              variable">ENV variables</a>, execute DOS <a
-              href="https://en.wikipedia.org/wiki/Command_line_interface"
-              target="_blank" rel="nofollow" title="Command line
-              interface">command</a> from a given <a
-              href="https://en.wikipedia.org/wiki/Environment_variable"
-              target="_self" rel="dofollow" title="Environment
-              variable">ENV variables</a>, execute <a href="/linux.html"
-              target="_self" rel="dofollow" title="Linux">Linux</a> <a
-              href="https://en.wikipedia.org/wiki/Command_line_interface"
-              target="_blank" rel="nofollow" title="Command line
-              interface">command</a> ...
+              target="_self" rel="dofollow" title="Linux">Linux</a>
+              ENV variables, execute DOS command from a given ENV
+              variables, execute <a href="/linux.html" target="_self"
+              rel="dofollow" title="Linux">Linux</a> command ...
             </li>
             <li>
-              <tt>dosdbg</tt> &mdash; set/display <a
-              href="https://en.wikipedia.org/wiki/Debug_%28command%29"
-              target="_blank" rel="nofollow" title="Debug
-              (command)">debug</a>(Log) features/flags
+              <tt>dosdbg</tt> &mdash; set/display debug(Log)
+              features/flags
             </li>
             <li>
-              <tt>xmode</tt> &mdash; set/display special <a
-              href="https://en.wikipedia.org/wiki/DOSEMU"
-              target="_blank" rel="nofollow" title="DOSEMU">DOSEMU</a>
-              relevant (<a href="https://en.wikipedia.org/wiki/XFree86"
-              target="_blank" rel="nofollow" title="XFree86">Xfree</a>)
-              <a href="https://en.wikipedia.org/wiki/Display_device"
-              target="_blank" rel="nofollow" title="Display
-              device">display</a> modes
+              <tt>xmode</tt> &mdash; set/display special DOSEMU relevant
+              (Xfree) display modes
             </li>
             <li>
               <tt>system</tt> &mdash; execute a <a href="/linux.html"
-              target="_self" rel="dofollow" title="Linux">Linux</a> <a
-              href="https://en.wikipedia.org/wiki/Command_line_interface"
-              target="_blank" rel="nofollow" title="Command line
-              interface">command</a> out of DOS
+              target="_self" rel="dofollow" title="Linux">Linux</a>
+              command out of DOS
             </li>
             <li>
               <tt>uchdir</tt> &mdash; change the current <a
@@ -2177,215 +1738,93 @@
               title="Linux">Linux</a> (not DOS) directory
             </li>
           </ul>
-        </nav>The following was quoted from <tt><a
-        href="https://en.wikipedia.org/wiki/Help_%28command%29"
-        target="_blank" rel="nofollow" title="help
-        (command)">help</a></tt> (in lowercase).
+        </nav>
+        <p>The following was quoted from <tt>help</tt> (in
+        lowercase).</p>
       </section>
       <section role="section">
         <h3 id="XTM">XTM PC Emulator</h3>
-        <p><a href="http://nb-info.co.uk/index.htm/" target="_blank"
-        rel="nofollow" title="XTM PC Emulator">XTM PC Emulator</a> is
-        <em>&quot;a <a href="https://en.wikipedia.org/wiki/Software"
-        target="_blank" rel="nofollow" title="Software">software</a> emulation of a classic <a
-        href="https://en.wikipedia.org/wiki/IBM_Personal_Computer_XT"
-        target="_blank" rel="nofollow" title="IBM Personal Computer
-        XT">PC/XT</a> computer [<a
-        href="/dos.html#PCDOS"" target="_blank"
-        rel="nofollow" information="Disk Operating System &raquo; Versions of DOS Compatible with MS-DOS &raquo; PC DOS (International Business Machines)">PC DOS</a> 3.0</a>] for <a
-        href="https://en.wikipedia.org/wiki/EPOC_%28operating_system%29"
-        target="_blank" rel="nofollow" title="EPOC (operating
-        system)">EPOC32</a>.&quot;</em> Within this standard <a
-        href="https://en.wikipedia.org/wiki/Application_software"
-        target="_blank" rel="nofollow" title="Application
-        software">application</a> for your <a
-        href="https://en.wikipedia.org/wiki/Mobile_device"
-        target="_blank" rel="nofollow" title="Mobile
-        device">portable</a> computer, you can run any software which would run on
-        a low-end <a
-        href="https://en.wikipedia.org/wiki/Personal_computer"
-        target="_blank" rel="nofollow" title="Personal computer">PC</a>
-        <a href="https://en.wikipedia.org/wiki/Clone_%28computing%29"
-        target="_blank" rel="nofollow" title="Clone
-        (computing)">clones</a> from the 1980's.</p>
+        <p>XTM PC Emulator is <em>&quot;a software emulation of a
+        classic PC/XT computer [<a href="/dos.html#PCDOS""
+        target="_blank" rel="nofollow" information="Disk Operating
+        System &raquo; Versions of DOS Compatible with MS-DOS &raquo; PC
+        DOS (International Business Machines)">PC DOS</a> 3.0</a>] for
+        EPOC32.&quot;</em> Within this standard application for your
+        portable computer, you can run any software which would run on
+        a low-end PC clones from the 1980's.</p>
       </section>
       <section>
         <h2 id="GUIs">Graphic User Interfaces for MS-DOS Other Than
         Windows 3.1x:</h2>
-        <p id="OpenGEM">Since nowadays most of us are used to some GUI or another, a good idea is installing <a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">OpenGEM</a> (an modern and <a
+        <p id="OpenGEM">Since nowadays most of us are used to some GUI
+        or another, a good idea is installing OpenGEM (an modern and <a
         href="/opensource.html" target="_self" rel="dofollow"
-        title="Open Source">open source</a> version of <a
-        href="https://en.wikipedia.org/wiki/Graphical_Environment_Manager"
-        target="_blank" rel="nofollow" title="Graphical Environment
-        Manager">GEM</a>; <a
-        href="http://ibiblio.org/pub/micro/pc-stuff/freedos/files/gui/opengem/6/"
-        target="_blank" rel="nofollow" title="opengem6.zip">download
-        link</a>), which is based on <a
-        href="https://en.wikipedia.org/wiki/FreeGEM" target="_blank"
-        rel="nofollow" title="FreeGEM">FreeGEM</a>, which is based on Graphical Environment Manager (GEM), on <a
-        href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-        Operating System &raquo; MS-DOS">MS-DOS</a> or any <a
-        href="/dos.html#Compatible" target="_self" rel="dofollow"
-        title="Disk Operating System &raquo; Versions of DOS Compatible
-        with MS-DOS">compatible</a> clone like <a href="/dos.html#FreeDOS"
+        title="Open Source">open source</a> version of GEM), which is
+        based on FreeGEM, which is based on Graphical Environment
+        Manager (GEM), on <a href="/dos.html#MSDOS" target="_self"
+        rel="dofollow" title="Disk Operating System &raquo;
+        MS-DOS">MS-DOS</a> or any <a href="/dos.html#Compatible"
         target="_self" rel="dofollow" title="Disk Operating System
-        &raquo; Versions of DOS Compatible with MS-DOS &raquo;
-        FreeDOS">FreeDOS</a>. If you decide to do this on <a
-        href="https://en.wikipedia.org/wiki/DOSBox" target="_blank"
-        rel="nofollow" title="DOSBox">DOSBox</a>, keep in mind that the
-        installation <a
-        href="https://en.wikipedia.org/wiki/Path_%28computing%29"
-        target="_blank" rel="nofollow" title="PATH (computing)">path</a>
-        should be on <tt>C:</tt>. You would need to <a
-        href="https://en.wikipedia.org/wiki/Mount_%28Unix%29"
-        target="_blank" rel="nofollow" title="Mount (Unix)">mount</a>
-        the <a href="https://en.wikipedia.org/wiki/Path_%28computing%29"
-        target="_blank" rel="nofollow" title="PATH (computing)">path</a>
-        where you want <a href="https://en.wikipedia.org/wiki/OpenGEM"
-        target="_blank" rel="nofollow" title="OpenGEM">OpenGEM</a> to
-        be installed.</p>
+        &raquo; Versions of DOS Compatible with MS-DOS">compatible</a>
+        clone like <a href="/dos.html#FreeDOS" target="_self"
+        rel="dofollow" title="Disk Operating System &raquo; Versions of
+        DOS Compatible with MS-DOS &raquo; FreeDOS">FreeDOS</a>. If you
+        decide to do this on DOSBox, keep in mind that the installation
+        path should be on <tt>C:</tt>. You would need to mount the path
+        where you want OpenGEM to be installed.</p>
         <pre>
           MOUNT C X:\<em>OpenGEM</em>
         </pre>
-        <p>Once installed, <tt><a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">GEM.BAT</a></tt> can be ran from
-        the <tt>C:</tt> <a href="https://en.wikipedia.org/wiki/Vdisk"
-        target="_blank" rel="nofollow" title="Vdisk">virtual disk</a>.
-        As mentioned before, you can edit <tt>DOSBOX.CONF</tt> to <a
-        href="https://en.wikipedia.org/wiki/Mount_%28Unix%29"
-        target="_blank" rel="nofollow" title="Mount (Unix)">mount</a>
-        the location of the <tt><a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">GEM.BAT</a></tt> as <tt>C:</tt>
-        (unsure if it could run properly if mounted
-        using a different letter). You can even call <tt><a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">GEM.BAT</a></tt> to make <a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">OpenGEM</a> run automatically,
-        but image guess that would
-        take the fun out of running <a
-        href="https://en.wikipedia.org/wiki/DOSBox" target="_blank"
-        rel="nofollow" title="DOSBox">DOSBox</a>.</p>
+        <p>Once installed, <tt>GEM.BAT</tt> can be ran from the
+        <tt>C:</tt> virtual disk. As mentioned before, you can edit
+        <tt>DOSBOX.CONF</tt> to mount the location of the
+        <tt>GEM.BAT</tt> as <tt>C:</tt> (unsure if it could run properly
+        if mounted using a different letter). You can even call
+        <tt>GEM.BAT</tt> to make OpenGEM run automatically, but image
+        guess that would take the fun out of running DOSBox.</p>
         <p align="center"><img
         src="/img/OpenGEM6_on_DOSBox074(VOSC).png" height="252"
         width="320" border="0" class="boxes" alt="OpenGEM 6 on DOSBox
         0.74 (PortableApps)" title="OpenGEM 6 on DOSBox 0.74
         (PortableApps)"></p><!-- upload image to Wikipedia? -->
-        <p>There is a <a
-        href="https://en.wikipedia.org/wiki/SourceForge" target="_blank"
-        rel="nofollow" title="SourceForge">SourceForge</a>  project
-        named <a href="http://sourceforge.net/projects/bluegemdos/"
-        target="_blank" rel="nofollow" title="BlueGEM">BlueGEM</a> that
-        combines <a href="/dos.html#FreeDOS" target="_self"
-        rel="dofollow" title="Disk Operating System &raquo; Versions of
-        DOS Compatible with MS-DOS &raquo; FreeDOS">FreeDOS</a> with <a
-        href="https://en.wikipedia.org/wiki/FreeGEM" target="_blank"
-        rel="nofollow" title="FreeGEM">FreeGEM</a> in one <a
-        href="https://en.wikipedia.org/wiki/Software_package"
-        target="_blank" rel="nofollow" title="Software
-        package">package</a> for DOS <a
-        href="https://en.wikipedia.org/wiki/Video_game" target="_blank"
-        rel="nofollow" title="Video game">gamer</a>. Note that <a
+        <p>There is a SourceForge project named BlueGEM that combines <a
         href="/dos.html#FreeDOS" target="_self" rel="dofollow"
         title="Disk Operating System &raquo; Versions of DOS Compatible
-        with MS-DOS &raquo; FreeDOS"> FreeDOS</a> lists <a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">OpenGEM</a> as its GUI, in some way already doing what the <a
-        href="http://sourceforge.net/projects/bluegemdos/"
-        target="_blank" rel="nofollow" title="BlueGEM">BlueGEM</a> wants
-        to accomplish. In any case, <a href="/frn2000.html"
-        target="_self" rel="dofollow" title="frn2000@VintageOS">I</a> think it
-        is a great idea to revive many old i386 and <a
-        href="https://en.wikipedia.org/wiki/Intel_80486" target="_blank"
-        rel="nofollow" title="Intel 80486">i486</a> PCs. If interested in using <a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">OpenGEM</a>, the project offers a
-        variety of applications as part of their <a
-        href="https://en.wikipedia.org/wiki/SourceForge" target="_blank"
-        rel="nofollow" title="SourceForge">SourceForge</a> <a
-        href="http://sourceforge.net/projects/opengem/files/latest/download"
-        target="_blank" rel="nofollow" title="OpenGEM SDK">project</a>.
-        Note that <a
-        href="https://en.wikipedia.org/wiki/Installation_%28computer_programs%29"
-        target="_blank" rel="nofollow" title="Installation (computer
-        programs)">installations</a> must be done from a floppy so <a
-        href="https://en.wikipedia.org/wiki/Mount_%28Unix%29"
-        target="_blank" rel="nofollow" title="Mount (Unix)">mount</a>
-        the <a href="https://en.wikipedia.org/wiki/Path_%28computing%29"
-        target="_blank" rel="nofollow" title="PATH (computing)">path</a>
-        of the <a
-        href="https://en.wikipedia.org/wiki/Directory_%28computing%29"
-        target="_blank" rel="nofollow" title="Directory
-        (computing)">directory</a> containing the installation files
-        to <tt>A:</tt>.</p>
+        with MS-DOS &raquo; FreeDOS">FreeDOS</a> with FreeGEM in one
+        package for DOS gamer. Note that <a href="/dos.html#FreeDOS"
+        target="_self" rel="dofollow" title="Disk Operating System
+        &raquo; Versions of DOS Compatible with MS-DOS &raquo;
+        FreeDOS"> FreeDOS</a> lists OpenGEM as its GUI, in some way
+        already doing what the BlueGEM wants to accomplish. In any case,
+        I think it is a great idea to revive many old i386 and i486 PCs.
+        If interested in using OpenGEM, the project offers a variety of
+        applications as part of their SourceForge project. Note that
+        installations must be done from a floppy so mount the path of
+        the directory containing the installation files to virtual drive
+        <tt>A:</tt>.</p>
         <pre>
           MOUNT A X:\[<em>path</em>]
         </pre>
         <p>Then run the <tt>INSTALL.APP</tt>, which calls
         <tt>INSTALL.TXT</tt> to copy the installation files
         accordingly.</p>
-        <p>Note that applications in GEM (<a
-        href="https://en.wikipedia.org/wiki/FreeGEM" target="_blank"
-        rel="nofollow" title="FreeGEM">FreeGEM</a> and <a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">OpenGEM</a>) are <tt><a
-        href="https://en.wikipedia.org/wiki/Application_software"
-        target="_blank" rel="nofollow" title="Application
-        software">APP</a></tt> files
-        &mdash; not DOS or <a href="/windows.html" target="_self"
-        rel="dofollow" title="Microsoft Windows">Windows</a> <a
-        href="https://en.wikipedia.org/wiki/Executable" target="_blank"
-        rel="nofollow" title="Executable">.EXE</a> <a
-        href="https://en.wikipedia.org/wiki/File_format" target="_blank"
-        rel="nofollow" title="File format">files</a>.</p>
+        <p>Note that applications in GEM are <tt>.APP</tt> files &mdash;
+        not DOS or <a href="/windows.html" target="_self" rel="dofollow"
+        title="Microsoft Windows">Windows</a> <tt>.EXE</tt> files.</p>
         <p>Using the example above, on <a href="/linux.html"
-        target="_self" rel="dofollow" title="Linux">Linux</a>, I installed <a
-        href="https://en.wikipedia.org/wiki/DOSBox" target="_blank"
-        rel="nofollow" title="DOSBox">DOSBox</a> running <a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">OpenGEM</a>, various applications from the <a
-        href="https://en.wikipedia.org/wiki/OpenGEM" target="_blank"
-        rel="nofollow" title="OpenGEM">OpenGEM</a> <a
-        href="https://en.wikipedia.org/wiki/Software_development_kit"
-        target="_blank" rel="nofollow" title="Software development
-        kit">SDK</a> (<a
-        href="http://sourceforge.net/projects/opengem/files/latest/download"
-        target="_blank" rel="nofollow" title="OpenGEM SDK">download
-        link</a>) and <a href="https://en.wikipedia.org/wiki/ZSNES"
-        target="_blank" rel="nofollow" title="ZSNES">ZSNES</a> for DOS. I do not think there is
-        anything practical doing this, but it is sure fun to see old <a
-        href="https://en.wikipedia.org/wiki/Technology" target="_blank"
-        rel="nofollow" title="Technology">technology</a> originally (<a
-        href="https://en.wikipedia.org/wiki/Source_code" target="_blank"
-        rel="nofollow" title="Source code">coded</a>) several decades
-        ago running on up-to-date <a
-        href="https://en.wikipedia.org/wiki/Technology" target="_blank"
-        rel="nofollow" title="Technology">technology</a>. It is merely
-        an excuse to show off. After all, <a
-        href="https://en.wikipedia.org/wiki/ZSNES" target="_blank"
-        rel="nofollow" title="ZSNES">ZSNES</a> is also available on <a
-        href="/linux.html" target="_self" rel="dofollow"
-        title="Linux">Linux</a>.</p>
+        target="_self" rel="dofollow" title="Linux">Linux</a>, I
+        installed DOSBox running OpenGEM, various applications from the
+        OpenGEM SDK and ZSNES for DOS. I do not think there is anything
+        practical doing this, but it is sure fun to see old technology
+        originally coded several decades ago running on up-to-date
+        technology. It is merely an excuse to show off. After all, ZSNES
+        is also available on <a href="/linux.html" target="_self"
+        rel="dofollow" title="Linux">Linux</a>.</p>
         <p>Note that, on <a href="/windows.html" target="_self"
-        rel="dofollow" title="Microsoft Windows">Windows</a>, you can run the <a
-        href="https://en.wikipedia.org/wiki/PortableApps.com"
-        target="_blank" rel="nofollow"
-        title="PortableApps.com">PortableApps.com</a> <a
-        href="https://en.wikipedia.org/wiki/Porting" target="_blank"
-        rel="nofollow" title="Porting">port</a> of <a
-        href="https://en.wikipedia.org/wiki/DOSBox" target="_blank"
-        rel="nofollow" title="DOSBox">DOSBox</a> making it ready from a
-        <a href="https://en.wikipedia.org/wiki/USB_flash_drive"
-        target="_blank" rel="nofollow" title="USB flash drive">USB flash
-        drive</a> with any added software and/or your
-        personalized <a
-        href="https://en.wikipedia.org/wiki/Computer_configuration"
-        target="_blank" rel="nofollow" title="Computer
-        configuration">configuration</a>.</p>
+        rel="dofollow" title="Microsoft Windows">Windows</a>, you can
+        run the PortableApps.com port of DOSBox making it ready from a
+        USB flash drive with any added software and/or your personalized
+        configuration.</p>
       </section>
      </article>
   </main><!-- end of main body -->

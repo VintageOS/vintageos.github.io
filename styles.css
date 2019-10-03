@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------+
-|     FRN2000 & VintageOS v5D5B3801, all rights reserved, 1997-2019    |
+|     FRN2000 & VintageOS v5D8BBEDD, all rights reserved, 1997-2019    |
 |             frn2000.com · vintageos.com · vintageos.org              |
 |                                                                      |
 | 1.  over three decades destroying various technologies, crashing and |
@@ -35,9 +35,8 @@
 |     to code this file found at http://robotstxt.org/robotstxt.html   |
 +-------------------------------------------------------------------- */
 
-body
+article body li main nav select ol option p ul
   {
-    /* background-color: #002232; */
     background-color: #F5F5F5;
     margin: 50px, 50px, 50px, 50px;
     padding: 30px 30px 30px 30px;
@@ -90,16 +89,6 @@ hr
     height: 1px;
   }
 
-article body main nav select p ol option ul li
-  {
-    color: #000000;
-    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 20px;
-    text-align: left;
-  }
-
 pre tt
   {
     font-family: monospace;
@@ -150,6 +139,20 @@ a:hover
     border: 1pt solid #C0C0C0;
   }
 
+.monogreen
+  {
+    padding: 0px 2px 0px 2px;
+    color: #4CBB17;
+    background: #000000;
+  }
+
+.monoamber
+  {
+    padding: 0px 2px 0px 2px;
+    color: #FFBF00;
+    background: #000000;
+  }
+
 .padded
   {
     margin: 50px, 50px, 50px, 50px;
@@ -159,13 +162,13 @@ a:hover
 .regTXT
   {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 18px;
   }
 
 .smTXT
   {
     font-size: 10px;
-    line-height: 13px;
+    line-height: 14px;
   }
 
 /* ------------------------------- EOF ------------------------------ */

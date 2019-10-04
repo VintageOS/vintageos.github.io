@@ -1,5 +1,10 @@
-                    FRN2000 & VintageOS v5D8BBEDD
-                   all rights reserved,  1997-2019
+          _____ _     _               _____ _____            v5D8BBEDD
+         |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___
+         |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |
+          \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |
+                             |___|                         |___|
+
+      FRN2000 & VintageOS v5D8BBEDD, all rights reserved, 1997-2019
               frn2000.com · vintageos.org · vintageos.org
 
 [VintageOS](https://vintageos.org/) is the source for information on

@@ -95,6 +95,16 @@ hr
     height: 1px;
   }
 
+li ol p ul
+  {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+  }
+
 pre tt
   {
     font-family: monospace;

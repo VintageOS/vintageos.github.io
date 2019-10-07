@@ -41,7 +41,7 @@
 |     to code this file found at http://robotstxt.org/robotstxt.html   |
 +-------------------------------------------------------------------- */
 
-article body li main nav select ol option p ul
+body
   {
     background-color: #F7F7F7;
     margin: 50px, 50px, 50px, 50px;
@@ -95,8 +95,9 @@ hr
     height: 1px;
   }
 
-li ol p ul
+article li main nav select ol option p ul
   {
+    background-color: #F7F7F7;
     color: #000000;
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
     font-size: 14px;
@@ -104,7 +105,7 @@ li ol p ul
     line-height: 18px;
     text-align: left;
   }
-
+  
 pre tt
   {
     font-family: monospace;

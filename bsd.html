@@ -62,10 +62,7 @@
     rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div id="top">
-    <!-- top anchor (`id` attribute) -->
-  </div>
-  <header role="banner">
+  <header role="banner" id="top">
     <a href="/" target="_self" rel="dofollow"><img src="/img/vos12.jpg"
     height="70" width="595" border="0" alt="VintageOS v5D8BBEDD"
     title="VintageOS v5D8BBEDD"></a>
@@ -107,6 +104,8 @@
         title="Operating System/2">OS/2</option>
       <option value="/palm.html" target="_self" rel="dofollow"
         title="Palm OS">Palm</option>
+      <option value="/reactos.html" target="_self" rel="dofollow"
+        title="ReactOS">ReactOS</option>
       <option value="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</option>
       <option value="/windows.html" target="_self" rel="dofollow"
@@ -132,24 +131,25 @@
   <main role="main">
   <article role="article">
     <h1 id="main">What is BSD?</h1>
-    <p>There is a close relation between BSD and <a href="/linux.html"
-    target="_self" rel="dofollow" title="Linux">Linux</a>. They are both
-    UNIX&reg; clones, sort of like distant cousins. BSD stands for
-    Berkeley Software Distribution because it was at the University of
-    California at Berkley in 1977 the source code of System V (AT&amp;T)
-    was forked. Since 1970's, the source code for <a  href="/unix.html"
-    target="_self" rel="dofollow" title="Unix">Unix</a> was included
-    with the releases to allow further development. The changes done at
-    Berkley became known as BSD. Although every version and adaptation
-    of Unix is important, the 1984 release of BSD known as 4.2BSD became
-    popular and commonly used within universities.</p>
+    <p id="BSDvsLinux">There is a close relation between BSD and <a
+    href="/linux.html" target="_self" rel="dofollow"
+    title="Linux">Linux</a>. They are both UNIX&reg; clones, sort of
+    like distant cousins. BSD stands for Berkeley Software Distribution
+    because it was at the University of California at Berkley in 1977
+    the source code of System V (AT&amp;T) was forked. Since 1970's, the
+    source code for <a href="/unix.html" target="_self" rel="dofollow"
+    title="Unix">Unix</a> was included with the releases to allow
+    further development. The changes done at Berkley became known as
+    BSD. Although every version and adaptation of Unix is important, the
+    1984 release of BSD known as 4.2BSD became popular and commonly used
+    within universities.</p>
     <p id="386BSD">In 1985, William Jolitz and Lynne Jolitz adapted the
     source code of BSD to work on the i386 microprocessor under the name
     386BSD.</p>
     <p id="MacBSD">In 1991, Brad Grantham, Lawrence Kesteloot and Chris
     Caputo ported 386BSD to <a href="/macos.html" target="_self"
     rel="dofollow" title="macOS">macOS</a> under the name MacBSD. In
-    1992, BSD was running on Mac II systems.
+    1992, BSD was running on Mac II systems.</p>
     <p id="NetBSD">In May 1993, NetBSD 0.8 was first released. NetBSD
     was the first royalty-free Unix OS. Around the same time, Allen
     Briggs and Michael Finch started to merge NetBSD 0.8 and MacBSD to
@@ -161,17 +161,17 @@
     NetBSD.</p>
     <p id="FreeBSD">In November of 1993, Nate Williams, Rod Grimes and
     Jordan Hubbard released FreeBSD 1.0 for x86 microprocessors based on
-    4.4BSD-Lite(1995) with components of the Unofficial 386BSD Patchkit,
-    which they had developed for William Jolitz's OS. Jordan Hubbard is
-    also credited for FreeBSD Ports, a command line package manager to
-    install programs via the <tt>Makefile</tt> macro. See <a
+    4.4BSD-Lite (1994) with components of the Unofficial 386BSD
+    Patchkit, which they had developed for William Jolitz's OS. Jordan
+    Hubbard is also credited for FreeBSD Ports, a command line package
+    manager to install programs via the <tt>Makefile</tt> macro. See <a
     href="/bsd.html#FreeBSD_distros" target="_self" rel="dofollow"
     title="Berkeley Software Distribution &raquo; List of Distributions
     Based on FreeBSD (1993)">list of distributions</a> based on
     FreeBSD.</p>
-    <p id="" name="OpenBSD">In October 1995, Theo de Raadt (a former
-    core team and co-founder of NetBSD, who asked to leave the
-    organization) first released OpenBSD 2.0 as a fork of NetBSD. See <a
+    <p id="OpenBSD">In October 1995, Theo de Raadt (a former core team
+    and co-founder of NetBSD, who asked to leave the organization) first
+    released OpenBSD 2.0 as a fork of NetBSD. See <a
     href="/bsd.html#OpenBSD_distros" target="_self" rel="dofollow"
     title="Berkeley Software Distribution &raquo; List of Distributions
     Based on OpenBSD (1995)">list of distributions</a> based on
@@ -206,21 +206,21 @@
     title="Berkeley Software Distribution &raquo; List of Distributions
     Based on FreeBSD (1993)">FreeBSD</a>, <a
     href="/bsd.html#OpenBSD_distros" target="_self" rel="dofollow"
-    title="Berkeley Software Distribution &raquo; List of
-    Distributions Based on OpenBSD (1995)">OpenBSD</a> or <a
+    title="Berkeley Software Distribution &raquo; List of Distributions
+    Based on OpenBSD (1995)">OpenBSD</a> or <a
     href="/bsd.html#DragonFlyBSD_distros" target="_self" rel="dofollow"
-    title="Berkeley Software Distribution &raquo; List of
-    Distributions Based on DragonFly BSD (2003)">DragonFly BSD</a>.</p>
-    <p>There are many ways to install BSD (from a CD-ROM, USB drive
-    (most common media to copy OS images nowadays), FTP, HTTP, NFS, a <a
+    title="Berkeley Software Distribution &raquo; List of Distributions
+    Based on DragonFly BSD (2003)">DragonFly BSD</a>.</p>
+    <p>There are many ways to install BSD from a CD-ROM, USB drive (the
+    most common media to copy OS images nowadays), FTP, HTTP, NFS, a <a
     href="/dos.html" target="_self" rel="dofollow" title="Disk Operating
     System">DOS</a> partition, etc.). If you are a  beginner or lazy (as
-    I am), do the installation from a USB drive. Just plug the USB
-    drive and reboot. Do <strong>NOT</strong> forget that the
-    installation will format the partition or most likely the whole HDD
-    if you are not careful. If you want to test BSD without doing any
-    changes or formatting your HDD, make sure you have a live image in
-    the USB drive.</p>
+    I am), do the installation from a USB drive. Just plug the USB drive
+    and reboot. Do <strong>NOT</strong> forget that the installation
+    will format the partition or most likely the whole HDD if you are
+    not careful. If you want to test BSD without doing any changes or
+    formatting your HDD, make sure you have a live image in the USB
+    drive.</p>
   </article>
   <article role="article">
     <h2 id="NetBSD_distros">List of Distributions Based on NetBSD

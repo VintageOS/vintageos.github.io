@@ -62,10 +62,7 @@
     rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div id="top">
-    <!-- top anchor (`id` attribute) -->
-  </div>
-  <header role="banner">
+  <header role="banner" id="top">
     <a href="/" target="_self" rel="dofollow"><img src="/img/vos12.jpg"
     height="70" width="595" border="0" alt="VintageOS v5D8BBEDD"
     title="VintageOS v5D8BBEDD"></a>
@@ -107,6 +104,8 @@
         title="Operating System/2">OS/2</option>
       <option value="/palm.html" target="_self" rel="dofollow"
         title="Palm OS">Palm</option>
+      <option value="/reactos.html" target="_self" rel="dofollow"
+        title="ReactOS">ReactOS</option>
       <option value="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</option>
       <option value="/windows.html" target="_self" rel="dofollow"
@@ -1515,7 +1514,8 @@
               memory
             </li>
             <li>
-              <tt>mem</tt> &mdash; displays the amount of DOS memory used
+              <tt>mem</tt> &mdash; displays the amount of DOS memory
+              used
             </li>
             <li>
               <tt>more</tt> &mdash; displays a text file one screen at a
@@ -1523,13 +1523,13 @@
             </li>
             <li>
               <tt>nansi</tt> &mdash; <tt>nansi.sys</tt>, an enhanced
-              <a href="/dos.html#MSDOS" target="_self"
-              rel="dofollow" title="Disk Operating System &raquo;
-              MS-DOS">MS-DOS</a> console driver
+              <a href="/dos.html#MSDOS" target="_self" rel="dofollow"
+              title="Disk Operating System &raquo; MS-DOS">MS-DOS</a>
+              console driver
             </li>
             <li>
-              <tt>pause</tt> &mdash; will suspend execution of a
-              batch program
+              <tt>pause</tt> &mdash; will suspend execution of a batch
+              program
             </li>
             <li>
               <tt>shsucdx</tt> &mdash; CDROM redirector (load
@@ -1545,33 +1545,33 @@
               <tt>swsubst</tt> &mdash; CDS manipulator
             </li>
             <li>
-              <tt>.SYS</tt> &mdash; create bootable DOS floppy or
-              hdimage
+              <tt>sys</tt> &mdash; create bootable DOS floppy or hdimage
             </li>
             <li>
               <tt>tail</tt> &mdash; displays the tail of a text file
             </li>
             <li>
-              <tt>tee</tt> &mdash; saves a copy of its input to a
-              file and to standard output
+              <tt>tee</tt> &mdash; saves a copy of its input to a file
+              and to standard output
             </li>
             <li>
               <tt>touch</tt> &mdash; <tt>touch</tt> a file's timestamp
             </li>
             <li>
-              <tt>verify</tt> &mdash; tells DOS to
-              verify if files are written correctly
+              <tt>verify</tt> &mdash; tells DOS to verify if files are
+              written correctly
             </li>
             <li>
               <tt>wcd</tt> &mdash; Waterlander <tt>cd</tt>, tree based
-              comfortable 'change directory' (navigate with arrow
-              keys, <tt>ENTER</tt> and <tt>ESC</tt>)
+              comfortable 'change directory' (navigate with arrow keys,
+              <tt>ENTER</tt> and <tt>ESC</tt>)
             </li>
             <li>
               <tt>xcopy</tt> &mdash; full-featured copy command
             </li>
           </ul>
         </nav>
+        <p>DOSEMU also has built-in commanads.</p>
         <nav role="navigation" id="DOSEMU_Built-ins">
           <ul>
             <li>
@@ -1623,8 +1623,7 @@
               <tt>set</tt> &mdash; set/display environment variables
             </li>
             <li>
-              <tt>path</tt> &mdash; set/display the
-              execution path
+              <tt>path</tt> &mdash; set/display the execution path
             </li>
             <li>
               <tt>prompt</tt> &mdash; set the prompt mode
@@ -1646,8 +1645,8 @@
               <tt>rd</tt> &mdash; (the same)
             </li>
             <li>
-              <tt>verify</tt> &mdash; set/display the DOS
-              verify mode for block devices
+              <tt>verify</tt> &mdash; set/display the DOS verify mode
+              for block devices
             </li>
             <li>
               <tt>ver</tt> &mdash; display version numbers of running
@@ -1708,7 +1707,7 @@
               title="Linux">Linux</a> (not DOS) directory
             </li>
             <li>
-              <tt>vgaoff</tt> &mdash; only for <tt>'root'</tt>!!  switch
+              <tt>vgaoff</tt> &mdash; only for <tt>'root'</tt>!! switch
               vga mode off (when on console)
             </li>
             <li>
@@ -1749,19 +1748,19 @@
             </li>
           </ul>
         </nav>
-        <p>The following was quoted from <tt>help</tt> (in
+        <p>The previous was quoted from <tt>help</tt> (in
         lowercase).</p>
       </section>
       <section role="section">
         <h3 id="XTM">XTM PC Emulator</h3>
         <p>XTM PC Emulator is <em>&quot;a software emulation of a
-        classic PC/XT computer [<a href="/dos.html#PCDOS""
-        target="_self" rel="nofollow" information="Disk Operating System
-        &raquo; Versions of DOS Compatible with MS-DOS &raquo; PC DOS
+        classic PC/XT computer [<a href="/dos.html#PCDOS" target="_self"
+        rel="nofollow" information="Disk Operating System &raquo;
+        Versions of DOS Compatible with MS-DOS &raquo; PC DOS
         (International Business Machines)">PC DOS</a> 3.0</a>] for
         EPOC32.&quot;</em> Within this standard application for your
-        portable computer, you can run any software which would run on
-        a low-end PC clones from the 1980's.</p>
+        portable computer, you can run any software which would run on a
+        low-end PC clones from the 1980's.</p>
       </section>
       <section>
         <h2 id="GUIs">Graphic User Interfaces for MS-DOS Other Than
@@ -1804,7 +1803,7 @@
         package for DOS gamer. Note that <a href="/dos.html#FreeDOS"
         target="_self" rel="dofollow" title="Disk Operating System
         &raquo; Versions of DOS Compatible with MS-DOS &raquo;
-        FreeDOS"> FreeDOS</a> lists OpenGEM as its GUI, in some way
+        FreeDOS">FreeDOS</a> lists OpenGEM as its GUI, in some way
         already doing what the BlueGEM wants to accomplish. In any case,
         I think it is a great idea to revive many old i386 and i486 PCs.
         If interested in using OpenGEM, the project offers a variety of

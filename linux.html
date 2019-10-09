@@ -62,10 +62,7 @@
     rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div id="top">
-    <!-- top anchor (`id` attribute) -->
-  </div>
-  <header role="banner">
+  <header role="banner" id="top">
     <a href="/" target="_self" rel="dofollow"><img src="/img/vos12.jpg"
     height="70" width="595" border="0" alt="VintageOS v5D8BBEDD"
     title="VintageOS v5D8BBEDD"></a>
@@ -107,6 +104,8 @@
         title="Operating System/2">OS/2</option>
       <option value="/palm.html" target="_self" rel="dofollow"
         title="Palm OS">Palm</option>
+      <option value="/reactos.html" target="_self" rel="dofollow"
+        title="ReactOS">ReactOS</option>
       <option value="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</option>
       <option value="/windows.html" target="_self" rel="dofollow"
@@ -142,24 +141,42 @@
       commonly used and most reliable OS for servers in the market, no
       matter what paid third-party reports that are plaguing the
       internet indicate.</p>
-      <p>Most Linux distributions include a collection of programs that
-      run on the Linux kernel like X, KDE, GNOME, other desktop
-      environments and/or LibreOffice. Under the Linux name, you can get
-      RHEL (paid subscription, enterprise licensing), Fedora, CentOS,
-      Ubuntu (my distribution of choice), Mandriva, Debian, Slackware
-      and many others. In the past, you could buy the disks for any
-      distribution from the developers or third-party vendors. Nowadays
-      you would most likely download the distribution of your choice and
-      burn it to USB drive.</p>
+      <p>Most Linux distributions (<em>distros</em>) include a
+      collection of programs that run on the Linux kernel like X, KDE,
+      GNOME, other desktop environments, LibreOffice and various codecs.
+      Under the Linux name, you can get RHEL (paid subscription,
+      enterprise licensing), Fedora, CentOS, Ubuntu (my distribution of
+      choice), Mandriva, Debian, Slackware and many others tailored to
+      your needs and/or desires. In the past, you could buy the disks
+      for any distribution from the developers or third-party vendors.
+      Nowadays you would most likely download the distribution
+      (<em>distro</em>) in a live <tt>.ISO</tt> or <tt>.IMG</tt> file
+      that can be burnt to a USB drive.</p>
       <article role="article">
         <h2 id="Installation">Installing Linux:</h2>
         <p>Before trying to install Linux, get a full inventory of
         what your computer has. In the past, you might have had to help
         the installer recognize the hardware. Nowadays the installer
         takes care of most the configuration (<em>config</em>).</p>
-        <p>Boot from the USB drive and sit back. The only thing you
-        would have to decide is if you want to format the whole drive or
-        share it with another OS.</p>
+        <p>Since most distributions are live, you can boot into the OS
+        and test it before install it. If you decide to install it,
+        there is usually a shortcut on the desktop that calls the
+        installer. You could also reboot and select to install it and
+        sit back. The only thing you would have to decide is if you want
+        to format the whole drive or share it with another OS.</p>
+        <p>In the past, you were advised to assign twice the RAM as
+        <tt>/swap</tt>. Nowadays new hardware and versions of Linux do
+        not need this rule of thumb anymore. As mentioned before, you
+        can now sit back and relax.</p>
+        <p>There are still distributions for total nerds that demand you
+        to compile each file in the installation like Slackware (one of
+        the original seven distributions) and Arch Linux to create a
+        tailored installation for your hardware with only the drivers
+        and other libraries needed (no bloat, small installation). For
+        more information, you can visit DistroWatch to see what
+        distributions are new and are the trendy for about an hour
+        &mdash; very similar to <a href="/windows.html" target="_self"
+        rel="dofollow" title="Microsoft Windows">Windows</a>.</p>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>
@@ -169,7 +186,8 @@
         generations with a price tag under $50, several projects have
         used Raspberry Pi hardware like Kano (2013), which designed a
         system for children to learn how to build computers and laptops
-        as well as to code.</p>
+        as well as to code. Most of these SBC units run their own
+        tailored Linux distributions.</p>
       </article>
     </section>
   </main><!-- end of main body -->

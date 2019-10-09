@@ -93,7 +93,7 @@
       <option value="/ios.html" target="_self" rel="dofollow"
         title="iOS">iOS</option>
       <option value="/kaios.html" target="_self" rel="dofollow"
-        title="KaiOS">KaiOS</option>
+        title="KaiOS ">KaiOS </option>
       <option value="/linux.html" target="_self" rel="dofollow"
         title="Linux">Linux</option>
       <option value="/macos.html" target="_self" rel="dofollow"
@@ -130,77 +130,89 @@
   </nav>
   <main role="main">
     <article role="article">
-      <h1 id="main">What is an operating system (OS)?</h1>
-      <p>MVS, which stands for Multiple Virtual Storage, is one of the
-      oldest operating systems developed by IBM and distant relative of
-      what we nowadays call <a href="/dos.html" target="_self"
-      rel="dofollow" title="Disk Operating System">DOS</a>. MVS has its
-      own programming language, JCL (Job Control Language). Three
-      decades after MVS was created (1974), JCL is still heavily used.
-      As a matter of fact, where I work, some programmers still use JCL
-      on a daily basis in the IBM z/VM system. Some of the applications
-      where I work query VSAM files and third-party application handle
-      screen scraping to replicate the screens and output to ASP or JSP.
-      After over forty years, the mainframes are still king.</p>
-      <p>The following table shows the history of MVS as per the book <a
-      href="http://amzn.to/2xYPh1a" target="_blank" rel="nofollow"
-      title="ISBN: 9780534503536 &mdash; Understanding Operating Systems
-      (UNIVERSITY OF PHOENIX College Of Information Systems And
-      Technology MSCIS)">Understanding Operating Systems</a> (<a
-      href="http://amzn.to/2xYPh1a" target="_blank" rel="nofollow"
-      title="ISBN: 9780534503536 &mdash; Understanding Operating
-      Systems (UNIVERSITY OF PHOENIX College Of Information Systems And
-      Technology MSCIS)">ISBN 9780534503536</a>) by Ida Flynn.</p>
-      <article role="article">
-        <h2 id="Timeline">Timeline:</h2>
-        <!-- beginning of MVS timeline -->
-        <ul>
-          <li id="1964">
-            OS/360 for IBM 360 (1964)
-          </li>
-          <li id="1967">
-            OS/MFT (Multiprogramming with Fixed number Tasks) for IBM
-            360 (1967)
-          </li>
-          <li id="1968">
-            OS/MVT (Multiprogramming with Variable number Tasks) for IBM
-            360 (1968)
-          </li>
-          <li id="1972">
-            SVS (Single Virtual Storage)
-            <br/>OS/VS1 (Virtual Storage 1)
-            <br/>OS/VS2 (Virtual Storage 2) for IBM 370 (1972)
-          </li>
-          <li id="1974">
-            MVS (Multiple VirtualStorage) for IBM 370 (1974)
-          </li>
-          <li id="1981">
-            MVS/XA (MVS with Extended Architecture) for IBM 370 (1981)
-          </li>
-          <li id="1985">
-            MVS/ESA (MVS with Enterprise System Architecture) for IBM
-            370 (1985)
-          </li>
-          <li id="1990">
-            MVS/ESA (MVS with Enterprise System Architecture for IBM 390
-            (1990)
-          </li>
-          <li id="1996">
-            OS/390 (Open Server 390) for IBM 390 (1996)
-          </li>
-          <li id="2000">
-            z/OS 64-bit for zSeries (2000)
-          </li>
-          <li id="2004">
-            IBM z/VM for zSeries (2004)
-          </li>
-        </ul><!-- end of MVS timeline -->
-        <p>If you want to play with VMS, you can run OpenVMS by VMS
-        Software via the FreeAXP Alpha emulator on Windows by Migration
-        Specialties. There is also a x86 port.</p>
-      </section>
+      <h1 id="main">What is ReactOS?</h1>
+      <p>For the past 16 years, <a href="https://reactos.org/"
+      target="_blank" rel="nofollow" title="ReactOS">ReactOS</a> has
+      been a project to create an OS compatible with the <a
+      href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows NT</a> kernel, <a
+      href="/dos.html" target="_self" rel="dofollow" title="Disk
+      Operating System">DOS</a>, <a href="/os2.html" target="_self"
+      rel="dofollow" title="OS/2">OS/2</a> and Java subsystems.
+      According to the developing group, ReactOS is 93.8% complete
+      (alpha). The current build is 0.4.12 released on 09/23/2019 and it reports <a
+      href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">NT 5.2</a> (Build 3790; Service Pack 2)
+      on FAT-32. ReactOS can currently run older versions of software
+      originally released for <a href="/windows.html" target="_self"
+      rel="dofollow" title="Microsoft Windows">Windows</a> without major
+      glitches. If you get programs from Application Manager
+      (repository), do not upgrade them to the latest version as they
+      might break the OS. For example, the latest version of Firefox in
+      this build is 48.0.2 Extended Support Release (08/24/2016) and
+      52.0.3 ESR (latest version) would not run. I had to reinstall
+      48.0.2 ESR to what the installer considered an upgrade (although
+      it was a downgrade) the newer version of Firefox.</p>
+      <p align="center"><a
+      href="https://en.wikipedia.org/wiki/File:ReactOS_0.4.7_with_Lautus_Theme.png"
+      target="_blank" rel="nofollow"><img
+      src="/img/639px-ReactOS_0.4.7_with_Lautus_Theme.png" height="240"
+      width="320" border="0" class="boxes" alt="By ROSHelper - Own work,
+      CC0, https://commons.wikimedia.org/w/index.php?curid=67644888"
+      title="By ROSHelper - Own work, CC0,
+      https://commons.wikimedia.org/w/index.php?curid=67644888"></a></p>
+      <p>Being a <a href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows</a> clone, it uses the same
+      mentality in naming convention and system variables as <a
+      href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows</a>. This meant that I had to
+      change the environment variables for <tt>TEMP</tt> and
+      <tt>TMP</tt> to <tt>C:\TEMP</tt> (bad habit that I picked up
+      working with <a href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows 3.1.1</a>). By the way, I do the
+      same to every <a href="/windows.html" target="_self"
+      rel="dofollow" title="Microsoft Windows">Windows</a> machine that
+      I have worked with ever since.</p>
+      <p>Although the OS is clearly not ready for prime time, I have had
+      fun using it even running a game engine. At this point, I do not
+      know what else to do with it so I do not play with it as much.</p>
+      <p>ReactOS relies on the Wine project for compatibility with the
+      <a href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows NT</a> kernel. This is similar
+      to what <a href="/unix.html" target="_self" rel="dofollow"
+      title="Unix">Unix</a>-like operating systems do. At the same time,
+      this might be its weakest point of the OS although it is a quick
+      way to achieve the goal of making a drop-in replacement for <a
+      href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows</a>.</p>
+      <p>Although ReactOS uses Wine, it is not considered and/or
+      marketed as another <a href="/unix.html" target="_self"
+      rel="dofollow" title="Unix">Unix</a>-like OS. This project is, for
+      lack of a better legal expression, a <a href="/windows.html"
+      target="_self" rel="dofollow" title="Microsoft
+      Windows">Windows</a> clone without reusing any of Microsoft's
+      proprietary code that could be used in a fairly new hardware. For
+      make sure the latter remains true, internal audits check the code
+      (mostly C++) constantly.</p>
+
     </article>
-  </article>
+    <article role="article">
+      <h2 id="Installation">Installing ReactOS:</h2>
+      <p>Like most operating systems nowadays, the installation of
+      ReactOS is handled by a live <tt>.ISO</tt> that can be burned to a
+      USB drive. The installation is similar to that of <a
+      href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows</a> including the dialog boxes.
+      I installed ReactOS in a VDI as I no longer have a physical
+      computer lab at home.</p>
+      <p>If you decide to use a VDI, you might get errors indicating
+      that some drivers are missing. Some of these errors do not tell
+      you what is missing and/or needed merely displaying that it needs
+      a driver for a <em>system device<em>. If you run it as the sole OS
+      in a computer or shared in a separate partition, you might need to
+      manually install AC97 (available in the Application Manager) for
+      audio and drivers your 802.11 adapter.</p>
+    </article>
   </main><!-- end of main body -->
   <article role="article">
     <p id="CreativeCommons" align="center"><!-- beginning of Creative

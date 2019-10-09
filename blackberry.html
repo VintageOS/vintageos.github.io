@@ -62,10 +62,7 @@
     rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div id="top">
-    <!-- top anchor (`id` attribute) -->
-  </div>
-  <header role="banner">
+  <header role="banner" id="top">
     <a href="/" target="_self" rel="dofollow"><img src="/img/vos12.jpg"
     height="70" width="595" border="0" alt="VintageOS v5D8BBEDD"
     title="VintageOS v5D8BBEDD"></a>
@@ -107,6 +104,8 @@
         title="Operating System/2">OS/2</option>
       <option value="/palm.html" target="_self" rel="dofollow"
         title="Palm OS">Palm</option>
+      <option value="/reactos.html" target="_self" rel="dofollow"
+        title="ReactOS">ReactOS</option>
       <option value="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</option>
       <option value="/windows.html" target="_self" rel="dofollow"
@@ -166,11 +165,11 @@
       <p>The BlackBerry OS is a fairly robust product although I trashed
       the system configuration &mdash; not the OS itself &mdash; of my
       first unit several times and practically destroyed the hardware of
-      a second unit. The last model I used before I started using <a
-      href="/android.html" target="_self" rel="dofollow"
-      title="Android">Android</a> had version 4.6.1.259 of the
-      BlackBerry OS with kernel 3.8.5.50a &mdash; no idea what these
-      numbers mean in terms of the OS and its related technologies.</p>
+      a second unit. The last BlackBerry model I used before I started
+      using <a href="/android.html" target="_self" rel="dofollow"
+      title="Android">Android</a> had version 4.6.1.259 with kernel
+      3.8.5.50a &mdash; no idea what these numbers mean in terms of the
+      OS and its related technologies.</p>
       <p>Perhaps the biggest plus (biggest sales pitch, for that matter)
       is the email service that allows a BlackBerry device to send and
       receive corporate emails &mdash; sort of a relay.</p>
@@ -201,8 +200,8 @@
       not yet found a way to explore its configuration or any system
       files, for that matter.</p>
       <p id="Directories">The tree structure is similar to <a
-      href="/unix.html" target="_self" rel="dofollow"
-      title="Unix">Unix</a> as seen below.</p>
+      href="/android.html" target="_self" rel="dofollow"
+      title="Android">Android</a> as seen below.</p>
       <pre id="Blackberry_storage">
         Device Memory
         + Home
@@ -227,12 +226,12 @@
          + <em>[user-defined subdirectories]</em>
         </pre>
       <p>Note that the memory card (microSD) is mounted at the root as
-      <tt>Media Card</tt>. Only in <tt>Media
-      Card</tt>, the user has access to create, hide (changing
-      attributes) and delete directories other than the ones needed by
-      the system. Some program installations also write data to
-      <tt>Media Card</tt>. In any event, mobile phones can be mounted as
-      external disks via USB connection.</p>
+      <tt>Media Card</tt>. Only in <tt>Media Card</tt>, the user has
+      access to create, hide (changing attributes) and delete
+      directories other than the ones needed by the system. Some program
+      installations also write data to <tt>Media Card</tt>. In any
+      event, mobile phones can be mounted as external disks via USB
+      connection.</p>
       <p>One thing that I find fairly strange is that notes, tasks,
       calendar, contact and all configuration (<em>config</em>) data is
       stored in the mobile phone and not in the microSD &mdash; not even

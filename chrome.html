@@ -65,7 +65,7 @@
   <header role="banner" id="top">
     <a href="/" target="_self" rel="dofollow"><img src="/img/vos12.jpg"
     height="70" width="595" border="0" alt="VintageOS v5D8BBEDD"
-    title="VintageOS v5D8BBEDD"></a> 
+    title="VintageOS v5D8BBEDD"></a>
   </header>
   <nav>
     <select class="boxes" onChange="window.location.href=this.value">
@@ -131,37 +131,38 @@
   <main role="main">
     <article role="article">
       <h1 id="main">What is Chrome?</h1>
-      <p>Google Chrome, developed and controlled by Google, may refer to
-      either the web browser or the OS that uses the latter web browser
-      as its GUI. Chrome OS is intended for laptops (not intended for
-      desktops), which Google markets under the name Chromebook. Just
-      like Google's portable OS, <a href="/android.html" target="_self"
-      rel="dofollow" title="Android">Android</a>, it is also based on <a
-      href="/linux.html" target="_self" rel="dofollow"
-      title="Linux">Linux</a>.</p>
-      <p align="center"><a
+      <p><a
       href="https://en.wikipedia.org/wiki/File:Chrome_OS_21.0.1172_Aura_Dev.png"
       target="_blank" rel="nofollow"><img
       src="/img/800px-Chrome_OS_21.0.1172_Aura_Dev.png" height="180"
-      width="320" border="0" class="boxes" alt="Chrome OS 21.0.1172 Aura
-      Dev" title="Chrome OS 21.0.1172 Aura Dev"></a></p>
-      <p>Although the OS is
-      <a href="/opensource.html" target="_self" rel="dofollow"
-      title="Open Source">open source</a>, users only have access to
-      personal files and no access to system files, especially the
-      kernel. Chrome OS mostly runs web applications making it basically
-      a thin client &mdash; except for multimedia with several (if not
-      all) codecs, camera and daemons.</p>
+      width="320" border="0" align="right" class="boxes" alt="Chrome OS
+      21.0.1172 Aura Dev" title="Chrome OS 21.0.1172 Aura Dev"></a>
+      Google Chrome, developed and controlled by Google, may refer to
+      either the web browser or the OS that uses the latter web browser
+      as its GUI. <a href="https://www.google.com/chromebook/"
+      target="_blank" title="Chrome OS">Chrome OS</a> is intended for
+      laptops (not intended for desktops), which Google markets under
+      the name Chromebook. Just like Google's portable OS, <a
+      href="/android.html" target="_self" rel="dofollow"
+      title="Android">Android</a>, it is also based on <a
+      href="/linux.html" target="_self" rel="dofollow"
+      title="Linux">Linux</a>.</p>
+      <p>Although the OS is <a href="/opensource.html" target="_self"
+      rel="dofollow" title="Open Source">open source</a>, users only
+      have access to personal files and no access to system files,
+      especially the kernel. Chrome OS mostly runs web applications
+      making it basically a thin client &mdash; except for multimedia
+      with several (if not all) codecs, camera and daemons.</p>
       <p>Running Chrome OS (stable channel only) demands the user to
       completely trust Google as it controls all aspects of the OS
       including and perhaps not limited to updates, which is perfect for
       users. As a matter of fact, all applications are only accessible
       through the Chrome Web Store and there is little to no risk of
       viruses or other malware.</p>
-      <p id="GooglePlay">As of version 53 of the OS released on
-      September 2016, Google Chrome can run a Google Play, which allows
-      users install and run <a href="/android.html" target="_self"
-      rel="dofollow" title="Android">Android</a> apps.</p>
+      <p id="GooglePlay">As of version 53 released on September 2016,
+      Google Chrome can run a Google Play, which allows users install
+      and run <a href="/android.html" target="_self" rel="dofollow"
+      title="Android">Android</a> apps.</p>
       <p id="crosh">Chrome OS has a limited shell in user mode by the
       name of <tt>crosh</tt>.</p>
       <nav id="help_advanced">
@@ -312,12 +313,11 @@
             <tt>set_apn [-c] [-n &lt;network-id&gt;] [-u
             &lt;username&gt;] [-p &lt;password&gt;] &lt;apn&gt;</tt>
             &mdash; Set the <tt>APN</tt> to use when connecting to the
-            network specified by
-            <tt>&lt;network-id&gt;</tt>. If <tt>&lt;network-id&gt;</tt>
-            is not specified, use the <tt>network-id</tt> of the
-            currently registered network. The <tt>-c</tt> option clears
-            the <tt>APN</tt> to be used, so that the default
-            <tt>APN</tt> will be used instead.
+            network specified by <tt>&lt;network-id&gt;</tt>. If
+            <tt>&lt;network-id&gt;</tt> is not specified, use the
+            <tt>network-id</tt> of the currently registered network. The
+            <tt>-c</tt> option clears the <tt>APN</tt> to be used, so
+            that the default <tt>APN</tt> will be used instead.
           </li>
           <li>
             <tt>set_arpgw &lt;true | false&gt;</tt> &mdash; Turn on
@@ -355,26 +355,26 @@
             readability test.
           </li>
           <li>
-            <tt>swap [ enable &lt;size (MB)&gt; | disable | start
-            | stop | status | set_margin &lt;discard threshold
-            (MB)&gt; | set_extra_free &lt;amount (MB)&gt; |
-            set_min_filelist &lt;amount (MB)&gt; ]</tt> &mdash; Manage
-            the system <tt>/swap</tt> files. The enable/disable options
-            update the config files settings and will take effect at the
-            next boot. The start/stop options will turn <tt>/swap</tt>
-            on/off immediately, but leave the config files settings
-            alone (so next boot will revert back). Warning: If
-            <tt>/swap</tt> is heavily used, then turning it off might
-            cause the system to hang while the kernel tries to release
-            pages and free up memory. In some extreme situations, this
-            can take a long time to finish. The <tt>set_margin</tt>
-            option changes the low-memory warning margin immediately and
-            persistently to the chosen amount (in MiB). A value of
-            <tt>0</tt>, or the string <tt>default</tt>, restore the
-            default behavior. The current value is shown with <tt>swap
-            status</tt>. Similarly, the <tt>set_min_filelist</tt> and
-            <tt>set_extra_free</tt> change obscure kernel parameters
-            (which are similarly named) in the same way.
+            <tt>swap [ enable &lt;size (MB)&gt; | disable | start | stop
+            | status | set_margin &lt;discard threshold (MB)&gt; |
+            set_extra_free &lt;amount (MB)&gt; | set_min_filelist
+            &lt;amount (MB)&gt; ]</tt> &mdash; Manage the system
+            <tt>/swap</tt> files. The enable/disable options update the
+            config files settings and will take effect at the next boot.
+            The start/stop options will turn <tt>/swap</tt> on/off
+            immediately, but leave the config files settings alone (so
+            next boot will revert back). Warning: If <tt>/swap</tt> is
+            heavily used, then turning it off might cause the system to
+            hang while the kernel tries to release pages and free up
+            memory. In some extreme situations, this can take a long
+            time to finish. The <tt>set_margin</tt> option changes the
+            low-memory warning margin immediately and persistently to
+            the chosen amount (in MiB). A value of <tt>0</tt>, or the
+            string <tt>default</tt>, restore the default behavior. The
+            current value is shown with <tt>swap status</tt>. Similarly,
+            the <tt>set_min_filelist</tt> and <tt>set_extra_free</tt>
+            change obscure kernel parameters (which are similarly named)
+            in the same way.
           </li>
           <li>
             <tt>syslog &lt;message&gt;</tt> &mdash; Logs a message to
@@ -465,7 +465,7 @@
     &mdash; Attribution-NonCommercial-NoDerivs 3.0 Unported (CC
     BY-NC-ND 3.0)" title="Creative Commons License &mdash;
     Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)"
-    src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a> 
+    src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
     <!-- end of Creative Commons license code &mdash;
     Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND
     3.0) --></p>

@@ -139,7 +139,7 @@
       21.0.1172 Aura Dev" title="Chrome OS 21.0.1172 Aura Dev"></a>
       Google Chrome, developed and controlled by Google, may refer to
       either the web browser or the OS that uses the latter web browser
-      as its GUI. <a href="https://www.google.com/chromebook/"
+      as its GUI. <a href="https://google.com/chromebook/"
       target="_blank" title="Chrome OS">Chrome OS</a> is intended for
       laptops (not intended for desktops), which Google markets under
       the name Chromebook. Just like Google's portable OS, <a
@@ -179,8 +179,8 @@
             (taciturn), <tt>2</tt> (chatty), or <tt>3</tt> (verbose).
           </li>
           <li>
-            <tt>battery_firmware &lt;info|check|update&gt;</tt>
-            &mdash;<br/><tt>info</tt>: Query battery info.
+            <tt>battery_firmware &lt;info|check|update&gt;</tt> &mdash;
+            <br/><tt>info</tt>: Query battery info.
             <br/><tt>check</tt>: Check whether the AC adapter is
             connected. Also check whether the battery firmware is the
             latest.
@@ -220,9 +220,9 @@
             Key).
           </li>
           <li>
-            <tt>enroll_status [&mdash;mode] [&mdash;domain]
-            [&mdash;realm] [&mdash;user]</tt> &mdash; Displays device
-            enrollment information.
+            <tt>enroll_status [--mode] [--domain] [--realm]
+            [--user]</tt> &mdash; Displays device enrollment
+            information.
           </li>
           <li><tt>exit</tt> &mdash; Exit <tt>crosh</tt>.</li>
           <li>
@@ -272,8 +272,8 @@
             <tt>reset</tt> subcommand.
           </li>
           <li>
-            <tt>p2p_update [enable|disable] [&mdash;num-connections]
-            [&mdash;show-peers]</tt> &mdash; Enables or disables the
+            <tt>p2p_update [enable|disable] [--num-connections]
+            [--show-peers]</tt> &mdash; Enables or disables the
             peer-to-peer (P2P) sharing of updates over the local
             network. This will both attempt to get updates from other
             peers in the network and share the downloaded updates with
@@ -338,7 +338,7 @@
             <tt>set_time [&lt;time string&gt;]</tt> &mdash; Sets the
             system time if the the system has been unable to get it from
             the network. The <tt>&lt;time string&gt;</tt> uses the
-            format of the <tt>GNU coreutils</tt> date command.
+            format of the GNU <tt>coreutils</tt> date command.
           </li>
           <li>
             <tt>set_wake_on_lan &lt;true | false&gt;</tt> &mdash;
@@ -348,7 +348,7 @@
           </li>
           <li>
             <tt>storage_test_1</tt> &mdash; Performs a short offline
-            SMART test.
+            <tt>SMART</tt> test.
           </li>
           <li>
             <tt>storage_test_2</tt> &mdash; Performs an extensive
@@ -437,7 +437,7 @@
           </li>
           <li>
             <tt>wpa_debug [&lt;debug_level&gt;]
-            [&mdash;list_valid_level] [&mdash;reset]</tt> &mdash; Set
+            [--list_valid_level] [--reset]</tt> &mdash; Set
             <tt>wpa_supplicant</tt> debugging level. <tt>wpa_debug
             help</tt> for more details.
           </li>
@@ -447,13 +447,26 @@
     </article>
     <article role="article">
       <h2 id="Installation">Installing Chrome OS:</h2>
-      <p>There is no OS installation. In case of extreme errors, there
-      is a local utility that resets the system to factory
-      specifications (<em>specs</em>) from an on-board ROM chip called
-      <tt>POWERWASH</tt>. Another alternative only when suggested by the
-      Chromebook vendor is to re-store the OS creating a recovery USB
-      flash drive and booting from it. In the latter scenario, you need
-      to contact the vendor for specific instructions.</p>
+      <p>There is no OS installation. Google does not offer any medium
+      to install the OS and all updates are pushed only by Google. In
+      other words, Google has taken an <a href="/opensource.html"
+      target="_self" rel="dofollow" title="Open Source">open source</a>
+      distribution of <a href="/linux.html" target="_self"
+      rel="dofollow" title="Linux">Linux</a> (currently based on Gentoo,
+      including the Portage repository) and closed it in the name of
+      security.</p>
+      <p>Nonetheless in case of extreme errors, there is a local utility
+      that resets the system to factory specifications (<em>specs</em>)
+      from an on-board ROM chip called <tt>POWERWASH</tt>. Another
+      alternative only when suggested by the Chromebook manufacturer is
+      to restore the OS creating a recovery USB flash drive and booting
+      from it. In the latter scenario, you need to contact the
+      manufacturer for specific instructions.</p>
+      <p>If you are really interested in installing Chrome OS, you could
+      check out third-party operating systems forked from Chrome OS
+      (clones) like <a href="https://nayuos.nexedi.com/" target="_blank"
+      title="NayuOS">NayuOS</a>, which is designed to only work on
+      Chromebooks.</p>
     </article>
   </main><!-- end of main body -->
   <article role="article">

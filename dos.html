@@ -497,9 +497,8 @@
       MS-DOS">MS-DOS</a>, not from <a href="/windows.html"
       target="_self" rel="dofollow" title="Microsoft
       Windows">Windows</a>.</p>
-      <p>If you do not want to see the</p></a> DOS commands while the
-      batch file is running, edit the batch turning <tt>ECHO</tt>
-      off.</p>
+      <p>If you do not want to see the DOS commands while the batch file 
+      is running, edit the batch turning <tt>ECHO</tt> off.</p>
       <pre>
         ECHO OFF
       </pre>
@@ -519,13 +518,12 @@
       <pre>
         SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE
       </pre>
-      <p>The batch
-      creates (if not already created) and assigns <tt>C:\TEMP</tt> as
-      the temporary directory instead of using <tt>C:\DOS</tt> or
-      <tt>C:\WINDOWS</tt> as a temporary directory. Some programs delete
-      the temporary directories after installation. This would be
-      serious trouble if the installation routine deleted the
-      <tt>C:\DOS</tt> directory.</p>
+      <p>The batch creates (if not already created) and assigns 
+      <tt>C:\TEMP</tt> as the temporary directory instead of using 
+      <tt>C:\DOS</tt> or <tt>C:\WINDOWS</tt> as a temporary directory. 
+      Some programs delete the temporary directories after installation. 
+      This would be serious trouble if the installation routine deleted 
+      the <tt>C:\DOS</tt> directory.</p>
       <pre>
         IF NOT EXIST C:\TEMP MKDIR C:\TEMP
         TEMP=C:\TEMP

@@ -105,7 +105,7 @@ article li main nav select ol option p ul
     line-height: 18px;
     text-align: left;
   }
-  
+
 pre tt
   {
     font-family: monospace;
@@ -114,6 +114,14 @@ pre tt
     line-height: 18px;
     background: #FFFFFF;
     border: 1pt solid #C0C0C0;
+  }
+
+blockquote
+  {
+    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
   }
 
 a:link

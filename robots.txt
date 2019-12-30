@@ -5,8 +5,8 @@
 #         \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |       #
 #                            |___|                         |___|       #
 #                                                                      #
-#     FRN2000 & VintageOS v5D8BBEDD, all rights reserved, 1997-2019    #
-#             frn2000.com · vintageos.com · vintageos.org              #
+#     FRN2000 & VintageOS v5D8BBEDD, all rights reserved, 1997-2020    #
+#             vintageos.org · vintageos.com · frn2000.com              #
 #                                                                      #
 # 1.  over three decades destroying various technologies, crashing and #
 #     hacking every operating system that I have ever touched from     #

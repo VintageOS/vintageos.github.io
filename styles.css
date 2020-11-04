@@ -43,12 +43,57 @@
 |     to code this file found at http://robotstxt.org/robotstxt.html   |
 +-------------------------------------------------------------------- */
 
-article body li main nav select ol option p ul
+/* --------------------------------------------------------------------+
+|     FRN2000 & VintageOS v5D8BBEDD, all rights reserved, 1997-2020    |
+|             frn2000.com · vintageos.com · vintageos.org              |
+|                                                                      |
+| 1.  over three decades destroying various technologies, crashing and |
+|     hacking every operating system that I have ever touched from     |
+|     BASIC on C64 and TRS-80 (https://vintageos.org/basic.html) to    |
+|     Linux (https://vintageos.org/linux.html) as well as teaching and |
+|     advocating for the hacker mentality behind open source           |
+|     (https://vintageos.org/opensource.html);  much more information  |
+|     available at https://vintageos.org/frn2000.html                  |
+|                                                                      |
+| 2.  disclaimer and terms of use for this site and/or related domains |
+|     found and explained at https://vintageos.org/disclaimer.html     |
+|                                                                      |
+| 3.  website and related files completely coded by hand (no WYSIWYG)  |
+|     using -- in alphabetical order                                   |
+|                                                                      |
+|     3.1.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      |
+|           (https://vintageos.org/chromeos.html)                      |
+|                                                                      |
+|     3.2.  Gedit (https://wiki.gnome.org/Apps/Gedit) on Linux         |
+|           (https://vintageos.org/linux.html)                         |
+|                                                                      |
+|     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     |
+|           Windows (https://vintageos.org//windows.html)              |
+|                                                                      |
+|     3.4.  Nano (https://nano-editor.org/) on Linux                   |
+|           (https://vintageos.org/linux.html) and/or Cygwin           |
+|           (https://vintageos.org/cygwin.html)                        |
+|                                                                      |
+|     3.5.  Tidy (http://html-tidy.org/) on Linux                      |
+|           (https://vintageos.org/linux.html) and/or Cygwin           |
+|           (https://vintageos.org/cygwin.html)                        |
+|                                                                      |
+| 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      |
+|     Markdown (https://daringfireball.net/projects/markdown/) as      |
+|     specified by GitHub Pages (https://pages.github.com/) in their   |
+|     guide (https://guides.github.com/features/mastering-markdown/)   |
+|                                                                      |
+| 5.  file `robots.txt` to block certain robots/spiders from accessing |
+|     files and sub-directories;  instructions and information on how  |
+|     to code this file found at http://robotstxt.org/robotstxt.html   |
++-------------------------------------------------------------------- */
+
+body
   {
     background-color: #F5F5F5;
     margin: 50px 50px 50px 50px;
     padding: 30px 30px 30px 30px;
-    width: 75vw;
+    width: 75%;
     color: #000000;
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
     font-size: 14px;
@@ -95,6 +140,16 @@ hr
     background-color: #C0C0C0;
     border: 0px;
     height: 1px;
+  }
+
+article body main nav select p ol option ul li
+  {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
   }
 
 pre tt
@@ -147,36 +202,24 @@ a:hover
     border: 1pt solid #C0C0C0;
   }
 
-.monogreen
-  {
-    padding: 0px 2px 0px 2px;
-    color: #4CBB17;
-    background: #000000;
-  }
-
-.monoamber
-  {
-    padding: 0px 2px 0px 2px;
-    color: #FFBF00;
-    background: #000000;
-  }
-
 .padded
   {
-    margin: 50px 50px 50px 50px;
-    padding: 50px 50px 50px 50px;
+    margin: 50px, 50px, 50px, 50px;
+    padding: 50px, 50px, 50px, 50px;
   }
 
 .regTXT
   {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 16px;
   }
 
 .smTXT
   {
     font-size: 10px;
-    line-height: 14px;
+    line-height: 13px;
   }
+
+/* ------------------------------- EOF ------------------------------ */
 
 /* ------------------------------- EOF ------------------------------ */

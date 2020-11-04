@@ -1,35 +1,37 @@
 ########################################################################
-#         _____ _     _               _____ _____            v5D8BBEDD #
-#        |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        #
-#        |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |       #
-#         \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |       #
-#                            |___|                         |___|       #
-#                                                                      #
 #     FRN2000 & VintageOS v5D8BBEDD, all rights reserved, 1997-2020    #
-#             vintageos.org · vintageos.com · frn2000.com              #
+#             frn2000.com · vintageos.com · vintageos.org              #
 #                                                                      #
 # 1.  over three decades destroying various technologies, crashing and #
 #     hacking every operating system that I have ever touched from     #
 #     BASIC on C64 and TRS-80 (https://vintageos.org/basic.html) to    #
-#     GNU Linux (https://vintageos.org/linux.html) as well as teaching #
-#     and advocating for open source;  more information available at   #
-#     https://vintageos.org/frn2000.html                               #
+#     Linux (https://vintageos.org/linux.html) as well as teaching and #
+#     advocating for the hacker mentality behind open source           #
+#     (https://vintageos.org/opensource.html);  much more information  #
+#     available at https://vintageos.org/frn2000.html                  #
 #                                                                      #
 # 2.  disclaimer and terms of use for this site and/or related domains #
 #     found and explained at https://vintageos.org/disclaimer.html     #
 #                                                                      #
 # 3.  website and related files completely coded by hand (no WYSIWYG)  #
-#     using                                                            #
-#     3.1.  Gedit (https://wiki.gnome.org/Apps/Gedit) on GNU Linux     #
-#           (https://kernel.org/),                                     #
-#     3.2.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      #
-#           (https://google.com/chromebook/),                          #
+#     using -- in alphabetical order                                   #
+#                                                                      #
+#     3.1.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      #
+#           (https://vintageos.org/chromeos.html)                      #
+#                                                                      #
+#     3.2.  Gedit (https://wiki.gnome.org/Apps/Gedit) on Linux         #
+#           (https://vintageos.org/linux.html)                         #
+#                                                                      #
 #     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     #
-#           Windows (https://microsoft.com/en-us/windows/),            #
-#     3.4.  Nano (https://nano-editor.org/) on GNU Linux               #
-#           (https://kernel.org/) and Cygwin (https://cygwin.com/),    #
-#     3.5.  Tidy (http://html-tidy.org/) on both GNU Linux             #
-#           (https://kernel.org/) and Cygwin (https://cygwin.com/)     #
+#           Windows (https://vintageos.org//windows.html)              #
+#                                                                      #
+#     3.4.  Nano (https://nano-editor.org/) on Linux                   #
+#           (https://vintageos.org/linux.html) and/or Cygwin           #
+#           (https://vintageos.org/cygwin.html)                        #
+#                                                                      #
+#     3.5.  Tidy (http://html-tidy.org/) on Linux                      #
+#           (https://vintageos.org/linux.html) and/or Cygwin           #
+#           (https://vintageos.org/cygwin.html)                        #
 #                                                                      #
 # 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      #
 #     Markdown (https://daringfireball.net/projects/markdown/) as      #

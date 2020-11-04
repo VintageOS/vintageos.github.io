@@ -1,11 +1,6 @@
-          _____ _     _               _____ _____            v5D8BBEDD
-         |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___
-         |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |
-          \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |
-                             |___|                         |___|
-
-      FRN2000 & VintageOS v5D8BBEDD, all rights reserved, 1997-2020
-              vintageos.org · vintageos.com · frn2000.com
+                    FRN2000 & VintageOS v5D8BBEDD
+                   all rights reserved,  1997-2020
+              frn2000.com · vintageos.org · vintageos.org
 
 In the simplest definition, an operating system (OS) is a set of
 instructions (software) that controls some hardware.  These instructions
@@ -45,4 +40,4 @@ with VirtualBox (free) or similar application.
 
 [« « «  Go back to the prior page.](README.md)
 
-        vintageos.org · vintageos.com · frn2000.com · 1997-2020
+        frn2000.com · vintageos.org · vintageos.org · 1997-2020

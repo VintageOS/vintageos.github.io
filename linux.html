@@ -127,18 +127,22 @@
       href="http://kernel.org/" target="_blank" rel="nofollow"
       title="The Linux Kernel Archives">Linux kernel</a>.</p>
       <p>For close to three decades, Linux has been one of the most
-      commonly used and most reliable OS for servers in the market, no
-      matter what paid third-party reports that are plaguing the
+      commonly used and most reliable OS'es for servers in the market,
+      no matter what paid third-party reports that are plaguing the
       internet indicate.</p>
       <p>Most Linux distributions include a collection of programs that
-      run on the Linux kernel like X, KDE, GNOME, other desktop
-      environments and/or LibreOffice. Under the Linux name, you can get
-      RHEL (paid subscription, enterprise licensing), Fedora, CentOS,
-      Ubuntu (my distribution of choice), Mandriva, Debian, Slackware
-      and many others. In the past, you could buy the disks for any
-      distribution from the developers or third-party vendors. Nowadays
-      you would most likely download the distribution of your choice and
-      burn it to USB drive.</p>
+      run on the Linux kernel like X, KDE, GNOME, Cinnamon or other
+      desktop environments as well as LibreOffice and other office or
+      home utitlities. Under the Linux name, you can get RHEL (paid
+      subscription, enterprise licensing), Fedora, CentOS, Ubuntu (my
+      distribution of choice), Mandriva, Debian, Slackware and many
+      others. In the past, you could buy the disks for any distribution
+      from the developers or third-party vendors. Nowadays you would
+      most likely download the distribution of your choice as an
+      <tt>.ISO</tt> and burn it to USB drive.</p>
+      <pre>
+        dd if=linux_image.iso of=/dev/sdb1
+      </pre>
       <article role="article">
         <h2 id="Installation">Installing Linux:</h2>
         <p>Before trying to install Linux, get a full inventory of
@@ -148,6 +152,16 @@
         <p>Boot from the USB drive and sit back. The only thing you
         would have to decide is if you want to format the whole drive or
         share it with another OS.</p>
+        <p>Depending on the distribution (<em>distro</em>), you might
+        need to update your installation right away. If the distro is
+        based on Debian and it has <tt>apt</tt> as in the case of Ubuntu
+        and its derivatives like Mint Linux, you might want to run the
+        following on the console.</p>
+        <pre>
+          apt-get update && apt-get upgrade && apt-get autoclean -y &&
+          apt-get autoremove -y && apt-get purge -y && reboot
+        </pre>
+        <p>I would recommend doing the latter on a daily basis.</p>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>

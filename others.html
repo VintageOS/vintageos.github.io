@@ -120,11 +120,15 @@
   <main role="main">
     <article role="article">
       <h1 id="main">Are There Other Operating Systems?</h1>
-      <p>Developers keep making operating systems to call their own.
-      Maybe out of pure vanity we take pride of their programs or set of
-      inter-related programs as an OS. The following list of hobby
-      and/or dedicated OS is in alphabetical order &mdash; both vintage
-      and cutting-edge.</p>
+      <p>Developers keep making operating systems (OS'es) to call their
+      own. Maybe out of pure vanity, they take pride of their programs
+      and/or set of connected programs as an OS. To make the development
+      of latter more interesting, there are groups and manuals how to
+      write OS'es in different languages especially assembler, which I
+      do not speak (understand). Some of these OS'es come in all forms
+      and for every taste and hardware. The following list of hobby
+      and/or dedicated OS including microkernels is in alphabetical
+      order &mdash; both vintage and cutting-edge.</p>
       <article role="article">
         <h2 id="2OS">2/OS:</h2>
         <p><a href="http://meos.sourceforge.net/" target="_blank"
@@ -170,14 +174,14 @@
       <article role="article">
         <h2 id="BOS">BOS:</h2>
         <p><a href="https://bos.asmhackers.net/" target="_blank"
-        rel="nofollow" title="BOS">BOS</a> is an x86 32-bit OS
+        rel="nofollow" title="BOS">BOS</a> is an x86 32-bit OS made
         <em>&quot;with <a href="/dos.html" target="_self"
         rel="dofollow" title="Disk Operating System">DOS</a> in mind...
         with native support for CD-ROM/BURNER, DVD, USB, most
         filesystems, up to 4gb of memory... for all those people that
         miss the days of <a href="/dos.html" target="_self"
         rel="dofollow" title="Disk Operating System">DOS</a>
-        programming&quot;</em> (Nov. 2020) written in assembler by
+        programming&quot;</em> (May 2012) written in assembler by
         Christoffer Bubach. It is marketed as a modern alternative to <a
         href="/dos.html" target="_self" rel="dofollow" title="Disk
         Operating System">DOS</a> although it has more of a <a
@@ -343,15 +347,22 @@
       <article role="article">
         <h2 id="GNUHurd">GNU Hurd:</h2>
         <p><a href="https://gnu.org/software/hurd/" target="_blank"
-        rel="nofollow" title="GNU Hurd">GNU Hurd</a> developed by GNU
-        Project is a microkernel to replace the <a href="/unix.html"
-        target="_self" rel="dofollow" title="Unix">Unix</a> kernel. This
-        microkernel can also be used to replace the <a
-        href="/linux.html" target="_self" rel="dofollow"
-        title="Linux">Linux</a>. As such, GNU wants to create a
-        <em>&quot;general-purpose kernel suitable for the GNU operating
-        system&quot;</em> (Nov. 2020) that can also be used in other <a
-        href="/unix.html" target="_self" rel="dofollow"
+        rel="nofollow" title="GNU Hurd">GNU Hurd</a> developed by the
+        GNU Project is a microkernel to replace the <a href="/unix.html"
+        target="_self" rel="dofollow" title="Unix">Unix</a> kernel
+        and it is based on <a
+        href="https://gnu.org/software/hurd/microkernel/mach/gnumach.html"
+        target="_blank" rel="nofollow" title="GNU Mach">GNU Mach</a>,
+        the same microkernel used by <a href="/macos.html"
+        target="_self" rel="dofollow" title="macOS">macOS</a>/<a
+        href="/bsd.html#Darwin" target="_self" rel="dofollow"
+        title="Berkeley Software Distribution &raquo;
+        Darwin">Darwin</a>. The GNU Hurd microkernel can also be used to
+        replace the <a href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Linux</a>. As such, the Hurd project is to create
+        a <em>&quot;general-purpose kernel suitable for the GNU
+        operating system&quot;</em> (Nov. 2020) that can also be used in
+        other <a href="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</a>-like systems for full POSIX compliance
         between systems.</p>
         <p align="center"><a
@@ -408,9 +419,9 @@
         rel="nofollow" title="MenuetOS">MenuetOS</a> --> MenuetOS is
         written in assembler and fits in a floppy. It needs mouse, i386,
         32 MB of RAM and 1 MB Display Vesa 2.0+ LFB. I have not had a
-        chance to use it although I have tested its fork <a
-        href="/others.html#KolibriOS" title="Other Operating Systems
-        &raquo; KolibriOS">KolibriOS</a>.</p>
+        chance to use it although I have tested (played a lot with) its
+        fork <a href="/others.html#KolibriOS" title="Other Operating
+        Systems &raquo; KolibriOS">KolibriOS</a>.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/File:Menuet.png"
         target="_blank" rel="nofollow"><img src="/img/Menuet.png"
@@ -427,11 +438,14 @@
         Michal Prochazka is an x86 16-bit <a href="/opensource.html"
         target="_self" rel="dofollow" title="Open Source">open
         source</a> fork of <a href="/others.html#MikeOS" target="_self"
-        rel="dofollow" title="Other Operating Systems
-        &raquo; MikeOS">MikeOS 4.5</a> with a desktop invornment instead
-        of a menu in the middle of the screen. Since MichalOS is forked
-        from a previous version of MikeOS, the fork has the opportunity
-        to become its own OS.</p>
+        rel="dofollow" title="Other Operating Systems &raquo;
+        MikeOS">MikeOS</a> with a desktop invornment instead of a menu
+        in the middle of the screen. MichalOS has a nicer interface
+        that asks for the user enter a name and password for security
+        writing data back to its 1.8 MB image (no <tt>.ISO</tt>). Since
+        MichalOS is forked from a previous version of MikeOS, 4.5 rather
+        than the newest, the fork has the opportunity to become its own
+        OS.</p>
         <p align="center"><a
         href="https://sourceforge.net/projects/michalos/"
         target="_blank" rel="nofollow"><img src="/img/MichalOS_1.png"
@@ -448,10 +462,10 @@
         Assembler (NASM) by Mike Saunders and others. This OS (currently
         4.6.1) has low system requirements &mdash; i386, keyboard, no
         mouse and 1 MB of RAM &mdash; and it offers no installation. It
-        boots to the 3.3 MB image to a menu listing a set of files
-        including some programs you can run as with any OS. Note that
-        some of these files are not accessible as in the case of
-        <tt>KERNEL.BIN</tt> since it is a system file. What I do not
+        boots to the 3.3 MB image (no <tt>.ISO</tt>) to a menu listing a
+        set of files including some programs you can run as with any OS.
+        Note that some of these files are not accessible as in the case
+        of <tt>KERNEL.BIN</tt> since it is a system file. What I do not
         understand is why the file is not hidden in the first place.
         Part of the idea behind MikeOS is teaching how simple a 16-bit
         OS works with lots of documentation to study and learn from.
@@ -645,6 +659,29 @@
         height="240" width="320" border="0" class="boxes" alt="SkyOS
         (copyright of Robert Szeleney)" title="SkyOS (copyright of
         Robert Szeleney)"><!-- </a> -->
+        </p>
+      </article>
+      <article role="article">
+        <h2 id="Sortix">Sortix:</h2>
+        <p><a href="https://sortix.org/" target="_blank" rel="nofollow"
+        title="Sortix">Sortix</a> is a self-hosting (lots of emphasis on
+        the latter) x86 32-bit or 64-bit free OS written by Dannish
+        programer Jonas &quot;Sortie&quot; Termansen. Sortix is not
+        quite <a href="/opensource.html" target="_self" rel="dofollow"
+        title="Open Source">open source</a> although openly accessible
+        as per its ISC license. The OS is POSIX-complaint. Although
+        Sortix is not a <a href="/linux.html" target="_self"
+        rel="dofollow" title="Linux">Linux</a> derivative, it has a lot
+        of similarities possibly to establish the POSIX compatiblity. As
+        such, the learning curb is minimal if your background is in <a
+        href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Linux</a> consoles.</p>
+        <p align="center"><a href="https://sortix.org/" target="_blank"
+        rel="nofollow"><img src="/img/sortix-1.0-welcome.png"
+        height="240" width="320" border="0" class="boxes" alt="Sortix
+        (Copyright 2011-2019 Jonas 'Sortie' Termansen and contributors),
+        https://sortix.org/" title="Sortix (Copyright 2011-2019 Jonas
+        'Sortie' Termansen and contributors), https://sortix.org/"></a>
         </p>
       </article>
       <article role="article">

@@ -125,10 +125,46 @@
       and/or set of connected programs as an OS. To make the development
       of latter more interesting, there are groups and manuals how to
       write OS'es in different languages especially assembler, which I
-      do not speak (understand). Some of these OS'es come in all forms
-      and for every taste and hardware. The following list of hobby
-      and/or dedicated OS including microkernels is in alphabetical
-      order &mdash; both vintage and cutting-edge.</p>
+      do not speak (understand). As a matter of fact, the development of
+      hobby OS'es has caught my attention and has started my curiousity
+      of learning assembler (<em>asm</em>), but I have no idea which
+      assembler dialect &mdash; FASM, JWasm, MASM, YASM, etc. &mdash;
+      would be best (easiest) for me.</p>
+      <p>For the time being, I need to point out that these OS'es come
+      in all forms and for every taste, size and hardware from the
+      easiest to understand to most difficult to use. The following list
+      of hobby and/or dedicated OS including microkernels is in
+      alphabetical order &mdash; both vintage and cutting-edge.</p>
+      <p id="flp">Note that some of these OS'es are available in images
+      small enough to fit in a 1.44 MB floppy (usually <tt>.FLP</tt>).
+      These OS'es hardly ever come with an installer to write the image
+      to a hard drive. As such, you can to burn the image to a floppy
+      using the <tt>dd</tt> command in <a href="/linux.html"
+      target="_self" rel="dofollow" title="Linux">Linux</a> or <a
+      href="/unix.html#Cygwin" target="_self" rel="dofollow" title="Unix
+      &raquo; Unix Emulators &raquo; Cygwin">Unix</a> or a third-party
+      application in <a href="/windows.html" target="_self"
+      rel="dofollow" title="Microsoft Windows">Windows</a>.</p>
+      <pre>
+        dd if=os_image.flp of=/dev/fd0
+      </pre>
+      <p>You can mount the <tt>.FLP</tt> image to a virtual floppy drive
+      using VirtualBox, Bochs or similar product &mdash; what I have
+      done. Depending on the vendor and the version of the product, the
+      instructions at this point will vary. You would need to refer to
+      the vendor's documentation for detailed instructions.</p>
+      <p>You can also burn the <tt>.ISO</tt> (if available) to a USB
+      drive and boot your computer from it. Depending on the computer
+      manufacturer and/or the BIOS developer, the procedure to boot to
+      the USB drive will vary. You would need to refer to the
+      manufacturer's documentation for detailed instructions.</p>
+      <pre>
+        dd if=os_image.iso of=/dev/sdb1
+      </pre>
+      <p>Of course, you can also mount the read-only <tt>.ISO</tt> image
+      (if available) using VirtualBox, Bochs or similar product if have
+      no intention of saving any data that you may write to RAM while
+      testing the OS.</p>
       <article role="article">
         <h2 id="2OS">2/OS:</h2>
         <p><a href="http://meos.sourceforge.net/" target="_blank"
@@ -186,9 +222,13 @@
         href="/dos.html" target="_self" rel="dofollow" title="Disk
         Operating System">DOS</a> although it has more of a <a
         href="/unix.html" target="_self" rel="dofollow"
-        title="Unix">Unix</a> feel and functionality. The current
-        version 0.04 was released in 2005 with no clear date for a 0.05
-        release if any at all.</p>
+        title="Unix">Unix</a> feel and functionality although limited to
+        twelve (12) commands. The current version 0.04 was released in
+        2005 with no clear date for a 0.05 release if any at all. By the
+        way, although I have not found what BOS stands for anywhere in
+        the BOS website, something tells me that it stands for
+        <em>Bubach Operating System</em> since Bubach is the name of the
+        creator of the OS.</p>
         <p align="center"><a href="https://bos.asmhackers.net/"
         target="_blank" rel="nofollow"><img src="/img/bos_0.04_help.png"
         height="240" width="320" border="0" class="boxes" alt="BOS
@@ -220,9 +260,9 @@
         rel="dofollow" title="Berkeley Software
         Distribution">BSD</a>-like license. Since most machines in the
         market nowadays are x86, you should look into CP/M-86 3.1 if you
-        would like to try this OS. Note that 86 refers to the chipset,
+        would like to try this OS. Note that 86 refers to x86 chipsets,
         not the year, and 3.1 is the version of the OS. By the way, my
-        only memory of CP/M is using WordStar to type some biology
+        only memory of CP/M was using WordStar to type some biology
         papers in high school.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/CP/M#/media/File:CPM-86.png"
@@ -280,7 +320,7 @@
         <p>Domain/OS was the proprietary OS for the defunct line of
         Apollo/Domain workstations built with the like Motorola 68k and
         PRISM (RISC) processors written in Pascal rather than C or
-        assembler (1981-1992). The OS borrowed a lot of its technology
+        assembler (1981-1992). This OS borrowed a lot of its technology
         from <a href="/unix.html" target="_self" rel="dofollow"
         title="Unix">System V</a> and <a href="/bsd.html" target="_self"
         rel="dofollow" title="Berkeley Software Distribution">BSD</a>.
@@ -300,9 +340,18 @@
         <h2 id="EmuTOS">EmuTOS:</h2>
         <p><a href="https://emutos.sourceforge.io/" target="_blank"
         rel="nofollow" title="EmuTOS">EmuTOS</a> is a replacement for
-        Atari TOS with GEM as its GUI. It supports the Atari Coldfire
-        Project, also known as FireBee, which is an Atari computer
-        clone.</p>
+        Atari TOS with GEM as its GUI for Motorola 680x0 or ColdFire
+        microprocessors. EmuTOS is <em>&quot;partially derived from
+        Digital Research's original <a href="/dos.html" target="_self"
+        rel="dofollow" title="Disk Operating System">GEMDOS 1.1</a>
+        operating system and GEM GUI&quot;</em> (Oct. 2020).</p>
+        <p align="center"><a href="https://emutos.sourceforge.io/"
+        target="_blank" rel="nofollow"><img
+        src="/img/emutos_main_screenshot.png" height="240" width="320"
+        border="0" class="boxes" alt="EmuTOS - Free operating system for
+        Atari ST, and more, https://emutos.sourceforge.io/"
+        title="EmuTOS - Free operating system for Atari ST, and more,
+        https://emutos.sourceforge.io/"></a></p>
       </article>
       <article role="article">
         <h2 id="FreeRTOS">FreeRTOS:</h2>
@@ -314,7 +363,22 @@
         rel="nofollow" title="Robot Operating System">Robot Operating
         System</a> (<a href="https://ros.org/" target="_blank"
         rel="nofollow" title="Robot Operating System">ROS</a>) or any
-        similar OS.</p>
+        similar OS. FreeRTOS is <a href="/opensource.html"
+        target="_self" rel="dofollow" title="Open Source">open
+        source</a> and under the stewardship of (not owned by) Amazon
+        Web Services for its <a href="https://aws.amazon.com/freertos/"
+        target="_blank" rel="nofollow" title="AWS - FreeRTOS - Real-time
+        operating system for microcontrollers">IoT</a> services.</p>
+        <p align="center"><a href="https://aws.amazon.com/freertos/"
+        target="_blank" rel="nofollow"><img
+        src="/img/FreeRTOS_how_it_works.png" height="240" width="320"
+        border="0" class="boxes" alt="Amazon FreeRTOS - How It Works
+        Diagram, Fair use, (c) 2020, Amazon Web Services, Inc. or its
+        affiliates. All rights reserved.,
+        https://aws.amazon.com/freertos/" title="Amazon FreeRTOS - How
+        It Works Diagram, Fair use, (c) 2020, Amazon Web Services, Inc.
+        or its affiliates. All rights reserved.,
+        https://aws.amazon.com/freertos/"></a></p>
       </article>
       <article role="article">
         <h2 id="GEOS8">Graphic Environment Operating System
@@ -349,8 +413,8 @@
         <p><a href="https://gnu.org/software/hurd/" target="_blank"
         rel="nofollow" title="GNU Hurd">GNU Hurd</a> developed by the
         GNU Project is a microkernel to replace the <a href="/unix.html"
-        target="_self" rel="dofollow" title="Unix">Unix</a> kernel
-        and it is based on <a
+        target="_self" rel="dofollow" title="Unix">Unix</a> kernel and
+        it is based on <a
         href="https://gnu.org/software/hurd/microkernel/mach/gnumach.html"
         target="_blank" rel="nofollow" title="GNU Mach">GNU Mach</a>,
         the same microkernel used by <a href="/macos.html"
@@ -382,27 +446,34 @@
         OS &mdash; forked from <a href="/others.html#MenuetOS"
         title="Other Operating Systems &raquo; MenuetOS">MenuetOS</a>,
         written in flat assembler (FASM) &mdash; heavily scaled down in
-        order to use low resources. As such, it can fit in a 1.44 floppy
-        bare bones, while the full image is under 70 MB. It also needs
-        at least 8 MB of RAM to load the OS as KolibriOS is loaded
-        completely to memory and not from disk to memory. There is no
-        installation and any change you make gets written back to the
-        USB/HDD image. The software bundled in the image is interesting
-        to say the least. Its web browser WebView 2.65b is similar to
-        Lynx, but in a modern GUI. KolibriOS also has its own Bash-like
-        shell although limited to 28 external commands (excluding kernel
-        commands). The image comes with several games, several emulators
-        for several video game platforms like SNES and even <a
-        href="/dos.html#DOSBox" target="_self" rel="dofollow"
-        title="Disk Operating System &raquo; MS-DOS Emulators (Command
-        Prompt Interpreters) &raquo; DOSBox">DOSBox</a>. It seems like
-        an excellent OS for gaming although the it also includes several
-        office, programming languages like <a href="/basic.html"
-        target="_self" rel="nofollow" title="Beginner's All-purpose
-        Symbolic Instruction Code (BASIC)">TinyBASIC</a> and FASM as
-        well as network utilities almost rivaling any <a
-        href="/linux.html" target="_self" rel="dofollow"
-        title="Linux">Linux</a> distribution.</p>
+        order to use low resources. As such, the 1.41 MB <tt>.IMG</tt>
+        file fits in a 1.44 MB floppy, that can be burned to floppy or
+        mounted as a virtual drive. The full image available in an
+        <tt>.ISO</tt> is under 70 MB and it also needs at least 8 MB of
+        RAM to load the OS. In either case, KolibriOS is loaded
+        completely to memory and not from disk to memory (no swapping).
+        There is no installation and any change you make can be written
+        back to the image &mdash; as long, as it is not the read-only
+        <tt>.ISO</tt>. These changes cannot be written to the root of
+        the image, but rather to one of the subdirectories in the image.
+        One idea is <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep all OS
+        settings together and hence organized. The software bundled in
+        the image is interesting to say the least. Its web browser
+        WebView 2.65b is similar to Lynx, but in a modern GUI. KolibriOS
+        also has its own Bash-like shell although limited to 28 external
+        commands (excluding kernel commands). The image comes with
+        several games, several emulators for several video game
+        platforms like SNES and even <a href="/dos.html#DOSBox"
+        target="_self" rel="dofollow" title="Disk Operating System
+        &raquo; MS-DOS Emulators (Command Prompt Interpreters) &raquo;
+        DOSBox">DOSBox</a>. It seems like an excellent OS for gaming
+        although the it also includes several office, programming
+        languages like <a href="/basic.html" target="_self"
+        rel="nofollow" title="Beginner's All-purpose Symbolic
+        Instruction Code (BASIC)">TinyBASIC</a> and FASM as well as
+        network utilities almost rivaling any <a href="/linux.html"
+        target="_self" rel="dofollow" title="Linux">Linux</a>
+        distribution.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/KolibriOS#/media/File:KolibriOS_nightly_build_desktop.png"
         target="_blank" rel="nofollow"><img
@@ -417,11 +488,13 @@
         <h2 id="MenuetOS">MenuetOS:</h2>
         <p><!-- <a href="https://menuetos.net/" target="_blank"
         rel="nofollow" title="MenuetOS">MenuetOS</a> --> MenuetOS is
-        written in assembler and fits in a floppy. It needs mouse, i386,
-        32 MB of RAM and 1 MB Display Vesa 2.0+ LFB. I have not had a
-        chance to use it although I have tested (played a lot with) its
-        fork <a href="/others.html#KolibriOS" title="Other Operating
-        Systems &raquo; KolibriOS">KolibriOS</a>.</p>
+        written in assembler and fits in a <a href="/others.html#flp"
+        target="_self" rel="dofollow" title="Other Operating Systems
+        &raquo; Floppy Image">floppy</a>. It needs mouse, i386, 32 MB of
+        RAM and 1 MB Display Vesa 2.0+ LFB. I have not had a chance to
+        use it although I have tested (played a lot with) its fork <a
+        href="/others.html#KolibriOS" title="Other Operating Systems
+        &raquo; KolibriOS">KolibriOS</a>.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/File:Menuet.png"
         target="_blank" rel="nofollow"><img src="/img/Menuet.png"
@@ -442,10 +515,14 @@
         MikeOS">MikeOS</a> with a desktop invornment instead of a menu
         in the middle of the screen. MichalOS has a nicer interface
         that asks for the user enter a name and password for security
-        writing data back to its 1.8 MB image (no <tt>.ISO</tt>). Since
-        MichalOS is forked from a previous version of MikeOS, 4.5 rather
-        than the newest, the fork has the opportunity to become its own
-        OS.</p>
+        writing data back to its 1.8 MB image when written to a disk
+        (not the 1.8 MB read-only <tt>.ISO</tt>). If using the 1.41 MB
+        <a href="/others.html#flp" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo; Floppy Image">floppy
+        image</a>, there are parts of the OS missing like the used
+        and password set-up that I mentioned before. Since MichalOS is
+        forked from a previous version of MikeOS, 4.5 rather than the
+        newest, the fork has the opportunity to become its own OS.</p>
         <p align="center"><a
         href="https://sourceforge.net/projects/michalos/"
         target="_blank" rel="nofollow"><img src="/img/MichalOS_1.png"
@@ -461,19 +538,31 @@
         title="Open Source">open source</a> OS written in Netwide
         Assembler (NASM) by Mike Saunders and others. This OS (currently
         4.6.1) has low system requirements &mdash; i386, keyboard, no
-        mouse and 1 MB of RAM &mdash; and it offers no installation. It
-        boots to the 3.3 MB image (no <tt>.ISO</tt>) to a menu listing a
-        set of files including some programs you can run as with any OS.
-        Note that some of these files are not accessible as in the case
-        of <tt>KERNEL.BIN</tt> since it is a system file. What I do not
+        mouse and 1 MB of RAM &mdash; and it runs from its <a
+        href="/others.html#flp" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo; Floppy Image">floppy
+        image</a>. <!-- You need to burn the 1.41 MB <tt>.FLP</tt> image
+        to a floppy (<tt>dd if=mikeos.flp of=/dev/fd0</tt>), mount the
+        <tt>.FLP</tt> image to a virtual drive (what I have done), burn
+        the 3.3 MB <tt>.ISO</tt> to a USB drive (<tt>dd if=mikeos.iso
+        of=/dev/sdb1</tt>) or mount the read-only 3.3 MB <tt>.ISO</tt>
+        image. --> The OS will a menu listing a set of files including
+        some programs you can run as with any OS. Note that some of
+        these files are not accessible as in the case of
+        <tt>KERNEL.BIN</tt> since it is a system file. What I do not
         understand is why the file is not hidden in the first place.
         Part of the idea behind MikeOS is teaching how simple a 16-bit
-        OS works with lots of documentation to study and learn from.
-        Needless to say, Saunders seems to be doing something right when
-        his OS is getting forked. The most promising fork is <a
-        href="/others.html#MichalOS" target="_self" rel="dofollow"
-        title="Other Operating Systems &raquo; MichalOS">MichalOS</a> by
-        Michal Prochazka.</p>
+        OS works with lots of documentation to study and learn from. The
+        MikeOS website has a collection of applications for download
+        including a package for mouse support (<tt>MOUSE.LIB</tt>), <a
+        href="/basic.html" target="_self" rel="dofollow"
+        title="Beginner's All-purpose Symbolic Instruction Code
+        (BASIC)">BASIC</a> and C applications. Saunders seems to be
+        doing something right when his OS is getting forked. The most
+        promising fork is <a href="/others.html#MichalOS" target="_self"
+        rel="dofollow" title="Other Operating Systems &raquo;
+        MichalOS">MichalOS</a> by Michal Prochazka, which according to
+        the MikeOS website, already comes with mouse support.</p>
         <p align="center"><a href="http://mikeos.sourceforge.net/"
         target="_blank" rel="nofollow"><img src="/img/MikeOS_shot-1.png"
         height="240" width="320" border="0" class="boxes" alt="MikeOS,
@@ -658,8 +747,7 @@
         target="_blank" rel="nofollow"> --> <img src="/img/gtk_s.png"
         height="240" width="320" border="0" class="boxes" alt="SkyOS
         (copyright of Robert Szeleney)" title="SkyOS (copyright of
-        Robert Szeleney)"><!-- </a> -->
-        </p>
+        Robert Szeleney)"><!-- </a> --></p>
       </article>
       <article role="article">
         <h2 id="Sortix">Sortix:</h2>
@@ -794,18 +882,28 @@
         <a href="https://mars.nasa.gov/msl/home/" target="_blank"
         rel="nofollow" title="Mars Curiosity Rover">Mars Curiosity
         Rover</a>.</p>
-        <p align="center"><a
-        href="https://en.wikipedia.org/wiki/File:Mars_%27Curiosity%27_Rover,_Spacecraft_Assembly_Facility,_Pasadena,_California_(2011).jpg#/media/File:Mars_'Curiosity'_Rover,_Spacecraft_Assembly_Facility,_Pasadena,_California_(2011).jpg"
-        target="_blank" rel="nofollow"><img
-        src="/img/640px-Mars_'Curiosity'_Rover,_Spacecraft_Assembly_Facility,_Pasadena,_California_(2011).jpg"
-        height="225" width="300" border="0" class="boxes" alt="By NASA -
-        http://photojournal.jpl.nasa.gov/catalog/PIA14309, Public
-        Domain,
-        https://commons.wikimedia.org/w/index.php?curid=17465432"
-        title="By NASA -
-        http://photojournal.jpl.nasa.gov/catalog/PIA14309, Public
-        Domain,
-        https://commons.wikimedia.org/w/index.php?curid=17465432"></a></p>
+        <h2 id="yuuOS">yuuOS:</h2>
+        <p><a href="https://yuukidesu9.github.io/yuuos/" target="_blank"
+        rel="nofollow" title="yuuOS">yuuOS</a> is an x86 32-bit <a
+        href="/opensource.html" target="_self" rel="dofollow"
+        title="Open Source">open source</a> OS written in C &mdash; not
+        assembler as other OS'es in this list &mdash; by Jo&atilde;o
+        Costa (a.k.a. <em>YuukiDesu9</em> or simply <em>Yuuki</em>) that
+        runs from its <a href="/others.html#flp" target="_self"
+        rel="dofollow" title="Other Operating Systems &raquo; Floppy
+        Image">floppy image</a> &mdash; no installation. Since Costa is
+        the lead and practically sole programmer, the development of
+        this hobby OS is a tad slow. yuuOS reminds of <a
+        href="/others.html#BOS" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo; BOS">BOS</a> &mdash; also
+        on this list &mdash; with its menu at the top prompting users to
+        type the commands at the bottom of the screen without any means
+        to recall the previous commands like <tt>DOSKEY.EXE</tt>.</p>
+        <p align="center"><a href="https://yuukidesu9.github.io/yuuos/"
+        target="_blank" rel="nofollow"><img src="/img/yuuOS_0.1.png"
+        height="225" width="300" border="0" class="boxes" alt="yuuOS,
+        https://yuukidesu9.github.io/yuuos/" title="yuuOS,
+        https://yuukidesu9.github.io/yuuos/"></a></p>
       </article>
     </article>
   </main><!-- end of main body -->

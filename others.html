@@ -102,8 +102,8 @@
       <!-- section 02, other systems & technologies -->
       <option value="/web.html" target="_self" rel="dofollow"
         title="Web Platforms">Web Platforms</option>
-      <option value="/opensource.html" target="_self" rel="dofollow"
-        title="Open Source">Open Source</option>
+      <option value="/foss.html" target="_self" rel="dofollow"
+        title="Free and Open Source">Free and Open Source</option>
       <option value="/others.html" target="_self" rel="dofollow"
         title="Other Operating Systems">Other Operating Systems</option>
       <!-- section 03, projects & games -->
@@ -135,36 +135,49 @@
       easiest to understand to most difficult to use. The following list
       of hobby and/or dedicated OS including microkernels is in
       alphabetical order &mdash; both vintage and cutting-edge.</p>
-      <p id="flp">Note that some of these OS'es are available in images
-      small enough to fit in a 1.44 MB floppy (usually <tt>.FLP</tt>).
-      These OS'es hardly ever come with an installer to write the image
-      to a hard drive. As such, you can to burn the image to a floppy
-      using the <tt>dd</tt> command in <a href="/linux.html"
-      target="_self" rel="dofollow" title="Linux">Linux</a> or <a
-      href="/unix.html#Cygwin" target="_self" rel="dofollow" title="Unix
-      &raquo; Unix Emulators &raquo; Cygwin">Unix</a> or a third-party
-      application in <a href="/windows.html" target="_self"
-      rel="dofollow" title="Microsoft Windows">Windows</a>.</p>
-      <pre>
-        dd if=os_image.flp of=/dev/fd0
-      </pre>
-      <p>You can mount the <tt>.FLP</tt> image to a virtual floppy drive
-      using VirtualBox, Bochs or similar product &mdash; what I have
-      done. Depending on the vendor and the version of the product, the
-      instructions at this point will vary. You would need to refer to
-      the vendor's documentation for detailed instructions.</p>
-      <p>You can also burn the <tt>.ISO</tt> (if available) to a USB
-      drive and boot your computer from it. Depending on the computer
-      manufacturer and/or the BIOS developer, the procedure to boot to
-      the USB drive will vary. You would need to refer to the
-      manufacturer's documentation for detailed instructions.</p>
-      <pre>
-        dd if=os_image.iso of=/dev/sdb1
-      </pre>
-      <p>Of course, you can also mount the read-only <tt>.ISO</tt> image
-      (if available) using VirtualBox, Bochs or similar product if have
-      no intention of saving any data that you may write to RAM while
-      testing the OS.</p>
+      <p id="Images">Note that some of these OS'es are available in
+      images small enough to fit in a 1.44 MB floppy (usually
+      <tt>.FLP</tt>). These OS'es hardly ever come with an installer to
+      write the image to a hard drive.</p>
+      <ul>
+        <li>
+          As such, you can to burn the image to a floppy using the
+          <tt>dd</tt> command in <a href="/linux.html" target="_self"
+          rel="dofollow" title="Linux">Linux</a> or <a
+          href="/unix.html#Cygwin" target="_self" rel="dofollow"
+          title="Unix &raquo; Unix Emulators &raquo; Cygwin">Unix</a> or
+          a third-party application like UNetbootin for <a
+          href="/windows.html" target="_self" rel="dofollow"
+          title="Microsoft Windows">Windows</a>.
+          <pre>
+            dd if=floppy_image.flp of=/dev/fd0
+          </pre>
+        </li>
+        <li>
+          You can mount the <tt>.FLP</tt> image to a virtual floppy
+          drive using VirtualBox, Bochs or similar product &mdash; what
+          I have done. Depending on the vendor and the version of the
+          product, the instructions at this point will vary. You would
+          need to refer to the vendor's documentation for detailed
+          instructions.
+        </li>
+        <li>
+          You can also burn the <tt>.ISO</tt> (if available) to a USB
+          drive and boot your computer from it. Depending on the
+          computer manufacturer and/or the BIOS developer, the procedure
+          to boot to the USB drive will vary. You would need to refer to
+          the manufacturer's documentation for detailed instructions.
+          <pre>
+            dd if=disc_image.iso of=/dev/sdb1
+          </pre>
+        </li>
+        <li>
+          Of course, you can also mount the read-only <tt>.ISO</tt>
+          image (if available) using VirtualBox, Bochs or similar
+          product if have no intention of saving any data that you may
+          write to RAM while testing the OS.
+        </li>
+      </ul>
       <article role="article">
         <h2 id="2OS">2/OS:</h2>
         <p><a href="http://meos.sourceforge.net/" target="_blank"
@@ -301,11 +314,11 @@
         <h2 id="DexOS">DexOS:</h2>
         <p><a href="https://dex-os.github.io/" target="_blank"
         rel="nofollow" title="DexOS">DexOS</a> is an <a
-        href="/opensource.html" target="_self" rel="dofollow"
-        title="Open Source">open source</a> x86 32-bit OS written in
-        assembler by Craig Bamford with a GUI similar to that of a video
-        game console. Although the latest version 6.0 was released in
-        2012, it is still considered in production.</p>
+        href="/foss.html" target="_self" rel="dofollow" title="Free and
+        Open Source">open source</a> x86 32-bit OS written in assembler
+        by Craig Bamford with a GUI similar to that of a video game
+        console. Although the latest version 6.0 was released in 2012,
+        it is still considered in production.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/DexOS#/media/File:DexOS_GUI.PNG"
         target="_blank" rel="nofollow"><img
@@ -363,12 +376,12 @@
         rel="nofollow" title="Robot Operating System">Robot Operating
         System</a> (<a href="https://ros.org/" target="_blank"
         rel="nofollow" title="Robot Operating System">ROS</a>) or any
-        similar OS. FreeRTOS is <a href="/opensource.html"
-        target="_self" rel="dofollow" title="Open Source">open
-        source</a> and under the stewardship of (not owned by) Amazon
-        Web Services for its <a href="https://aws.amazon.com/freertos/"
-        target="_blank" rel="nofollow" title="AWS - FreeRTOS - Real-time
-        operating system for microcontrollers">IoT</a> services.</p>
+        similar OS. FreeRTOS is <a href="/foss.html" target="_self"
+        rel="dofollow" title="Free and Open Source">open source</a> and
+        under the stewardship of (not owned by) Amazon Web Services for
+        its <a href="https://aws.amazon.com/freertos/" target="_blank"
+        rel="nofollow" title="AWS - FreeRTOS - Real-time operating
+        system for microcontrollers">IoT</a> services.</p>
         <p align="center"><a href="https://aws.amazon.com/freertos/"
         target="_blank" rel="nofollow"><img
         src="/img/FreeRTOS_how_it_works.png" height="240" width="320"
@@ -488,7 +501,7 @@
         <h2 id="MenuetOS">MenuetOS:</h2>
         <p><!-- <a href="https://menuetos.net/" target="_blank"
         rel="nofollow" title="MenuetOS">MenuetOS</a> --> MenuetOS is
-        written in assembler and fits in a <a href="/others.html#flp"
+        written in assembler and fits in a <a href="/others.html#Images"
         target="_self" rel="dofollow" title="Other Operating Systems
         &raquo; Floppy Image">floppy</a>. It needs mouse, i386, 32 MB of
         RAM and 1 MB Display Vesa 2.0+ LFB. I have not had a chance to
@@ -508,8 +521,8 @@
         <h2 id="MichalOS">MichalOS:</h2>
         <p><a href="https://sourceforge.net/projects/michalos/"
         target="_blank" rel="nofollow" title="MichalOS">MichalOS</a> by
-        Michal Prochazka is an x86 16-bit <a href="/opensource.html"
-        target="_self" rel="dofollow" title="Open Source">open
+        Michal Prochazka is an x86 16-bit <a href="/foss.html"
+        target="_self" rel="dofollow" title="Free and Open Source">open
         source</a> fork of <a href="/others.html#MikeOS" target="_self"
         rel="dofollow" title="Other Operating Systems &raquo;
         MikeOS">MikeOS</a> with a desktop invornment instead of a menu
@@ -517,7 +530,7 @@
         that asks for the user enter a name and password for security
         writing data back to its 1.8 MB image when written to a disk
         (not the 1.8 MB read-only <tt>.ISO</tt>). If using the 1.41 MB
-        <a href="/others.html#flp" target="_self" rel="dofollow"
+        <a href="/others.html#Images" target="_self" rel="dofollow"
         title="Other Operating Systems &raquo; Floppy Image">floppy
         image</a>, there are parts of the OS missing like the used
         and password set-up that I mentioned before. Since MichalOS is
@@ -534,19 +547,14 @@
         <h2 id="MikeOS">MikeOS:</h2>
         <p><a href="http://mikeos.sourceforge.net/" target="_blank"
         rel="nofollow" title="MikeOS">MikeOS</a> is an x86 16-bit <a
-        href="/opensource.html" target="_self" rel="dofollow"
-        title="Open Source">open source</a> OS written in Netwide
-        Assembler (NASM) by Mike Saunders and others. This OS (currently
-        4.6.1) has low system requirements &mdash; i386, keyboard, no
-        mouse and 1 MB of RAM &mdash; and it runs from its <a
-        href="/others.html#flp" target="_self" rel="dofollow"
+        href="/foss.html" target="_self" rel="dofollow" title="Free and
+        Open Source">open source</a> OS written in Netwide Assembler
+        (NASM) by Mike Saunders and others. This OS (currently 4.6.1)
+        has low system requirements &mdash; i386, keyboard, no mouse and
+        1 MB of RAM &mdash; and it runs from its <a
+        href="/others.html#Images" target="_self" rel="dofollow"
         title="Other Operating Systems &raquo; Floppy Image">floppy
-        image</a>. <!-- You need to burn the 1.41 MB <tt>.FLP</tt> image
-        to a floppy (<tt>dd if=mikeos.flp of=/dev/fd0</tt>), mount the
-        <tt>.FLP</tt> image to a virtual drive (what I have done), burn
-        the 3.3 MB <tt>.ISO</tt> to a USB drive (<tt>dd if=mikeos.iso
-        of=/dev/sdb1</tt>) or mount the read-only 3.3 MB <tt>.ISO</tt>
-        image. --> The OS will a menu listing a set of files including
+        image</a>. The OS will a menu listing a set of files including
         some programs you can run as with any OS. Note that some of
         these files are not accessible as in the case of
         <tt>KERNEL.BIN</tt> since it is a system file. What I do not
@@ -572,8 +580,8 @@
       <article role="article">
         <h2 id="MINIX">MINIX:</h2>
         <p><a href="https://minix3.org/" target="_blank" rel="nofollow"
-        title="MINIX">MINIX</a> is an <a href="/opensource.html"
-        target="_self" rel="dofollow" title="Open Source">open
+        title="MINIX">MINIX</a> is an <a href="/foss.html"
+        target="_self" rel="dofollow" title="Free and Open Source">open
         source</a> <a href="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</a>-like OS written in C by Andrew Tanenbaum
         (<em><a href="https://www.cs.vu.nl/~ast/" target="_blank"
@@ -598,8 +606,8 @@
         <h2 id="MorphOS">MorphOS:</h2>
         <p><a href="https://morphos-team.net/" target="_blank"
         rel="nofollow" title="MorphOS">MorphOS</a> is an OS compatible
-        with AmigaOS with a combination of <a href="/opensource.html"
-        target="_self" rel="dofollow" title="Open Source">open
+        with AmigaOS with a combination of <a href="/foss.html"
+        target="_self" rel="dofollow" title="Free and Open Source">open
         source</a> and proprietary code, especially its kernel. It
         seems to be marketed as a replacement for <a href="/macos.html"
         target="_self" rel="dofollow" title="macOS">macOS</a> on
@@ -718,9 +726,9 @@
         architecture&quot;</em> and was originally designed for by Acorn
         Computers Ltd in Cambridge, England, released in 1987. Nowadays
         it is used in single-board computers like the Raspberry Pi.
-        There is an <a href="/opensource.html" target="_self"
-        rel="dofollow" title="Open Source">open source</a> version
-        available from <a href="https://riscosopen.org/" target="_blank"
+        There is an <a href="/foss.html" target="_self" rel="dofollow"
+        title="Free and Open Source">open source</a> version available
+        from <a href="https://riscosopen.org/" target="_blank"
         rel="nofollow" title="RISC OS Open Limited">RISC OS Open
         Limited</a> (<a href="https://riscosopen.org/" target="_blank"
         rel="nofollow" title="RISC OS Open Limited">ROOL</a>).</p>
@@ -755,10 +763,10 @@
         title="Sortix">Sortix</a> is a self-hosting (lots of emphasis on
         the latter) x86 32-bit or 64-bit free OS written by Dannish
         programer Jonas &quot;Sortie&quot; Termansen. Sortix is not
-        quite <a href="/opensource.html" target="_self" rel="dofollow"
-        title="Open Source">open source</a> although openly accessible
-        as per its ISC license. The OS is POSIX-complaint. Although
-        Sortix is not a <a href="/linux.html" target="_self"
+        quite <a href="/foss.html" target="_self" rel="dofollow"
+        title="Free and Open Source">open source</a> although openly
+        accessible as per its ISC license. The OS is POSIX-complaint.
+        Although Sortix is not a <a href="/linux.html" target="_self"
         rel="dofollow" title="Linux">Linux</a> derivative, it has a lot
         of similarities possibly to establish the POSIX compatiblity. As
         such, the learning curb is minimal if your background is in <a
@@ -896,11 +904,11 @@
         <h2 id="yuuOS">yuuOS:</h2>
         <p><a href="https://yuukidesu9.github.io/yuuos/" target="_blank"
         rel="nofollow" title="yuuOS">yuuOS</a> is an x86 32-bit <a
-        href="/opensource.html" target="_self" rel="dofollow"
-        title="Open Source">open source</a> OS written in C &mdash; not
+        href="/foss.html" target="_self" rel="dofollow" title="Free and
+        Open Source">open source</a> OS written in C &mdash; not
         assembler as other OS'es in this list &mdash; by Jo&atilde;o
         Costa (a.k.a. <em>YuukiDesu9</em> or simply <em>Yuuki</em>) that
-        runs from its <a href="/others.html#flp" target="_self"
+        runs from its <a href="/others.html#Images" target="_self"
         rel="dofollow" title="Other Operating Systems &raquo; Floppy
         Image">floppy image</a> &mdash; no installation. Since Costa is
         the lead and practically sole programmer, the development of

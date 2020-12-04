@@ -303,12 +303,19 @@
         title="Beginner's All-purpose Symbolic Instruction Code
         (BASIC)">BASIC</a> as originally shipped with these machines, in
         favor of much older programming languages as Forth and assembler
-        (<em>asm</em>). The whole idea as explained by the developers is
-        to be able to run computer systems to rebuild the computer-based
-        civilization that we are used to even if this means no GUI. It
-        sounds exciting and an imperative need to learn in case
-        civilization does collapse, but I had not yet had the
-        opportunity to play with this OS.</p>
+        (<em>asm</em>). Collapse OS uses a file system that
+        <em>&quot;contains everything that a post-collapse computer
+        would manage, that is, all Forth and assembler source code for
+        the tools it needs to fulfill its goals&quot;</em> named
+        <tt>blk.fs</tt> (<a href="https://sr.ht/~vdupras/collapseos/"
+        target="_blank" rel="nofollow" title="collapseos: Bootstrap
+        post-collapse technology (Sourcehut)">Sourcehut</a>, Nov. 2020).
+        The whole idea as explained by the developers is to be able to
+        run computer systems to rebuild the computer-based civilization
+        that we are used to even if this means no GUI. It sounds
+        exciting and an imperative need to learn in case civilization
+        does collapse, but I had not yet had the opportunity to play
+        with this OS.</p>
       </article>
       <article role="article">
         <h2 id="DexOS">DexOS:</h2>
@@ -455,38 +462,38 @@
       <article role="article">
         <h2 id="KolibriOS">KolibriOS:</h2>
         <p><a href="https://kolibrios.org/" target="_blank"
-        rel="nofollow" title="KolibriOS">KolibriOS</a> is an x36 32-bit
-        OS &mdash; forked from <a href="/others.html#MenuetOS"
+        rel="nofollow" title="KolibriOS">KolibriOS</a> is an x86
+        16/32-bit OS &mdash; forked from <a href="/others.html#MenuetOS"
         title="Other Operating Systems &raquo; MenuetOS">MenuetOS</a>,
         written in flat assembler (FASM) &mdash; heavily scaled down in
-        order to use low resources. As such, the 1.41 MB <tt>.IMG</tt>
-        file fits in a 1.44 MB floppy, that can be burned to floppy or
-        mounted as a virtual drive. The full image available in an
-        <tt>.ISO</tt> is under 70 MB and it also needs at least 8 MB of
-        RAM to load the OS. In either case, KolibriOS is loaded
+        order to use low resources. As such, the 1.41 MB <a
+        href="/others.html#Images" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo; Images">image</a>
+        (<tt>.IMG</tt>) fits in a 1.44 MB floppy, that can be burned to
+        floppy or mounted as a virtual drive. The full image available
+        in an <tt>.ISO</tt> is under 70 MB and it also needs at least 8
+        MB of RAM to load the OS. In either case, KolibriOS is loaded
         completely to memory and not from disk to memory (no swapping).
         There is no installation and any change you make can be written
-        back to the image &mdash; as long, as it is not the read-only
-        <tt>.ISO</tt>. These changes cannot be written to the root of
-        the image, but rather to one of the subdirectories in the image.
-        One idea is <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep all OS
-        settings together and hence organized. The software bundled in
-        the image is interesting to say the least. Its web browser
-        WebView 2.65b is similar to Lynx, but in a modern GUI. KolibriOS
-        also has its own Bash-like shell although limited to 28 external
-        commands (excluding kernel commands). The image comes with
-        several games, several emulators for several video game
-        platforms like SNES and even <a href="/dos.html#DOSBox"
-        target="_self" rel="dofollow" title="Disk Operating System
-        &raquo; MS-DOS Emulators (Command Prompt Interpreters) &raquo;
-        DOSBox">DOSBox</a>. It seems like an excellent OS for gaming
-        although the it also includes several office, programming
-        languages like <a href="/basic.html" target="_self"
-        rel="nofollow" title="Beginner's All-purpose Symbolic
-        Instruction Code (BASIC)">TinyBASIC</a> and FASM as well as
-        network utilities almost rivaling any <a href="/linux.html"
-        target="_self" rel="dofollow" title="Linux">Linux</a>
-        distribution.</p>
+        back to the image &mdash; not to root (<tt>/</tt>), but rather
+        to one of the subdirectories in the image. One idea is
+        <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep all OS settings
+        together and hence organized. The software bundled in the image
+        is interesting to say the least. Its web browser WebView 2.65b
+        is similar to Lynx, but in a modern GUI. KolibriOS also has its
+        own Bash-like shell although limited to 28 external commands
+        (excluding kernel commands). The image comes with several games,
+        several emulators for several video game platforms like SNES and
+        even <a href="/dos.html#DOSBox" target="_self" rel="dofollow"
+        title="Disk Operating System &raquo; MS-DOS Emulators (Command
+        Prompt Interpreters) &raquo; DOSBox">DOSBox</a>. It seems like
+        an excellent OS for gaming although the it also includes several
+        office, programming languages like <a href="/basic.html"
+        target="_self" rel="nofollow" title="Beginner's All-purpose
+        Symbolic Instruction Code (BASIC)">TinyBASIC</a> and FASM as
+        well as network utilities almost rivaling any <a
+        href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Linux</a> distribution.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/KolibriOS#/media/File:KolibriOS_nightly_build_desktop.png"
         target="_blank" rel="nofollow"><img
@@ -500,14 +507,14 @@
       <article role="article">
         <h2 id="MenuetOS">MenuetOS:</h2>
         <p><!-- <a href="https://menuetos.net/" target="_blank"
-        rel="nofollow" title="MenuetOS">MenuetOS</a> --> MenuetOS is
-        written in assembler and fits in a <a href="/others.html#Images"
-        target="_self" rel="dofollow" title="Other Operating Systems
-        &raquo; Floppy Image">floppy</a>. It needs mouse, i386, 32 MB of
-        RAM and 1 MB Display Vesa 2.0+ LFB. I have not had a chance to
-        use it although I have tested (played a lot with) its fork <a
-        href="/others.html#KolibriOS" title="Other Operating Systems
-        &raquo; KolibriOS">KolibriOS</a>.</p>
+        rel="nofollow" title="MenuetOS">MenuetOS</a> --> MenuetOS is an
+        x86 16/32-bit OS written in flat assembler (FASM) and fits in a
+        <a href="/others.html#Images" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo; Images">floppy</a>. It
+        needs a mouse, i386, 32 MB of RAM and 1 MB Display Vesa 2.0+
+        LFB. I have not had a chance to test it although I have played a
+        lot with its fork <a href="/others.html#KolibriOS" title="Other
+        Operating Systems &raquo; KolibriOS">KolibriOS</a>.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/File:Menuet.png"
         target="_blank" rel="nofollow"><img src="/img/Menuet.png"
@@ -531,11 +538,11 @@
         writing data back to its 1.8 MB image when written to a disk
         (not the 1.8 MB read-only <tt>.ISO</tt>). If using the 1.41 MB
         <a href="/others.html#Images" target="_self" rel="dofollow"
-        title="Other Operating Systems &raquo; Floppy Image">floppy
-        image</a>, there are parts of the OS missing like the used
-        and password set-up that I mentioned before. Since MichalOS is
-        forked from a previous version of MikeOS, 4.5 rather than the
-        newest, the fork has the opportunity to become its own OS.</p>
+        title="Other Operating Systems &raquo; Images">floppy image</a>,
+        there are parts of the OS missing like the used and password
+        set-up that I mentioned before. Since MichalOS is forked from a
+        previous version of MikeOS, 4.5 rather than the newest, the fork
+        has the opportunity to become its own OS.</p>
         <p align="center"><a
         href="https://sourceforge.net/projects/michalos/"
         target="_blank" rel="nofollow"><img src="/img/MichalOS_1.png"
@@ -553,10 +560,10 @@
         has low system requirements &mdash; i386, keyboard, no mouse and
         1 MB of RAM &mdash; and it runs from its <a
         href="/others.html#Images" target="_self" rel="dofollow"
-        title="Other Operating Systems &raquo; Floppy Image">floppy
-        image</a>. The OS will a menu listing a set of files including
-        some programs you can run as with any OS. Note that some of
-        these files are not accessible as in the case of
+        title="Other Operating Systems &raquo; Images">floppy image</a>.
+        The OS will a menu listing a set of files including some
+        programs you can run as with any OS. Note that some of these
+        files are not accessible as in the case of
         <tt>KERNEL.BIN</tt> since it is a system file. What I do not
         understand is why the file is not hidden in the first place.
         Part of the idea behind MikeOS is teaching how simple a 16-bit
@@ -584,7 +591,7 @@
         target="_self" rel="dofollow" title="Free and Open Source">open
         source</a> <a href="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</a>-like OS written in C by Andrew Tanenbaum
-        (<em><a href="https://www.cs.vu.nl/~ast/" target="_blank"
+        (<em><a href="https://cs.vu.nl/~ast/" target="_blank"
         rel="nofollow" title="Andrew S Tanenbaum, Professor at the Vrije
         Universiteit">ast</a></em>) of the Vrije Universiteit Amsterdam
         in order to teach his students how an OS works. This is the OS
@@ -795,12 +802,21 @@
         partially cloned from <a href="/beos.html" target="_self"
         rel="dofollow" title="BeOS">BeOS</a>, but not like <a
         href="/beos.html#Haiku" target="_self" rel="dofollow"
-        title="BeOS &raquo; Haiku">BeOS</a>. Note that both AtheOS and
+        title="BeOS &raquo; Haiku">Haiku</a>. Note that both AtheOS and
         Syllable shared the same domain name and seemed to be part of
         the same project or at least related projects inspired in <a
         href="/beos.html" target="_self" rel="dofollow"
         title="BeOS">BeOS</a> technologies other than just its file
-        system.</p>
+        system. I tested Syllable 0.6.7 released on January 2010, which
+        had a similar look and feel to <a href="/beos.html#Haiku"
+        target="_self" rel="dofollow" title="BeOS &raquo;
+        Haiku">Haiku</a> and therefore <a href="/beos.html"
+        target="_self" rel="dofollow" title="BeOS">BeOS</a>. Syllable
+        also included Bash and has a similar directory structure as <a
+        href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Linux</a> with <tt>/atheos</tt> instead of
+        <tt>/root</tt> &mdash; different from <a href="/beos.html"
+        target="_self" rel="dofollow" title="BeOS">BeOS</a>.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/File:Syllable-0.6.5-pl.png#/media/File:Syllable-0.6.5-pl.png"
         target="_blank" rel="nofollow"><img
@@ -845,7 +861,7 @@
         was sure that God had asked him to write this OS in a special
         version of C, which Davis named Holy-C, and assembler. Using the
         OS is difficult unless you understand its syntax &mdash;
-        somewhere in the middle between C and C++.</p>
+        a <em>cross</em> between C and C++ (C+).</p>
         <p align="center"><a
         href="https://en.wikipedia.org/wiki/TempleOS#/media/File:TempleOS_4.05_session.png"
         target="_blank" rel="nofollow"><img
@@ -906,7 +922,7 @@
         rel="nofollow" title="yuuOS">yuuOS</a> is an x86 32-bit <a
         href="/foss.html" target="_self" rel="dofollow" title="Free and
         Open Source">open source</a> OS written in C &mdash; not
-        assembler as other OS'es in this list &mdash; by Jo&atilde;o
+        assembler as most OS'es in this list &mdash; by Jo&atilde;o
         Costa (a.k.a. <em>YuukiDesu9</em> or simply <em>Yuuki</em>) that
         runs from its <a href="/others.html#Images" target="_self"
         rel="dofollow" title="Other Operating Systems &raquo; Floppy

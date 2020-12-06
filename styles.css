@@ -109,8 +109,8 @@ article body main nav select p ol option ul li
 
 pre
   {
-    /* color: #FFBF00;    monochrome amber */
-    /* color: #39FF14;    monochrome green */
+    /* color: #FFBF00;    monochrome amber  */
+    /* color: #39FF14;    monochrome green  */
     font-family: monospace;
     font-size: 14px;
     font-weight: normal;
@@ -121,10 +121,10 @@ pre
 
 tt
   {
-    /* color: #FFBF00;    monochrome amber */
-    /* color: #39FF14;    monochrome green */
+    /* color: #FFBF00;    monochrome amber  */
+    /* color: #39FF14;    monochrome green  */
     font-family: monospace;
-    font-size: 14px;
+    font-size: 12px;    /* instead of 14 px */
     font-weight: normal;
     line-height: 18px;
     /* background: #000000; */

@@ -19,7 +19,7 @@ most modern operating systems were made a good time ago like MVS in
 In the past couple of years, a different approach to operating systems
 and management of resources uses thin-clients (practically dumb
 terminals) accessing all shared resources from a server through a web
-browser — referred to cloud computing (web platforms).
+browser — referred to cloud computing.
 
 At the same time, computers (microcomputers) have shrunk from huge
 machines that would fit in a loft (like an IBM System/360 mainframe

@@ -1,0 +1,11 @@
+file `epoc2hex.txt` to convert human date to epoch value to hexadecimal value
+to be used as version number of VintageOS (https://vintageos.org/)
+
+using
+
+  1. https://www.epochconverter.com/
+  2. https://www.binaryhexconverter.com/decimal-to-hex-converter
+
+version date  2020/12/09
+date to epoch 1607529479
+hex of epoch    5FD0F407

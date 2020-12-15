@@ -12,7 +12,7 @@ hand (no WYSIWYG) using -- in alphabetical order
 2. [Gedit](https://wiki.gnome.org/Apps/Gedit) on
 [Linux](https://vintageos.org/linux.html),
 3. [Notepad++](http://notepad-plus-plus.org/) on
-[Microsoft Windows](https://vintageos.org//windows.html),
+[Microsoft Windows](https://vintageos.org/windows.html),
 4. [Nano](https://nano-editor.org/) on
 [Linux](https://vintageos.org/linux.html) and
 [Cygwin](https://vintageos.org/cygwin.html),

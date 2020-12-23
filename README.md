@@ -15,10 +15,10 @@ hand (no WYSIWYG) using -- in alphabetical order
 [Microsoft Windows](https://vintageos.org/windows.html),
 4. [Nano](https://nano-editor.org/) on
 [Linux](https://vintageos.org/linux.html) and
-[Cygwin](https://vintageos.org/cygwin.html),
+[Cygwin](https://vintageos.org/unix.html#Cygwin),
 5. [Tidy](http://html-tidy.org/) on
 [Linux](https://vintageos.org/linux.html) and
-[Cygwin](https://vintageos.org/cygwin.html).
+[Cygwin](https://vintageos.org/unix.html#Cygwin).
 
 [VintageOS](https://vintageos.org/) covers close to three (3) decades
 messing around with technology, crashing and hacking every operating

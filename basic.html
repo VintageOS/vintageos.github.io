@@ -133,8 +133,8 @@
   <main role="main">
     <article role="article">
       <h1 id="main">What is BASIC?</h1>
-      <h2 id="subtitle">(although not an OS in the modern sense, but a
-      complete instruction set nonetheless)</h2>
+      <h2 id="subtitle">Although not an OS, but a complete instruction
+      set nonetheless</h2>
       <p>BASIC (Beginner's All-purpose Symbolic Instruction Code) was
       more than an entry-level programming language. It was part of the
       instruction set (not quite an OS) for early home computers like
@@ -153,29 +153,29 @@
     </article>
     <article role="article">
       <h2 id="C64">Commodore 64:</h2>
-      <p>C64 was one of the first computer systems that I ever used and
-      the first one I ever owned (1984). I quickly got up hooked into a
+      <p><a
+      href="https://commons.wikimedia.org/w/index.php?curid=17414886"
+      target="_blank" rel="nofollow"><img
+      src="/img/320px-Commodore-64-Computer.png" height="158"
+      width="320" border="0" align="right" class="boxes" alt="By
+      Evan-Amos - Own work, Public Domain,
+      https://commons.wikimedia.org/w/index.php?curid=17414886"
+      title="By Evan-Amos - Own work, Public Domain,
+      https://commons.wikimedia.org/w/index.php?curid=17414886"></a> C64
+      was one of the first computer systems that I ever used and the
+      first one I ever owned (1984). I quickly got up hooked into a
       whole new field and style of life &mdash; <em>geekdom</em> &mdash;
       and coding into late hours of the night instead of sleeping. The
       experience of working with KERNAL (the OS), machine language
       (accessing KERNAL) and Commodore BASIC (programming) in its 8-bit
       glory boasting a 1.023 MHz microprocessor and 64 KB of RAM was as
-      fun as it could be for any kid in the early 1980's (1984, in my
+      fun as it could be for any kid in the early 1980s (1984, in my
       case). To make things even more exciting and bringing more curious
       kids (like me at the time) to computer science, C64 was heavily
       used for games and even some music programs thanks to its
       ground-breaking technology based on two chips by MOS Technology
       &mdash; SIC 6581 and VIC-II. Commodore International declared
       bankruptcy and closed shop in 1994.</p>
-      <p align="center"><a
-      href="https://commons.wikimedia.org/w/index.php?curid=17414886"
-      target="_blank" rel="nofollow"><img
-      src="/img/320px-Commodore-64-Computer.png" height="158"
-      width="320" border="0" class="boxes" alt="By Evan-Amos - Own work,
-      Public Domain,
-      https://commons.wikimedia.org/w/index.php?curid=17414886"
-      title="By Evan-Amos - Own work, Public Domain,
-      https://commons.wikimedia.org/w/index.php?curid=17414886"></a></p>
       <p>In 2011, Commodore USA, LLC, took over the Commodore brand name
       and released updated versions of C64 (C64x) with the same vintage
       (old, obsolete, ancient, historical, <em>retro</em>)
@@ -203,30 +203,32 @@
       launch, I would say is the C64. I want to get my hands on the new
       C64, but first I want to make sure the new Commondore company will
       last. Needless to say, I am stoked.</p>
-      <pre>
-        10 INPUT "WHAT'S YOUR NAME?"; NAME$
+      <pre id="OKAY.BAS">
+        10 INPUT "WHAT'S YOUR NAME"; NAME$
         20 PRINT "HELLO, "; NAME$;
         30 INPUT ", HOW ARE YOU? (OK/NOT)"; OK$
-        40 IF OK$ = "OK" THEN PRINT "GLAD TO HEAR THAT."
-        50 IF OK$ &lt;&gt; "OK" THEN PRINT "TOO BAD!"
+        40 IF OK$ = "OK" THEN PRINT "GLAD TO HEAR THAT, "; NAME$; "!"
+        50 IF OK$ &lt;&gt; "OK" THEN PRINT "TOO BAD! ";
+          NAME$; ", BETTER LUCK NEXT TIME!"
       </pre>
       <p>Another nostalgia option was Manomio's licensed emulator for
       iOS &mdash; iPhone, iPod and iPad. This emulator was almost as
       good as the original C64, but it was removed from the market
-      without notice.</p>
-      <p>Unfortunately it has been almost thirty (30) years since I last
-      coded my last program for the C64 and I hardly remember how to
+      without notice. I think someone might have considered it some sort
+      of copyright violation.</p>
+      <p>Unfortunately it has been over three (3) decades since I last
+      coded my last program for the C64 and I can hardly remember how to
       code a quick and dirty (not to mention descent) program (excluding
-      the one above), but I would consider it the geekiest purchase I
-      have would ever make.</p>
+      the one above &mdash; <tt>OKAY.BAS</tt>), but I would consider it
+      the <em>geekiest</em> purchase I have would ever make.</p>
       <p>Of course, if you are merely interested in C64 games, you can
       get a ROM emulator and a handful of ROM images, which may be
-      illegal in some areas and/or under special conditions (<a
-      href="http://copyright.gov/title17/92chap1.html#117"
+      illegal in some areas and/or under special conditions as explained
+      in <a href="http://copyright.gov/title17/92chap1.html#117"
       target="_blank" rel="nofollow" title="U.S. Copyright Office
       &mdash; Copyright Law: Chapter 1, &sect; 117. Limitations on
       exclusive rights: Computer programs">17 U.S.C. &sect;
-      117(a)</a>).</p>
+      117(a)</a>.</p>
       <blockquote>
         <em><strong>&sect; 117 . Limitations on exclusive rights:
         Computer programs</strong><br/>
@@ -263,7 +265,10 @@
           Apple II (1977)
         </li>
         <li>
-          Commodore BASIC for PET (1977) to C128 (1985)
+          Commodore BASIC, also known as PET BASIC or CBM-BASIC, from
+          PET (version 1.0, 1977) to C128 (version 7.0, 1985) &mdash;
+          the dialect that got started as a programmer in spring 1984 on
+          my C64 running version 2.0
         </li>
         <li>
           Color BASIC for TRS-80 CoCo (1980-91)
@@ -277,6 +282,47 @@
           (BASICA) for IBM 5150 (1981) and Cartridge BASIC for IBM PCjr
           (1984)
         </li>
+        <li>
+          Modern versions of BASIC
+          <ul>
+            <li>
+              Visual Basic (Microsoft, 1991)
+            </li>
+            <li>
+              Liberty BASIC (Carl Gundel, Shoptalk Systems, 1992),
+              followed by Run BASIC (2008) that is a web application
+              server running the Liberty BASIC and SQLite versions
+              released that year &mdash; only release
+            </li>
+            <li>
+              Gambas (Benoît Minisini, 1999) for <a href="/unix.html"
+              target="_self" rel="dofollow" title="Unix">Unix</a>-like
+              environments only
+            </li>
+            <li>
+              Visual Basic .NET, also referred to as VB.NET (Microsoft,
+              2001)
+            </li>
+            <li>
+              FreeBASIC (Andre Victor, FreeBASIC Development Team, 2004)
+            </li>
+            <li>
+              Mono (Miguel de Icaza under Ximian, then .NET Foundation
+              and Xamarin 2004) to port VB.NET to <a href="/linux.html"
+              target="_self" rel="dofollow" title="Linux">Linux</a>
+            </li>
+            <li>
+              Small Basic (Microsoft, 2008)
+            </li>
+            <li>
+              SmileBasic (SmileBoom Co. Ltd, 2011) for children to
+              program games for the Nintendo 3DS console
+            </li>
+            <li>
+              Xojo (Xojo, 2020)
+            </li>
+          </ul>
+        </li>
       </ul>
     </article>
     <article role="article">
@@ -286,8 +332,17 @@
       the built-in ROM to RAM. Later machines would run <a
       href="/dos.html" target="_self" rel="dofollow" title="Disk
       Operating System">DOS</a> and have BASIC as a stand-alone
-      executable like <tt class="console">QBASIC.EXE</tt> (Microsoft
-      BASIC), but by no means an OS or similar instruction set.</p>
+      executable like <tt>QBASIC.EXE</tt> (Microsoft BASIC), but by no
+      means being the similar instruction set on the late 1970s or
+      1980s.</p>
+      <p>Nowadays there are newer versions of BASIC that are installed
+      as any other program would be on a computer via an excutable or
+      script. For example, FreeBASIC is available for <a
+      href="/dos.html" target="_self" rel="dofollow" title="Disk
+      Operating System">DOS</a>, <a href="/windows.html"
+      target="_self" rel="dofollow" title="Microsoft
+      Windows">Windows</a> and <a href="/linux.html" target="_self"
+      rel="dofollow" title="Linux">Linux</a>.</p>
     </article>
   </main><!-- end of main body -->
   <article role="article">

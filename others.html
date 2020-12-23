@@ -133,64 +133,101 @@
   <main role="main">
     <article role="article">
       <h1 id="main">Are there other operating systems?</h1>
-      <p>Developers keep making operating systems (OS'es) to call their
+      <p>Developers keep making operating systems (OSs) to call their
       own. Maybe out of pure vanity, they take pride of their programs
       and/or set of connected programs as an OS. To make the development
       of latter more interesting, there are groups and manuals how to
-      write OS'es in different languages especially assembler, which I
-      do not speak (understand). As a matter of fact, the development of
-      hobby OS'es has caught my attention and has started my curiosity
-      of learning assembler (<em>asm</em>), but I have no idea which
+      write OSs in different languages especially assembler, which I do
+      not speak (understand). As a matter of fact, the development of
+      hobby OSs has caught my attention and has started my curiosity of
+      learning assembler (<em>asm</em>), but I have no idea which
       assembler dialect &mdash; FASM, JWasm, MASM, YASM, etc. &mdash;
       would be best (easiest) for me.</p>
-      <p>For the time being, I need to point out that these OS'es come
-      in all forms and for every taste, size and hardware from the
-      easiest to understand to most difficult to use. The following list
-      of hobby and/or dedicated OS including microkernels is in
-      alphabetical order &mdash; both vintage and cutting-edge.</p>
-      <p id="Images">Note that some of these OS'es are available in
-      images small enough to fit in a 1.44 MB floppy (usually
-      <tt>.FLP</tt>). These OS'es hardly ever come with an installer to
-      write the image to a hard drive.</p>
-      <ul>
-        <li>
-          As such, you can to burn the image to a floppy using the
-          <tt>dd</tt> command in <a href="/linux.html" target="_self"
-          rel="dofollow" title="Linux">Linux</a> or <a
-          href="/unix.html#Cygwin" target="_self" rel="dofollow"
-          title="Unix &raquo; Unix Emulators &raquo; Cygwin">Unix</a> or
-          a third-party application like UNetbootin for <a
-          href="/windows.html" target="_self" rel="dofollow"
-          title="Microsoft Windows">Windows</a>.
-          <pre>
-            dd if=floppy_image.flp of=/dev/fd0
-          </pre>
-        </li>
-        <li>
-          You can mount the <tt>.FLP</tt> image to a virtual floppy
-          drive using VirtualBox, Bochs or similar product &mdash; what
-          I have done. Depending on the vendor and the version of the
-          product, the instructions at this point will vary. You would
-          need to refer to the vendor's documentation for detailed
-          instructions.
-        </li>
-        <li>
-          You can also burn the <tt>.ISO</tt> (if available) to a USB
-          drive and boot your computer from it. Depending on the
-          computer manufacturer and/or the BIOS developer, the procedure
-          to boot to the USB drive will vary. You would need to refer to
-          the manufacturer's documentation for detailed instructions.
-          <pre>
-            dd if=disc_image.iso of=/dev/sdb1
-          </pre>
-        </li>
-        <li>
-          Of course, you can also mount the read-only <tt>.ISO</tt>
-          image (if available) using VirtualBox, Bochs or similar
-          product if have no intention of saving any data that you may
-          write to RAM while testing the OS.
-        </li>
-      </ul>
+      <p>For the time being, I need to point out that these OSs come in
+      all forms and for every taste, size and hardware from the easiest
+      to understand to most difficult to use. The following list of
+      hobby and/or dedicated OS including microkernels (&micro;kernels)
+      is in alphabetical order &mdash; both vintage and cutting-edge,
+      most of which I have fully tested.</p>
+      <article role="article">
+        <h2 id="Kernels">Monolithic kernels vs. &micro;kernels:</h2>
+        <p>When referring to OSs, a kernel is smallest section of code
+        that is considered the OS itself &mdash; its brain that manages
+        system calls, process management, concurrency (running multiple
+        threads of a job without asynhronously), memory management, file
+        system and device (hardware) drivers. Kernels are loaded
+        completely to RAM and need to run throughout the whole session.
+        There are two distincts groups of kernels depending how much
+        control the kernel really has.</p>
+        <ul>
+          <li>
+            Monolithic kernels have full control of system, processes,
+            threads, RAM and device driver management. All functions
+            take place inside the kernel. A good example is the <a
+            href="/linux.html" target="_self" rel="dofollow"
+            title="Linux">Linux</a> kernel, which is the OS itself. <a
+            href="/linux.html" target="_self" rel="dofollow"
+            title="Linux">Linux</a> distributions are built on the
+            kernel.
+          </li>
+          <li>
+            Microkernels (&micro;kernels) have the least amount of
+            control possible. Usually of file system, device drivers and
+            other aspects of the OS are handled outside the kernel. A
+            good example include any real-time operating system (RTOS)
+            currently in the market, which are small enough to use the
+            least amount of RAM &mdash; for example, in microcontrollers
+            and robotics.
+          </li>
+        </ul>
+      </article>
+      <article role="article">
+        <h2 id="Images">Images: discs and floppies</h2>
+        <p>Note that some of OSs covered on the list below are available
+        in images small enough to fit in a 1.44 MB floppy (usually
+        <tt>.FLP</tt>). These OSs hardly ever come with an installer to
+        write the image to a hard drive.</p>
+        <ul>
+          <li>
+            As such, you can to burn the image to a floppy using the
+            <tt>dd</tt> command in <a href="/linux.html" target="_self"
+            rel="dofollow" title="Linux">Linux</a> or <a
+            href="/unix.html#Cygwin" target="_self" rel="dofollow"
+            title="Unix &raquo; Unix Emulators &raquo; Cygwin">Unix</a>
+            or a third-party application like UNetbootin for <a
+            href="/windows.html" target="_self" rel="dofollow"
+            title="Microsoft Windows">Windows</a>.
+            <pre>
+              dd if=floppy_image.flp of=/dev/fd0
+            </pre>
+          </li>
+          <li>
+            You can mount the <tt>.FLP</tt> image to a virtual floppy
+            drive using VirtualBox, Bochs or similar product &mdash;
+            what I have done. Depending on the vendor and the version of
+            the product, the instructions at this point will vary. You
+            would need to refer to the vendor's documentation for
+            detailed instructions.
+          </li>
+          <li>
+            You can also burn the <tt>.ISO</tt> (if available) to a USB
+            drive and boot your computer from it. Depending on the
+            computer manufacturer and/or the BIOS developer, the
+            procedure to boot to the USB drive will vary. You would need
+            to refer to the manufacturer's documentation for detailed
+            instructions.
+            <pre>
+              dd if=disc_image.iso of=/dev/sdb1
+            </pre>
+          </li>
+          <li>
+            Of course, you can also mount the read-only <tt>.ISO</tt>
+            image (if available) using VirtualBox, Bochs or similar
+            product if you have no intention of saving any data that you
+            may write to RAM while testing the OS.
+          </li>
+        </ul>
+      </article>
       <article role="article">
         <h2 id="2OS">2/OS:</h2>
         <p><a href="http://meos.sourceforge.net/" target="_blank"
@@ -217,7 +254,7 @@
         rel="nofollow" title="Hyperion Entertainment">Hyperion
         Entertainment</a> is a M68K (versions 1.0 to 3.9) and PowerPC
         (since version 4.0) 16/32-bit OS. AmigaOS is one of the few
-        OS'es that has intrigued me for years because of its relation to
+        OSs that has intrigued me for years because of its relation to
         <a href="/basic.html#C64" target="_self" rel="nofollow"
         title="Beginner's All-purpose Symbolic Instruction Code (BASIC)
         &raquo; Commodore 64">C64</a>. I want to test it so badly, but
@@ -262,7 +299,7 @@
         RAM. AROS was meant as a direct re-implementation (replacement)
         of <a href="/others.html#AmigaOS" target="_self" rel="dofollow"
         title="Other Operating Systems &raquo; AmigaOS">AmigaOS</a>
-        hosted on other OS'es. Just like in <a href="/linux.html"
+        hosted on other OSs. Just like in <a href="/linux.html"
         target="_self" rel="dofollow" title="Linux">Linux</a>, there are
         several distributions (<em>distros</em>) of AROS tailored to the
         taste and needs of the end users &mdash; as shown in the list
@@ -355,7 +392,7 @@
         in its native C. The latest release was 3.1 in 1983. The CP/M
         market was taken over by <a href="/dos.html" target="_self"
         rel="dofollow" title="Disk Operating System">DOS</a> in the late
-        1980's. Although there has not been much developement or any at
+        1980s. Although there has not been much developement or any at
         all on the OS, CP/M is not considered obsolete thanks to many
         enthusiasts and its <a href="/bsd.html" target="_self"
         rel="dofollow" title="Berkeley Software
@@ -546,6 +583,37 @@
         https://commons.wikimedia.org/w/index.php?curid=76362518"></a></p>
       </article>
       <article role="article">
+        <h2 id="KanoOS">Kano OS:</h2>
+        <p><a
+        href="https://help.kano.me/hc/en-us/articles/360001546340-What-is-Kano-OS-"
+        target="_blank" rel="nofollow" title="Kano OS">Kano OS</a> is
+        the original OS for the Kano computer systems (2013) &mdash; a
+        series of hardware kits marketed primarily to children to teach
+        them how to build and configure computers and laptops with parts
+        like Lego bricks. The OS is based on <a href="/linux.html"
+        target="_self" rel="dofollow" title="Linux">Raspbian</a> &mdash;
+        a <a href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Debian</a> distro tailored for Rasberry Pi
+        hardware and related peripherals. In other words, Kano OS is <a
+        href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Raspbian</a> with educational software including
+        block programming. Note that on December 2019, Kano replaced
+        Kano OS in favor of <a href="/windows.html" target="_self"
+        rel="dofollow" title="Microsoft Windows">Windows 10</a>, which
+        includes a custom version of Minecraft (Mojang, purchased by
+        Microsoft) for children to hack. I understand that the company
+        needs to sell the product regarless how educational it is, but
+        siding with Microsoft for sales intead of an <a
+        href="/foss.html" target="_self" rel="dofollow" title="Free and
+        Open Source">open source</a> solution is a mistake.</p>
+        <p align="center"><a href="https://kano.me/us" target="_blank"
+        rel="nofollow"><img src="/img/KanoOSClassicMode.png"
+        height="240" width="320" border="0" class="boxes" alt="Copyright
+        (c) 2020 Kano. All rights reserved.; By Source, Fair use,
+        https://kano.me/us" title="Copyright (c) 2020 Kano. All rights
+        reserved.; By Source, Fair use, https://kano.me/us"></a></p>
+      </article>
+      <article role="article">
         <h2 id="KolibriOS">KolibriOS:</h2>
         <p><a href="https://kolibrios.org/" target="_blank"
         rel="nofollow" title="KolibriOS">KolibriOS</a> is an x86
@@ -620,7 +688,7 @@
         rel="dofollow" title="Other Operating Systems &raquo;
         MikeOS">MikeOS</a> with a desktop environment instead of a menu
         in the middle of the screen. MichalOS has a nicer interface that
-				asks for the user enter a name and password for security
+        asks for the user enter a name and password for security
         writing data back to its 1.8 MB image when written to a disk
         (not the 1.8 MB read-only <tt>.ISO</tt>). If using the 1.41 MB
         <a href="/others.html#Images" target="_self" rel="dofollow"
@@ -633,7 +701,8 @@
         href="https://sourceforge.net/projects/michalos/"
         target="_blank" rel="nofollow"><img src="/img/MichalOS_1.png"
         height="240" width="320" border="0" class="boxes" alt="MichalOS,
-        https://sourceforge.net/projects/michalos/" title="MichalOS,
+        By Source, Fair use, https://sourceforge.net/projects/michalos/"
+        title="MichalOS, By Source, Fair use,
         https://sourceforge.net/projects/michalos/"></a></p>
       </article>
       <article role="article">
@@ -650,20 +719,20 @@
         The OS will a menu listing a set of files including some
         programs you can run as with any OS. Note that some of these
         files are not accessible as in the case of <tt>KERNEL.BIN</tt>
-				since it is a system file. What I do not understand is why the
-				file is not hidden in the first place. Part of the idea behind
-				MikeOS is teaching how simple a 16-bit OS works with lots of
-				documentation to study and learn from. The MikeOS website has a
-				collection of applications for download including a package for
-				mouse support (<tt>MOUSE.LIB</tt>), <a href="/basic.html"
-				target="_self" rel="dofollow" title="Beginner's All-purpose
-				Symbolic Instruction Code (BASIC)">BASIC</a> and C applications.
-				Saunders seems to be doing something right when his OS is
-				getting forked. The most promising fork is <a
-				href="/others.html#MichalOS" target="_self" rel="dofollow"
-				title="Other Operating Systems &raquo; MichalOS">MichalOS</a> by
-				Michal Prochazka, which according to the MikeOS website,
-				already comes with mouse support.</p>
+        since it is a system file. What I do not understand is why the
+        file is not hidden in the first place. Part of the idea behind
+        MikeOS is teaching how simple a 16-bit OS works with lots of
+        documentation to study and learn from. The MikeOS website has a
+        collection of applications for download including a package for
+        mouse support (<tt>MOUSE.LIB</tt>), <a href="/basic.html"
+        target="_self" rel="dofollow" title="Beginner's All-purpose
+        Symbolic Instruction Code (BASIC)">BASIC</a> and C applications.
+        Saunders seems to be doing something right when his OS is
+        getting forked. The most promising fork is <a
+        href="/others.html#MichalOS" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo; MichalOS">MichalOS</a> by
+        Michal Prochazka, which according to the MikeOS website,
+        already comes with mouse support.</p>
         <p align="center"><a href="http://mikeos.sourceforge.net/"
         target="_blank" rel="nofollow"><img src="/img/MikeOS_shot-1.png"
         height="240" width="320" border="0" class="boxes" alt="MikeOS,
@@ -723,9 +792,8 @@
         trouble like breaking things while learning a new skill. -->
         When testing M&ouml;bius, I ran into several errors and ended
         contacting the developers. It seems that newer hardware brings
-        kernel exceptions
-
-        </p>
+        kernel exceptions. I contacted the developer who is looking into
+        the errors.</p>
         <p align="center"><a href="http://mobius.sourceforge.net/"
         target="_blank" rel="nofollow"><img
         src="/img/Mobius_release05-02.png" height="240" width="320"
@@ -1005,8 +1073,8 @@
         Although Sortix is not a <a href="/linux.html" target="_self"
         rel="dofollow" title="Linux">Linux</a> derivative, it has a lot
         of similarities possibly to establish the POSIX compatibility.
-				As such, the learning curb is minimal if your background is in
-				<a href="/linux.html" target="_self" rel="dofollow"
+        As such, the learning curb is minimal if your background is in
+        <a href="/linux.html" target="_self" rel="dofollow"
         title="Linux">Linux</a> consoles.</p>
         <p align="center"><a href="https://sortix.org/" target="_blank"
         rel="nofollow"><img src="/img/sortix-1.0-welcome.png"
@@ -1039,7 +1107,7 @@
         href="/beos.html" target="_self" rel="dofollow"
         title="BeOS">BeOS</a> technologies other than just its file
         system. I tested Syllable 0.6.7 released on January 2010, which
-        had a similar look and feel to <a href="/beos.html#Haiku"
+        had a similar look and feel of <a href="/beos.html#Haiku"
         target="_self" rel="dofollow" title="BeOS &raquo;
         Haiku">Haiku</a> and therefore <a href="/beos.html"
         target="_self" rel="dofollow" title="BeOS">BeOS</a>. Syllable
@@ -1087,7 +1155,7 @@
         <p><a href="https://templeos.org/" target="_blank"
         rel="nofollow" title="TempleOS">TempleOS</a> (public domain) is
         one of the strangest and possibly one of the less visually
-        appealing OS'es ever created. This OS was written by Terry Davis
+        appealing OSs ever created. This OS was written by Terry Davis
         (1969-2018), who had been diagnosed with mental illness and who
         was sure that God had asked him to write this OS in a special
         version of C, which Davis named Holy-C, and assembler. Using the
@@ -1116,7 +1184,7 @@
         title="Linux">Linux</a> and other <a href="/unix.html"
         target="_self" rel="dofollow" title="Unix">Unix</a> clones. The
         latest version is 0.9 (32 MB <tt>.ISO</tt>) released on April
-        2020. As with most OS'es on this list, the minimum requirements
+        2020. As with most OSs on this list, the minimum requirements
         are low. It needs an i586 and 64 MB of RAM to barely run. Of
         course, as with any other OS or software, you need much more if
         you do not want frustration to get the best of you.</p>
@@ -1154,7 +1222,7 @@
         rel="nofollow" title="yuuOS">yuuOS</a> is an x86 32-bit <a
         href="/foss.html" target="_self" rel="dofollow" title="Free and
         Open Source">open source</a> OS written in C &mdash; not
-        assembler as most OS'es in this list &mdash; by Jo&atilde;o
+        assembler as most OSs in this list &mdash; by Jo&atilde;o
         Costa (a.k.a. <em>YuukiDesu9</em> or simply <em>Yuuki</em>) that
         runs from its <a href="/others.html#Images" target="_self"
         rel="dofollow" title="Other Operating Systems &raquo;

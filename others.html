@@ -141,14 +141,119 @@
       not speak (understand). As a matter of fact, the development of
       hobby OSs has caught my attention and has started my curiosity of
       learning assembler (<em>asm</em>), but I have no idea which
-      assembler dialect &mdash; FASM, JWasm, MASM, YASM, etc. &mdash;
-      would be best (easiest) for me.</p>
+      assembler dialect would be best (easiest) for me.</p>
+      <ul>
+        <li>
+          FASM (flat assembler) &mdash; <a href="/dos.html"
+          target="_self" rel="dofollow" title="Disk Operating
+          System">DOS</a>, <a href="/linux.html" target="_self"
+          rel="dofollow" title="Linux">Linux</a>, <a
+          href="/windows.html" target="_self" rel="dofollow"
+          title="Microsoft Windows">Windows</a> and <a href="/unix.html"
+          target="_self" rel="dofollow" title="Unix">Unix</a>
+        </li>
+        <li>
+          JWasm (Japheth Assembler) &mdash; AVX (Advanced Vector
+          Extensions), <a href="/dos.html" target="_self" rel="dofollow"
+          title="Disk Operating System">DOS</a>, <a
+          href="/bsd.html#FreeBSD" target="_self" rel="dofollow"
+          title="Berkeley Software Distribution &raquo;
+          FreeBSD">FreeBSD</a>, <a href="/linux.html" target="_self"
+          rel="dofollow" title="Linux">Linux</a>, <a href="/os2.html"
+          target="_self" rel="dofollow" title="Operating
+          System/2">OS/2</a>, <a href="/windows.html" target="_self"
+          rel="dofollow" title="Microsoft Windows">Windows</a>
+        </li>
+        <li>
+          MASM (Microsoft Macro Assembler) &mdash; for <a
+          href="/windows.html" target="_self" rel="dofollow"
+          title="Microsoft Windows">Windows</a> only
+        </li>
+        <li>
+          NASM (Netwide Assembler) &mdash; <a href="/linux.html"
+          target="_self" rel="dofollow" title="Linux">Linux</a>
+        </li>
+        <li>
+          UASM (&micro;ASM or microassembler) &mdash; for <a
+          href="/linux.html" target="_self" rel="dofollow"
+          title="Linux">Linux</a>, <a href="/macos.html" target="_self"
+          rel="dofollow" title="macOS">macOS</a> and <a
+          href="/windows.html" target="_self" rel="dofollow"
+          title="Microsoft Windows">Windows</a>
+        </li>
+        <li>
+          Vasm (Volker's Assembler) &mdash; to be compiled by user for
+          <ul>
+            <li>
+              <a href="/others.html#Amiga" target="_self" rel="dofollow"
+              title="Other Operating Systems &raquo;
+              AmigaOS">AmigaOS 68k</a> and <a href="/others.html#Amiga"
+              target="_self" rel="dofollow" title="Other Operating
+              Systems &raquo; AmigaOS">AmigaOS 4</a>
+            </li>
+            <li>
+              Atari MiNT
+            </li>
+            <li>
+              Atari TOS 68k
+            </li>
+            <li>
+              <a href="/unix.html#Cygwin" target="_self" rel="dofollow"
+              title="Unix &raquo; Unix Emulators &raquo;
+              Cygwin">Cygwin</a>
+            </li>
+            <li>
+              <a href="/beos.html#Haiku" target="_self" rel="dofollow"
+              title="BeOS &raquo; Haiku">Haiku</a>
+            </li>
+            <li>
+              <a href="/others.html#MorphOS" target="_self"
+              rel="dofollow" title="Other Operating Systems &raquo;
+              MorphOS">MorphOS</a>
+            </li>
+            <li>
+              PowerUp
+            </li>
+            <li>
+              WarpOS (not <a href="/windows.html" target="_self"
+              rel="dofollow" title="Microsoft Windows">OS/2 Warp</a>)
+            <li>
+              <a href="/windows.html" target="_self" rel="dofollow"
+              title="Microsoft Windows">Windows 32-bit</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          WASM (Open Watcom Assembler) &mdash; for <a href="/dos.html"
+          target="_self" rel="dofollow" title="Disk Operating
+          System">DOS</a>, <a href="/linux.html" target="_self"
+          rel="dofollow" title="Linux">Linux</a>, <a href="/os2.html"
+          target="_self" rel="dofollow" title="Operating
+          System/2">OS/2</a>, <a href="/windows.html" target="_self"
+          rel="dofollow" title="Microsoft Windows">Windows</a>
+        </li>
+        <li>
+          YASM (Yasm Modular Assembler) &mdash; <a
+          href="/unix.html#Cygwin" target="_self" rel="dofollow"
+          title="Unix &raquo; Unix Emulators &raquo; Cygwin">Cygwin</a>,
+          <a href="/dos.html" target="_self" rel="dofollow" title="Disk
+          Operating System">DOS</a> and <a href="/windows.html"
+          target="_self" rel="dofollow" title="Microsoft
+          Windows">Windows</a>
+        </li>
+        <li>
+          or some other variant
+        </li>
+      </ul>
       <p>For the time being, I need to point out that these OSs come in
       all forms and for every taste, size and hardware from the easiest
       to understand to most difficult to use. The following list of
-      hobby and/or dedicated OS including microkernels (&micro;kernels)
-      is in alphabetical order &mdash; both vintage and cutting-edge,
-      most of which I have fully tested.</p>
+      hobby and/or dedicated OS including <a
+      href="/others.html#Microkernel" target="_self" rel="dofollow"
+      title="Other Operating Systems &raquo;
+      Microkernel">microkernels</a> (&micro;kernels) is in alphabetical
+      order &mdash; both vintage and cutting-edge, most of which I have
+      fully tested.</p>
       <article role="article">
         <h2 id="Kernels">Monolithic kernels vs. &micro;kernels:</h2>
         <p>When referring to OSs, a kernel is smallest section of code
@@ -160,7 +265,7 @@
         There are two distincts groups of kernels depending how much
         control the kernel really has.</p>
         <ul>
-          <li>
+          <li id="Monolithic">
             Monolithic kernels have full control of system, processes,
             threads, RAM and device driver management. All functions
             take place inside the kernel. A good example is the <a
@@ -170,7 +275,7 @@
             title="Linux">Linux</a> distributions are built on the
             kernel.
           </li>
-          <li>
+          <li id="Microkernel">
             Microkernels (&micro;kernels) have the least amount of
             control possible. Usually of file system, device drivers and
             other aspects of the OS are handled outside the kernel. A
@@ -189,14 +294,16 @@
         write the image to a hard drive.</p>
         <ul>
           <li>
-            As such, you can to burn the image to a floppy using the
+            As such, you can burn the image to a floppy using the
             <tt>dd</tt> command in <a href="/linux.html" target="_self"
             rel="dofollow" title="Linux">Linux</a> or <a
             href="/unix.html#Cygwin" target="_self" rel="dofollow"
-            title="Unix &raquo; Unix Emulators &raquo; Cygwin">Unix</a>
-            or a third-party application like UNetbootin for <a
-            href="/windows.html" target="_self" rel="dofollow"
-            title="Microsoft Windows">Windows</a>.
+            title="Unix &raquo; Unix Emulators &raquo;
+            Cygwin">Cygwin</a> or a third-party application like
+            UNetbootin for <a href="/windows.html" target="_self"
+            rel="dofollow" title="Microsoft Windows">Windows</a> or <a
+            href="/linux.html" target="_self" rel="dofollow"
+            title="Linux">Linux</a>.
             <pre>
               dd if=floppy_image.flp of=/dev/fd0
             </pre>
@@ -210,12 +317,11 @@
             detailed instructions.
           </li>
           <li>
-            You can also burn the <tt>.ISO</tt> (if available) to a USB
-            drive and boot your computer from it. Depending on the
-            computer manufacturer and/or the BIOS developer, the
-            procedure to boot to the USB drive will vary. You would need
-            to refer to the manufacturer's documentation for detailed
-            instructions.
+            You can burn the <tt>.ISO</tt> (if available) to a USB drive
+            and boot your computer from it. Depending on the computer
+            manufacturer and/or the BIOS developer, the procedure to
+            boot to the USB drive will vary. You would need to refer to
+            the manufacturer's documentation for detailed instructions.
             <pre>
               dd if=disc_image.iso of=/dev/sdb1
             </pre>
@@ -271,8 +377,8 @@
         13&quot; B/W TV. That was a great time to be a 13-year-old kid
         writing <a href="/basic.html#C64" target="_self" rel="nofollow"
         title="Beginner's All-purpose Symbolic Instruction Code
-        (BASIC)">BASIC</a> and machine language &mdash; talking to the
-        KARNEL OS &mdash; for hours at a time.</p>
+        (BASIC)">BASIC</a> and machine language to talk to the KARNEL OS
+        for hours at a time.</p>
         <p align="center"><a
         href="https://en.wikipedia.org/w/index.php?curid=27239193"
         target="_blank" rel="nofollow"><img
@@ -419,7 +525,7 @@
         rel="nofollow" title="Collapse OS">Collapse OS</a> is a
         <em>&quot;collection of tools and documentation with a single
         purpose: preserve the ability to program microcontrollers
-        through civilizational collapse&quot;</em> (Nov. 2020) written
+        through civilizational collapse&quot;</em> (Jun. 2020) written
         in Forth in a POSIX environment. The OS can run with minimal
         system requirements &mdash; for example, the 3.5 MHz Z80 chip in
         Sinclair ZX Spectrum (1982), the 2 MHz Z80A chip in TRS-80 Model
@@ -434,7 +540,7 @@
         the tools it needs to fulfill its goals&quot;</em> named
         <tt>blk.fs</tt> (<a href="https://sr.ht/~vdupras/collapseos/"
         target="_blank" rel="nofollow" title="collapseos: Bootstrap
-        post-collapse technology (Sourcehut)">Sourcehut</a>, Nov. 2020).
+        post-collapse technology (Sourcehut)">Sourcehut</a>, Jun. 2020).
         The whole idea as explained by the developers is to be able to
         run computer systems to rebuild the computer-based civilization
         that we are used to even if this means no GUI. It sounds
@@ -557,14 +663,21 @@
         <h2 id="GNUHurd">GNU Hurd:</h2>
         <p><a href="https://gnu.org/software/hurd/" target="_blank"
         rel="nofollow" title="GNU Hurd">GNU Hurd</a> developed by the
-        GNU Project is a microkernel to replace the <a href="/unix.html"
-        target="_self" rel="dofollow" title="Unix">Unix</a> kernel and
-        it is based on GNU Mach, the same microkernel used by <a
+        GNU Project is a <a href="/others.html#Microkernel"
+        target="_self" rel="dofollow" title="Other Operating Systems
+        &raquo; Microkernel">microkernel</a> to replace the <a
+        href="/unix.html" target="_self" rel="dofollow"
+        title="Unix">Unix</a> kernel and it is based on GNU Mach, the
+        same <a href="/others.html#Microkernel" target="_self"
+        rel="dofollow" title="Other Operating Systems &raquo;
+        Microkernel">microkernel</a> used by <a
         href="/macos.html" target="_self" rel="dofollow"
         title="macOS">macOS</a>/<a href="/bsd.html#Darwin"
         target="_self" rel="dofollow" title="Berkeley Software
-        Distribution &raquo; Darwin">Darwin</a>. The GNU Hurd
-        microkernel can also be used to replace the <a
+        Distribution &raquo; Darwin">Darwin</a>. The GNU Hurd <a
+        href="/others.html#Microkernel" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo;
+        Microkernel">microkernel</a> can also be used to replace the <a
         href="/linux.html" target="_self" rel="dofollow"
         title="Linux">Linux</a> kernel. As such, the GNU Hurd project is
         to create a <em>&quot;general-purpose kernel suitable for the
@@ -619,23 +732,23 @@
         rel="nofollow" title="KolibriOS">KolibriOS</a> is an x86
         16/32-bit OS &mdash; forked from <a href="/others.html#MenuetOS"
         title="Other Operating Systems &raquo; MenuetOS">MenuetOS</a>,
-        written in flat assembler (FASM) &mdash; heavily scaled down in
+        written in FASM (flat assembler) &mdash; heavily scaled down in
         order to use low resources. As such, the 1.41 MB <a
         href="/others.html#Images" target="_self" rel="dofollow"
         title="Other Operating Systems &raquo; Images">image</a>
         (<tt>.IMG</tt>) fits in a 1.44 MB floppy, that can be burned to
         floppy or mounted as a virtual drive. The full image available
         in an <tt>.ISO</tt> is under 70 MB and it also needs at least 8
-        MB of RAM to load the OS. In either case, KolibriOS is loaded
-        completely to memory and not from disk to memory (no swapping).
-        There is no installation and any change you make can be written
-        back to the image &mdash; not to root (<tt>/</tt>), but rather
-        to one of the subdirectories in the image. One idea is
-        <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep all OS settings
+        MB of RAM to load the OS. In either case, the whole OS (not only
+        the kernel) is loaded to memory and not from disk to memory (no
+        swapping). There is no installation and any change you make can
+        be written back to the image &mdash; not to root (<tt>/</tt>),
+        but rather to one of the subdirectories in the image. One idea
+        is <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep all OS settings
         together and hence organized. The software bundled in the image
         is interesting to say the least. Its web browser WebView 2.65b
-        is similar to Lynx, but in a modern GUI. KolibriOS also has its
-        own Bash-like shell although limited to 28 external commands
+        is similar to Lynx, but with a modern GUI. KolibriOS also has
+        its own Bash-like shell although limited to 28 external commands
         (excluding kernel commands). The image comes with several games,
         several emulators for several video game platforms like SNES and
         even <a href="/dos.html#DOSBox" target="_self" rel="dofollow"
@@ -644,8 +757,8 @@
         an excellent OS for gaming although the it also includes several
         office, programming languages like <a href="/basic.html"
         target="_self" rel="nofollow" title="Beginner's All-purpose
-        Symbolic Instruction Code (BASIC)">TinyBASIC</a> and FASM as
-        well as network utilities almost rivaling any <a
+        Symbolic Instruction Code (BASIC)">TinyBASIC</a> and FASM (flat
+        assembler) as well as network utilities almost rivaling any <a
         href="/linux.html" target="_self" rel="dofollow"
         title="Linux">Linux</a> distribution.</p>
         <p align="center"><a
@@ -662,13 +775,14 @@
         <h2 id="MenuetOS">MenuetOS:</h2>
         <p><!-- <a href="https://menuetos.net/" target="_blank"
         rel="nofollow" title="MenuetOS">MenuetOS</a> --> MenuetOS is an
-        x86 16/32-bit OS written in flat assembler (FASM) and fits in a
+        x86 16/32-bit OS written in FASM (flat assembler) and fits in a
         <a href="/others.html#Images" target="_self" rel="dofollow"
         title="Other Operating Systems &raquo; Images">floppy</a>. It
         needs a mouse, i386, 32 MB of RAM and 1 MB Display Vesa 2.0+
-        LFB. I have not had a chance to test it although I have played a
-        lot with its fork <a href="/others.html#KolibriOS" title="Other
-        Operating Systems &raquo; KolibriOS">KolibriOS</a>.</p>
+        LFB. I have not had a chance to test MenuetOS although I have
+        played a lot with its fork <a href="/others.html#KolibriOS"
+        title="Other Operating Systems &raquo; KolibriOS">KolibriOS</a>.
+        Note that the development of MenuetOS seems to be on hold.</p>
         <p align="center"><a
         href="https://commons.wikimedia.org/w/index.php?curid=17123183"
         target="_blank" rel="nofollow"><img src="/img/Menuet.png"

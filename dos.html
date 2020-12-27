@@ -173,7 +173,7 @@
       that can interpret DOS exist and are commonly used.</p>
       <p>What is left of <a href="/dos.html#MSDOS" target="_self"
       rel="dofollow" title="Disk Operating System &raquo;
-      MS-DOS">MS-DOS</a>" is reduced and buried in
+      MS-DOS">MS-DOS</a> is reduced to a handful of files buried in
       <tt>C:\WINDOWS\COMMAND</tt> in <a href="/windows.html"
       target="_self" rel="dofollow" title="Microsoft Windows">Windows
       9x</a>, <tt>C:\WINNT\SYSTEM32</tt> in <a href="/windows.html"
@@ -219,8 +219,8 @@
       (BASIC)">QBASIC.EXE</a></tt>). Nowadays, Microsoft does not
       include any programming language by default. <tt><a
       href="/basic.html" target="_self" rel="dofollow" title="Beginner's
-      All-purpose Symbolic Instruction Code (BASIC)"></a></tt> has to be
-      copied from <tt>D:\OTHER\OLDMSSDOS</tt> to
+      All-purpose Symbolic Instruction Code (BASIC)">QBASIC.EXE</a></tt>
+      has to be copied from <tt>D:\OTHER\OLDMSSDOS</tt> to
       <tt>C:\WINDOWS\COMMAND</tt>.</p>
       <p>DOS Shell (230 KB) was last included in <a
       href="/dos.html#MSDOS" target="_blank" rel="dofollow" title="Disk
@@ -550,9 +550,9 @@
       to text file (for this example, <tt>FOO.TXT</tt>). In the example
       below, the system will first write the date (<tt>%DATE%</tt>) and
       time (<tt>%TIME%</tt>) when the batch is run and two blank lines
-      (<tt>ECHO.</tt>, including the period) after the log has been
-      generated for cosmetic purposes. As such, these blank lines can be
-      excluded.</p>
+      (<tt>ECHO.</tt>, including the period after <tt>ECHO</tt>) after
+      the log has been generated for cosmetic purposes. As such, these
+      blank lines can be excluded.</p>
       <pre>
         ECHO OFF
         ECHO %DATE% %TIME% &gt; FOO.TXT
@@ -581,17 +581,17 @@
       below, but the one below is easier on the eyes.</p>
       <pre>
         ECHO OFF
-
+        <!-- spacer to make batch pretty and legible -->
         ECHO %DATE% %TIME% &gt; FOO.TXT
-
+        <!-- spacer to make batch pretty and legible -->
         DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
         DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
-
+        <!-- spacer to make batch pretty and legible -->
         ECHO. &gt; FOO.TXT
-
+        <!-- spacer to make batch pretty and legible -->
         DEFRAG /F/U/SE/SKIPHIGH C: &gt; FOO.TXT
         SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE &gt; FOO.TXT
-
+        <!-- spacer to make batch pretty and legible -->
         ECHO. &gt; FOO.TXT
         ECHO. &gt; FOO.TXT
       </pre>
@@ -614,7 +614,7 @@
         (International Business Machines)">PC DOS</a> during the DOS
         heyday in the 1980s. It has changed owners in the past two
         decades from Digital Research toNovell as Novell DOS (1991), to
-        Caldera as  OpenDOS (1996), to DeviceLogics once again as DR-DOS
+        Caldera as OpenDOS (1996), to DeviceLogics once again as DR-DOS
         (2002). Since its last incarnation, DR-DOS/OpenDOS Enhancement
         Project was started as a community initiative to keep its <a
         href="/foss.html" target="_self" rel="dofollow" title="Free and
@@ -623,16 +623,32 @@
     <!-- CONTINUE? -->
       <section role="section">
         <h3 id="FreeDOS">FreeDOS</h3>
-        <p>FreeDOS (Free-DOS, PD-DOS) by Jim Hall is a 16/32-bit <a
-        href="/foss.html" target="_self" rel="dofollow" title="Free and
-        Open Source">open source</a> <a href="/dos.html#MSDOS"
-        target="_self" rel="dofollow" title="Disk Operating System
-        &raquo; MS-DOS">MS-DOS</a> clone based on DOS-C (1994) by Pat
-        Villani that can <em>&quot;reproduce the functionality of <a
+        <p><a href="https://www.freedos.org/" target="_blank"
+        rel="nofollow" title="FreeDOS">FreeDOS</a> by Jim Hall is an x86
+        16/32-bit <a href="/foss.html" target="_self" rel="dofollow"
+        title="Free and Open Source">open source</a> <a
         href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-        Operating System &raquo; MS-DOS">MS-DOS</a>.&quot;</em>. Within
-        modern DOS clones, FreeDOS seems to be the most popular choice.
-        As such, it is my DOS of choice.</p>
+        Operating System &raquo; MS-DOS">MS-DOS</a> clone based on DOS-C
+        (1994) by Pat Villani that can <em>&quot;reproduce the
+        functionality of <a href="/dos.html#MSDOS" target="_self"
+        rel="dofollow" title="Disk Operating System &raquo;
+        MS-DOS">MS-DOS</a>.&quot;</em>.</p>
+        <p>The directory structure of FreeDOS is based on <a
+        href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Linux</a> and all content of the OS is located in
+        <tt>C:\FDOS</tt> including the <tt>TEMP</tt> subdirectory
+        (<tt>C:\FDOS\TEMP</tt>, which is different from the path that I
+        have used since I learned to work with <a href="/dos.html#MSDOS"
+        target="_self" rel="dofollow" title="Disk Operating System
+        &raquo; MS-DOS">MS-DOS</a>.</p>
+        <p>Within modern DOS clones, FreeDOS seems to be the most
+        popular, robust and most user-friendly choice. As a matter of
+        fact, it is my DOS of choice especially since Jim Hall is very
+        accessible for questions and continuosly makes video tutorials
+        on his OS.</p>
+        <p>To install software, you can use <tt>FDIMPLES</tt> to access
+        its repository. To establishing network connections,
+        <tt>FDNET</tt> handles a <em>vanilla</em> packet driver.</p>
         <nav role="navigation" id="FreeDOS_CMD">
           <ul>
             <li>
@@ -799,7 +815,7 @@
               <tt>EMM386</tt>. It has several advantages compared to
               FreeDOS and/or <a href="/dos.html#MSDOS" target="_self"
               rel="dofollow" title="Disk Operating System &raquo;
-              MS-DOS">MS-DOS</a>  <tt>EMM386</tt>:
+              MS-DOS">MS-DOS</a> <tt>EMM386</tt>:
               <br/>* needs only 192 bytes DOS memory
               <br/>* needs very little extended memory
               <br/>* is faster
@@ -881,7 +897,7 @@
             </li>
             <li>
               <tt>NLSFUNC</tt> &mdash; <tt>NLSFUNC</tt> adds NLS
-              (National Language Support functionality &mdash; works
+              (National Language Support functionality) &mdash; works
               with kernel 2037 only!
             </li>
             <li>
@@ -973,15 +989,15 @@
       </section>
       <section role="section">
         <h3 id="NewDOS">NewDOS</h3>
-        <p>NewDOS (not to be confused with <a
-        href="/dos.html#New-DOS" target="_self" rel="dofollow"
-        title="Disk Operating System &raquo; Versions of DOS Compatible
-        with MS-DOS &raquo; New-DOS">New-DOS</a> or <a
-        href="/dos.html#NEWDOS" target="_self" rel="dofollow"
-        title="Disk Operating System &raquo; Versions of DOS Compatible
-        with MS-DOS &raquo; NEWDOS">NEWDOS</a>) is another <a
-        href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-        Operating System &raquo; MS-DOS">MS-DOS</a> clone.</p>
+        <p>NewDOS (not to be confused with <a href="/dos.html#New-DOS"
+        target="_self" rel="dofollow" title="Disk Operating System
+        &raquo; Versions of DOS Compatible with MS-DOS &raquo;
+        New-DOS">New-DOS</a> or <a href="/dos.html#NEWDOS"
+        target="_self" rel="dofollow" title="Disk Operating System
+        &raquo; Versions of DOS Compatible with MS-DOS &raquo;
+        NEWDOS">NEWDOS</a>) is another <a href="/dos.html#MSDOS"
+        target="_self" rel="dofollow" title="Disk Operating System
+        &raquo; MS-DOS">MS-DOS</a> clone.</p>
       </section>
       <section role="section">
         <h3 id="NEWDOS">NEWDOS</h3>
@@ -992,9 +1008,8 @@
         href="/dos.html#NewDOS" target="_self" rel="dofollow"
         title="Disk Operating System &raquo; Versions of DOS Compatible
         with MS-DOS &raquo; NewDOS">NewDOS</a>) was designed for TRS-80
-        series of computers.
-        <!-- previous information taken from
-             http://trs-80.org/category/operating-systems/ --></p>
+        series of computers. <!-- Previous information taken from
+        http://trs-80.org/category/operating-systems/ --></p>
       </section>
     <section role="section">
       <h3 id="NTFSDOS">NTFSDOS</h3>
@@ -1008,13 +1023,12 @@
     </section>
     <section role="section">
       <h3 id="NXDOS">NX-DOS</h3>
-      <p>NX-DOS is a 16-bit/32-bit <a
-      href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-      Operating System &raquo; MS-DOS">MS-DOS</a> clone for embedded x86
-      systems that uses <a href="/dos.html#RXDOS" target="_self"
-      rel="dofollow" title="Disk Operating System &raquo; Versions of
-      DOS Incompatible with MS-DOS &raquo; RX-DOS">RX-DOS</a> memory
-      management.</p>
+      <p>NX-DOS is an x32 16-bit/32-bit <a href="/dos.html#MSDOS"
+      target="_self" rel="dofollow" title="Disk Operating System &raquo;
+      MS-DOS">MS-DOS</a> clone that uses <a href="/dos.html#RXDOS"
+      target="_self" rel="dofollow" title="Disk Operating System &raquo;
+      Versions of DOS Incompatible with MS-DOS &raquo;
+      RX-DOS">RX-DOS</a> memory management.</p>
       <p align="center"><a href="http://nxdos.sourceforge.net/"
       target="_blank" rel="nofollow"><img src="/img/nxdos_222952.jpg"
       height="152" width="320" border="0" class="boxes" alt="NX-DOS
@@ -1038,11 +1052,11 @@
       further information on <a href="/dos.html#PCDOS" target="_self"
       rel="nofollow" information="Disk Operating System &raquo; Versions
       of DOS Compatible with MS-DOS &raquo; PC DOS (International
-      Business Machines)">PC DOS 7</a>. Read what I found on <a
+      Business Machines)">PC DOS 7</a>. <!-- Read what I found on <a
       href="/pdf/pcdos63.pdf" target="_blank" rel="nofollow"
       title="white paper on Disk Operating System &raquo; Versions of
       DOS Compatible with MS-DOS &raquo; PC DOS (International Business
-      Machines)">PC DOS 6.3</a>. Also refer to the batch to <a
+      Machines)">PC DOS 6.3</a>. --> Also refer to the batch to <a
       href="/dos.html#MaintainHDD" target="_self" rel="dofollow"
       title="Disk Operating System &raquo; Maintaining a Hard Drive
       Running MS-DOS &amp; Windows">maintain</a> your HDD running on <a
@@ -1052,7 +1066,7 @@
       Operating System &raquo; Versions of DOS Compatible with MS-DOS
       &raquo; PC DOS (International Business Machines)">PC DOS</a>.</p>
     </section>
-    <!-- PDOS possible spot, although not marketed a DOS version -->
+    <!-- PDOS possible spot although not marketed a DOS version -->
     <section role="section">
       <h3 id="PTSDOS">PTS-DOS (PhystechSoft)</h3>
       <p>PTS-DOS <em>&quot;is a powerful and fastest DOS with a simple
@@ -1147,8 +1161,8 @@
               Versions of DOS Incompatible with MS-DOS &raquo; Atari DOS
               &raquo; SpartaDOS">SpartaDOS</a> marketed with a new name;
               strongly resembles <a href="/dos.html#MSDOS"
-              target="_self" rel="dofollow" title="Disk Operating
-              System &raquo; MS-DOS">MS-DOS</a>; shipped on a 64 KB ROM
+              target="_self" rel="dofollow" title="Disk Operating System
+              &raquo; MS-DOS">MS-DOS</a>; shipped on a 64 KB ROM
               cartridge.
             </li>
             <li id="RealDOS">
@@ -1159,22 +1173,23 @@
               &raquo; SpartaDOS">SpartaDOS 3.x</a>, possible clone.
             </li>
             <li id="BWDOS">
-              BW-DOS (by Jirí Bernasek, ?-1995): compatible with <a
-              href="/dos.html#SpartaDOS" target="_self" rel="dofollow"
-              title="Disk Operating System &raquo; Versions of DOS
-              Incompatible with MS-DOS &raquo; Atari DOS &raquo;
-              BW-DOS">SpartaDOS</a>; lower RAM use, ideal for older
-              400/800 models.
+              BW-DOS (by Jirí Bernasek, BeWeSoft, ?-1995): compatible
+              with <a href="/dos.html#SpartaDOS" target="_self"
+              rel="dofollow" title="Disk Operating System &raquo;
+              Versions of DOS Incompatible with MS-DOS &raquo; Atari DOS
+              &raquo; BW-DOS">SpartaDOS</a>; lower RAM use, ideal for
+              older Atari 400/800 models.
             </li>
           </ul>
           </nav><!-- previous list taken from
-            https://en.wikipedia.org/wiki/Atari_DOS#Third-party_DOS_programs
-          -->
+          https://en.wikipedia.org/wiki/Atari_DOS#Third-party_DOS_programs -->
         </section>
         <section role="section">
           <h3 id="CommodoreDOS">Commodore DOS</h3>
           <p>Commodore DOS (CBM DOS) was a beast of its own running from
-          ROM.</p>
+          ROM for the MOS 6502 family of chipsets &mdash; from PET
+          (1977) to C128 (1985). The most commonly used version was 2.0
+          that came in the C64.</p>
         </section>
         <section role="section">
           <h3 id="VSE">DOS/VSE</h3>
@@ -1254,13 +1269,14 @@
         mounting the subdirectory every time you need it or calling it
         from <tt>DOSBOX.CONF</tt>, at that point, go to the new virtual
         disk (<tt>X:</tt>) in order to access the contents of the
-        mounted directory (<tt>GAMES</tt>) as normally done in DOS.</p>
+        mounted directory (<tt>X:\GAMES</tt>) as normally done in most
+        DOS versions.</p>
         <pre>
           X:
         </pre>
-        <p>Just as with a real <tt>AUTOEXEC.BAT</tt>, in the
-        <tt>DOSBOX.CONF</tt>, you can call commands turning
-        <tt>ECHO</tt> off.</p>
+        <p>Just as with a real <tt>AUTOEXEC.BAT</tt>, the
+        <tt>[autoexec]</tt> section in the <tt>DOSBOX.CONF</tt> file,
+        you can call commands turning <tt>ECHO</tt> off.</p>
         <pre>
           [autoexec]
           ECHO OFF
@@ -1376,7 +1392,9 @@
               version.
             </li>
           </ul>
-        </nav>The latter was quoted from <tt>HELP</tt>.
+        </nav>
+        <p>The latter was quoted from the output of the <tt>HELP</tt>
+        command.</p>
       </section>
       <section role="section">
         <h3 id="DOSEMU">DOSEMU</h3>
@@ -1392,7 +1410,6 @@
         height="192" width="320" border="0" class="boxes" alt="DOSEMU
         1.4.0 after boot (Ubuntu GNOME Linux)" title="DOSEMU 1.4.0 after
         boot (Ubuntu GNOME Linux)"></p>
-        <!-- upload image to Wikipedia? -->
         <p>DOSEMU <em>&quot;uses <a href="/dos.html#FreeDOS"
         target="_self" rel="dofollow" title="Disk Operating System
         &raquo; Versions of DOS Compatible with MS-DOS &raquo;
@@ -1404,12 +1421,11 @@
         width="320" border="0" class="boxes" alt="DOSEMU 1.4.0 drive C
         with FreeGEM installation (Ubuntu GNOME Linux)" title="DOSEMU
         1.4.0 drive C with FreeGEM installation (Ubuntu GNOME
-        Linux)"></p><!-- upload image to Wikipedia? -->
+        Linux)"></p>
         <p align="center"><img src="/img/DOSEMU_drive_z(VOSC).png"
         height="190" width="320" border="0" class="boxes" alt="DOSEMU
         1.4.0 drive Z (Ubuntu GNOME Linux)" title="DOSEMU 1.4.0 drive Z
         (Ubuntu GNOME Linux)"></p>
-        <!-- upload image to Wikipedia? -->
         <p>DOSEMU mounts <tt>A:</tt> to access the floppy (<tt>B:</tt>
         reserved for second floppy), <tt>C:</tt> to access the DOSEMU
         environment acting as the OS including programs you install like
@@ -1422,15 +1438,15 @@
         where DOSEMU and all its commands reside.</p>
         <p align="center"><img src="/img/DOSEMU_OpenGEM6(VOSC).png"
         height="256" width="320" border="0" class="boxes" alt="OpenGEM 6
-        on DOSEMU 1.4.0" title="OpenGEM 6 on DOSEMU 1.4.0"></p><!--
-        upload image to Wikipedia? -->
+        on DOSEMU 1.4.0" title="OpenGEM 6 on DOSEMU 1.4.0"></p>
         <nav role="navigation" id="DOSEMU_CMD">
           <ul>
             <li>
               <tt>attrib</tt> &mdash; set and get file attributes
             </li>
             <li>
-              <tt>assign</tt> &mdash; assign a drive letter to a different drive
+              <tt>assign</tt> &mdash; assign a drive letter to a
+              different drive
             </li>
             <li>
               <tt>bwbasic</tt> &mdash; <a
@@ -1438,7 +1454,7 @@
               rel="nofollow" title="Bywater BASIC
               Interpreter">bywater</a> <a href="/basic.html"
               target="_self" rel="dofollow" title="Beginner's
-              All-purpose  Symbolic Instruction Code (BASIC)">BASIC</a>
+              All-purpose Symbolic Instruction Code (BASIC)">BASIC</a>
               Interpreter/Shell, version 2.20
             </li>
             <li>
@@ -1453,7 +1469,8 @@
               <tt>DEBUG</tt> command
             </li>
             <li>
-              <tt>deltree</tt> &mdash; utility for deleting files and subdirectories
+              <tt>deltree</tt> &mdash; utility for deleting files and
+              subdirectories
             </li>
             <li>
               <tt>diskcopy</tt> &mdash; copy whole disks
@@ -1471,7 +1488,8 @@
               <tt>fc</tt> &mdash; compares two files or sets of files
             </li>
             <li>
-              <tt>find</tt> &mdash; display all lines from a text file that contain 'string'
+              <tt>find</tt> &mdash; display all lines from a text file
+              that contain 'string'
               <br/>(NOTE: this is not the <a href="/unix.html"
               target="_self" rel="dofollow" title="Unix">Unix</a>
               <tt>find</tt>)
@@ -1487,24 +1505,26 @@
               directory
             </li>
             <li>
-              <tt>lib</tt> &mdash; librarian for OBJ files, creating a
-              LIB file
+              <tt>lib</tt> &mdash; librarian for <tt>OBJ</tt> files,
+              creating a <tt>LIB</tt> file
             </li>
             <li>
               <tt>loadhi</tt> &mdash; loads a program into the upper
               memory
             </li>
             <li>
-              <tt>mem</tt> &mdash; displays the amount of DOS memory used
+              <tt>mem</tt> &mdash; displays the amount of DOS memory
+              used
             </li>
             <li>
-              <tt>more</tt> &mdash; displays a text file one screen at a time
+              <tt>more</tt> &mdash; displays a text file one screen at a
+              time
             </li>
             <li>
               <tt>nansi</tt> &mdash; <tt>nansi.sys</tt>, an enhanced
-              <a href="/dos.html#MSDOS" target="_self"
-              rel="dofollow" title="Disk Operating System &raquo;
-              MS-DOS">MS-DOS</a> console driver
+              <a href="/dos.html#MSDOS" target="_self" rel="dofollow"
+              title="Disk Operating System &raquo; MS-DOS">MS-DOS</a>
+              console driver
             </li>
             <li>
               <tt>pause</tt> &mdash; will suspend execution of batch
@@ -1696,8 +1716,8 @@
               but do nothing important on X.
             </li>
             <li>
-              <tt>lredir</tt> &mdash; set/display redirection of a
-              <a href="/linux.html" target="_self" rel="dofollow"
+              <tt>lredir</tt> &mdash; set/display redirection of a <a
+              href="/linux.html" target="_self" rel="dofollow"
               title="Linux">Linux</a> directory to a DOS drive
             </li>
             <li>
@@ -1794,7 +1814,7 @@
         <p>Note that applications in GEM (FreeGEM and OpenGEM) are
         <tt>.APP</tt> files &mdash; not DOS or <a href="/windows.html"
         target="_self" rel="dofollow" title="Microsoft
-        Windows">Windows</a> <tt>.EXE</tt> files.</p>
+        Windows">Windows</a> <tt>.EXE</tt> or <tt>.COM</tt> files.</p>
         <p>Using the example above, on <a href="/linux.html"
         target="_self" rel="dofollow" title="Linux">Linux</a>, I
         installed DOSBox running OpenGEM, various applications from the

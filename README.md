@@ -1,5 +1,5 @@
                     FRN2000 & VintageOS v5D8BBEDD
-                   all rights reserved,  1997-2020
+                   all rights reserved,  1997-2021
               frn2000.com · vintageos.org · vintageos.org
 
 [VintageOS](https://vintageos.org/) is the source for information on
@@ -45,4 +45,4 @@ this file found in the
 
 [Read more about VintageOS.  » » »](README2.md)
 
-        frn2000.com · vintageos.org · vintageos.org · 1997-2020
+        frn2000.com · vintageos.org · vintageos.org · 1997-2021

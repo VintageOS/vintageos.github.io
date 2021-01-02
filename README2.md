@@ -1,5 +1,5 @@
                     FRN2000 & VintageOS v5D8BBEDD
-                   all rights reserved,  1997-2020
+                   all rights reserved,  1997-2021
               frn2000.com · vintageos.org · vintageos.org
 
 In the simplest definition, an operating system (OS) is a set of
@@ -40,4 +40,4 @@ with VirtualBox (free) or similar application.
 
 [« « «  Go back to the prior page.](README.md)
 
-        frn2000.com · vintageos.org · vintageos.org · 1997-2020
+        frn2000.com · vintageos.org · vintageos.org · 1997-2021

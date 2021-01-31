@@ -354,11 +354,12 @@
       improved. By using this technique, a DOS and <a
       href="/windows.html" target="_self" rel="dofollow"
       title="Microsoft Windows">Windows</a> set-up would work almost as
-      well as <tt>/swap</tt> <a href="/unix.html" target="_self"
+      well as <tt>/swap</tt> in <a href="/unix.html" target="_self"
       rel="dofollow" title="Unix">Unix</a>.</p>
       <p>Run <tt>FDISK.EXE</tt> from the boot disk.</p>
       <pre>
-        A:\FDISK
+        <!-- *spacer* -->
+				A:\FDISK
       </pre>
       <p>View old partitions, if any, and delete them.</p>
       <p>Delete first non-DOS partitions, then logical, then extended
@@ -374,7 +375,8 @@
       partition is close or over 2 GB, make 1 GB partitions. Then
       <tt>FORMAT</tt> each partition.</p>
       <pre>
-        A:\FORMAT C:
+        <!-- *spacer* -->
+				A:\FORMAT C:
         A:\FORMAT D:
         A:\FORMAT E:
       </pre>
@@ -391,7 +393,8 @@
       target="_self" rel="dofollow" title="Disk Operating System &raquo;
       MS-DOS">MS-DOS</a>.</p>
       <pre>
-        LASTDRIVE=Z
+        <!-- *spacer* -->
+				LASTDRIVE=Z
       </pre>
       <p>Create backup files (<tt>.BAK</tt>) of <tt>CONFIG.SYS</tt> and
       <tt>AUTOEXEC.BAT</tt> before doing changes. Should there be a
@@ -408,30 +411,35 @@
       (International Business Machines)">PC DOS</a>. Then save them with
       the new names.</p>
       <pre>
-        C:\EDIT
+        <!-- *spacer* -->
+				C:\EDIT
         C:\E
       </pre>
       <p>You may also copy them to new files with different names, of
       course.</p>
       <pre>
-        COPY AUTOEXEC.BAT AUTOEXEC.BAK
+        <!-- *spacer* -->
+				COPY AUTOEXEC.BAT AUTOEXEC.BAK
         COPY CONFIG.SYS CONFIG.BAK
       </pre>
       <p>At this point, you can create the RAM drive (or virtual disk)
       that I mentioned before.</p>
       <pre>
-        DEVICEHIGH=C:\WINDOWS\RAMDRIVE.SYS 2048 /E
+        <!-- *spacer* -->
+				DEVICEHIGH=C:\WINDOWS\RAMDRIVE.SYS 2048 /E
       </pre>
       <p>Do changes on <tt>CONFIG.SYS</tt> by adding the following lines
       to mount a CD-ROM in <a href="/dos.html#MSDOS" target="_self"
       rel="dofollow" title="Disk Operating System &raquo;
       MS-DOS">MS-DOS</a>.</p>
       <pre>
-        DEVICEHIGH=PRE&gt;C:\DOS\AOATAPI.SYS /D:IDECD000/Q
+        <!-- *spacer* -->
+				DEVICEHIGH=PRE&gt;C:\DOS\AOATAPI.SYS /D:IDECD000/Q
       </pre>
       <p>Then edit <tt>AUTOEXEC.BAT</tt>.</p>
       <pre>
-        LH=C:\DOS\MSCDEX.EXE /D:IDECD000
+        <!-- *spacer* -->
+				LH=C:\DOS\MSCDEX.EXE /D:IDECD000
       </pre>
       <p>Copy <tt>AOATAPI.SYS</tt> to the HDD from <a
       href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
@@ -439,7 +447,8 @@
       <tt>CONFIG.SYS</tt> and <tt>AUTOEXEC.BAT</tt> need this file, so
       copy it to your HDD.</p>
       <pre>
-        A:\COPY AOATAPI.SYS C:
+        <!-- *spacer* -->
+				A:\COPY AOATAPI.SYS C:
       </pre>
       <p>Run <tt>MEMMAKER</tt> (<a href="/dos.html#MSDOS" target="_self"
       rel="dofollow" title="Disk Operating System &raquo; MS-DOS">MS-DOS
@@ -480,7 +489,8 @@
       <tt><em>FOOBAR</em>PD.COM</tt> with the correct packet driver file
       name.</p>
       <pre>
-        LH <em>FOOBAR</em>PD.COM 0X60 5 0X300
+        <!-- *spacer* -->
+				LH <em>FOOBAR</em>PD.COM 0X60 5 0X300
       </pre>
       <p>In the example above, the first parameter (<tt>0X60</tt>) sets
       the interrupt. The second one (<tt>5</tt>) sets the IRQ and the
@@ -501,7 +511,8 @@
       <p>If you do not want to see the DOS commands while the batch file
       is running, edit the batch turning <tt>ECHO</tt> off.</p>
       <pre>
-        ECHO OFF
+        <!-- *spacer* -->
+				ECHO OFF
       </pre>
       <p>All files are randomly saved on your HDD. A practical way to
       manage your HDD would be having all parts that form a file
@@ -510,14 +521,16 @@
       (<tt>/U</tt>), sorts them by extensions (<tt>/SE</tt>) and skips
       using extended or upper memory (<tt>/SKIPHIGH</tt>).</p>
       <pre>
-        DEFRAG /F/U/SE/SKIPHIGH C:
+        <!-- *spacer* -->
+				DEFRAG /F/U/SE/SKIPHIGH C:
       </pre>
       <p><tt>SCANDISK</tt> repairs problems that your all disks may have
       automatically without prompting (asking), deletes errors, skips
       summary, and checks the surface the disk. This line of code might
       not work with other distributions of DOS.</p>
       <pre>
-        SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE
+        <!-- *spacer* -->
+				SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE
       </pre>
       <p>The batch
       creates (if not already created) and assigns <tt>C:\TEMP</tt> as
@@ -527,14 +540,16 @@
       serious trouble if the installation routine deleted the
       <tt>C:\DOS</tt> directory.</p>
       <pre>
-        IF NOT EXIST C:\TEMP MKDIR C:\TEMP
+        <!-- *spacer* -->
+				IF NOT EXIST C:\TEMP MKDIR C:\TEMP
         TEMP=C:\TEMP
       </pre>
       <p>If you are running Microsoft Office 6.0 or earlier, you might
       want to delete all temporary files, which start with a tilde
       (<tt>~</tt>).</p>
       <pre>
-        DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A
+        <!-- *spacer* -->
+				DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A
       </pre>
       <p>Note that using the recursive switch (<tt>/S</tt>) in
       <tt>DEL</tt> tells the system to delete a certain criteria (in
@@ -546,7 +561,8 @@
       subdirectories without being prompted to confirm deletion,
       regardless of their attributes.</p>
       <pre>
-        DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A
+        <!-- *spacer* -->
+				DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A
       </pre>
       <p>If you want to generate a log of the deletions, send the output
       to text file (for this example, <tt>FOO.TXT</tt>). In the example
@@ -556,7 +572,8 @@
       the log has been generated for cosmetic purposes. As such, these
       blank lines can be excluded.</p>
       <pre>
-        ECHO OFF
+        <!-- *spacer* -->
+				ECHO OFF
         ECHO %DATE% %TIME% &gt; FOO.TXT
         DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
         DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
@@ -566,7 +583,8 @@
       <p>Putting all the commands together, your batch file would look
       as the sample below.</p>
       <pre>
-        ECHO OFF
+        <!-- *spacer* -->
+				ECHO OFF
         ECHO %DATE% %TIME% &gt; FOO.TXT
         DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
         DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
@@ -582,7 +600,8 @@
       or delay). Therefore the sample above is the same as the one
       below, but the one below is easier on the eyes.</p>
       <pre>
-        ECHO OFF
+        <!-- *spacer* -->
+				ECHO OFF
         <!-- spacer to make batch pretty and legible -->
         ECHO %DATE% %TIME% &gt; FOO.TXT
         <!-- spacer to make batch pretty and legible -->
@@ -1264,7 +1283,8 @@
         href="/unix.html" target="_self" rel="dofollow"
         title="Unix">Unix</a>).</p>
         <pre>
-          MOUNT X X:\GAMES
+          <!-- *spacer* -->
+					MOUNT X X:\GAMES
         </pre>
         <p>The latter command can be added after the line
         <tt>[autoexec]</tt> in the <tt>DOSBOX.CONF</tt>, which serves as
@@ -1275,13 +1295,15 @@
         mounted directory (<tt>X:\GAMES</tt>) as normally done in most
         DOS versions.</p>
         <pre>
-          X:
+          <!-- *spacer* -->
+					X:
         </pre>
         <p>Just as with a real <tt>AUTOEXEC.BAT</tt>, the
         <tt>[autoexec]</tt> section in the <tt>DOSBOX.CONF</tt> file,
         you can call commands turning <tt>ECHO</tt> off.</p>
         <pre>
-          [autoexec]
+          <!-- *spacer* -->
+					[autoexec]
           ECHO OFF
           MOUNT X X:\GAMES
         </pre>
@@ -1784,7 +1806,8 @@
         be on <tt>C:</tt>. You would need the path where you want to
         mount OpenGEM to be installed.</p>
         <pre>
-          MOUNT C X:\<em>OpenGEM</em>
+          <!-- *spacer* -->
+					MOUNT C X:\<em>OpenGEM</em>
         </pre>
         <p>Once installed, <tt>GEM.BAT</tt> can be ran from the
         <tt>C:</tt> virtual disk. As mentioned before, you can edit
@@ -1809,7 +1832,8 @@
         from a floppy so you had to mount the of the directory
         containing the installation files to <tt>A:</tt>.</p>
         <pre>
-          MOUNT A X:\[<em>path</em>]
+          <!-- *spacer* -->
+					MOUNT A X:\[<em>path</em>]
         </pre>
         <p>Then run the <tt>INSTALL.APP</tt>, which calls
         <tt>INSTALL.TXT</tt> to copy the installation files

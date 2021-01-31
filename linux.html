@@ -133,73 +133,73 @@
     </select>
   </nav>
   <main role="main">
-		<section role="section">
-			<article role="article">
-				<h1 id="main">What is Linux?</h1>
-				<p><a href="https://linuxfoundation.org/" target="_blank"
-				rel="nofollow" title="The Linux Foundation">Linux</a> is a <a
-				href="/unix.html" target="_blank" rel="nofollow"
-				title="Unix">UNIX&reg;</a> clone OS based on <a
-				href="/others.html#Minix" target="_self" rel="dofollow"
-				title="Other Operating Systems &raquo; MINIX">MINIX</a>, created
-				in 1991 by Linus Torvalds from the University of Helsinki.
-				Torvalds controls all changes and releases of the <a
-				href="http://kernel.org/" target="_blank" rel="nofollow"
-				title="The Linux Kernel Archives">Linux kernel</a>.</p>
-				<p>For close to three decades, Linux has been one of the most
-				commonly used and most reliable OSs for servers in the market,
-				no matter what paid third-party reports that are plaguing the
-				internet indicate.</p>
-				<p>Most Linux distributions include a collection of programs that
-				run on the Linux kernel like X, KDE, GNOME, Cinnamon or other
-				desktop environments as well as LibreOffice and other office or
-				home utilities. Under the Linux name, you can get RHEL (paid
-				subscription, enterprise licensing), Fedora, CentOS, Ubuntu, Mint
-				(my distribution of choice), Mandriva, Debian, Slackware and many
-				others. In the past, you could buy the disks for any distribution
-				from the developers or third-party vendors. Nowadays you would
-				most likely download the distribution of your choice as an
-				<tt>.ISO</tt> and burn it to USB drive.</p>
-				<pre>
-					<!-- *spacer* -->
-					dd if=linux_image.iso of=/dev/sdb1
-				</pre>
-			</article>
-			<article role="article">
-				<h2 id="Installation">Installing Linux:</h2>
-				<p>Before trying to install Linux, get a full inventory of
-				what your computer has. In the past, you might have had to help
-				the installer recognize the hardware. Nowadays the installer
-				takes care of most the configuration.</p>
-				<p>Boot from the USB drive and sit back. The only thing you
-				would have to decide is if you want to format the whole drive or
-				share it with another OS.</p>
-				<p>Depending on the distribution (<em>distro</em>), you might
-				need to update your installation right away. If the
-				<em>distro</em> is based on Debian and it has <tt>apt</tt> as in
-				the case of Ubuntu and its derivatives like Linux Mint, you
-				might want to run the following on the console.</p>
-				<pre>
-					<!-- *spacer* -->
-					apt-get update &amp;&amp;
-					apt-get upgrade &amp;&amp;
-					apt-get autoclean -y &amp;&amp;
-					apt-get autoremove -y &amp;&amp;
-					apt-get purge -y &amp;&amp;
-					reboot
-				</pre>
-				<p>I would recommend doing the latter on a daily basis.</p>
-			</article>
-			<article role="article">
-				<h2 id="SBC">Single-Board Computers:</h2>
-				<p>Some vendors have started to offer single-board computer
-				(SBC) units. For example, the Raspberry Pi Foundation released
-				its Raspberry Pi 1 Model A in February of 2012. After several
-				generations with a price tag under $50, several projects have
-				used Raspberry Pi hardware.</p>
-			</article>
-		</section>
-	</main><!-- end of main body -->
+    <section role="section">
+      <article role="article">
+        <h1 id="main">What is Linux?</h1>
+        <p><a href="https://linuxfoundation.org/" target="_blank"
+        rel="nofollow" title="The Linux Foundation">Linux</a> is a <a
+        href="/unix.html" target="_blank" rel="nofollow"
+        title="Unix">UNIX&reg;</a> clone OS based on <a
+        href="/others.html#Minix" target="_self" rel="dofollow"
+        title="Other Operating Systems &raquo; MINIX">MINIX</a>, created
+        in 1991 by Linus Torvalds from the University of Helsinki.
+        Torvalds controls all changes and releases of the <a
+        href="http://kernel.org/" target="_blank" rel="nofollow"
+        title="The Linux Kernel Archives">Linux kernel</a>.</p>
+        <p>For close to three decades, Linux has been one of the most
+        commonly used and most reliable OSs for servers in the market,
+        no matter what paid third-party reports that are plaguing the
+        internet indicate.</p>
+        <p>Most Linux distributions include a collection of programs that
+        run on the Linux kernel like X, KDE, GNOME, Cinnamon or other
+        desktop environments as well as LibreOffice and other office or
+        home utilities. Under the Linux name, you can get RHEL (paid
+        subscription, enterprise licensing), Fedora, CentOS, Ubuntu, Mint
+        (my distribution of choice), Mandriva, Debian, Slackware and many
+        others. In the past, you could buy the disks for any distribution
+        from the developers or third-party vendors. Nowadays you would
+        most likely download the distribution of your choice as an
+        <tt>.ISO</tt> and burn it to USB drive.</p>
+        <pre>
+          <!-- *spacer* -->
+          dd if=linux_image.iso of=/dev/sdb1
+        </pre>
+      </article>
+      <article role="article">
+        <h2 id="Installation">Installing Linux:</h2>
+        <p>Before trying to install Linux, get a full inventory of
+        what your computer has. In the past, you might have had to help
+        the installer recognize the hardware. Nowadays the installer
+        takes care of most the configuration.</p>
+        <p>Boot from the USB drive and sit back. The only thing you
+        would have to decide is if you want to format the whole drive or
+        share it with another OS.</p>
+        <p>Depending on the distribution (<em>distro</em>), you might
+        need to update your installation right away. If the
+        <em>distro</em> is based on Debian and it has <tt>apt</tt> as in
+        the case of Ubuntu and its derivatives like Linux Mint, you
+        might want to run the following on the console.</p>
+        <pre>
+          <!-- *spacer* -->
+          apt-get update &amp;&amp;
+          apt-get upgrade &amp;&amp;
+          apt-get autoclean -y &amp;&amp;
+          apt-get autoremove -y &amp;&amp;
+          apt-get purge -y &amp;&amp;
+          reboot
+        </pre>
+        <p>I would recommend doing the latter on a daily basis.</p>
+      </article>
+      <article role="article">
+        <h2 id="SBC">Single-Board Computers:</h2>
+        <p>Some vendors have started to offer single-board computer
+        (SBC) units. For example, the Raspberry Pi Foundation released
+        its Raspberry Pi 1 Model A in February of 2012. After several
+        generations with a price tag under $50, several projects have
+        used Raspberry Pi hardware.</p>
+      </article>
+    </section>
+  </main><!-- end of main body -->
   <article role="article">
     <p id="CreativeCommons" align="center"><!-- beginning of Creative
     Commons license code &mdash; Attribution-NonCommercial-NoDerivs 3.0

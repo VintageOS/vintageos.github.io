@@ -359,7 +359,7 @@
       <p>Run <tt>FDISK.EXE</tt> from the boot disk.</p>
       <pre>
         <!-- *spacer* -->
-				A:\FDISK
+        A:\FDISK
       </pre>
       <p>View old partitions, if any, and delete them.</p>
       <p>Delete first non-DOS partitions, then logical, then extended
@@ -376,7 +376,7 @@
       <tt>FORMAT</tt> each partition.</p>
       <pre>
         <!-- *spacer* -->
-				A:\FORMAT C:
+        A:\FORMAT C:
         A:\FORMAT D:
         A:\FORMAT E:
       </pre>
@@ -394,7 +394,7 @@
       MS-DOS">MS-DOS</a>.</p>
       <pre>
         <!-- *spacer* -->
-				LASTDRIVE=Z
+        LASTDRIVE=Z
       </pre>
       <p>Create backup files (<tt>.BAK</tt>) of <tt>CONFIG.SYS</tt> and
       <tt>AUTOEXEC.BAT</tt> before doing changes. Should there be a
@@ -412,21 +412,21 @@
       the new names.</p>
       <pre>
         <!-- *spacer* -->
-				C:\EDIT
+        C:\EDIT
         C:\E
       </pre>
       <p>You may also copy them to new files with different names, of
       course.</p>
       <pre>
         <!-- *spacer* -->
-				COPY AUTOEXEC.BAT AUTOEXEC.BAK
+        COPY AUTOEXEC.BAT AUTOEXEC.BAK
         COPY CONFIG.SYS CONFIG.BAK
       </pre>
       <p>At this point, you can create the RAM drive (or virtual disk)
       that I mentioned before.</p>
       <pre>
         <!-- *spacer* -->
-				DEVICEHIGH=C:\WINDOWS\RAMDRIVE.SYS 2048 /E
+        DEVICEHIGH=C:\WINDOWS\RAMDRIVE.SYS 2048 /E
       </pre>
       <p>Do changes on <tt>CONFIG.SYS</tt> by adding the following lines
       to mount a CD-ROM in <a href="/dos.html#MSDOS" target="_self"
@@ -434,12 +434,12 @@
       MS-DOS">MS-DOS</a>.</p>
       <pre>
         <!-- *spacer* -->
-				DEVICEHIGH=PRE&gt;C:\DOS\AOATAPI.SYS /D:IDECD000/Q
+        DEVICEHIGH=PRE&gt;C:\DOS\AOATAPI.SYS /D:IDECD000/Q
       </pre>
       <p>Then edit <tt>AUTOEXEC.BAT</tt>.</p>
       <pre>
         <!-- *spacer* -->
-				LH=C:\DOS\MSCDEX.EXE /D:IDECD000
+        LH=C:\DOS\MSCDEX.EXE /D:IDECD000
       </pre>
       <p>Copy <tt>AOATAPI.SYS</tt> to the HDD from <a
       href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
@@ -448,7 +448,7 @@
       copy it to your HDD.</p>
       <pre>
         <!-- *spacer* -->
-				A:\COPY AOATAPI.SYS C:
+        A:\COPY AOATAPI.SYS C:
       </pre>
       <p>Run <tt>MEMMAKER</tt> (<a href="/dos.html#MSDOS" target="_self"
       rel="dofollow" title="Disk Operating System &raquo; MS-DOS">MS-DOS
@@ -490,7 +490,7 @@
       name.</p>
       <pre>
         <!-- *spacer* -->
-				LH <em>FOOBAR</em>PD.COM 0X60 5 0X300
+        LH <em>FOOBAR</em>PD.COM 0X60 5 0X300
       </pre>
       <p>In the example above, the first parameter (<tt>0X60</tt>) sets
       the interrupt. The second one (<tt>5</tt>) sets the IRQ and the
@@ -512,7 +512,7 @@
       is running, edit the batch turning <tt>ECHO</tt> off.</p>
       <pre>
         <!-- *spacer* -->
-				ECHO OFF
+        ECHO OFF
       </pre>
       <p>All files are randomly saved on your HDD. A practical way to
       manage your HDD would be having all parts that form a file
@@ -522,7 +522,7 @@
       using extended or upper memory (<tt>/SKIPHIGH</tt>).</p>
       <pre>
         <!-- *spacer* -->
-				DEFRAG /F/U/SE/SKIPHIGH C:
+        DEFRAG /F/U/SE/SKIPHIGH C:
       </pre>
       <p><tt>SCANDISK</tt> repairs problems that your all disks may have
       automatically without prompting (asking), deletes errors, skips
@@ -530,7 +530,7 @@
       not work with other distributions of DOS.</p>
       <pre>
         <!-- *spacer* -->
-				SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE
+        SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE
       </pre>
       <p>The batch
       creates (if not already created) and assigns <tt>C:\TEMP</tt> as
@@ -541,7 +541,7 @@
       <tt>C:\DOS</tt> directory.</p>
       <pre>
         <!-- *spacer* -->
-				IF NOT EXIST C:\TEMP MKDIR C:\TEMP
+        IF NOT EXIST C:\TEMP MKDIR C:\TEMP
         TEMP=C:\TEMP
       </pre>
       <p>If you are running Microsoft Office 6.0 or earlier, you might
@@ -549,7 +549,7 @@
       (<tt>~</tt>).</p>
       <pre>
         <!-- *spacer* -->
-				DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A
+        DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A
       </pre>
       <p>Note that using the recursive switch (<tt>/S</tt>) in
       <tt>DEL</tt> tells the system to delete a certain criteria (in
@@ -562,7 +562,7 @@
       regardless of their attributes.</p>
       <pre>
         <!-- *spacer* -->
-				DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A
+        DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A
       </pre>
       <p>If you want to generate a log of the deletions, send the output
       to text file (for this example, <tt>FOO.TXT</tt>). In the example
@@ -573,7 +573,7 @@
       blank lines can be excluded.</p>
       <pre>
         <!-- *spacer* -->
-				ECHO OFF
+        ECHO OFF
         ECHO %DATE% %TIME% &gt; FOO.TXT
         DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
         DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
@@ -584,7 +584,7 @@
       as the sample below.</p>
       <pre>
         <!-- *spacer* -->
-				ECHO OFF
+        ECHO OFF
         ECHO %DATE% %TIME% &gt; FOO.TXT
         DEL C:\~*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
         DEL C:\TEMP\*.* /F/S/Q/A:R/A:H/A:S/A:A &gt; FOO.TXT
@@ -601,7 +601,7 @@
       below, but the one below is easier on the eyes.</p>
       <pre>
         <!-- *spacer* -->
-				ECHO OFF
+        ECHO OFF
         <!-- spacer to make batch pretty and legible -->
         ECHO %DATE% %TIME% &gt; FOO.TXT
         <!-- spacer to make batch pretty and legible -->
@@ -635,12 +635,12 @@
         (International Business Machines)">PC DOS</a> during the DOS
         heyday in the 1980s. It has changed owners in the past two
         decades from Digital Research (DR) to Novel as Novel DOS (1991),
-				to Caldera as OpenDOS (1996), to DeviceLogics once again as
-				DR-DOS (2002). Since its last incarnation, DR-DOS/OpenDOS
-				Enhancement Project was started as a community initiative to
-				keep its <a href="/foss.html" target="_self" rel="dofollow"
-				title="Free and Open Source">open source</a> up to date with
-				technology.</p>
+        to Caldera as OpenDOS (1996), to DeviceLogics once again as
+        DR-DOS (2002). Since its last incarnation, DR-DOS/OpenDOS
+        Enhancement Project was started as a community initiative to
+        keep its <a href="/foss.html" target="_self" rel="dofollow"
+        title="Free and Open Source">open source</a> up to date with
+        technology.</p>
       </section>
     <!-- CONTINUE? -->
       <section role="section">
@@ -1196,8 +1196,8 @@
             </li>
             <li id="BWDOS">
               BW-DOS (Jirí Bernasek, BeWeSoft, ?-1995): compatible with
-							<a href="/dos.html#SpartaDOS" target="_self"
-							rel="dofollow" title="Disk Operating System &raquo;
+              <a href="/dos.html#SpartaDOS" target="_self"
+              rel="dofollow" title="Disk Operating System &raquo;
               Versions of DOS Incompatible with MS-DOS &raquo; Atari DOS
               &raquo; BW-DOS">SpartaDOS</a>; lower RAM use, ideal for
               older Atari 400/800 models.
@@ -1284,7 +1284,7 @@
         title="Unix">Unix</a>).</p>
         <pre>
           <!-- *spacer* -->
-					MOUNT X X:\GAMES
+          MOUNT X X:\GAMES
         </pre>
         <p>The latter command can be added after the line
         <tt>[autoexec]</tt> in the <tt>DOSBOX.CONF</tt>, which serves as
@@ -1296,14 +1296,14 @@
         DOS versions.</p>
         <pre>
           <!-- *spacer* -->
-					X:
+          X:
         </pre>
         <p>Just as with a real <tt>AUTOEXEC.BAT</tt>, the
         <tt>[autoexec]</tt> section in the <tt>DOSBOX.CONF</tt> file,
         you can call commands turning <tt>ECHO</tt> off.</p>
         <pre>
           <!-- *spacer* -->
-					[autoexec]
+          [autoexec]
           ECHO OFF
           MOUNT X X:\GAMES
         </pre>
@@ -1807,7 +1807,7 @@
         mount OpenGEM to be installed.</p>
         <pre>
           <!-- *spacer* -->
-					MOUNT C X:\<em>OpenGEM</em>
+          MOUNT C X:\<em>OpenGEM</em>
         </pre>
         <p>Once installed, <tt>GEM.BAT</tt> can be ran from the
         <tt>C:</tt> virtual disk. As mentioned before, you can edit
@@ -1833,7 +1833,7 @@
         containing the installation files to <tt>A:</tt>.</p>
         <pre>
           <!-- *spacer* -->
-					MOUNT A X:\[<em>path</em>]
+          MOUNT A X:\[<em>path</em>]
         </pre>
         <p>Then run the <tt>INSTALL.APP</tt>, which calls
         <tt>INSTALL.TXT</tt> to copy the installation files

@@ -59,7 +59,7 @@ body
     width: 75%;
     color: #000000;
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 18px;
     text-align: left;
@@ -68,33 +68,33 @@ body
 h1
   {
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 26px;
   }
 
 h2
   {
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    line-height: 22px;
+    line-height: 24px;
   }
 
 h3
   {
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 20px;
+    line-height: 22px;
   }
 
 h4
   {
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 18px;
+    line-height: 20px;
   }
 
 hr
@@ -109,9 +109,9 @@ article body main nav select p ol option ul li
   {
     color: #000000;
     font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
-    line-height: 20px;
+    line-height: 18px;
     text-align: left;
   }
 
@@ -120,7 +120,7 @@ pre
     /* color: #FFBF00;    monochrome amber  */
     /* color: #39FF14;    monochrome green  */
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 18px;
     background: #FFFFFF;
@@ -132,7 +132,7 @@ tt
     /* color: #FFBF00;    monochrome amber  */
     /* color: #39FF14;    monochrome green  */
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 18px;
     /* background: #000000; */
@@ -168,7 +168,7 @@ a:hover
 .boxes
   {
     padding: 5px 5px 5px 5px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     border: 1pt solid #C0C0C0;
   }
@@ -177,7 +177,7 @@ a:hover
   {
     padding: 5px 5px 5px 5px;
     background-color: #F7F7F7;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     border: 1pt solid #C0C0C0;
   }
@@ -190,14 +190,14 @@ a:hover
 
 .regTXT
   {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
 .smTXT
   {
     font-size: 10px;
-    line-height: 13px;
+    line-height: 15px;
   }
 
 /* ------------------------------- EOF ------------------------------ */

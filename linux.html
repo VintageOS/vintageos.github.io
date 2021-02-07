@@ -150,15 +150,16 @@
         commonly used and most reliable OSs for servers in the market,
         no matter what paid third-party reports that are plaguing the
         internet indicate.</p>
-        <p>Most Linux distributions include a collection of programs that
-        run on the Linux kernel like X, KDE, GNOME, Cinnamon or other
-        desktop environments as well as LibreOffice and other office or
-        home utilities. Under the Linux name, you can get RHEL (paid
-        subscription, enterprise licensing), Fedora, CentOS, Ubuntu, Mint
-        (my distribution of choice), Mandriva, Debian, Slackware and many
-        others. In the past, you could buy the disks for any distribution
-        from the developers or third-party vendors. Nowadays you would
-        most likely download the distribution of your choice as an
+        <p>Most Linux distributions include a collection of programs
+        that run on the Linux kernel like X, KDE, GNOME, Cinnamon or
+        other desktop environments as well as LibreOffice and other
+        office or home utilities. Under the Linux name, you can get RHEL
+        (paid subscription, enterprise licensing), Fedora, CentOS,
+        Ubuntu, Mint (currently my distribution of choice), Mandriva,
+        Debian, Slackware and many others. When Linux became popular
+        (c. 1995-99), you could buy disks for any distribution from the
+        developers or third-party vendors. Nowadays you would most
+        likely download the distribution of your choice as an
         <tt>.ISO</tt> and burn it to USB drive.</p>
         <pre>
           <!-- *spacer* -->
@@ -166,11 +167,184 @@
         </pre>
       </article>
       <article role="article">
+        <h2 id="Shells">Shells</h2>
+        <p>Because there many <em>distros</em> in the market (mostly
+        based on a parent <em>distro</em> &mdash; for example, Linux
+        Mint based on Ubuntu, which is based on Debian &mdash; learning
+        Linux is not necesarily learning how to use the GUI installed in
+        the <em>distro</em> of your choice. Learning Linux is learning
+        how to operate the command language interpreter or shell. Just
+        like the number of <em>distros</em>, there are several shells
+        available for <a href="/unix.html" target="_blank"
+        rel="nofollow" title="Unix">UNIX&reg;</a> and <a
+        href="/unix.html" target="_blank" rel="nofollow"
+        title="Unix">Unix</a>-like OSs.</p>
+        <ul>
+          <li>
+            <p id="sh">Bourne shell (<tt>sh</tt>) was developed by
+            Stephen Bourne for Bell Labs in 1979 for Version 7 Unix. The
+            prompt is <tt>$</tt> in user mode
+            (<tt>foobar@foobar:~$</tt>) and <tt>#</tt> as root <tt>sudo
+            -i</tt> (<tt>root@foobar:~#</tt>).</p>
+            <ul>
+              <li>
+                <p id="bash"><a href="https://gnu.org/software/bash/"
+                target="_blank" rel="nofollow" title="Bourne Again
+                shell">Bourne Again shell</a> (<a
+                href="https://gnu.org/software/bash/" target="_blank"
+                rel="nofollow" title="Bourne Again
+                shell"><tt>bash</tt></a>) was developed by Brian Fox for
+                the GNU Project in 1989 as a replacement of the 1979 <a
+                href="/linux.html#sh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo; sh">Bourne</a>
+                shell. It <em>&quot;incorporates useful features from
+                the <a href="/linux.html#ksh" target="_blank"
+                rel="nofollow" title="Linux &raquo; Shells &raquo;
+                Bourne &raquo; Korn">Korn shell</a> (<tt><a
+                href="/linux.html#ksh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo; Bourne &raquo;
+                Korn">ksh</a></tt>) and the <a href="/linux.html#csh"
+                target="_blank" rel="nofollow" title="Linux &raquo;
+                Shells &raquo; csh">C shell</a> (<tt><a
+                href="/linux.html#csh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo;
+                C">csh</a></tt>)&quot;</em> (GNU Project, Sep. 2020).
+                Bash is the most used and most commonly pre-installed in
+                many Linux distributions. This is the shell that I have
+                used most and therefore I am most comfortable with.</p>
+                <p align="center"><a
+                href="https://commons.wikimedia.org/w/index.php?curid=509725"
+                target="_blank" rel="nofollow"><img
+                src="/img/529px-Bash_screenshot.png" height="480"
+                width="320" border="0" class="boxes" alt="By Emx -
+                Wikimedia Foundation, GPL,
+                https://commons.wikimedia.org/w/index.php?curid=509725"
+                title="By Emx - Wikimedia Foundation, GPL,
+                https://commons.wikimedia.org/w/index.php?curid=509725"></a></p>
+              </li>
+              <li>
+                <p id="ksh"><a href="http://kornshell.org/"
+                target="_blank" rel="nofollow"
+                title="KornShell">KornShell</a> (<tt><a
+                href="/linux.html#ksh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo; Bourne &raquo;
+                Korn">ksh</a></tt>) was developed by David Korn for Bell
+                Labs in 1983. It is backward compatible with <a
+                href="/linux.html#ksh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo; Bourne &raquo;
+                Bash">bash</a> and partially compatible with <a
+                href="/linux.html#csh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo; csh">C
+                shell</a>.</p>
+                <p align="center"><a
+                href="https://commons.wikimedia.org/w/index.php?curid=30558744"
+                target="_blank" rel="nofollow"><img
+                src="/img/640px-OpenBSD_ksh_Interaction.png"
+                height="295" width="250" border="0" class="boxes"
+                alt="By Huihermit - Own work, Public Domain,
+                https://commons.wikimedia.org/w/index.php?curid=30558744"
+                title="By Huihermit - Own work, Public Domain,
+                https://commons.wikimedia.org/w/index.php?curid=30558744"></a></p>
+              </li>
+              <li>
+                <p id="ash"><a
+                href="https://in-ulm.de/~mascheck/various/ash/"
+                target="_blank" rel="nofollow" title="Almquist
+                shell">Almquist shell</a> (<a
+                href="https://in-ulm.de/~mascheck/various/ash/"
+                target="_blank" rel="nofollow" title="Almquist
+                shell"><tt>ash</tt></a>) was developed by Kenneth
+                Almquist in 1989 as a replacement for the <a
+                href="/linux.html#sh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo; Bourne
+                Shell">Bourne</a> shell in System V4 (<a
+                href="/bsd.html" target="_self" rel="dofollow"
+                title="Berkeley Software Distribution">BSD</a>).</p>
+                <ul>
+                  <li>
+                    <p><a
+                    href="http://gondor.apana.org.au/~herbert/dash/"
+                    target="_blank" rel="nofollow" title="Almquist
+                    shell">Debian Almquist shell</a> (<a
+                    href="http://gondor.apana.org.au/~herbert/dash/"
+                    target="_blank" rel="nofollow" title="Almquist
+                    shell"><tt>dash</tt></a>) is the Debian version of
+                    <a href="/linux.html#sh" target="_blank"
+                    rel="nofollow" title="Linux &raquo; Shells &raquo;
+                    Almquist shell"><tt>ash</tt></a> developed by
+                    Herbert Xu in 1997. <tt>dash</tt> became the default
+                    shell in Debian GNU/Linux and Debian-based
+                    distributions like Ubuntu for boot sequence.</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p id="csh">C shell (<tt>csh</tt>) was developed by Bill Joy
+            in 1978 for <a href="/bsd.html" target="_self"
+            rel="dofollow" title="Berkeley Software
+            Distribution">2BSD</a>. The prompt is <tt>%</tt> in user
+            mode.</p>
+            <ul>
+              <li>
+                <p id="tcsh"><a href="https://tcsh.org/" target="_blank"
+                rel="nofollow" title="TCSH">TENEX/TOPS C shell</a> (<a
+                href="https://tcsh.org/" target="_blank" rel="nofollow"
+                title="TCSH"><tt>tcsh</tt></a>, pronounced
+                <em>tish</em>) was developed by Ken Greer at Carnegie
+                Mellon University in 1975 and merged <tt>tcsh</tt> into
+                <a href="/linux.html#csh" target="_blank" rel="nofollow"
+                title="Linux &raquo; Shells &raquo;
+                csh"><tt>csh</tt></a> in 1981. Mike Ellis at Fairchild
+                A.I. Labs expanded <tt>tcsh</tt> with command
+                completition in 1983. Other key developers include Paul
+                Placeway and Christos Zoulas. It is backward compatible
+                with <a href="/linux.html#csh" target="_blank"
+                rel="nofollow" title="Linux &raquo; Shells &raquo;
+                csh"><tt>csh</tt></a>.</p>
+                <p align="center"><a
+                href="https://commons.wikimedia.org/w/index.php?curid=58368724"
+                target="_blank" rel="nofollow"><img
+                src="/img/640px-TC_Shell.png" height="295" width="250"
+                border="0" class="boxes" alt="By iluxa777 - Own work, CC
+                BY-SA 4.0,
+                https://commons.wikimedia.org/w/index.php?curid=58368724"
+                title="By iluxa777 - Own work, CC BY-SA 4.0,
+                https://commons.wikimedia.org/w/index.php?curid=58368724"></a></p>
+              </li>
+              <li>
+                <p id="zsh"><a href="https://zsh.org/" target="_blank"
+                rel="nofollow" title="Z shell">Z shell</a> (<a
+                href="https://zsh.org/" target="_blank" rel="nofollow"
+                title="Z shell"><tt>zsh</tt></a>) was written by Paul
+                Falstad in 1990 while studying at Princeton University.
+                It is named after then-Princeton professor Zhong Shao.
+                In 2019, Zsh became the default shell in <a
+                href="/macos.html" target="_self" rel="dofollow"
+                title="macOS">macOS</a>.</p>
+                <p align="center"><a
+                href="https://commons.wikimedia.org/w/index.php?curid=79476954"
+                target="_blank" rel="nofollow"><img
+                src="/img/640px-Zsh_5.7.1_screenshot.png"
+                height="295" width="250" border="0" class="boxes"
+                alt="By Paul FalstadScreenshot:Vulphere - Self-taken;
+                derivative work, MIT,
+                https://commons.wikimedia.org/w/index.php?curid=79476954"
+                title="By Paul FalstadScreenshot:Vulphere - Self-taken;
+                derivative work, MIT,
+                https://commons.wikimedia.org/w/index.php?curid=79476954"></a></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+      <article role="article">
         <h2 id="Installation">Installing Linux:</h2>
-        <p>Before trying to install Linux, get a full inventory of
-        what your computer has. In the past, you might have had to help
-        the installer recognize the hardware. Nowadays the installer
-        takes care of most the configuration.</p>
+        <p>Before trying to install Linux, get a full inventory of what
+        your computer has. In the past, you might have had to help the
+        installer recognize the hardware. Nowadays the installer takes
+        care of most the configuration.</p>
         <p>Boot from the USB drive and sit back. The only thing you
         would have to decide is if you want to format the whole drive or
         share it with another OS.</p>
@@ -178,11 +352,12 @@
         need to update your installation right away. If the
         <em>distro</em> is based on Debian and it has <tt>apt</tt> as in
         the case of Ubuntu and its derivatives like Linux Mint, you
-        might want to run the following on the console.</p>
+        might want to run the following on the console as root (<tt>sudo
+        -i</tt>).</p>
         <pre>
           <!-- *spacer* -->
           apt-get update &amp;&amp;
-          apt-get upgrade &amp;&amp;
+          apt-get upgrade -y &amp;&amp;
           apt-get autoclean -y &amp;&amp;
           apt-get autoremove -y &amp;&amp;
           apt-get purge -y &amp;&amp;

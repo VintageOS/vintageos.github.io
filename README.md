@@ -9,16 +9,16 @@ hand (no WYSIWYG) using -- in alphabetical order
 
 1. [Caret](https://thomaswilburn.net/caret/) on
 [Chrome OS](https://google.com/chromebook/),
-2. [Gedit](https://wiki.gnome.org/Apps/Gedit) on
-[Linux](https://vintageos.org/linux.html),
-3. [Notepad++](http://notepad-plus-plus.org/) on
+2. [Notepad++](http://notepad-plus-plus.org/) on
 [Microsoft Windows](https://vintageos.org/windows.html),
-4. [Nano](https://nano-editor.org/) on
+3. [GNU nano](https://nano-editor.org/) on
 [Linux](https://vintageos.org/linux.html) and
 [Cygwin](https://vintageos.org/unix.html#Cygwin),
-5. [Tidy](http://html-tidy.org/) on
+4. [Tidy](http://html-tidy.org/) on
 [Linux](https://vintageos.org/linux.html) and
-[Cygwin](https://vintageos.org/unix.html#Cygwin).
+[Cygwin](https://vintageos.org/unix.html#Cygwin),
+5. [Xed](https://community.linuxmint.com/software/view/xed) on
+[Linux](https://vintageos.org/linux.html).
 
 [VintageOS](https://vintageos.org/) covers close to three (3) decades
 messing around with technology, crashing and hacking every operating

@@ -17,12 +17,8 @@
   <meta name="description" content="VintageOS v5FD0F407 is the source
     for information on different operating systems and also offers
     computer consulting services. This website is completely coded by
-    hand using Nano (https://nano-editor.org/), Gedit
-    (https://wiki.gnome.org/Apps/Gedit) on Linux (https://kernel.org/)
-    and/or Notepad++ (http://notepad-plus-plus.org/) on Windows
-    (https://microsoft.com/en-us/windows/) with help from Tidy
-    (http://html-tidy.org/) on Linux (https://kernel.org/) and Cygwin
-    (https://cygwin.com/).">
+    hand using GNU nano, Xed on Linux and/or Notepad++ on Windows with
+		help from Tidy on Linux and Cygwin.">
   <meta name="keywords" content="286, 386, 486, 586, 686, 80286, 80386,
     80486, 80586, 80686, AMD, Android, Anime, Apache, Apple, Assembler,
     BASIC, batch, Be OS, BeOS, Blackberry, Bootstrap, BSD, BSDi, Buy,
@@ -34,7 +30,7 @@
     Graphic Design, Haiku, Hosting, HTTP, i286, i386, i486, i586, i686,
     IBM, Intel, Internet, Internet, Intranet, iOS, iPad, iPhone, iPod,
     iTunes, Java, JavaScript, JScript, Jokes, JQuery, K6, K7, Kai OS,
-    KaiOS , KDE, Linux, Mac, Macintosh, Mac, Mac OS, macOS, macOS,
+    KaiOS, KDE, Linux, Mac, Macintosh, Mac, Mac OS, macOS, Mac OS X,
     Mac X, Mainframe, Manga, Mastodon, Microsoft, Mobile, Mobile Phone,
     MS DOS, MS-DOS, MSDOS, MS SQL, MS-SQL, MVS, MySQL, NetBSD, NES,
     New DOS, New-DOS, NewDOS, New Technology, New York, New York City,
@@ -94,7 +90,7 @@
       <option value="/ios.html" target="_self" rel="dofollow"
         title="iOS">iOS</option>
       <option value="/kaios.html" target="_self" rel="dofollow"
-        title="KaiOS ">KaiOS </option>
+        title="KaiOS">KaiOS</option>
       <option value="/linux.html" target="_self" rel="dofollow"
         title="Linux">Linux</option>
       <option value="/macos.html" target="_self" rel="dofollow"
@@ -102,7 +98,9 @@
       <option value="/mvs.html" target="_self" rel="dofollow"
         title="Multiple Virtual Storage">MVS</option>
       <option value="/os2.html" target="_self" rel="dofollow"
-        title="Operating System/2">OS/2</option>
+        title="IBM Operating System/2">OS/2</option>
+      <option value="/os400.html" target="_self" rel="dofollow"
+        title="IMB Operating System/400">OS/400</option>
       <option value="/palm.html" target="_self" rel="dofollow"
         title="Palm OS">Palm</option>
       <option value="/reactos.html" target="_self" rel="dofollow"
@@ -135,17 +133,26 @@
   <main role="main">
     <article role="article">
       <h1 id="main">What is DOS?</h1>
-      <p>DOS stands for Disk Operating System and it is a command line
-      interface (CLI) OS for IBM Personal Computer systems and clones.
-      Although IBM originally used the acronym DOS in the early 1970s
+      <p>DOS stands for Disk Operating System In general terms, DOS is a
+      command line interface (CLI) OS to manage data in disks. What we
+      have been accostumed to is DOS as the CLI OS for the IBM Personal
+      Computer and clones written by Tim Paterson and then sold by
+      Microsoft, on which <a href="/windows.html" target="_self"
+      rel="dofollow" title="Microsoft Windows">Windows</a> was later
+      built on.</p>
+      <p>Although IBM originally used the acronym DOS in the early 1970s
       for their disk operating system for <a href="/mvs.html"
       target="_self" rel="dofollow" title="Multiple Virtual Storage">IBM
       System/360</a>, the 1970s version of DOS (later replaced by <a
       href="/mvs.html" target="_self" rel="dofollow" title="Multiple
       Virtual Storage">VSE</a>) is not the same as what we commonly know
-      as DOS. In computer science, many terms are confusing and DOS is
-      one of them. To make matters ever more confusing, one of the
-      biggest misconceptions nowadays is that we think of DOS and <a
+      as DOS for IBM PC and clones.</p>
+      <p>In computer science, many terms are confusing and DOS is one of
+      them. If it is spelled <em>DoS</em> (lower case <em>`o`</em>), we
+      refer to denial of service. In this page, I am covering DOS (all
+      upper case).</p>
+      <p>To make matters ever more confusing, one of the biggest
+      misconceptions nowadays is that we think of DOS and <a
       href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
       Operating System &raquo; MS-DOS">MS-DOS</a> as a synonyms. In
       reality, <a href="/dos.html#MSDOS" target="_self" rel="dofollow"
@@ -154,27 +161,32 @@
     </article>
     <article role="article">
       <h2 id="MSDOS">MS-DOS (Microsoft)</h2>
-      <p><img src="/img/ibmpc_81.gif" width="200" height="200"
-      border="0" class="boxes" align="right" alt="IBM PC, 1981"
-      title="IBM PC, 1981">In the early 1980s Microsoft bought the
-      source code for 86-DOS (commonly referred to Quick and Dirty
-      Operating System, QDOS), which was developed by Tim Paterson for
-      the Intel 8086 microprocessor, for Seattle Computer Products.
-      86-DOS contained about 4,000 lines of assembler. QDOS later became
-      <a href="/dos.html#PCDOS" target="_self" rel="dofollow"
-      title="Disk Operating System &raquo; Versions of DOS Compatible
-      with MS-DOS &raquo; PC DOS (International Business Machines)">PC
-      DOS</a> for the IBM Personal Computer system on August 1981. DOS
-      was not developed originally by Microsoft and Bill Gates (in his
-      book <a href="https://amzn.to/2ncCHZ6" target="_blank"
-      rel="nofollow" title="The Road Ahead (Book &amp; CD)">The Road
-      Ahead</a>, 1995) recognizes Tim Paterson as the father of DOS.
-      Although Microsoft's version of DOS (<a href="/dos.html#MSDOS"
-      target="_self" rel="dofollow" title="Disk Operating System &raquo;
+      <p><img
+      src="/img/86-DOS_running_assembler_and_HEX2BIN_(screenshot).png"
+      width="236" height="169" border="0" class="boxes" align="right"
+      alt="By User:Retron &mdash; Taken by myself via MESS, Public
+			Domain, https://commons.wikimedia.org/w/index.php?curid=46219473"
+      title="By User:Retron &mdash; Taken by myself via MESS, Public
+			Domain, https://commons.wikimedia.org/w/index.php?curid=46219473">
+			In the early 1980s Microsoft bought the source code for 86-DOS
+			(commonly referred to Quick and Dirty Operating System, QDOS),
+			which was developed by Tim Paterson for the Intel 8086
+			microprocessor, for Seattle Computer Products (SCP). 86-DOS
+			contained about 4,000 lines of assembler. QDOS later became <a
+			href="/dos.html#PCDOS" target="_self" rel="dofollow" title="Disk
+			Operating System &raquo; Versions of DOS Compatible with MS-DOS
+			&raquo; PC DOS (International Business Machines)">PC DOS</a> for
+			the IBM Personal Computer system on August 1981. DOS was not
+			developed originally by Microsoft and Bill Gates (in his book <a
+      href="https://amzn.to/2ncCHZ6" target="_blank" rel="nofollow"
+      title="The Road Ahead (Book &amp; CD)">The Road Ahead</a>, 1995)
+      recognizes Tim Paterson as the father of DOS. Although Microsoft's
+      version of DOS (<a href="/dos.html#MSDOS" target="_self"
+      rel="dofollow" title="Disk Operating System &raquo;
       MS-DOS">MS-DOS</a>) has become obsolete, many DOS clones and OS
       that can interpret DOS exist and are commonly used.</p>
-      <p>What is left of <a href="/dos.html#MSDOS" target="_self"
-      rel="dofollow" title="Disk Operating System &raquo;
+      <p>Nowadays, what is left of <a href="/dos.html#MSDOS"
+      target="_self" rel="dofollow" title="Disk Operating System &raquo;
       MS-DOS">MS-DOS</a> is reduced to a handful of files buried in
       <tt>C:\WINDOWS\COMMAND</tt> in <a href="/windows.html"
       target="_self" rel="dofollow" title="Microsoft Windows">Windows
@@ -193,12 +205,13 @@
       target="_self" rel="dofollow" title="Microsoft Windows">Windows NT
       4 and up</a> use an emulation of <a href="/dos.html#MSDOS"
       target="_self" rel="dofollow" title="Disk Operating System &raquo;
-      MS-DOS">MS-DOS 5.0</a> that makes our life hell when trying to
-      work with old DOS commands and batches. Some of these commands do
-      not work anymore or exist anymore. Microsoft forces users to use
-      the less effective <a href="/windows.html" target="_self"
-      rel="dofollow" title="Microsoft Windows">Windows 4.xx</a> versions
-      of programs that were reliable in DOS.</p>
+      MS-DOS">MS-DOS 5.0</a> (1991) &mdash; not 6.0 (1993) or 6.21/6.22
+      (1994) &mdash; that makes our life hell when trying to work with
+      old DOS commands and batches. Some of these commands do not work
+      anymore or exist anymore. Microsoft forces users to use the less
+      effective <a href="/windows.html" target="_self" rel="dofollow"
+      title="Microsoft Windows">Windows 4.xx</a> versions of programs
+      that were reliable in DOS.</p>
       <p><a href="/dos.html#MSDOS" target="_self" rel="dofollow"
       title="Disk Operating System &raquo; MS-DOS">MS-DOS</a> as a
       stand-alone OS (less than 5 MB in <a href="/dos.html#MSDOS"
@@ -330,7 +343,7 @@
       <h2 id="Installation">Installing MS-DOS on i386 &amp; i486
       Systems:</h2>
       <p>This technique is different from what most nowadays books
-      indicate, using FAT 16. The only drawback of installing FAT 16 DOS
+      indicate, using FAT16. The only drawback of installing FAT16 DOS
       is that the HDD has to be divided into partitions not larger than
       2 GB each (seen by the system as separate disks). The first
       partition is primary and the rest are logical partitions.</p>
@@ -366,7 +379,7 @@
       and finally the primary (if any).</p>
       <p>Make primary partition. Since <a href="/dos.html#MSDOS"
       target="_self" rel="dofollow" title="Disk Operating System &raquo;
-      MS-DOS">MS-DOS</a> has a FAT 16 architecture, <a
+      MS-DOS">MS-DOS</a> has a FAT16 architecture, <a
       href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
       Operating System &raquo; MS-DOS">MS-DOS</a> cannot read more than
       2 GB at a time.</p>
@@ -408,7 +421,7 @@
       MS-DOS">MS-DOS</a> or <tt>E</tt> on <a href="/dos.html#PCDOS"
       target="_self" rel="dofollow" title="Disk Operating System &raquo;
       Versions of DOS Compatible with MS-DOS &raquo; PC DOS
-      (International Business Machines)">PC DOS</a>. Then save them with
+			(International Business Machines)">PC DOS</a>. Then save them with
       the new names.</p>
       <pre>
         <!-- *spacer* -->
@@ -506,7 +519,7 @@
       the batch in <a href="/dos.html#MSDOS" target="_self"
       rel="dofollow" title="Disk Operating System &raquo;
       MS-DOS">MS-DOS</a>, not from <a href="/windows.html"
-      target="_self" rel="dofollow" title="Microsoft
+			target="_self" rel="dofollow" title="Microsoft
       Windows">Windows</a>.</p>
       <p>If you do not want to see the DOS commands while the batch file
       is running, edit the batch turning <tt>ECHO</tt> off.</p>
@@ -526,19 +539,18 @@
       </pre>
       <p><tt>SCANDISK</tt> repairs problems that your all disks may have
       automatically without prompting (asking), deletes errors, skips
-      summary, and checks the surface the disk. This line of code might
+      summary and checks the surface the disk. This line of code might
       not work with other distributions of DOS.</p>
       <pre>
         <!-- *spacer* -->
         SCANDISK /ALL/AUTOFIX/NOSAVE/NOSUMMARY/SURFACE
       </pre>
-      <p>The batch
-      creates (if not already created) and assigns <tt>C:\TEMP</tt> as
-      the temporary directory instead of using <tt>C:\DOS</tt> or
-      <tt>C:\WINDOWS</tt> as a temporary directory. Some programs delete
-      the temporary directories after installation. This would be
-      serious trouble if the installation routine deleted the
-      <tt>C:\DOS</tt> directory.</p>
+      <p>The batch creates (if not already created) and assigns
+      <tt>C:\TEMP</tt> as the temporary directory instead of using
+      <tt>C:\DOS</tt> or <tt>C:\WINDOWS</tt> as a temporary directory.
+      Some programs delete the temporary directories after installation.
+      This would be serious trouble if the installation routine deleted
+      the <tt>C:\DOS</tt> directory.</p>
       <pre>
         <!-- *spacer* -->
         IF NOT EXIST C:\TEMP MKDIR C:\TEMP
@@ -622,6 +634,22 @@
       something goes wrong and/or if you delete important data by
       mistake. Refer to the <a href="/disclaimer.html" target="_self"
       rel="dofollow" title="Disclaimer">disclaimer</a>.</p>
+      <p>As I mentioned at the beginning of this section, these
+      instructions are for <a href="/dos.html#MSDOS" target="_self"
+      rel="dofollow" title="Disk Operating System &raquo;
+      MS-DOS">MS-DOS</a>. Other versions of DOS are slightly different.
+      For example, <a href="/dos.html#FreeDOS" target="_self"
+      rel="dofollow" title="Disk Operating System &raquo; Versions of
+      DOS Compatible with MS-DOS &raquo; FreeDOS">FreeDOS</a> has a
+      more organized directory structure and comes with
+      <tt>C:\FDOS\TEMP</tt> where <tt>FDOS</tt> is the DOS subdirectory.
+      I do not know if <a href="/dos.html#FreeDOS" target="_self"
+      rel="dofollow" title="Disk Operating System &raquo; Versions of
+      DOS Compatible with MS-DOS &raquo; FreeDOS">FreeDOS</a> has a
+      built-in facility for garbage management. If you were to adapt the
+      previous code, make sure you understand the directory structure of
+      the version of DOS as well as which commands and executables are
+      available.</p>
     </article>
     <article role="article">
       <h2 id="Compatible">Versions of DOS Compatible with MS-DOS:</h2>
@@ -645,16 +673,15 @@
     <!-- CONTINUE? -->
       <section role="section">
         <h3 id="FreeDOS">FreeDOS</h3>
-        <p><a href="https://www.freedos.org/" target="_blank"
-        rel="nofollow" title="FreeDOS">FreeDOS</a> by Jim Hall is an x86
-        16/32-bit <a href="/foss.html" target="_self" rel="dofollow"
-        title="Free and Open Source">open source</a> <a
+        <p><a href="https://freedos.org/" target="_blank" rel="nofollow"
+        title="FreeDOS">FreeDOS</a> by Jim Hall is an x86 16/32-bit <a
+        href="/foss.html" target="_self" rel="dofollow" title="Free and
+        Open Source">open source</a> <a href="/dos.html#MSDOS"
+        target="_self" rel="dofollow" title="Disk Operating System
+        &raquo; MS-DOS">MS-DOS</a> clone based on DOS-C (1994) by Pat
+        Villani that can <em>&quot;reproduce the functionality of <a
         href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-        Operating System &raquo; MS-DOS">MS-DOS</a> clone based on DOS-C
-        (1994) by Pat Villani that can <em>&quot;reproduce the
-        functionality of <a href="/dos.html#MSDOS" target="_self"
-        rel="dofollow" title="Disk Operating System &raquo;
-        MS-DOS">MS-DOS</a>.&quot;</em>.</p>
+        Operating System &raquo; MS-DOS">MS-DOS</a>.&quot;</em>.</p>
         <p>The directory structure of FreeDOS is based on <a
         href="/linux.html" target="_self" rel="dofollow"
         title="Linux">Linux</a> and all content of the OS is located in
@@ -670,7 +697,7 @@
         on his OS.</p>
         <p>To install software, you can use <tt>FDIMPLES</tt> to access
         its repository. To establishing network connections,
-        <tt>FDNET</tt> handles a <em>vanilla</em> packet driver.</p>
+        <tt>FDNET.BAT</tt> handles a <em>vanilla</em> packet driver.</p>
         <nav role="navigation" id="FreeDOS_CMD">
           <ul>
             <li>
@@ -994,7 +1021,9 @@
       <section role="section">
         <h3 id="MSXDOS">MSX-DOS</h3>
         <p>MSX-DOS was a version of DOS developed by Microsoft in 1984
-        for MSX systems, which combined MS-DOS 1.0 and CP/M.</p>
+        for MSX systems, which combined MS-DOS 1.0 and <a
+				href="/cpm.html" target="_self" rel="dofollow" title="Control
+				Program for Microcomputers">CP/M</a>.</p>
       </section>
       <section role="section">
         <h3 id="New-DOS">New-DOS</h3>
@@ -1038,7 +1067,7 @@
       <p>NTFSDOS developed by System Internals (Winternals) allowed
       users see NTFS partitions (<a href="/windows.html" target="_self"
       rel="dofollow" title="Microsoft Windows">NT 4/5</a> encrypted
-      partitions) as regular DOS FAT 16 partitions. To no one's
+      partitions) as regular DOS FAT16 partitions. To no one's
       surprise, if NTFSDOS could break Microsoft's encryption in order
       to access a drive as plain DOS, Microsoft was bound to acquire it
       and remove it from the market (2006).</p>
@@ -1092,7 +1121,7 @@
     <section role="section">
       <h3 id="PTSDOS">PTS-DOS (PhystechSoft)</h3>
       <p>PTS-DOS <em>&quot;is a powerful and fastest DOS with a simple
-      graphical file manager and FAT 32 architecture. PhystechSoft also
+      graphical file manager and FAT32 architecture. PhystechSoft also
       has distribution.&quot;</em></p>
     </section>
     <section role="section">
@@ -1101,7 +1130,7 @@
       inexpensive replacement for <a href="/dos.html#MSDOS"
       target="_self" rel="dofollow" title="Disk Operating System &raquo;
       MS-DOS">MS-DOS</a>, designed for embedded and mobile computing
-      environments&quot;</em> with access to FAT 32.</p>
+      environments&quot;</em> with access to FAT32.</p>
     </section>
     </article>
     <article role="article">
@@ -1204,7 +1233,8 @@
             </li>
           </ul>
           </nav><!-- previous list taken from
-          https://en.wikipedia.org/wiki/Atari_DOS#Third-party_DOS_programs -->
+          https://en.wikipedia.org/wiki/Atari_DOS#Third-party_DOS_programs
+					-->
         </section>
         <section role="section">
           <h3 id="CommodoreDOS">Commodore DOS</h3>
@@ -1217,8 +1247,8 @@
           <h3 id="VSE">DOS/VSE</h3>
           <p>DOS/VSE is <em>&quot;DOS then DOS/VS then DOS/VSE then
           VSE/SP then VSE/ESA (current) mainframe OS from 1964 till
-          today [which] has its own half dozen file systems neither FAT
-          16-bit/32 nor NTFS, not <a href="/linux.html" target="_self"
+          today [which] has its own half dozen file systems neither
+					FAT16/FAT32 nor NTFS, not <a href="/linux.html" target="_self"
           rel="dofollow" title="Linux">Linux</a> compatible&quot;</em>
           (thanks Pete).</p>
         </section>
@@ -1226,8 +1256,8 @@
           <h3 id="RXDOS">RX-DOS</h3>
           <p><a href="http://rxdos.sourceforge.net/" target="_blank"
           rel="nofollow" title="RX-DOS">RX-DOS</a> (with only eight
-          files) supports FAT 12, 16 and 32-bit. RX-DOS does not support
-          <a href="/windows.html" target="_self" rel="dofollow"
+          files) supports FAT12, FAT16 and FAT32. RX-DOS does not
+					support <a href="/windows.html" target="_self" rel="dofollow"
           title="Microsoft Windows">Windows</a> and may support <a
           href="/linux.html" target="_self" rel="dofollow"
           title="Linux">Linux</a>. The OS has some bugs.</p>
@@ -1262,7 +1292,7 @@
         target="_self" rel="dofollow" title="Linux">Linux</a>, <a
         href="/macos.html" target="_self" rel="dofollow"
         title="macOS">macOS</a>, <a href="/os2.html" target="_self"
-        rel="dofollow" title="Operating System/2">OS/2</a>, RISC OS,
+        rel="dofollow" title="IBM Operating System/2">OS/2</a>, RISC OS,
         Solaris, and especially <a href="/windows.html" target="_self"
         rel="dofollow" title="Microsoft Windows">Windows</a>. Since its
         source code is available to install DOSBox. In theory, it can be
@@ -1515,7 +1545,7 @@
             </li>
             <li>
               <tt>find</tt> &mdash; display all lines from a text file
-              that contain 'string'
+              that contain `string`
               <br/>(NOTE: this is not the <a href="/unix.html"
               target="_self" rel="dofollow" title="Unix">Unix</a>
               <tt>find</tt>)
@@ -1589,8 +1619,8 @@
             </li>
             <li>
               <tt>wcd</tt> &mdash; Waterlander <tt>cd</tt>, tree based
-              comfortable 'change directory' (navigate with arrow
-              keys, <tt>ENTER</tt> and <tt>ESC</tt>)
+              comfortable `change directory` (navigate with arrow keys,
+							<tt>ENTER</tt> and <tt>ESC</tt>)
             </li>
             <li>
               <tt>xcopy</tt> &mdash; full-featured copy command

@@ -27,19 +27,19 @@
 |     3.1.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      |
 |           (https://vintageos.org/chromeos.html)                      |
 |                                                                      |
-|     3.2.  Gedit (https://wiki.gnome.org/Apps/Gedit) on Linux         |
-|           (https://vintageos.org/linux.html)                         |
-|                                                                      |
-|     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     |
+|     3.2.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     |
 |           Windows (https://vintageos.org/windows.html)               |
 |                                                                      |
-|     3.4.  Nano (https://nano-editor.org/) on Linux                   |
+|     3.3.  GNU nano (https://nano-editor.org/) on Linux               |
 |           (https://vintageos.org/linux.html) and/or Cygwin           |
 |           (https://vintageos.org/unix.html#Cygwin)                   |
 |                                                                      |
-|     3.5.  Tidy (http://html-tidy.org/) on Linux                      |
+|     3.4.  Tidy (http://html-tidy.org/) on Linux                      |
 |           (https://vintageos.org/linux.html) and/or Cygwin           |
 |           (https://vintageos.org/unix.html#Cygwin)                   |
+|                                                                      |
+|     3.5.  Xed (https://community.linuxmint.com/software/view/xed) on |
+|           Linux (https://vintageos.org/linux.html)                   |
 |                                                                      |
 | 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      |
 |     Markdown (https://daringfireball.net/projects/markdown/) as      |
@@ -63,7 +63,7 @@ body
     font-weight: normal;
     line-height: 20px;
     text-align: left;
-  }
+  };
 
 h1
   {
@@ -71,7 +71,7 @@ h1
     font-size: 24px;
     font-weight: bold;
     line-height: 28px;
-  }
+  };
 
 h2
   {
@@ -79,7 +79,7 @@ h2
     font-size: 22px;
     font-weight: bold;
     line-height: 26px;
-  }
+  };
 
 h3
   {
@@ -87,7 +87,7 @@ h3
     font-size: 20px;
     font-weight: bold;
     line-height: 24px;
-  }
+  };
 
 h4
   {
@@ -95,7 +95,7 @@ h4
     font-size: 18px;
     font-weight: bold;
     line-height: 22px;
-  }
+  };
 
 hr
   {
@@ -103,7 +103,7 @@ hr
     background-color: #C0C0C0;
     border: 0px;
     height: 1px;
-  }
+  };
 
 article body main nav select p ol option ul li
   {
@@ -113,24 +113,24 @@ article body main nav select p ol option ul li
     font-weight: normal;
     line-height: 20px;
     text-align: left;
-  }
+  };
 
 pre
   {
-    /* color: #FFBF00;    monochrome amber  */
-    /* color: #39FF14;    monochrome green  */
+    /* color: #FFBF00;	monochrome amber  */
+    /* color: #39FF14;  monochrome green  */
     font-family: monospace;
     font-size: 16px;
     font-weight: normal;
     line-height: 20px;
     background: #FFFFFF;
     border: 1pt solid #C0C0C0;
-  }
+  };
 
 tt
   {
-    /* color: #FFBF00;    monochrome amber  */
-    /* color: #39FF14;    monochrome green  */
+    /* color: #FFBF00;  monochrome amber  */
+    /* color: #39FF14;  monochrome green  */
     font-family: monospace;
     font-size: 16px;
     font-weight: normal;
@@ -139,31 +139,30 @@ tt
     background: #FFFFFF;
     /* border: 1pt solid #000000; */
     border: 1pt solid #C0C0C0;
-  }
-
+  };
 
 a:link
   {
     color: #003366;
     text-decoration: underline;
-  }
+  };
 
 a:visited
   {
     color: #336699;
     text-decoration: underline;
-  }
+  };
 
 a:hover
   {
     color: #336666;
     text-decoration: none;
-  }
+  };
 
 .banner
   {
     background: #F7F7F7;
-  }
+  };
 
 .boxes
   {
@@ -171,7 +170,7 @@ a:hover
     font-size: 16px;
     line-height: 20px;
     border: 1pt solid #C0C0C0;
-  }
+  };
 
 .buttons
   {
@@ -180,24 +179,24 @@ a:hover
     font-size: 15px;
     line-height: 19px;
     border: 1pt solid #C0C0C0;
-  }
+  };
 
 .padded
   {
     margin: 50px, 50px, 50px, 50px;
     padding: 50px, 50px, 50px, 50px;
-  }
+  };
 
 .regTXT
   {
     font-size: 16px;
     line-height: 20px;
-  }
+  };
 
 .smTXT
   {
     font-size: 14px;
     line-height: 18px;
-  }
+  };
 
 /* ------------------------------- EOF ------------------------------ */

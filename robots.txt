@@ -27,19 +27,19 @@
 #     3.1.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      #
 #           (https://vintageos.org/chromeos.html)                      #
 #                                                                      #
-#     3.2.  Gedit (https://wiki.gnome.org/Apps/Gedit) on Linux         #
-#           (https://vintageos.org/linux.html)                         #
-#                                                                      #
-#     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     #
+#     3.2.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     #
 #           Windows (https://vintageos.org/windows.html)               #
 #                                                                      #
-#     3.4.  Nano (https://nano-editor.org/) on Linux                   #
+#     3.3.  GNU nano (https://nano-editor.org/) on Linux               #
 #           (https://vintageos.org/linux.html) and/or Cygwin           #
 #           (https://vintageos.org/unix.html#Cygwin)                   #
 #                                                                      #
-#     3.5.  Tidy (http://html-tidy.org/) on Linux                      #
+#     3.4.  Tidy (http://html-tidy.org/) on Linux                      #
 #           (https://vintageos.org/linux.html) and/or Cygwin           #
 #           (https://vintageos.org/unix.html#Cygwin)                   #
+#                                                                      #
+#     3.5.  Xed (https://community.linuxmint.com/software/view/xed) on #
+#           Linux (https://vintageos.org/linux.html)                   #
 #                                                                      #
 # 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      #
 #     Markdown (https://daringfireball.net/projects/markdown/) as      #

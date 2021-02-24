@@ -17,12 +17,8 @@
   <meta name="description" content="VintageOS v5FD0F407 is the source
     for information on different operating systems and also offers
     computer consulting services. This website is completely coded by
-    hand using Nano (https://nano-editor.org/), Gedit
-    (https://wiki.gnome.org/Apps/Gedit) on Linux (https://kernel.org/)
-    and/or Notepad++ (http://notepad-plus-plus.org/) on Windows
-    (https://microsoft.com/en-us/windows/) with help from Tidy
-    (http://html-tidy.org/) on Linux (https://kernel.org/) and Cygwin
-    (https://cygwin.com/).">
+    hand using GNU nano, Xed on Linux and/or Notepad++ on Windows with
+		help from Tidy on Linux and Cygwin.">
   <meta name="keywords" content="286, 386, 486, 586, 686, 80286, 80386,
     80486, 80586, 80686, AMD, Android, Anime, Apache, Apple, Assembler,
     BASIC, batch, Be OS, BeOS, Blackberry, Bootstrap, BSD, BSDi, Buy,
@@ -94,7 +90,7 @@
       <option value="/ios.html" target="_self" rel="dofollow"
         title="iOS">iOS</option>
       <option value="/kaios.html" target="_self" rel="dofollow"
-        title="KaiOS ">KaiOS </option>
+        title="KaiOS">KaiOS</option>
       <option value="/linux.html" target="_self" rel="dofollow"
         title="Linux">Linux</option>
       <option value="/macos.html" target="_self" rel="dofollow"
@@ -102,7 +98,9 @@
       <option value="/mvs.html" target="_self" rel="dofollow"
         title="Multiple Virtual Storage">MVS</option>
       <option value="/os2.html" target="_self" rel="dofollow"
-        title="Operating System/2">OS/2</option>
+        title="IBM Operating System/2">OS/2</option>
+      <option value="/os400.html" target="_self" rel="dofollow"
+        title="IMB Operating System/400">OS/400</option>
       <option value="/palm.html" target="_self" rel="dofollow"
         title="Palm OS">Palm</option>
       <option value="/reactos.html" target="_self" rel="dofollow"
@@ -192,22 +190,22 @@
       <p>For Windows 95B (1986) and up, you can bypass installing <a
       href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
       Operating System &raquo; MS-DOS">MS-DOS</a> running
-      <tt>FDISK.EXE</tt> and <tt>FORMAT.COM</tt> using a boot disk (FAT
-      32-bit). Windows 4.xx (95, 95B, 95C, 98, 98SE and ME) includes
-      MS-DOS 7 and does not have low-level memory utility. Because <a
-      href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-      Operating System &raquo; MS-DOS">MS-DOS 7</a> is direly limited, I
-      recommend you to install <a href="/dos.html#MSDOS" target="_self"
-      rel="dofollow" title="Disk Operating System &raquo; MS-DOS">MS-DOS
-      6.22</a> and run memory management. Note that <a
-      href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-      Operating System &raquo; MS-DOS">MS-DOS</a> has <tt>MEMMAKER</tt>
-      and <a href="/dos.html#PCDOS" target="_self" rel="dofollow"
-      title="Disk Operating System &raquo; Versions of DOS Compatible
-      with MS-DOS &raquo; PC DOS (International Business Machines)">PC
-      DOS</a> has <tt><a href="/pdf/pcdos63.pdf" target="_blank"
-      rel="nofollow" title="white paper on RAMBOOST,
-      PC-DOS">RAMBOOST</a></tt>.</p>
+      <tt>FDISK.EXE</tt> and <tt>FORMAT.COM</tt> using a boot disk
+			(FAT32). Windows 4.xx (95, 95B, 95C, 98, 98SE and ME) includes <a
+			href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
+			Operating System &raquo; MS-DOS">MS-DOS 7</a> and does not have
+			low-level memory utility. Because <a href="/dos.html#MSDOS"
+			target="_self" rel="dofollow" title="Disk Operating System &raquo;
+			MS-DOS">MS-DOS 7</a> is direly limited, I recommend you to install
+			<a href="/dos.html#MSDOS" target="_self" rel="dofollow"
+			title="Disk Operating System &raquo; MS-DOS">MS-DOS 6.22</a> and
+			run memory management. Note that <a href="/dos.html#MSDOS"
+			target="_self" rel="dofollow" title="Disk Operating System &raquo;
+			MS-DOS">MS-DOS</a> has <tt>MEMMAKER</tt> and <a
+			href="/dos.html#PCDOS" target="_self" rel="dofollow" title="Disk
+			Operating System &raquo; Versions of DOS Compatible with MS-DOS
+			&raquo; PC DOS (International Business Machines)">PC DOS</a> has
+			<tt>RAMBOOST</tt>.</p>
       <p>Windows 4.xx (95 to ME) has <tt>CONFIG.SYS</tt>, a system file
       that can create a RAM drive to speed up whatever you do. Of
       course, do not save anything there that you need or want to keep.
@@ -245,9 +243,9 @@
       the CD-ROM starts running, watch TV or something exciting for the
       next half an hour or longer. Finally follow the last steps of the
       installation and registration (no way around it nowadays).</p>
-      <p>The architecture of Windows 4.xx can be FAT 32-bit while <a
+      <p>The architecture of Windows 4.xx can be FAT32 while <a
       href="/dos.html#MSDOS" target="_self" rel="dofollow" title="Disk
-      Operating System &raquo; MS-DOS">MS-DOS</a> is FAT 16. Do not
+      Operating System &raquo; MS-DOS">MS-DOS</a> is FAT16. Do not
       change the structure of the File Allocation Table (FAT) running
       <tt>C:\WINDOWS\CVT1.EXE</tt>. If you do, you would have wasted
       about an hour of work and possible access to your upper memory and
@@ -277,7 +275,7 @@
       title="Microsoft Windows &raquo; Installing Windows 95B">95B</a>,
       but you will not get much of a break. The installation is more
       interactive. Make sure that you select NTFS (New Technology File
-      System) instead of FAT 32 (File Allocation Table 32-bit) when
+      System) instead of FAT32 (File Allocation Table 32-bit) when
       asked for the file format system. NTFS will give you more
       protection and privacy, in a multi-user OS. After you finish
       installing Windows 2000 or later, refer to the <em>Black

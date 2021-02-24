@@ -120,9 +120,9 @@ pre
     /* color: #FFBF00;  monochrome amber  */
     /* color: #39FF14;  monochrome green  */
     font-family: monospace;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: normal;
-    line-height: 20px;
+    line-height: 19px;
     /* background: #000000; */
     background: #FFFFFF;
     /* border: 1pt solid #000000; */
@@ -134,9 +134,11 @@ tt
     /* color: #FFBF00;  monochrome amber  */
     /* color: #39FF14;  monochrome green  */
     font-family: monospace;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 15px;
     font-weight: normal;
-    line-height: 20px;
+    /* line-height: 20px; */
+    line-height: 19px;
     /* background: #000000; */
     background: #FFFFFF;
     /* border: 1pt solid #000000; */

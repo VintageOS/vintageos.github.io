@@ -52,4 +52,5 @@
 ########################################################################
 
 User-agent: *
-Disallow:
+Disallow: robots.txt
+Disallow: blocks.html

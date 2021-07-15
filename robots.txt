@@ -54,3 +54,4 @@
 User-agent: *
 Disallow: robots.txt
 Disallow: blocks.html
+Disallow: *.md

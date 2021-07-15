@@ -54,4 +54,4 @@
 User-agent: *
 Disallow: robots.txt
 Disallow: blocks.html
-Disallow: echo8.html
+Disallow: echo8.*

@@ -1,0 +1,34 @@
+.boxesEcho8
+  {
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1pt solid #C0C0C0;
+  }
+ .boxesEcho8GREEN
+   {
+    background-color: #008000;
+    color: #FFFFFF;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1pt solid #C0C0C0;
+  }
+  .boxesEcho8RED
+   {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1pt solid #C0C0C0;
+  }
+ .boxesEcho8YELLOW
+   {
+    background-color: #FFFF00;
+    color: #FFFFFF;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1pt solid #C0C0C0;
+  }

@@ -1,6 +1,5 @@
-                    FRN2000 & VintageOS v5D8BBEDD
-                   all rights reserved,  1997-2021
-              frn2000.com · vintageos.org · vintageos.org
+                  FRN2000 & VintageOS v20211218223349
+        frn2000.com · vintageos.org · all rights reserved, 1997-2021
 
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting
@@ -45,4 +44,4 @@ this file found in the
 
 [Read more about VintageOS.  » » »](README2.md)
 
-        frn2000.com · vintageos.org · vintageos.org · 1997-2021
+        frn2000.com · vintageos.org · all rights reserved, 1997-2021

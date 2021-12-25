@@ -1,18 +1,57 @@
 ########################################################################
-#     FRN2000 & VintageOS v5B1A9F87, all rights reserved, 1997-2018    #
-#             frn2000.com | vintageos.com | vintageos.org              #
+#        _____ _     _               _____ _____       v20211218223349 #
+#       |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___         #
+#       |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |        #
+#        \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |        #
+#                           |___|                         |___|        #
 #                                                                      #
-# 1.  Close to three decades fucking around with technology,  breaking #
-#     and crashing every operating system that I have gotten my wicked #
-#     hands on from C64 (1984) to Linux (nowadays)  as well as fucking #
-#     with source code, teaching and advocating for open source;  more #
-#     information  available  at  http://www.vintageos.org/frn2000.php #
-# 2.  Disclaimer and terms of use for this site and/or related domains #
-#     found and  explained at  http://www.vintageos.org/disclaimer.php #
-# 3.  File `robots.txt` to block certain robots/spiders from accessing #
-#     files and subdirectories; instructions and information on how to #
-#     code this file found at  http://www.robotstxt.org/robotstxt.html #
+#                                * thanks to patorjk.com for ASCII art #
+#                                                                      #
+# FRN2000 & VintageOS v20211218223349,  all rights reserved, 1997-2021 #
+#                     frn2000.com · vintageos.org                      #
+#                                                                      #
+# 1.  over three (3) decades destroying various technologies, crashing #
+#     and hacking every operating system (OS) that I have ever touched #
+#     from KERNAL/BASIC on the C64 (https://vintageos.org/basic.html)  #
+#     to Linux (https://vintageos.org/linux.html) as well as teaching  #
+#     and advocating for the hacker mentality behind free and open     #
+#     source (https://vintageos.org/foss.html);  much more information #
+#     available at https://vintageos.org/frn2000.html                  #
+#                                                                      #
+# 2.  disclaimer and terms of use for this site and/or related domains #
+#     found and explained at https://vintageos.org/disclaimer.html     #
+#                                                                      #
+# 3.  website and related files completely coded by hand (no WYSIWYG)  #
+#     using -- in alphabetical order                                   #
+#                                                                      #
+#     3.1.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      #
+#           (https://vintageos.org/chromeos.html)                      #
+#                                                                      #
+#     3.2.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     #
+#           Windows (https://vintageos.org/windows.html)               #
+#                                                                      #
+#     3.3.  GNU nano (https://nano-editor.org/) on Linux               #
+#           (https://vintageos.org/linux.html) and/or Cygwin           #
+#           (https://vintageos.org/unix.html#Cygwin)                   #
+#                                                                      #
+#     3.4.  Tidy (http://html-tidy.org/) on Linux                      #
+#           (https://vintageos.org/linux.html) and/or Cygwin           #
+#           (https://vintageos.org/unix.html#Cygwin)                   #
+#                                                                      #
+#     3.5.  Xed (https://community.linuxmint.com/software/view/xed) on #
+#           Linux (https://vintageos.org/linux.html)                   #
+#                                                                      #
+# 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      #
+#     Markdown (https://daringfireball.net/projects/markdown/) as      #
+#     specified by GitHub Pages (https://pages.github.com/) in their   #
+#     guide (https://guides.github.com/features/mastering-markdown/)   #
+#                                                                      #
+# 5.  file `robots.txt` to block certain robots/spiders from accessing #
+#     files and sub-directories;  instructions and information on how  #
+#     to code this file found at http://robotstxt.org/robotstxt.html   #
 ########################################################################
 
 User-agent: *
-Disallow:
+Disallow: robots.txt
+Disallow: blocks.html
+Disallow: echo*.*

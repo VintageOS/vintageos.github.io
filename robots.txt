@@ -7,7 +7,7 @@
 #                                                                      #
 #                                * thanks to patorjk.com for ASCII art #
 #                                                                      #
-# FRN2000 & VintageOS v20211218223349,  all rights reserved, 1997-2021 #
+# FRN2000 & VintageOS v20211218223349,  all rights reserved, 1997-2022 #
 #                     frn2000.com · vintageos.org                      #
 #                                                                      #
 # 1.  over three (3) decades destroying various technologies, crashing #

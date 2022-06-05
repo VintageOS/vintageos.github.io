@@ -36,7 +36,8 @@
 #                                                                      #
 #     3.4.  Tidy (http://html-tidy.org/) on Linux                      #
 #           (https://vintageos.org/linux.html) and/or Cygwin           #
-#           (https://vintageos.org/unix.html#Cygwin)                   #
+#           (https://vintageos.org/unix.html#Cygwin) with quick        #
+#           statement `tidy -i -w 72 -o some_page.html some_page.html` #
 #                                                                      #
 #     3.5.  Xed (https://community.linuxmint.com/software/view/xed) on #
 #           Linux (https://vintageos.org/linux.html)                   #

@@ -15,7 +15,8 @@ hand (no WYSIWYG) using -- in alphabetical order
 [Cygwin](https://vintageos.org/unix.html#Cygwin),
 4. [Tidy](http://html-tidy.org/) on
 [Linux](https://vintageos.org/linux.html) and
-[Cygwin](https://vintageos.org/unix.html#Cygwin),
+[Cygwin](https://vintageos.org/unix.html#Cygwin) with quick statement
+`tidy -i -w 72 -o some_page.html some_page.html`,
 5. [Xed](https://community.linuxmint.com/software/view/xed) on
 [Linux](https://vintageos.org/linux.html).
 

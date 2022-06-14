@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  "HTML Tidy for HTML5 for Cygwin version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____      v20211218223349 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -509,22 +509,26 @@
     </article>
     <article role="article">
       <h2 id="PackageManagers">Package Managers:</h2>
-      <p>Windows does not come with a package manager. The concept of a
-      single location where anyone can find software for installation
-      and updates on any computer running Windows, which also installs
-      and updates all dependencies (libraries and other programs
-      needed) — commonly referred to as packages — is foreign in
-      Windows and most users. There are third-parties that handle this
-      need usually at corporate level.</p>
-      <p>I use the free version of <a href="https://chocolatey.org/"
-      target="_blank" rel="nofollow" title="Chocolatey">Chocolatey</a>
-      to manage applications and their dependencies like run-time
-      environments (if available in the vendor's repository) in my
-      Windows machines as have no interest to manually check which and
-      when software needs to be updated. I am not saying that you
-      should install Chocolatey, but it is simple to use specially when
-      you install its GUI or if you like to use CLI using the
-      <tt>choco</tt> command.</p>
+      <p id="winget">Windows now comes with its own package manager —
+      <tt>winget</tt>. This means that Windows now offers a facility
+      that finds software for installation and updates on any computer
+      running Windows, which also installs and updates all dependencies
+      (libraries and other programs needed) — commonly referred to as
+      packages.</p>
+      <pre>
+        <!-- *spacer* -->
+        winget install python3
+      </pre>
+      <p ide="Chocolatey">There are third-parties that handle this need
+      usually at corporate level. I use the free version of <a href=
+      "https://chocolatey.org/" target="_blank" rel="nofollow" title=
+      "Chocolatey">Chocolatey</a> to manage applications and their
+      dependencies like run-time environments (if available in the
+      vendor's repository) in my Windows machines as have no interest
+      to manually check which and when software needs to be updated. I
+      am not saying that you should install Chocolatey, but it is
+      simple to use specially when you install its GUI or if you like
+      to use CLI using the <tt>choco</tt> command.</p>
       <pre>
         <!-- *spacer* -->
         choco install chocolateygui
@@ -549,18 +553,14 @@
     </article>
   </main><!-- end of main body -->
   <article role="article">
-    <p id="CreativeCommons" align="center"><!-- beginning of Creative
-    Commons license code &mdash; Attribution-NonCommercial-NoDerivs 3.0
-    Unported (CC BY-NC-ND 3.0) --><a href=
+    <p id="CreativeCommons" align="center"><a href=
     "http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"
     rel="nofollow"><img alt=
     "Creative Commons License — Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)"
     title=
     "Creative Commons License — Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)"
-    src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
-    <!-- end of Creative Commons license code &mdash;
-    Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)
-    --></p>
+    src=
+    "http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a></p>
     <article role="article">
       <footer role="contentinfo">
         <p align="center"><a href="/" target="_self" rel="dofollow"
@@ -578,8 +578,8 @@
     </article>
   </article><!-- beginning of Google Analytics -->
   <script src="http://google-analytics.com/urchin.js" type=
-  "text/javascript"></script>
-  <script type="text/javascript"></script>
+  "text/javascript"></script> 
+  <script type="text/javascript"></script> 
   <!-- end of Google Analytics -->
 </body>
 </html>

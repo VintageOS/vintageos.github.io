@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  "HTML Tidy for HTML5 for Cygwin version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____      v20211218223349 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -368,9 +368,9 @@
         <p>Depending on the distribution (<em>distro</em>), you might
         need to update your installation right away. If the
         <em>distro</em> is based on Debian and it has <tt>apt</tt> as
-        in the case of Ubuntu and its derivatives like Linux Mint, you
-        might want to run the following on the console as root
-        (<tt>sudo -i</tt>).</p>
+        in the case of Ubuntu and its derivatives like Linux Mint (what
+        I currently use), you might want to run the following on the
+        console as root (<tt>sudo -i</tt>).</p>
         <pre>
           <!-- *spacer* -->
           apt-get update &amp;&
@@ -378,9 +378,20 @@
           apt-get autoclean -y &amp;&
           apt-get autoremove -y &amp;&
           apt-get purge -y &amp;&
-          reboot
+          reboot now
         </pre>
-        <p>I would recommend doing the latter on a daily basis.</p>
+        <p>The latter runs multiple commands — one after another using
+        the <tt>&amp;&</tt> (and) operator and then reboot without
+        confirmation. Of course if you do not need to reboot exclude
+        the last <tt>&amp;&</tt> operator and the <tt>reboot now</tt>
+        command. I would recommend doing the latter on a daily basis to
+        make sure your system has the most up-to-date packages.</p>
+        <p>You can also install packages using <tt>apt-get</tt> calling
+        the correct package name.</p>
+        <pre>
+          <!-- *spacer* -->
+          apt-get install <em>[package_name]</em>
+        </pre>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>
@@ -390,21 +401,41 @@
         generations with a price tag under $50, several projects have
         used Raspberry Pi hardware.</p>
       </article>
+      <article role="article">
+        <h2 id="WSL">Windows Subsystem for Linux</h2>
+        <p>Microsoft decided in 2016 to incorporate a subsystem based
+        on Ubuntu in <a href="/windows.html" target="_self" rel=
+        "dofollow" title="Microsoft Windows">Windows</a>. Part of this
+        decision is the reason why Microsoft bought Github and even
+        developed a copy of <tt>apt</tt> named <a href="/windows.html"
+        target="_self" rel="dofollow" title=
+        "Microsoft Windows » Package Managers » winget"><tt>winget</tt></a>,
+        which searches for packages similarly to <tt>apt</tt> or rather
+        <tt>apt-get</tt> as used by Ubuntu. Personally I prefer to use
+        <a href="/windows.html" target="_self" rel="dofollow" title=
+        "Microsoft Windows » Package Managers » winget">Chocolatey</a>
+        (<tt>choco</tt>) since <a href="/windows.html" target="_self"
+        rel="dofollow" title=
+        "Microsoft Windows » Package Managers » winget"><tt>winget</tt></a>
+        does not get as many packages and also returns a list of
+        applications to be upgraded (<a href="/windows.html" target=
+        "_self" rel="dofollow" title=
+        "Microsoft Windows » Package Managers » winget"><tt>winget
+        upgrade</tt></a>) when already done by <a href="/windows.html"
+        target="_self" rel="dofollow" title=
+        "Microsoft Windows » Package Managers » winget">Chocolatey</a>.</p>
+      </article>
     </section>
   </main><!-- end of main body -->
   <article role="article">
-    <p id="CreativeCommons" align="center"><!-- beginning of Creative
-    Commons license code &mdash; Attribution-NonCommercial-NoDerivs 3.0
-    Unported (CC BY-NC-ND 3.0) --><a href=
+    <p id="CreativeCommons" align="center"><a href=
     "http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"
     rel="nofollow"><img alt=
     "Creative Commons License — Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)"
     title=
     "Creative Commons License — Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)"
-    src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
-    <!-- end of Creative Commons license code &mdash;
-    Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)
-    --></p>
+    src=
+    "http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a></p>
     <article role="article">
       <footer role="contentinfo">
         <p align="center"><a href="/" target="_self" rel="dofollow"
@@ -422,8 +453,8 @@
     </article>
   </article><!-- beginning of Google Analytics -->
   <script src="http://google-analytics.com/urchin.js" type=
-  "text/javascript"></script>
-  <script type="text/javascript"></script>
+  "text/javascript"></script> 
+  <script type="text/javascript"></script> 
   <!-- end of Google Analytics -->
 </body>
 </html>

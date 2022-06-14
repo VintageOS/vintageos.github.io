@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  "HTML Tidy for HTML5 for Cygwin version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____      v20211218223349 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -226,6 +226,40 @@
         target="_self" rel="dofollow" title="Microsoft Windows">Windows
         [4.x and up]</a>"</em> (emulator) originally developed by
         Cygnus Solutions and then acquired by Red Hat.</p>
+        <p>Similar to other Unix distributions regardless of OS or
+        vendor, Cygwin has its own package manager — <tt>apt-cyg</tt>,
+        which does not come installed by default. You would need to run
+        the following commands to get the package from the specific
+        website (<tt>wget</tt>) as shown below.</p>
+        <pre>
+          wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
+        </pre>
+        <p>Then you need to change the permission so the
+        <tt>apt-cyg</tt> package can be executable.</p>
+        <pre>
+          <!-- *spacer* -->
+          chmod +x apt-cyg
+        </pre>
+        <p>As the last step, you need to move the <tt>apt-cyg</tt>
+        package to <tt>/usr/local/bin</tt> so it can be accessible —
+        included in the <tt>path</tt> system variable.</p>
+        <pre>
+          <!-- *spacer* -->
+          mv apt-cyg /usr/local/bin
+        </pre>
+        <p>Now that <tt>apt-cyg</tt> has been installed, made into an
+        executable and made accessible in the <tt>path</tt> system
+        variable, you can use it as any other <tt>apt</tt> package
+        manager similar to <tt>apt-get</tt> on Debian based <a href=
+        "/linux.html" target="_self" rel="dofollow" title=
+        "Linux">Linux</a> installations.</p>
+        <pre>
+          <!-- *spacer* -->
+          apt-cyg install nano
+          apt-cyg install git
+          apt-cyg install python3
+          apt-cyg install tidy
+        </pre>
       </section>
       <section role="section">
         <h3 id="GitHubWindows">GitHub for Windows</h3>
@@ -233,12 +267,16 @@
         rel="dofollow" title="Free and Open Source">open source</a>
         emulator for <a href="/windows.html" target="_self" rel=
         "dofollow" title="Microsoft Windows">Windows</a> in order to
-        access the Git version control system. This emulator is often
-        the choice of <a href="/foss.html" target="_self" rel=
-        "dofollow" title="Free and Open Source">open source</a>
-        developers using <a href="/windows.html" target="_blank" rel=
-        "nofollow" title="Microsoft Windows">Windows</a>. As of 2018,
-        GitHub became part of Microsoft.</p>
+        access the Git version control system based on the MinGW-w64
+        (<tt>MINGW64</tt>) project. This emulator is often the choice
+        of <a href="/foss.html" target="_self" rel="dofollow" title=
+        "Free and Open Source">open source</a> developers using
+        <a href="/windows.html" target="_blank" rel="nofollow" title=
+        "Microsoft Windows">Windows</a>. As of 2018, GitHub including
+        the Octocat (its mascot) became part of Microsoft.</p>
+        <p>I have not found a package manager for <tt>MINGW64</tt>. I
+        guess installing <tt>apt-cyg</tt>, but I have not tried it. As
+        a purist, I would not do it.</p>
       </section>
       <section role="section">
         <h3 id="Termux">Termux (Android)</h3>
@@ -248,8 +286,27 @@
         "dofollow" title="Linux">Linux</a> environment for <a href=
         "/android.html" target="_self" rel="dofollow" title=
         "Android">Android</a> with its own package manager
-        (<tt>pkg</tt>) in a sandbox — little to no chance to destroy or
-        corrupt data.</p>
+        (<tt>pkg</tt>) Similar to <tt>apt-get</tt> (<a href=
+        "/linux.html" target="_self" rel="dofollow" title=
+        "Linux">Linux</a>), <tt>brew</tt> (<a href="/macos.html"
+        target="_self" rel="dofollow" title="macOS">macOS</a>, also
+        used in <a href="/linux.html" target="_self" rel="dofollow"
+        title="Linux">Linux</a>) and other package managers, you can
+        update the list of available packages in the <tt>pkg</tt>
+        repository and upgrade the packages currently installed in the
+        Termux instance (guest) running on <a href="/android.html"
+        target="_self" rel="dofollow" title="Android">Android</a>
+        (host). I would recommend doing this before installing any new
+        package and to make sure that your packages are up-to-date.</p>
+        <pre>
+          <!-- *spacer* -->
+          pkg update &amp;&
+          pkg upgrade
+        </pre>
+        <p>The latter runs two commands in order — one after another
+        using the <tt>&amp;&</tt> (and) operator.</p>
+        <p>You can also install packages in the Termux instance using
+        <tt>pkg</tt> calling the correct package name.</p>
         <pre>
           <!-- *spacer* -->
           pkg install <em>[package_name]</em>
@@ -258,18 +315,14 @@
     </article>
   </main><!-- end of main body -->
   <article role="article">
-    <p id="CreativeCommons" align="center"><!-- beginning of Creative
-    Commons license code &mdash; Attribution-NonCommercial-NoDerivs 3.0
-    Unported (CC BY-NC-ND 3.0) --><a href=
+    <p id="CreativeCommons" align="center"><a href=
     "http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"
     rel="nofollow"><img alt=
     "Creative Commons License — Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)"
     title=
     "Creative Commons License — Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)"
-    src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
-    <!-- end of Creative Commons license code &mdash;
-    Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)
-    --></p>
+    src=
+    "http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a></p>
     <article role="article">
       <footer role="contentinfo">
         <p align="center"><a href="/" target="_self" rel="dofollow"
@@ -287,8 +340,8 @@
     </article>
   </article><!-- beginning of Google Analytics -->
   <script src="http://google-analytics.com/urchin.js" type=
-  "text/javascript"></script>
-  <script type="text/javascript"></script>
+  "text/javascript"></script> 
+  <script type="text/javascript"></script> 
   <!-- end of Google Analytics -->
 </body>
 </html>

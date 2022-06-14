@@ -43,6 +43,4 @@ files and sub-directories;  instructions and information on how to code
 this file found in the
 [`robotstxt.html`](http://robotstxt.org/robotstxt.html) file.
 
-[Read more about VintageOS.  » » »](README2.md)
-
         frn2000.com · vintageos.org · all rights reserved, 1997-2022

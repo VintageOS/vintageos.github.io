@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Cygwin version 5.6.0">
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____      v20211218223349 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -684,27 +684,33 @@
               "nofollow" title="KolibriOS">KolibriOS</a> is an x86
               16/32-bit OS — forked from <a href=
               "/others.html#MenuetOS" title=
-              "Other Operating Systems » MenuetOS">MenuetOS</a>,
-              written in FASM (flat assembler) — heavily scaled down in
-              order to use low resources. As such, the 1.41 MB <a href=
-              "/others.html#Images" target="_self" rel="dofollow"
-              title="Other Operating Systems » Images">image</a>
+              "Other Operating Systems » MenuetOS">MenuetOS</a> in
+              2004, written in FASM (flat assembler) — heavily scaled
+              down in order to use low resources. As such, the 1.41 MB
+              <a href="/others.html#Images" target="_self" rel=
+              "dofollow" title=
+              "Other Operating Systems » Images">image</a>
               (<tt>.IMG</tt>) fits in a 1.44 MB floppy, that can be
               burned to floppy or mounted as a virtual drive. The full
               image available in an <tt>.ISO</tt> is under 70 MB and it
-              also needs at least 8 MB of RAM to load the OS. In either
-              case, the whole OS (not only the kernel) is loaded to
-              memory and not from disk to memory (no swapping). There
-              is no installation and any change you make can be written
-              back to the image — not to root (<tt>/</tt>), but rather
-              to one of the subdirectories in the image. One idea is
+              also needs at least 8 MB of RAM to load the OS. I would
+              recommend at least 128 MB of RAM to run most
+              applications. In either case, the whole OS (not only the
+              kernel) is loaded to memory and not from disk to memory
+              (no swapping). There is no installation and any change
+              you make can be written back to the image — not to root
+              (<tt>/</tt>), but rather to one of the subdirectories in
+              the image. One idea is
               <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep all OS
               settings together and hence organized. The software
               bundled in the image is interesting to say the least. Its
-              web browser WebView 2.65b is similar to Lynx, but with a
+              web browser WebView 3.66-3 is similar to Lynx, but with a
               modern GUI. KolibriOS also has its own Bash-like shell
               although limited to 28 external commands (excluding
-              kernel commands). The image comes with several games,
+              kernel commands) simply called <tt>Shell 0.8.3</tt> in
+              Kolibri 0.7.7.0 (current version as of 06/10/2022) with
+              kernel SUN-rev 9832 (no idea what SUN means in the name
+              of the kernel). The image comes with several games,
               several emulators for several video game platforms like
               SNES and even <a href="/dos.html#DOSBox" target="_self"
               rel="dofollow" title=
@@ -717,7 +723,9 @@
               TinyBASIC</a> and FASM (flat assembler) as well as
               network utilities almost rivaling any <a href=
               "/linux.html" target="_self" rel="dofollow" title=
-              "Linux">Linux</a> distribution.</p>
+              "Linux">Linux</a> distribution. Although it is a bit
+              off-topic, this OS is the cutest I have seen and I enjoy
+              playing with it.</p>
               <p align="center"><a href=
               "https://commons.wikimedia.org/w/index.php?curid=28946526"
               target="_blank" rel="nofollow"><img src=
@@ -859,8 +867,9 @@
               retaining compatibility with <a href="/others.html#POSIX"
               target="_self" rel="dofollow" title=
               "Other Operating Systems » POSIX"></a> and Win32"</em>
-              (Sep. 2013). 
-              <!-- Note that I am still trying to understand this
+              (Sep. 2013).
+              <!-- -----------------------------------------------------
+              Note that I am still trying to understand this
               M&ouml;bius release 5 as its <tt>help</tt> — no
               upper case available, almost as if the <tt>SHIFT</tt> key
               were disabled in this OS — lists a series of
@@ -877,10 +886,11 @@
               title="Unix">Unix</a> and its clones. It is an interesting
               project nonetheless, but guessing games can only lead to
               bad trouble — hardly ever good trouble like breaking
-              things while learning a new skill. --> When testing
-Möbius, I ran into several errors and ended contacting the developers.
-It seems that newer hardware triggers kernel exceptions. I contacted
-the developer who is looking into the errors.</p>
+              things while learning a new skill. ------------------- -->
+               When testing Möbius, I ran into several errors and ended
+              contacting the developers. It seems that newer hardware
+              triggers kernel exceptions. I contacted the developer who
+              is looking into the errors.</p>
               <p align="center"><a href=
               "http://mobius.sourceforge.net/" target="_blank" rel=
               "nofollow"><img src="/img/Mobius_release05-02.png"
@@ -1190,15 +1200,16 @@ the developer who is looking into the errors.</p>
               <h3 id="TempleOS">TempleOS:</h3>
               <p><a href="https://templeos.org/" target="_blank" rel=
               "nofollow" title="TempleOS">TempleOS</a> (public domain)
-              is one of the strangest and possibly one of the less
-              visually appealing OSs ever created. This OS was written
-              by Terry Davis (1969-2018), who had been diagnosed with
-              mental illness and who was sure that God had asked him to
-              write this OS in a special version of C, which Davis
-              named Holy-C, and assembler. Using the OS is difficult
-              unless you understand its syntax and programming language
-              — a <em>cross</em> between C and C++ (named CrossC,
-              C+).</p>
+              is a an x86 64-bit OS that needs at least 512 MB of RAM.
+              This OS is often considered one of the strangest and
+              possibly the less visually appealing OSs ever created.
+              This OS was written by Terry Davis (1969-2018), who had
+              been diagnosed with mental illness and who was sure that
+              God had asked him to write this OS in a special version
+              of C, which Davis named Holy-C, and assembler. Using the
+              OS is difficult unless you understand its syntax and
+              programming language — a <em>cross</em> between C and C++
+              (named CrossC, C+, with only one plus sign).</p>
               <p align="center"><a href=
               "https://commons.wikimedia.org/w/index.php?curid=48186267"
               target="_blank" rel="nofollow"><img src=
@@ -1352,8 +1363,8 @@ the developer who is looking into the errors.</p>
     </article>
   </article><!-- beginning of Google Analytics -->
   <script src="http://google-analytics.com/urchin.js" type=
-  "text/javascript"></script> 
-  <script type="text/javascript"></script> 
+  "text/javascript"></script>
+  <script type="text/javascript"></script>
   <!-- end of Google Analytics -->
 </body>
 </html>

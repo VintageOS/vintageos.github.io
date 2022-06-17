@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Cygwin version 5.6.0">
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____      v20211218223349 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -55,6 +55,10 @@
       "Beginner's All-purpose Symbolic Instruction Code (BASIC)">
         BASIC
       </option>
+      <option value="/beos.html" target="_self" rel="dofollow" title=
+      "BeOS">
+        BeOS
+      </option>
       <option value="/blackberry.html" target="_self" rel="dofollow"
       title="BlackBerry">
         BlackBerry
@@ -63,17 +67,13 @@
       "Berkeley Software Distribution">
         BSD
       </option>
-      <option value="/beos.html" target="_self" rel="dofollow" title=
-      "BeOS">
-        BeOS
+      <option value="/chrome.html" target="_self" rel="dofollow" title=
+      "Chrome OS">
+        Chrome OS
       </option>
       <option value="/cpm.html" target="_self" rel="dofollow" title=
       "Control Program for Microcomputers">
         CP/M
-      </option>
-      <option value="/chrome.html" target="_self" rel="dofollow" title=
-      "Chrome OS">
-        Chrome OS
       </option>
       <option value="/dos.html" target="_self" rel="dofollow" title=
       "Disk Operating System">
@@ -142,9 +142,9 @@
       <option value="" target="_self" rel="dofollow" title=
       "section 03: projects + disclaimer + whoami">
       </option>
-      <option value="/games.html" target="_self" rel="dofollow" title=
-      "New Project: Games">
-        New Project: Games
+      <option value="/blocks.html" target="_self" rel="dofollow" title=
+      "Construction Blocks">
+        Construction Blocks
       </option>
       <option value="/disclaimer.html" target="_self" rel="dofollow"
       title="Disclaimer">
@@ -164,16 +164,16 @@
         have a Unix-level budget."</em><br>
         — Microsoft advertisement (2003)
       </blockquote>
-      <p id="1969"><a href=
+      <p id="1969">Unix is one of the oldest operating systems,
+      originally coded in assembler in 1969 by Dennis Ritchie (right)
+      and Ken Thompson (left) at Bell Labs (pictured below).</p>
+      <p align="center"><a href=
       "https://commons.wikimedia.org/w/index.php?curid=31308" target=
       "_blank" rel="nofollow"><img src="/img/220px-Ken_n_dennis.jpg"
-      height="143" width="220" border="0" align="right" alt=
+      height="207" width="320" border="0" align="right" alt=
       "By Unknown author — http://catb.org/~esr/jargon/html/U/Unix.html, Public Domain, https://commons.wikimedia.org/w/index.php?curid=31308"
       title=
-      "By Unknown author — http://catb.org/~esr/jargon/html/U/Unix.html, Public Domain, https://commons.wikimedia.org/w/index.php?curid=31308"></a>
-      Unix is one of the oldest operating systems, originally coded in
-      assembler in 1969 by Dennis Ritchie (right) and Ken Thompson
-      (left) at Bell Labs.</p>
+      "By Unknown author — http://catb.org/~esr/jargon/html/U/Unix.html, Public Domain, https://commons.wikimedia.org/w/index.php?curid=31308"></a></p>
       <p id="1972">In 1972, Unix was coded again in C (its native
       language) for portability. Unix is the most portable and reliable
       OS.</p>
@@ -232,17 +232,20 @@
         the following commands to get the package from the specific
         website (<tt>wget</tt>) as shown below.</p>
         <pre>
+          <!-- *spacer* -->
           wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
         </pre>
-        <p>Then you need to change the permission so the
-        <tt>apt-cyg</tt> package can be executable.</p>
+        <p>Then you need to change the mode (<tt>chmod</tt>) —
+        permission — of <tt>apt-cyg</tt> package to executable
+        (<tt>+x</tt>).</p>
         <pre>
           <!-- *spacer* -->
           chmod +x apt-cyg
         </pre>
-        <p>As the last step, you need to move the <tt>apt-cyg</tt>
-        package to <tt>/usr/local/bin</tt> so it can be accessible —
-        included in the <tt>path</tt> system variable.</p>
+        <p>As the last step, you need to move (<tt>mv</tt>) the
+        <tt>apt-cyg</tt> package to <tt>/usr/local/bin</tt> so it can
+        be accessible — included in the <tt>path</tt> system
+        variable.</p>
         <pre>
           <!-- *spacer* -->
           mv apt-cyg /usr/local/bin
@@ -260,6 +263,14 @@
           apt-cyg install python3
           apt-cyg install tidy
         </pre>
+        <p align="center"><a href=
+        "https://commons.wikimedia.org/w/index.php?curid=186257"
+        target="_blank" rel="nofollow"><img src=
+        "/img/640px-Cygwin_X11_rootless_WinXP.png" height="231" width=
+        "320" border="0" align="right" alt=
+        "By User:Cljk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=186257"
+        title=
+        "By User:Cljk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=186257"></a></p>
       </section>
       <section role="section">
         <h3 id="GitHubWindows">GitHub for Windows</h3>
@@ -277,6 +288,12 @@
         <p>I have not found a package manager for <tt>MINGW64</tt>. I
         guess installing <tt>apt-cyg</tt>, but I have not tried it. As
         a purist, I would not do it.</p>
+        <p><a href="https://gitforwindows.org/img/gw1.png" target=
+        "_blank" rel="nofollow"><img src="/img/gw1.png" height="244"
+        width="320" border="0" align="right" alt=
+        "Copyright (c) 2021 Git for Windows, All rights reserved.; By Source, Fair use, https://gitforwindows.org/img/gw1.png"
+        title=
+        "Copyright (c) 2021 Git for Windows, All rights reserved.; By Source, Fair use, https://gitforwindows.org/img/gw1.png"></a></p>
       </section>
       <section role="section">
         <h3 id="Termux">Termux (Android)</h3>
@@ -311,6 +328,13 @@
           <!-- *spacer* -->
           pkg install <em>[package_name]</em>
         </pre>
+        <p align="center"><a href=
+        "https://commons.wikimedia.org/w/index.php?curid=108727161"
+        target="_blank" rel="nofollow"><img src="/img/Termux-nano.jpg"
+        height="487" width="320" border="0" align="right" alt=
+        "By Cyandie-overlord - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=108727161"
+        title=
+        "By Cyandie-overlord - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=108727161"></a></p>
       </section>
     </article>
   </main><!-- end of main body -->

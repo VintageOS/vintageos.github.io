@@ -218,7 +218,7 @@
         <li>
           <p id="BBCMicro">Acorn BBC Micro (1981-94) — Acorn Machine
           Operating System (MOS, not to be confused with MOS chips)
-          with BBC BASIC I, 2 KHz MOS 6502, 16 KB of RAM; more than
+          with BBC BASIC I, 2 KHz MOS 6502 CPU, 16 KB of RAM; more than
           1,500,000 sold</p>
           <p align="center"><img src=
           "/img/638px-Acorn_MOS_Version_320.png" height="241" width=
@@ -295,7 +295,7 @@
           Motorola MC6809E that could be overclocked to 1.8 MHz by
           hacking the clock generator, 16 or 32 or 64 KB of RAM and a
           MC6847T1 video display generator (VCG) allowing the CoCo to
-          display upper and lower case characters. The CoCo 2 with 64
+          display upper and lower case characters. The CoCo 3 with 64
           KB of RAM is the system that, if I had not opted for the
           <a href="/basic.html#C64" target="_self" rel="nofollow"
           title="Beginner's All-purpose Symbolic Instruction Code (BASIC) » Commodore 64">
@@ -396,16 +396,14 @@
           "Other Operating Systems » Control Program for Microcomputers">
           CP/M 2.2 or 3.0</a> with Level I or Level II BASIC (Steve
           Leininger), 4 MHz Zilog Z80A or 6+ MHz with Z80B/Z80H or
-          HD64180/Z180 configurations. The Model IV was marketed to
+          HD64180/Z180 CPU configurations. The Model IV was marketed to
           businesses with a price of $799 for a disk-less, bare-bones
           system to $1999 for a double drive unit.</p>
+          <p>Japan, in the other hand, was different and several
+          markets worldwide followed — Asia (Korea and Japan), South
+          America (Brazil and Chile), Europe (Netherlands, France,
+          Spain and Finland) and the Soviet Union.</p>
         </li>
-      </ul>
-      <p>Japan, in the other hand, was different and several markets
-      worldwide followed — Asia (Korea and Japan), South America
-      (Brazil and Chile), Europe (Netherlands, France, Spain and
-      Finland) and the Soviet Union.</p>
-      <ul>
         <li>
           <h3 id="MSX">Machine with Software eXchangeability
           (1983-93)</h3>
@@ -428,7 +426,7 @@
           title=
           "Copyright (c) 2022 techpeanuts. All rights reserved.; By Source, Fair use, https://tech-peanuts.com/2022/03/13/lets-build-a-msx-computer-from-scratch-part-1/."></p>
           <p>The common MSX (worldwide, 1983) architecture was based on
-          a 3.58 MHz Zilog Z80A, at least 8 KB of RAM (most models
+          a 3.58 MHz Zilog Z80A CPU, at least 8 KB of RAM (most models
           shipped with 64 KB), 32 KB of ROM, a General Instrument
           AY-3-8910 3-voice programmable sound generator (PSG), 16 KB
           of VRAM and a Texas Instruments TMS-9918/9928/9929 video
@@ -437,7 +435,7 @@
           "Disk Operating System">MSX-DOS</a> with MSX BASIC 1.0 (based
           on GW-BASIC with extensions provided by ASCII).</p>
           <p>The common MSX2 (worldwide, 1985) architecture was based
-          on a 3.58 MHz Zilog Z80A, at least 64 KB of RAM, 48 KB of
+          on a 3.58 MHz Zilog Z80A CPU, at least 64 KB of RAM, 48 KB of
           ROM, a Yamaha YM2149 PSG, 64 KB of VRAM (most models shipped
           with 128 KB), Yamaha V9938 VDP and a Ricoh RP5C01 real time
           clock (RTC) chip with a rechargeable battery running <a href=
@@ -446,19 +444,20 @@
           2.0 or 2.1.</p>
           <p>The common MSX2+ (Japan officially, Europe and Brazil via
           upgrades, 1988) architecture was based on a 3.58 MHz Zilog
-          Z80A (5.37 MHz via software), 64 KB of ROM, at least 64 KB of
-          RAM, a Yamaha YM2149 PSG, at least 128 KB of VRAM, a Yamaha
-          V9958 VDP and a Ricoh RP5C01 RTC chip with rechargeable
-          battery running <a href="/dos.html" target="_self" rel=
-          "dofollow" title="Disk Operating System">MSX-DOS</a> with MSX
-          BASIC version 3.0.</p>
-          <p>The common MSX3 (Japan only, 1988) architecture was based
-          on a 3.58 MHz Zilog Z80A with 256 KB or a 7.16 MHz ASCII
-          DAR800-X0G (referred to R800, 28.6 MHz compared to the Z80)
-          with 512 KB, 96 KB of ROM, a Yamaha YM2149 PSG, at least 128
-          KB of VRAM, a Yamaha V9958 VDP and a Ricoh RP5C01 RTC chip
-          with rechargeable battery running <a href="/dos.html" target=
+          Z80A CPU (5.37 MHz via software), 64 KB of ROM, at least 64
+          KB of RAM, a Yamaha YM2149 PSG, at least 128 KB of VRAM, a
+          Yamaha V9958 VDP and a Ricoh RP5C01 RTC chip with
+          rechargeable battery running <a href="/dos.html" target=
           "_self" rel="dofollow" title=
+          "Disk Operating System">MSX-DOS</a> with MSX BASIC version
+          3.0.</p>
+          <p>The common MSX3 (Japan only, 1988) architecture was based
+          on a 3.58 MHz Zilog Z80A CPU with 256 KB or a 7.16 MHz ASCII
+          DAR800-X0G CPU (referred to R800, 28.6 MHz compared to the
+          Z80) with 512 KB, 96 KB of ROM, a Yamaha YM2149 PSG, at least
+          128 KB of VRAM, a Yamaha V9958 VDP and a Ricoh RP5C01 RTC
+          chip with rechargeable battery running <a href="/dos.html"
+          target="_self" rel="dofollow" title=
           "Disk Operating System">MSX-DOS</a> with MSX BASIC version
           4.0.</p>
           <p>Computer manufacturers worked around the MSX architecture
@@ -489,9 +488,9 @@
       "dofollow" title=
       "Beginner's All-purpose Symbolic Instruction Code (BASIC) » TRS80">
       TRS-80 Model III</a> (1983-85). At home, I spent many hours in
-      front of my C64 writing programs that no longer exist. Saving
-      programs on cassettes was an unreliable yet very common at the
-      time.</p>
+      front of my C64 connected to a B/W 13" Zenith TV writing programs
+      that no longer exist. Saving programs on cassettes was an
+      unreliable yet very common at the time.</p>
       <p>I never got a chance to play with an <a href=
       "/basic.html#Atari400" target="_self" rel="nofollow" title=
       "Beginner's All-purpose Symbolic Instruction Code (BASIC) » Atari 400">
@@ -504,12 +503,16 @@
       Amstrad CPC</a>, a <a href="/basic.html#TandyCoCo" target="_self"
       rel="nofollow" title=
       "Beginner's All-purpose Symbolic Instruction Code (BASIC) » TRS-80 Color Computer">
-      CoCo</a> or any other 8-bit home computer.</p>
+      CoCo</a> or any other 8-bit home computer other than my C64.
+      Maybe this is why I have a fascination with 8-bit computers
+      specially the CoCo 3.</p>
       <p>Maybe any 8-bit home computer system back then would have been
       the same to me, but my first experience with computers was my C64
-      — not merely a few hours a week in shop class. This is why, on
-      this page, I can only concentrate on my experience of BASIC on my
-      C64.</p>
+      — not merely a few hours a week in shop class on a <a href=
+      "/basic.html#TRS80" target="_self" rel="dofollow" title=
+      "Beginner's All-purpose Symbolic Instruction Code (BASIC) » TRS80">
+      TRS-80 Model III</a>. This is why, on this page, I can only
+      concentrate on my experience of BASIC on my C64.</p>
     </article>
     <article role="article">
       <h2 id="C64">Commodore 64 & BASIC 2.0:</h2>
@@ -519,7 +522,7 @@
       <em>geekdom</em> — and coding into late hours of the night
       instead of sleeping. The experience of working with KERNAL (the
       OS), machine language (accessing KERNAL) and Commodore BASIC
-      (programming) in its 8-bit glory boasting a 1.023 MHz MOS
+      (programming) in its 8-bit glory boasting a 1.023 MHz MOS CPU
       Technology 6510 microprocessor and 64 KB of RAM was as fun as it
       could be for any kid in the early 1980s. To make things even more
       exciting and bringing more curious kids (like me at the time) to
@@ -620,8 +623,8 @@
       for the Commodore 65 (probably just a prototype name). Being a
       prototype, only few units exist and one of these units could
       easily sell in an auction for close to 47,000€ (about $49,500).
-      The C65 boasted a 3.54 MHz 16-bit CSG 4510 chip (compared to the
-      1 MHz chip in C64) combined with two MOS 6526 chips, Universal
+      The C65 boasted a 3.54 MHz 16-bit CSG 4510 CPU (compared to the 1
+      MHz CPU in C64) combined with two MOS 6526 chips, Universal
       Asynchronous Receiver/Transmitter (UART) serial interface, 1 MB
       of RAM mapping (depending on RAM expansion), a VIC-III graphics
       chip (256 colors, 40/80×25 text), CSG 8580R5 SID chips capable of
@@ -633,9 +636,9 @@
       the controller for the external floppy disk drive as in the
       C64).</p>
       <p id="MEGA65">The Museum of Electronic Games & Art (MEGA,
-      Germany) is producing the MEGA65 with a 40.5 MHz 8-bit GS4510
+      Germany) is producing the MEGA65 with a 40.5 MHz 8-bit GS4510 CPU
       (about the same speed as an i486 though not sure of the vendor of
-      the new chip), 384 KB of fast RAM (old CBM hardware) and 8 MB of
+      the new CPU), 384 KB of fast RAM (old CBM hardware) and 8 MB of
       Hyper-RAM (hypervisor), four soft-SIDs and two 8-bit DACs
       (digital-to-analog converters), MEGA OS (hypervisor to run
       multiple VMs: BASIC 10 or BASIC 65 <a href="/others.html#GEOS"
@@ -658,6 +661,11 @@
       C65 prototype) and BASIC 65. This means that the MEGA65 can run
       in three different modes — BASIC 2.0 (<tt>C64.ROM</tt>), BASIC 10
       (<tt>C65.ROM</tt>) and BASIC 65 (<tt>MEGA65.ROM</tt>).</p>
+      <p>Note that, since the MEGA65 is made in Germany, the output
+      might be PAL (50 Hz AC, 625 lines, 50 fields, 25 fps) and might
+      not work on NTSC (60 Hz AC 625 lines, 60 fields, 30 fps). I could
+      not find this in the system specifications (specs). If you have a
+      dual mode monitor, you should be okay.</p>
       <p align="center"><img src="/img/640px-C65.png" height="252"
       width="320" border="0" class="boxes" alt=
       "By The original uploader was Tom Knox at German Wikipedia. - Transferred from de.wikipedia to Commons., Public Domain, https://commons.wikimedia.org/w/index.php?curid=2181755"
@@ -698,8 +706,8 @@
           "http://devili.iki.fi/Computers/Commodore/C64/CPM/" target=
           "_blank" rel="nofollow" title="CP/M Cartridge">CP/M
           Cartridge</a> was released in 1983 by CBM with Z80 running at
-          3 MHz — almost twice faster than the 1.023 MHz MOS Technology
-          6510 in the C64.</p>
+          3 MHz CPU — almost twice faster than the 1.023 MHz MOS
+          Technology 6510 in the C64.</p>
         </li>
         <li>
           <p id="DOS65">DOS/65 by Richard Leary offers file system
@@ -819,7 +827,7 @@
     <article role="article">
       <h2 id="TRS80">TRS-80:</h2>
       <p>As I mentioned before, I also have a special memory of the
-      TRS-80, specially Model III and the Color Computer 2 (CoCo 2) —
+      TRS-80, specially Model III and the Color Computer 2 (CoCo 3) —
       not other models of the TRS-80 family. I used a TRS-80 at school
       (two students per machine). I enjoyed annoying others with the
       orange button on the top right hand side of the keyboard — memory

@@ -1,5 +1,5 @@
 ########################################################################
-#        _____ _     _               _____ _____       v20211218223349 #
+#        _____ _     _               _____ _____         v202208091049 #
 #       |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___         #
 #       |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |        #
 #        \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |        #
@@ -7,7 +7,7 @@
 #                                                                      #
 #                                * thanks to patorjk.com for ASCII art #
 #                                                                      #
-# FRN2000 & VintageOS v20211218223349,  all rights reserved, 1997-2022 #
+#  FRN2000 & VintageOS v202208091049,  all rights reserved, 1997-2022  #
 #                     frn2000.com · vintageos.org                      #
 #                                                                      #
 # 1.  over three (3) decades destroying various technologies, crashing #

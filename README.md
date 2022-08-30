@@ -1,4 +1,4 @@
-                  FRN2000 & VintageOS v20211218223349
+                  FRN2000 & VintageOS v202208091049
         frn2000.com · vintageos.org · all rights reserved, 1997-2022
 
 [VintageOS](https://vintageos.org/) is the source for information on

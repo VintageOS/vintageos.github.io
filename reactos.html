@@ -183,7 +183,7 @@
       title=
       "By ROSHelper — Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=67644888"></p>
       <p>For the past 16 years, ReactOS has remained in alpha. The
-      current version 0.4.13 was released on 04/10/2020. According to
+      current version 0.4.14 was released on 04/10/2020. According to
       its developing group, this OS is 93.8% complete.</p>
       <p>ReactOS can run older <a href="/windows.html" target="_self"
       rel="dofollow" title="What is Microsoft Windows?">Windows</a>
@@ -234,8 +234,8 @@
       it. I do not play with it as much, but I am still curious about
       its capabilities as a <a href="/windows.html" target="_self" rel=
       "dofollow" title="What is Microsoft Windows?">Windows</a>
-      replacement especially for older machines — most likely
-      involving, people and companies on a tight budget.</p>
+      replacement especially for older machines — most likely involving
+      people and companies on a tight budget.</p>
       <p>ReactOS relies on Wine for compatibility with the <a href=
       "/windows.html" target="_self" rel="dofollow" title=
       "What is Microsoft Windows?">Windows NT</a> kernel. This is
@@ -259,6 +259,98 @@
       internal audits check the code (mostly C++) constantly.
       Redistributable packages and libraries by Microsoft can be
       installed on ReactOS.</p>
+      <p>ReactOS comes with a descent set of console commands in it
+      command prompt (<tt>CMD.EXE</tt>), most of which are copies of
+      those in <a href="/windows.html" target="_self" rel="dofollow"
+      title="What is Microsoft Windows?">Windows</a>.</p>
+      <nav id="cmd">
+        <ul>
+          <li><tt>?</tt> — List all available commands (without
+          description).</li>
+          <li><tt>ALIAS</tt> — Sets, removes or shows aliases.</li>
+          <li><tt>ATTRIB</tt> — Displays or changes file
+          attributes.</li>
+          <li><tt>BEEP</tt> — Beep the speaker.</li>
+          <li><tt>CALL</tt> — Calls one batch program from
+          another.</li>
+          <li><tt>CD</tt> — Displays the name of or changes the current
+          directory.</li>
+          <li><tt>CHCP</tt> — Displays or sets the active code page
+          number.</li>
+          <li><tt>CHOICE</tt> — Waits for the user to choose one of a
+          set of choices.</li>
+          <li><tt>CLS</tt> — Clears the screen.</li>
+          <li><tt>CMD</tt> — Starts a new instance of the ReactOS
+          command interpreter.</li>
+          <li><tt>COLOR</tt> — Sets the default console foreground and
+          background colors.</li>
+          <li><tt>COPY</tt> — Copies one or more files to another
+          location.</li>
+          <li><tt>DATE</tt> — Displays or sets the date.</li>
+          <li><tt>DELETE</tt> — Deletes one or more files.</li>
+          <li><tt>DIR</tt> — Displays a list of files and
+          subdirectories in a directory.</li>
+          <li><tt>ECHO</tt> — Displays messages, or turns command
+          echoing on or off.</li>
+          <li><tt>ERASE</tt> — Deletes one or more files.</li>
+          <li><tt>EXIT</tt> — Quits the <tt>CMD.EXE</tt> program
+          (command interpreter).</li>
+          <li><tt>FOR</tt> — Runs a specified command for each file in
+          a set of files.</li>
+          <li><tt>FREE</tt> — (free) disc space.</li>
+          <li><tt>GOTO</tt> — Directs the ReactOS command interpreter
+          to a labeled line in a batch program.</li>
+          <li><tt>HELP</tt> — Provides Help information for ReactOS
+          commands.</li>
+          <li><tt>HISTORY</tt> — Lists all commands which have been
+          used.</li>
+          <li><tt>IF</tt> — Performs conditional processing in batch
+          programs.</li>
+          <li><tt>LABEL</tt> — Creates, changes, or deletes the volume
+          label of a disk.</li>
+          <li><tt>MD</tt> — Creates a directory.</li>
+          <li><tt>MKDIR</tt> — Creates a directory.</li>
+          <li><tt>MKLINK</tt> — Creates a filesystem link object.</li>
+          <li><tt>MOVE</tt> — Moves one or more files from one
+          directory to another directory.</li>
+          <li><tt>PATH</tt> — Displays or sets a search path for
+          executable files.</li>
+          <li><tt>PAUSE</tt> — Suspends processing of a batch file and
+          displays a message.</li>
+          <li><tt>POPD</tt> — Restores the previous value of the
+          current directory saved by <tt>PUSHD</tt>.</li>
+          <li><tt>PROMPT</tt> — Changes the command prompt.</li>
+          <li><tt>PUSHD</tt> — Saves the current directory then changes
+          it.</li>
+          <li><tt>RD</tt> — Removes a directory.</li>
+          <li><tt>REM</tt> — Records comments (remarks) in batch
+          files.</li>
+          <li><tt>REN</tt> — Renames a file or files.</li>
+          <li><tt>RENAME</tt> — Renames a file or files.</li>
+          <li><tt>REPLACE</tt> — Replaces files.</li>
+          <li><tt>RMDIR</tt> — Removes a directory.</li>
+          <li><tt>SCREEN</tt> — Move cursor and optionally print
+          text.</li>
+          <li><tt>SET</tt> — Displays, sets, or removes ReactOS
+          environment variables.</li>
+          <li><tt>SHIFT</tt> — Shifts the position of replaceable
+          parameters in batch files.</li>
+          <li><tt>START</tt> — Starts a separate window to run a
+          specified program or command.<br>
+          Executes command.</li>
+          <li><tt>TIME</tt> — Displays or sets the system time.</li>
+          <li><tt>TIMER</tt> — Allow the use of ten stopwatches.</li>
+          <li><tt>TITLE</tt> — Sets the window title for a
+          <tt>CMD.EXE</tt> session.</li>
+          <li><tt>TYPE</tt> — Displays the contents of a text
+          file.</li>
+          <li><tt>VER</tt> — Displays the ReactOS version.</li>
+          <li><tt>VERIFY</tt> — Tells ReactOS whether to verify that
+          your files are written correctly to a disk.</li>
+          <li><tt>VOL</tt> — Displays a disk volume label and serial
+          number.</li>
+        </ul>
+      </nav>
       <p>Keep in mind that, although ReactOS is a functional OS, it is
       still in <em>alpha</em>. It could still be considered a proof of
       concept, an experiment of sorts. As such, it feels fairly buggy,
@@ -277,11 +369,13 @@
       boxes. I installed ReactOS in a VDI as I no longer have a
       physical computer lab at home.</p>
       <p>Although I had installed and used ReactOS many times before,
-      version 0.4.13 gave me some issues when using VirtualBox. The
-      folks at the forum (chat) helped me troubleshoot the errors I was
+      version 0.4.13 (currently running 0.4.14) gave me some issues
+      when using VirtualBox running on <a href="/linux.html" target=
+      "_self" rel="dofollow" title="What is Linux?">Linux</a>. The
+      folks at the forum helped me troubleshoot the errors I was
       getting — freezing the host computer and being forced to reboot
-      it manually. I was advised to select <a href="/windows.html"
-      target="_self" rel="dofollow" title=
+      it manually. I was advised to select at least <a href=
+      "/windows.html" target="_self" rel="dofollow" title=
       "What is Microsoft Windows?">Windows 2003 (32-bit)</a> using no
       more than 1 GB of RAM.</p>
       <p>If you decide to use a VDI, you might get errors indicating

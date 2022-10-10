@@ -179,17 +179,16 @@
       (<em>asm</em>), but I have no idea which assembler dialect would
       be best (easiest) for me.</p>
       <ul>
-        <li>FASM (flat assembler) — <a href="/dos.html" target="_self"
-          rel="dofollow" title=
-          "What is Disk Operating System (DOS)?">DOS</a>, <a href=
-          "/linux.html" target="_self" rel="dofollow" title=
-          "What is Linux?">Linux</a>, <a href="/unix.html" target=
-          "_self" rel="dofollow" title=
-          "What are UNIX® and Unix?">Unix</a> and <a href=
-          "/windows.html" target="_self" rel="dofollow" title=
+        <li id="FASM">Flat Assembler (FASM) — <a href="/dos.html"
+        target="_self" rel="dofollow" title=
+        "What is Disk Operating System (DOS)?">DOS</a>, <a href=
+        "/linux.html" target="_self" rel="dofollow" title=
+        "What is Linux?">Linux</a>, <a href="/unix.html" target="_self"
+          rel="dofollow" title="What are UNIX® and Unix?">Unix</a> and
+          <a href="/windows.html" target="_self" rel="dofollow" title=
           "What is Microsoft Windows?">Windows</a>
         </li>
-        <li>JWasm (Japheth Assembler) — AVX (Advanced Vector
+        <li id="JWasm">Japheth Assembler (JWasm) — AVX (Advanced Vector
         Extensions), <a href="/dos.html" target="_self" rel="dofollow"
           title="What is Disk Operating System (DOS)?">DOS</a>,
           <a href="/bsd.html#FreeBSD" target="_self" rel="dofollow"
@@ -201,22 +200,23 @@
           and <a href="/windows.html" target="_self" rel="dofollow"
           title="What is Microsoft Windows?">Windows</a>
         </li>
-        <li>MASM (Microsoft Macro Assembler) — for <a href=
+        <li id="MASM">Microsoft Macro Assembler (MASM) — for <a href=
         "/windows.html" target="_self" rel="dofollow" title=
         "What is Microsoft Windows?">Windows</a> only
         </li>
-        <li>NASM (Netwide Assembler) — <a href="/linux.html" target=
-        "_self" rel="dofollow" title="What is Linux?">Linux</a>
-        </li>
-        <li>UASM (µASM or microassembler) — for <a href="/linux.html"
-        target="_self" rel="dofollow" title="What is Linux?">Linux</a>,
-        <a href="/macos.html" target="_self" rel="dofollow" title=
-        "What is macOS?">macOS</a> and <a href="/windows.html"
+        <li id="NASM">Netwide Assembler (NASM) — <a href="/linux.html"
           target="_self" rel="dofollow" title=
-          "What is Microsoft Windows?">Windows</a>
+          "What is Linux?">Linux</a>
         </li>
-        <li>Vasm (Volker's Assembler) — needs to be compiled by user
-        for
+        <li id="UASM">microassembler (UASM or µASM) — for <a href=
+        "/linux.html" target="_self" rel="dofollow" title=
+        "What is Linux?">Linux</a>, <a href="/macos.html" target=
+        "_self" rel="dofollow" title="What is macOS?">macOS</a> and
+        <a href="/windows.html" target="_self" rel="dofollow" title=
+        "What is Microsoft Windows?">Windows</a>
+        </li>
+        <li id="Vasm">Volker's Assembler (Vasm) — needs to be compiled
+        by user for
           <ul>
             <li>
               <a href="/others.html#Amiga" target="_self" rel=
@@ -256,8 +256,8 @@
             </li>
           </ul>
         </li>
-        <li>WASM (Open Watcom Assembler) — for <a href="/dos.html"
-        target="_self" rel="dofollow" title=
+        <li id="WASM">Open Watcom Assembler (WASM) — for <a href=
+        "/dos.html" target="_self" rel="dofollow" title=
         "What is Disk Operating System (DOS)?">DOS</a>, <a href=
         "/linux.html" target="_self" rel="dofollow" title=
         "What is Linux?">Linux</a>, <a href="/os2.html" target="_self"
@@ -266,7 +266,7 @@
           "What is Microsoft Windows?">Windows</a> (not WebAssembly,
           also abbreviated as <em>WASM</em>)
         </li>
-        <li>YASM (Yasm Modular Assembler) — for <a href=
+        <li id="YASM">Yasm Modular Assembler (YASM) — for <a href=
         "/unix.html#Cygwin" target="_self" rel="dofollow" title=
         "What is Unix — Cygwin?">Cygwin</a>, <a href="/dos.html"
           target="_self" rel="dofollow" title=
@@ -274,10 +274,11 @@
           "/windows.html" target="_self" rel="dofollow" title=
           "What is Microsoft Windows?">Windows</a>
         </li>
-        <li>or some other variant either for <a href="/linux.html"
-        target="_self" rel="dofollow" title="What is Linux?">Linux</a>
-        or <a href="/windows.html" target="_self" rel="dofollow"
-          title="What is Microsoft Windows?">Windows</a>
+        <li id="ASM">or some other variant of assembler either for
+        <a href="/linux.html" target="_self" rel="dofollow" title=
+        "What is Linux?">Linux</a> or <a href="/windows.html" target=
+        "_self" rel="dofollow" title=
+        "What is Microsoft Windows?">Windows</a>
         </li>
       </ul>
       <p>For the time being, I need to point out that these OSs come in
@@ -318,7 +319,7 @@
         </ul>
       </article>
       <article role="article">
-        <h2 id="Images">Images: discs and floppies</h2>
+        <h2 id="Images">Images (discs and floppies):</h2>
         <p>Note that some of OSs covered on the list below are
         available in images small enough to fit in a 1.44 MB floppy
         (usually <tt>.FLP</tt>). These OSs hardly ever come with an
@@ -673,12 +674,15 @@
               <p>KolibriOS is an x86 16/32-bit OS — forked from
               <a href="/others.html#MenuetOS" title=
               "What other operating systems are there — MenuetOS?">MenuetOS</a>
-              in 2004, written in FASM (flat assembler) — heavily
-              scaled down in order to use low resources, as quoted from
-              the <tt>INSTALL.TXT</tt> file that is included with the
-              <a href="/others.html#Images" target="_self" rel=
-              "dofollow" title=
-              "What other operating systems are there — Images?">image</a>.</p>
+              in 2004, written in <a href="/others.html#FASM" target=
+              "_self" rel="dofollow" title=
+              "What other operating systems are there — Flat Assembler (FASM)?">
+              FASM</a> — heavily scaled down in order to use low
+              resources, as quoted from the <tt>INSTALL.TXT</tt> file
+              that is included with the <a href="/others.html#Images"
+              target="_self" rel="dofollow" title=
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a>.</p>
               <ul>
                 <li>CPU 5x86: Pentium, AMD or Cyrix without MMX with
                 frequency 90 MHz</li>
@@ -690,41 +694,44 @@
               </ul>
               <p>As such, the 1.41 MB <a href="/others.html#Images"
               target="_self" rel="dofollow" title=
-              "What other operating systems are there — Images?">image</a>
-              (<tt>.IMG</tt>) fits in a 1.44 MB floppy, that can be
-              burned to floppy or mounted as a virtual drive. The full
-              <a href="/others.html#Images" target="_self" rel=
-              "dofollow" title=
-              "What other operating systems are there — Images?">image</a>
-              available in an <tt>.ISO</tt> is under 70 MB and it also
-              needs at least 8 MB of RAM to load the OS. I would
-              recommend at least 128 MB of RAM to run most
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a> (<tt>.IMG</tt>) fits in a 1.44 MB floppy, that
+              can be burned to floppy or mounted as a virtual drive.
+              The full <a href="/others.html#Images" target="_self"
+              rel="dofollow" title=
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a> available in an <tt>.ISO</tt> is under 70 MB
+              and it also needs at least 8 MB of RAM to load the OS. I
+              would recommend at least 128 MB of RAM to run most
               applications. In either case, the whole OS (not only the
               kernel) is loaded to memory and not from disk to memory
               (no swapping). There is no installation and any change
               you make can be written back to the <a href=
               "/others.html#Images" target="_self" rel="dofollow"
-              title="What other operating systems are there — Images?">image</a>
-              — not to root (<tt>/</tt>), but rather to one of the
-              subdirectories in the <a href="/others.html#Images"
-              target="_self" rel="dofollow" title=
-              "What other operating systems are there — Images?">image</a>.
-              One idea is <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep
-              all OS settings together and hence organized. The
-              software bundled in the <a href="/others.html#Images"
-              target="_self" rel="dofollow" title=
-              "What other operating systems are there — Images?">image</a>
-              is interesting to say the least. Its web browser WebView
-              3.66-3 is similar to Lynx, but with a modern GUI as well
-              as image rendering and no scripts. KolibriOS also has its
-              own <a href="/linux.html#sh" target="_blank" rel=
-              "nofollow" title=
+              title="What other operating systems are there — Images (discs and floppies)?">
+              image</a> — not to root (<tt>/</tt>), but rather to one
+              of the subdirectories in the <a href=
+              "/others.html#Images" target="_self" rel="dofollow"
+              title="What other operating systems are there — Images (discs and floppies)?">
+              image</a>. One idea is
+              <tt>/fd/1/SETTINGS/RAMDRIVE.BAK</tt> to keep all OS
+              settings together and hence organized. The software
+              bundled in the <a href="/others.html#Images" target=
+              "_self" rel="dofollow" title=
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a> is interesting to say the least. Its web
+              browser WebView 3.66-3 is similar to Lynx, but with a
+              modern GUI as well as image rendering and no scripts.
+              KolibriOS also has its own <a href="/linux.html#sh"
+              target="_blank" rel="nofollow" title=
               "What is Linux — Bash? Bash">Bash</a>-like shell although
               limited to 28 external commands (excluding kernel
-              commands) simply called <tt>Shell 0.8.3</tt> in Kolibri
-              0.7.7.0 (current build svn9877 as of 09/18/2022). The
-              following are the commands taken as per the KolibriOS
-              Wiki.</p>
+              commands) simply called <tt>Shell 0.8.3</tt> in KolibriOS
+              0.7.7.0 (current build svn9877 released on 09/18/2022).
+              The following are the commands taken as per the KolibriOS
+              Wiki, most of which are similar to those in <a href=
+              "/linux.html" target="_self" rel="dofollow" title=
+              "What is Linux?">Linux</a>.</p>
               <!-- list from http://wiki.kolibrios.org/wiki/Shell -->
               <ul>
                 <li><tt>about</tt></li>
@@ -758,21 +765,24 @@
               </ul>
               <p>The <a href="/others.html#Images" target="_self" rel=
               "dofollow" title=
-              "What other operating systems are there — Images?">image</a>
-              comes with several games, several emulators for several
-              video game platforms like SNES and even <a href=
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a> comes with several games, several emulators for
+              several video game platforms like SNES and even <a href=
               "/dos.html#DOSBox" target="_self" rel="dofollow" title=
               "What is Disk Operating System (DOS) — DOSBox?">DOSBox</a>.
               It seems like an excellent OS for gaming although the it
               also includes several office, programming languages like
               <a href="/basic.html" target="_self" rel="nofollow"
               title="What is Beginner's All-purpose Symbolic Instruction Code (BASIC)?">
-              TinyBASIC</a> and FASM (flat assembler) as well as
-              network utilities almost rivaling any <a href=
-              "/linux.html" target="_self" rel="dofollow" title=
-              "What is Linux?">Linux</a> distribution. Although it is a
-              bit off-topic, this OS is the cutest I have seen and I
-              enjoy playing with it — my favorite from this list.</p>
+              TinyBASIC</a> and <a href="/others.html#FASM" target=
+              "_self" rel="dofollow" title=
+              "What other operating systems are there — Flat Assembler (FASM)?">
+              FASM</a> as well as network utilities almost rivaling any
+              <a href="/linux.html" target="_self" rel="dofollow"
+              title="What is Linux?">Linux</a> distribution. Although
+              it is a bit off-topic, this OS is the cutest I have seen
+              and I enjoy playing with it — my favorite from this
+              list.</p>
               <p align="center"><img src=
               "/img/640px-KolibriOS_nightly_build_desktop.png" height=
               "240" width="320" border="0" class="boxes" alt=
@@ -782,14 +792,16 @@
             </li>
             <li>
               <h3 id="MenuetOS">MenuetOS:</h3>
-              <p>MenuetOS is an x86 16/32-bit OS written in FASM (flat
-              assembler) and fits in a <a href="/others.htm%20l#Images"
+              <p>MenuetOS is an x86 16/32-bit OS written in <a href=
+              "/others.html#FASM" target="_self" rel="dofollow" title=
+              "What other operating systems are there — Flat Assembler (FASM)?">
+              FASM</a> and fits in a <a href="/others.htm%20l#Images"
               target="_self" rel="dofollow" title=
-              "What other operating systems are there — Images?">floppy</a>.
-              It needs a mouse, i386, 32 MB of RAM and 1 MB Display
-              Vesa 2.0+ LFB. I have not had a chance to test MenuetOS
-              although I have played a lot with its fork <a href=
-              "/others.html#KolibriOS" title=
+              "What other operating systems are there — Images (discs and floppies)?">
+              floppy</a>. It needs a mouse, i386, 32 MB of RAM and 1 MB
+              Display Vesa 2.0+ LFB. I have not had a chance to test
+              MenuetOS although I have played a lot with its fork
+              <a href="/others.html#KolibriOS" title=
               "What other operating systems are there — KolibriOS?">KolibriOS</a>.</p>
               <p align="center"><img src="/img/Menuet.png" height="240"
               width="320" border="0" class="boxes" alt=
@@ -804,22 +816,22 @@
               "What is Free and Open Source Software (FOSS)?">open
               source</a> fork of <a href="/others.html#MikeOS" target=
               "_self" rel="dofollow" title=
-              "What other operating systems are there — Mike?OS">MikeOS</a>
+              "What other operating systems are there — MikeOS?">MikeOS</a>
               with a desktop environment instead of a menu in the
               middle of the screen. MichalOS has a nicer interface that
               asks for the user enter a name and password for security
               writing data back to its 1.8 MB <a href=
               "/others.html#Images" target="_self" rel="dofollow"
-              title="What other operating systems are there — Images?">image</a>
-              when written to a disk (not the 1.8 MB read-only
-              <tt>.ISO</tt>). If using the 1.41 MB <a href=
+              title="What other operating systems are there — Images (discs and floppies)?">
+              image</a> when written to a disk (not the 1.8 MB
+              read-only <tt>.ISO</tt>). If using the 1.41 MB <a href=
               "/others.html#Images" target="_self" rel="dofollow"
-              title="What other operating systems are there — Images?">floppy
-              image</a>, there are parts of the OS missing like the
-              used and password set-up that I mentioned before. Since
-              MichalOS is forked from a previous version of MikeOS, 4.5
-              rather than the newest, the fork has the opportunity to
-              become its own OS.</p>
+              title="What other operating systems are there — Images (discs and floppies)?">
+              floppy image</a>, there are parts of the OS missing like
+              the used and password set-up that I mentioned before.
+              Since MichalOS is forked from a previous version of
+              MikeOS, 4.5 rather than the newest, the fork has the
+              opportunity to become its own OS.</p>
               <p align="center"><img src="/img/MichalOS_1.png" height=
               "240" width="320" border="0" class="boxes" alt=
               "MichalOS, By Source, Fair use, https://sourceforge.net/projects/michalos/"
@@ -831,19 +843,21 @@
               <p>MikeOS is an x86 16-bit <a href="/foss.html" target=
               "_self" rel="dofollow" title=
               "What is Free and Open Source Software (FOSS)?">open
-              source</a> OS written in Netwide Assembler (NASM) by Mike
-              Saunders and others. This OS (currently 4.6.1) has low
-              system requirements — i386, keyboard, no mouse and 1 MB
-              of RAM — and it runs from its <a href=
+              source</a> OS written in <a href="/others.html#NASM"
+              target="_self" rel="dofollow" title=
+              "What other operating systems are there — Netwide Assembler (NASM)?">
+              FASM</a> by Mike Saunders and others. This OS (currently
+              4.6.1) has low system requirements — i386, keyboard, no
+              mouse and 1 MB of RAM — and it runs from its <a href=
               "/others.html#Images" target="_self" rel="dofollow"
-              title="What other operating systems are there — Images?">floppy
-              image</a>. The OS will a menu listing a set of files
-              including some programs you can run as with any OS. Note
-              that some of these files are not accessible as in the
-              case of <tt>KERNEL.BIN</tt> since it is a system file.
-              What I do not understand is why the file is not hidden in
-              the first place. Part of the idea behind MikeOS is
-              teaching how simple a 16-bit OS works with lots of
+              title="What other operating systems are there — Images (discs and floppies)?">
+              floppy image</a>. The OS will a menu listing a set of
+              files including some programs you can run as with any OS.
+              Note that some of these files are not accessible as in
+              the case of <tt>KERNEL.BIN</tt> since it is a system
+              file. What I do not understand is why the file is not
+              hidden in the first place. Part of the idea behind MikeOS
+              is teaching how simple a 16-bit OS works with lots of
               documentation to study and learn from. The MikeOS website
               has a collection of applications for download including a
               package for mouse support (<tt>MOUSE.LIB</tt>), <a href=
@@ -890,10 +904,11 @@
               "What is Free and Open Source Software (FOSS)?">open
               source</a> OS that comes in a <a href=
               "/others.html#Images" target="_self" rel="dofollow"
-              title="What other operating systems are there — Images?">floppy
-              image</a> set <em>"out to be an innovative new operating
-              system while retaining compatibility with <a href=
-              "/others.html#POSIX" target="_self" rel="dofollow" title=
+              title="What other operating systems are there — Images (discs and floppies)?">
+              floppy image</a> set <em>"out to be an innovative new
+              operating system while retaining compatibility with
+              <a href="/others.html#POSIX" target="_self" rel=
+              "dofollow" title=
               "What other operating systems are there — POSIX?"></a>
               and Win32"</em> (Sep. 2013).</p>
               <p>Note that I am still trying to understand this Möbius
@@ -950,9 +965,9 @@
               <p>NewOS is an OS that is under development written in C,
               C++ and assembler. This OS can fit on a <a href=
               "/others.html#Images" target="_self" rel="dofollow"
-              title="What other operating systems are there — Images?">floppy</a>.
-              As per the developers, it is <em>"mostly a kernel with a
-              minimal amount of user space libraries and
+              title="What other operating systems are there — Images (discs and floppies)?">
+              floppy</a>. As per the developers, it is <em>"mostly a
+              kernel with a minimal amount of user space libraries and
               applications."</em> This means plain CLI, no GUI. If you
               want to try it, you can run its binaries (located at
               <tt>/usr/local/i386-newos/bin</tt>) on <a href=
@@ -1054,10 +1069,10 @@
               <em>"to disk in a way that lets OS to restore whole
               memory <a href="/others.html#Images" target="_self" rel=
               "dofollow" title=
-              "What other operating systems are there — Images?">image</a>
-              on restart"</em> (Nov. 2020). This way in the case of
-              power failure the machine can pick up where it left
-              off.</p>
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a> on restart"</em> (Nov. 2020). This way in the
+              case of power failure the machine can pick up where it
+              left off.</p>
               <p align="center"><img src=
               "/img/611px-Phantom_screen_17.10.2019.png" height="240"
               width="320" border="0" class="boxes" alt=
@@ -1289,9 +1304,9 @@
               "What are UNIX® and Unix?">Unix</a> — that needs to be
               compiled from source (no <a href="/others.html#Images"
               target="_self" rel="dofollow" title=
-              "What other operating systems are there — Images?">image</a>).
-              It is promoted as not being <a href="/unix.html" target=
-              "_self" rel="dofollow" title=
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a>). It is promoted as not being <a href=
+              "/unix.html" target="_self" rel="dofollow" title=
               "What are UNIX® and Unix?">Unix</a>. Functions and naming
               conventions are similar to that of <a href="/unix.html"
               target="_self" rel="dofollow" title=
@@ -1311,8 +1326,8 @@
               simply <em>Yuuki</em>) that runs from its floppy-sized
               <a href="/others.html#Images" target="_self" rel=
               "dofollow" title=
-              "What other operating systems are there — Images?">image</a>
-              — no installation. Since Costa is the lead and
+              "What other operating systems are there — Images (discs and floppies)?">
+              image</a> — no installation. Since Costa is the lead and
               practically sole programmer, the development of this
               hobby OS is a tad slow. yuuOS reminds of <a href=
               "/others.html#BOS" target="_self" rel="dofollow" title=

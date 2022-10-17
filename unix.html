@@ -210,15 +210,11 @@
       rel="dofollow" title="What is Linux?">Linux</a> or <a href=
       "/bsd.html" target="_self" rel="dofollow" title=
       "What is Berkeley Software Distribution (BSD)?">BSD</a>), with
-      Apache Software Foundation (ASF) or related technology. As such,
-      support the <a href="/foss.html" target="_self" rel="dofollow"
-      title="What is Free and Open Source Software (FOSS)?">open
-      source</a> community. One way you can do this is by supporting
-      organizations like the Open Source Education Foundation.</p>
+      Apache Software Foundation (ASF) or related technology.</p>
       <p id="Shells">If you are interested in learning Unix as well as
       its clones or other derivatives, you should learn how to use, at
-      least, one <a href="/linux.html#Shells" target="_self" rel=
-      "dofollow" title="What is Linux — Shells?">shell</a>.</p>
+      least, one <a href="/unix.html#Shells" target="_self" rel=
+      "dofollow" title="What is Unix — Shells?">shell</a>.</p>
     </article>
     <article role="article">
       <h2 id="Installation">Installing Unix (or Unix Clones):</h2>
@@ -237,49 +233,180 @@
       page was partially taken from IBM DeveloperWorks.</p>
     </article>
     <article role="article">
+      <h2 id="Shells">Shells</h2>
+      <p>Because there many <em>distros</em> in the market (mostly
+      based on a parent <em>distro</em> — for example, Linux Mint based
+      on Ubuntu, which is based on Debian — learning Linux is not
+      necessarily learning how to use the GUI installed in the
+      <em>distro</em> of your choice. Learning Linux is learning how to
+      operate the command language interpreter or shell. Just like the
+      number of <em>distros</em>, there are several shells available
+      for <a href="/unix.html" target="_blank" rel="nofollow" title=
+      "What are UNIX® and Unix?">UNIX®</a> and <a href="/unix.html"
+      target="_blank" rel="nofollow" title=
+      "What are UNIX® and Unix?">Unix</a>-like OSs.</p>
+      <ul>
+        <li>
+          <p id="sh">Bourne Shell (<tt>sh</tt>) was developed by
+          Stephen Bourne for Bell Labs in 1979 for Version 7 Unix. The
+          prompt is <tt>$</tt> in user mode (<tt>user@foobar:~$</tt>)
+          and <tt>#</tt> as root using <tt>sudo -i</tt>
+          (<tt>root@foobar:~#</tt>).</p>
+          <ul>
+            <li>
+              <p id="bash">Bourne Again Shell (<tt>bash</tt>) was
+              developed by Brian Fox for the GNU Project in 1989 as a
+              replacement of the 1979 <a href="/unix.html#sh" target=
+              "_blank" rel="nofollow" title=
+              "What is Unix — Bourne Shell?">Bourne Shell</a>. It
+              <em>"incorporates useful features from the <a href=
+              "/unix.html#ksh" target="_blank" rel="nofollow" title=
+              "What is Unix — Bash Korn">Korn Shell</a> (<tt><a href=
+              "/unix.html#ksh" target="_blank" rel="nofollow" title=
+              "What is Unix — Bash Korn">ksh</a></tt>) and the <a href=
+              "/unix.html#csh" target="_blank" rel="nofollow" title=
+              "What is Unix — C Shell?">C Shell</a> (<tt><a href=
+              "/unix.html#csh" target="_blank" rel="nofollow" title=
+              "What is Unix — C Shell?">csh</a></tt>)"</em> (GNU
+              Project, Sep. 2020). Bash is the most used and most
+              commonly pre-installed in many Linux distributions. This
+              is the shell that I have used most and therefore I am
+              most comfortable with.</p>
+              <p align="center"><img src=
+              "/img/529px-Bash_screenshot.png" height="480" width="320"
+              border="0" class="boxes" alt=
+              "By Emx - Wikimedia Foundation, GPL, https://commons.wikimedia.org/w/index.php?curid=509725"
+              title=
+              "By Emx — Wikimedia Foundation, GPL, https://commons.wikimedia.org/w/index.php?curid=509725"></p>
+            </li>
+            <li>
+              <p id="ksh">KornShell (<tt>ksh</tt>) was developed by
+              David Korn for Bell Labs in 1983. It is backward
+              compatible with <a href="/unix.html#sh" target="_blank"
+              rel="nofollow" title="What is Unix — Bash? Bash">bash</a>
+              and partially compatible with <a href="/unix.html#csh"
+              target="_blank" rel="nofollow" title=
+              "What is Unix — C Shell?">C shell</a>.</p>
+              <p align="center"><img src=
+              "/img/640px-OpenBSD_ksh_Interaction.png" height="240"
+              width="320" border="0" class="boxes" alt=
+              "By Huihermit — Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=30558744"
+              title=
+              "By Huihermit — Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=30558744"></p>
+            </li>
+            <li>
+              <p id="ash">Almquist Shell (<tt>ash</tt>) was developed
+              by Kenneth Almquist in 1989 as a replacement for the
+              <a href="/unix.html#sh" target="_blank" rel="nofollow"
+              title="What is Unix — Bourne Shell?">Bourne Shell</a> in
+              System V4 (<a href="/bsd.html" target="_self" rel=
+              "dofollow" title=
+              "What is Berkeley Software Distribution (BSD)?">BSD</a>).</p>
+              <ul>
+                <li>
+                  <p id="dash">Debian Almquist Shell (<tt>dash</tt>) is
+                  the Debian version of <a href="/unix.html#sh" target=
+                  "_blank" rel="nofollow" title=
+                  "What is Unix — Almquist Shell?"><tt>ash</tt></a>
+                  developed by Herbert Xu in 1997. <tt>dash</tt> became
+                  the default shell in Debian GNU/Linux and
+                  Debian-based distributions like Ubuntu for boot
+                  sequence.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p id="csh">C shell (<tt>csh</tt>) was developed by Bill Joy
+          in 1978 for <a href="/bsd.html" target="_self" rel="dofollow"
+          title=
+          "What is Berkeley Software Distribution (BSD)?">2BSD</a>. The
+          prompt is <tt>%</tt> in user mode.</p>
+          <ul>
+            <li>
+              <p id="tcsh">TENEX/TOPS C shell (<tt>tcsh</tt>,
+              pronounced <em>tish</em>) was developed by Ken Greer at
+              Carnegie Mellon University in 1975 and merged
+              <tt>tcsh</tt> into <a href="/unix.html#csh" target=
+              "_blank" rel="nofollow" title=
+              "What is Unix — C Shell?"><tt>csh</tt></a> in 1981. Mike
+              Ellis at Fairchild A.I. Labs expanded <tt>tcsh</tt> with
+              command competition in 1983. Other key developers include
+              Paul Placeway and Christos Zoulas. It is backward
+              compatible with <a href="/unix.html#csh" target="_blank"
+              rel="nofollow" title=
+              "What is Unix — C Shell?"><tt>csh</tt></a>.</p>
+              <p align="center"><img src="/img/640px-TC_Shell.png"
+              height="240" width="320" border="0" class="boxes" alt=
+              "By iluxa777 — Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=58368724"
+              title=
+              "By iluxa777 — Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=58368724"></p>
+            </li>
+            <li>
+              <p id="zsh">Z shell (<tt>zsh</tt>) was written by Paul
+              Falstad in 1990 while studying at Princeton University.
+              It is named after then-Princeton professor Zhong Shao. In
+              2019, Zsh became the default shell in <a href=
+              "/macos.html" target="_self" rel="dofollow" title=
+              "What is macOS?">macOS</a>.</p>
+              <p align="center"><img src=
+              "/img/640px-Zsh_5.7.1_screenshot.png" height="240" width=
+              "320" border="0" class="boxes" alt=
+              "By Paul FalstadScreenshot:Vulphere — Self-taken; derivative work, MIT, https://commons.wikimedia.org/w/index.php?curid=79476954"
+              title=
+              "By Paul FalstadScreenshot:Vulphere — Self-taken; derivative work, MIT, https://commons.wikimedia.org/w/index.php?curid=79476954"></p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+    <article role="article">
       <h2 id="Emulators">Unix Emulators:</h2>
       <section role="section">
-        <h3 id="Cygwin">Cygwin</h3>
-        <p><a href="https://cygwin.com/" target="_blank" rel="nofollow"
-        title="Cygwin">Cygwin</a> is an <a href="/foss.html" target=
-        "_self" rel="dofollow" title=
-        "What is Free and Open Source Software (FOSS)?">open source</a>
-        <em>"<a href="/linux.html" target="_self" rel="dofollow" title=
-        "What is Linux?">Linux</a>-like environment for <a href=
-        "/windows.html" target="_self" rel="dofollow" title=
-        "What is Microsoft Windows?">Windows [4.x and up]</a>"</em>
-        (emulator) originally developed by Cygnus Solutions and then
-        acquired by Red Hat.</p>
-        <p>Similar to other Unix distributions regardless of OS or
-        vendor, Cygwin has its own package manager — <tt>apt-cyg</tt>,
-        which does not come installed by default. You would need to run
-        the following commands to get the package from the specific
-        website (<tt>wget</tt>) as shown below.</p>
-        <pre>
+        <ul>
+          <li id="Cygwin">
+            <p><a href="https://cygwin.com/" target="_blank" rel=
+            "nofollow" title="Cygwin">Cygwin</a> is an <a href=
+            "/foss.html" target="_self" rel="dofollow" title=
+            "What is Free and Open Source Software (FOSS)?">open
+            source</a> <em>"<a href="/linux.html" target="_self" rel=
+            "dofollow" title="What is Linux?">Linux</a>-like
+            environment for <a href="/windows.html" target="_self" rel=
+            "dofollow" title="What is Microsoft Windows?">Windows [4.x
+            and up]</a>"</em> (emulator) originally developed by Cygnus
+            Solutions and then acquired by Red Hat.</p>
+            <p>Similar to other Unix distributions regardless of OS or
+            vendor, Cygwin has its own package manager —
+            <tt>apt-cyg</tt>, which does not come installed by default.
+            You would need to run the following commands to get the
+            package from the specific website (<tt>wget</tt>) as shown
+            below.</p>
+            <pre>
           <!-- *spacer* -->
           wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
         </pre>
-        <p>Then you need to change the mode (<tt>chmod</tt>) of
-        <tt>apt-cyg</tt> package to executable (<tt>+x</tt>).</p>
-        <pre>
+            <p>Then you need to change the mode (<tt>chmod</tt>) of
+            <tt>apt-cyg</tt> package to executable (<tt>+x</tt>).</p>
+            <pre>
           <!-- *spacer* -->
           chmod +x apt-cyg
         </pre>
-        <p>As the last step, you need to move (<tt>mv</tt>) the
-        <tt>apt-cyg</tt> package to <tt>/usr/local/bin</tt> so it can
-        be accessible — included in the <tt>path</tt> system
-        variable.</p>
-        <pre>
+            <p>As the last step, you need to move (<tt>mv</tt>) the
+            <tt>apt-cyg</tt> package to <tt>/usr/local/bin</tt> so it
+            can be accessible — included in the <tt>path</tt> system
+            variable.</p>
+            <pre>
           <!-- *spacer* -->
           mv apt-cyg /usr/local/bin
         </pre>
-        <p>Now that <tt>apt-cyg</tt> has been installed, made into an
-        executable and made accessible in the <tt>path</tt> system
-        variable, you can use it as any other <tt>apt</tt> package
-        manager similar to <tt>apt-get</tt> as in <a href="/linux.html"
-        target="_self" rel="dofollow" title="What is Linux?">Debian</a>
-        and its derivatives.</p>
-        <pre>
+            <p>Now that <tt>apt-cyg</tt> has been installed, made into
+            an executable and made accessible in the <tt>path</tt>
+            system variable, you can use it as any other <tt>apt</tt>
+            package manager similar to <tt>apt-get</tt> as in <a href=
+            "/linux.html" target="_self" rel="dofollow" title=
+            "What is Linux?">Debian</a> and its derivatives.</p>
+            <pre>
           <!-- *spacer* -->
           apt-cyg install git       # version control system
           apt-cyg install lynx      # web browser
@@ -288,82 +415,85 @@
           apt-cyg install python    # language we all must to learn
           apt-cyg install tidy      # utility to make HTML code tidy
         </pre>
-        <p align="center"><img src=
-        "/img/640px-Cygwin_X11_rootless_WinXP.png" height="231" width=
-        "320" border="0" alt=
-        "By User:Cljk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=186257"
-        title=
-        "By User:Cljk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=186257"></p>
-      </section>
-      <section role="section">
-        <h3 id="GitForWindows">Git for Windows</h3>
-        <p><a href="https://gitforwindows.org/" target="_blank" rel=
-        "nofollow" title="Git for Windows&lt;">Git for Windows&lt;</a>
-        offers a limited <a href="/foss.html" target="_self" rel=
-        "dofollow" title=
-        "What is Free and Open Source Software (FOSS)?">open source</a>
-        <a href="/linux.html#sh" target="_blank" rel="nofollow" title=
-        "What is Linux — Bash? Bash">Bash</a> emulator for <a href=
-        "/windows.html" target="_self" rel="dofollow" title=
-        "What is Microsoft Windows?">Windows</a> in order to access the
-        Git version control system based on the MinGW-w64
-        (<tt>MINGW64</tt>) project. This emulator is often the choice
-        of <a href="/foss.html" target="_self" rel="dofollow" title=
-        "What is Free and Open Source Software (FOSS)?">open source</a>
-        developers using <a href="/windows.html" target="_blank" rel=
-        "nofollow" title="What is Microsoft Windows?">Windows</a>. As
-        of 2018, GitHub including the Octocat (its mascot) became part
-        of Microsoft.</p>
-        <p>I have not found a package manager for <tt>MINGW64</tt>. I
-        guess installing <tt>apt-cyg</tt>, but I have not tried it. As
-        a purist, I would not do it.</p>
-        <p align="center"><img src="/img/gw1.png" height="244" width=
-        "320" border="0" alt=
-        "Copyright (c) 2021 Git for Windows, All rights reserved.; By Source, Fair use, https://gitforwindows.org/img/gw1.png"
-        title=
-        "Copyright (c) 2021 Git for Windows, All rights reserved.; By Source, Fair use, https://gitforwindows.org/img/gw1.png"></p>
-      </section>
-      <section role="section">
-        <h3 id="Termux">Termux (Android)</h3>
-        <p><a href="https://termux.dev/en/" target="_blank" rel=
-        "nofollow" title="Termux">Termux&lt;</a> is an <a href=
-        "/foss.html" target="_self" rel="dofollow" title=
-        "What is Free and Open Source Software (FOSS)?">open source</a>
-        emulator and <a href="/linux.html" target="_self" rel=
-        "dofollow" title="What is Linux?">Linux</a> environment for
-        <a href="/android.html" target="_self" rel="dofollow" title=
-        "Android">Android</a> with its own package manager
-        (<tt>pkg</tt>) Similar to <tt>apt-get</tt> (<a href=
-        "/linux.html" target="_self" rel="dofollow" title=
-        "What is Linux?">Linux</a>), <tt>brew</tt> (<a href=
-        "/macos.html" target="_self" rel="dofollow" title=
-        "What is macOS?">macOS</a>, also used in <a href="/linux.html"
-        target="_self" rel="dofollow" title="What is Linux?">Linux</a>)
-        and other package managers, you can update the list of
-        available packages in the <tt>pkg</tt> repository and upgrade
-        the packages currently installed in the Termux instance (guest)
-        running on <a href="/android.html" target="_self" rel=
-        "dofollow" title="What is Android?">Android</a> (host). I would
-        recommend doing this before installing any new package and to
-        make sure that your packages are up-to-date.</p>
-        <pre>
+            <p align="center"><img src=
+            "/img/640px-Cygwin_X11_rootless_WinXP.png" height="231"
+            width="320" border="0" alt=
+            "By User:Cljk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=186257"
+            title=
+            "By User:Cljk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=186257"></p>
+          </li>
+          <li id="GitForWindows">
+            <p><a href="https://gitforwindows.org/" target="_blank"
+            rel="nofollow" title="Git for Windows&lt;">Git for
+            Windows</a> offers a limited <a href="/foss.html" target=
+            "_self" rel="dofollow" title=
+            "What is Free and Open Source Software (FOSS)?">open
+            source</a> <a href="/unix.html#sh" target="_blank" rel=
+            "nofollow" title="What is Unix — Bash? Bash">Bash</a>
+            emulator for <a href="/windows.html" target="_self" rel=
+            "dofollow" title="What is Microsoft Windows?">Windows</a>
+            in order to access the Git version control system based on
+            the MinGW-w64 (<tt>MINGW64</tt>) project. This emulator is
+            often the choice of <a href="/foss.html" target="_self"
+            rel="dofollow" title=
+            "What is Free and Open Source Software (FOSS)?">open
+            source</a> developers using <a href="/windows.html" target=
+            "_blank" rel="nofollow" title=
+            "What is Microsoft Windows?">Windows</a>. As of 2018,
+            GitHub including the Octocat (its mascot) became part of
+            Microsoft.</p>
+            <p>I have not found a package manager for <tt>MINGW64</tt>.
+            I guess installing <tt>apt-cyg</tt>, but I have not tried
+            it. As a purist, I would not do it.</p>
+            <p align="center"><img src="/img/gw1.png" height="244"
+            width="320" border="0" alt=
+            "Copyright (c) 2021 Git for Windows, All rights reserved.; By Source, Fair use, https://gitforwindows.org/img/gw1.png"
+            title=
+            "Copyright (c) 2021 Git for Windows, All rights reserved.; By Source, Fair use, https://gitforwindows.org/img/gw1.png"></p>
+          </li>
+          <li id="Termux">
+            <p><a href="https://termux.dev/en/" target="_blank" rel=
+            "nofollow" title="Termux">Termux&lt;</a> is an <a href=
+            "/foss.html" target="_self" rel="dofollow" title=
+            "What is Free and Open Source Software (FOSS)?">open
+            source</a> emulator and <a href="/linux.html" target=
+            "_self" rel="dofollow" title="What is Linux?">Linux</a>
+            environment for <a href="/android.html" target="_self" rel=
+            "dofollow" title="Android">Android</a> with its own package
+            manager (<tt>pkg</tt>) Similar to <tt>apt-get</tt>
+            (<a href="/linux.html" target="_self" rel="dofollow" title=
+            "What is Linux?">Linux</a>), <tt>brew</tt> (<a href=
+            "/macos.html" target="_self" rel="dofollow" title=
+            "What is macOS?">macOS</a>, also used in <a href=
+            "/linux.html" target="_self" rel="dofollow" title=
+            "What is Linux?">Linux</a>) and other package managers, you
+            can update the list of available packages in the
+            <tt>pkg</tt> repository and upgrade the packages currently
+            installed in the Termux instance (guest) running on
+            <a href="/android.html" target="_self" rel="dofollow"
+            title="What is Android?">Android</a> (host). I would
+            recommend doing this before installing any new package and
+            to make sure that your packages are up-to-date.</p>
+            <pre>
           <!-- *spacer* -->
           pkg update &amp;&
           pkg upgrade
         </pre>
-        <p>The latter runs two commands in order — one after another
-        using the <tt>&amp;&</tt> (and) operator.</p>
-        <p>You can also install packages in the Termux instance using
-        <tt>pkg</tt> calling the correct package name.</p>
-        <pre>
+            <p>The latter runs two commands in order — one after
+            another using the <tt>&amp;&</tt> (and) operator.</p>
+            <p>You can also install packages in the Termux instance
+            using <tt>pkg</tt> calling the correct package name.</p>
+            <pre>
           <!-- *spacer* -->
           pkg install <em>[package_name]</em>
         </pre>
-        <p align="center"><img src="/img/Termux-nano.jpg" height="487"
-        width="320" border="0" alt=
-        "By Cyandie-overlord - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=108727161"
-        title=
-        "By Cyandie-overlord - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=108727161"></p>
+            <p align="center"><img src="/img/Termux-nano.jpg" height=
+            "487" width="320" border="0" alt=
+            "By Cyandie-overlord - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=108727161"
+            title=
+            "By Cyandie-overlord - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=108727161"></p>
+          </li>
+        </ul>
       </section>
     </article>
   </main><!-- end of main body -->

@@ -223,13 +223,16 @@
     <article role="article">
       <h2 id="Installation">Installing Unix (or Unix Clones):</h2>
       <p>Unfortunately I have no experience installing or using Tru64
-      Unix, IBM AIX, UnixWare, IRIX or Sun Solaris. I have experience
-      <a href="/bsd.html#Installation" target="_self" rel="dofollow"
-      title=
+      Unix, IBM AIX, UnixWare, IRIX or Sun Solaris.</p>
+      <p>I have experience installing <a href="/bsd.html#Installation"
+      target="_self" rel="dofollow" title=
       "What is Berkeley Software Distribution (BSD) — Installing BSD?">BSD</a>
       and <a href="/linux.html#Installation" target="_self" rel=
       "dofollow" title="What is Linux — Installing Linux?">Linux</a>
-      though.</p>
+      though. In the latter case, in most cases, installing the OS is
+      as simple as following the instructions from the installer. Some
+      are more technical where you need to know the hardware in detail
+      and select the proper packages.</p>
       <p id="DeveloperWorks">Some of the information mentioned in this
       page was partially taken from IBM DeveloperWorks.</p>
     </article>
@@ -237,8 +240,9 @@
       <h2 id="Emulators">Unix Emulators:</h2>
       <section role="section">
         <h3 id="Cygwin">Cygwin</h3>
-        <p>Cygwin is an <a href="/foss.html" target="_self" rel=
-        "dofollow" title=
+        <p><a href="https://cygwin.com/" target="_blank" rel="nofollow"
+        title="Cygwin">Cygwin</a> is an <a href="/foss.html" target=
+        "_self" rel="dofollow" title=
         "What is Free and Open Source Software (FOSS)?">open source</a>
         <em>"<a href="/linux.html" target="_self" rel="dofollow" title=
         "What is Linux?">Linux</a>-like environment for <a href=
@@ -273,15 +277,17 @@
         <p>Now that <tt>apt-cyg</tt> has been installed, made into an
         executable and made accessible in the <tt>path</tt> system
         variable, you can use it as any other <tt>apt</tt> package
-        manager similar to <tt>apt-get</tt> on Debian based <a href=
-        "/linux.html" target="_self" rel="dofollow" title=
-        "What is Linux?">Linux</a> installations.</p>
+        manager similar to <tt>apt-get</tt> (<a href="/linux.html"
+        target="_self" rel="dofollow" title="What is Linux?">Debian</a>
+        and derivatives).</p>
         <pre>
           <!-- *spacer* -->
-          apt-cyg install nano
-          apt-cyg install git
-          apt-cyg install python3
-          apt-cyg install tidy
+          apt-cyg install git       # version control system
+          apt-cyg install lynx      # web browser
+          apt-cyg install nano      # text editor
+          apt-cyg install sqlite3   # relational database
+          apt-cyg install python3   # language we all must to learn
+          apt-cyg install tidy      # utility to make HTML code pretty
         </pre>
         <p align="center"><img src=
         "/img/640px-Cygwin_X11_rootless_WinXP.png" height="231" width=
@@ -291,16 +297,19 @@
         "By User:Cljk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=186257"></p>
       </section>
       <section role="section">
-        <h3 id="GitHubWindows">GitHub for Windows</h3>
-        <p>GitHub offers a limited <a href="/foss.html" target="_self"
-        rel="dofollow" title=
-        "What is Free and Open Source Software (FOSS)?">open source</a>
-        emulator for <a href="/windows.html" target="_self" rel=
-        "dofollow" title="What is Microsoft Windows?">Windows</a> in
-        order to access the Git version control system based on the
-        MinGW-w64 (<tt>MINGW64</tt>) project. This emulator is often
-        the choice of <a href="/foss.html" target="_self" rel=
+        <h3 id="GitForWindows">Git for Windows</h3>
+        <p><a href="https://gitforwindows.org/" target="_blank" rel=
+        "nofollow" title="Git for Windows&lt;">Git for Windows&lt;</a>
+        offers a limited <a href="/foss.html" target="_self" rel=
         "dofollow" title=
+        "What is Free and Open Source Software (FOSS)?">open source</a>
+        <a href="/linux.html#sh" target="_blank" rel="nofollow" title=
+        "What is Linux — Bash? Bash">Bash</a> emulator for <a href=
+        "/windows.html" target="_self" rel="dofollow" title=
+        "What is Microsoft Windows?">Windows</a> in order to access the
+        Git version control system based on the MinGW-w64
+        (<tt>MINGW64</tt>) project. This emulator is often the choice
+        of <a href="/foss.html" target="_self" rel="dofollow" title=
         "What is Free and Open Source Software (FOSS)?">open source</a>
         developers using <a href="/windows.html" target="_blank" rel=
         "nofollow" title="What is Microsoft Windows?">Windows</a>. As
@@ -317,8 +326,9 @@
       </section>
       <section role="section">
         <h3 id="Termux">Termux (Android)</h3>
-        <p>Termux is an <a href="/foss.html" target="_self" rel=
-        "dofollow" title=
+        <p><a href="https://termux.dev/en/" target="_blank" rel=
+        "nofollow" title="Termux">Termux&lt;</a> is an <a href=
+        "/foss.html" target="_self" rel="dofollow" title=
         "What is Free and Open Source Software (FOSS)?">open source</a>
         emulator and <a href="/linux.html" target="_self" rel=
         "dofollow" title="What is Linux?">Linux</a> environment for

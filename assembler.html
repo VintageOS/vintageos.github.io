@@ -396,7 +396,7 @@
       <p>In any case, I have opted for <a href="/assembler.html#NASM"
       target="_self" rel="dofollow" title=
       "What is Assembler — Netwide Assembler (NASM)?">NASM</a> because
-      of the amount of information available on-line related to
+      of the vast amount of information available on-line related to
       <a href="/linux.html" target="_self" rel="dofollow" title=
       "What is Linux?">Linux</a> and easy installation on <a href=
       "/unix.html" target="_self" rel="dofollow" title=
@@ -409,9 +409,96 @@
       "What is Linux?">Linux</a> distros.</p>
       <p>Even after watching an IEEE crash-course video on <a href=
       "/assembler.html#NASM" target="_self" rel="dofollow" title=
-      "What is Assembler — Netwide Assembler (NASM)?">NASM</a> and
-      others, I still have trouble understanding this language. That is
-      no surprise.</p>
+      "What is Assembler — Netwide Assembler (NASM)?">NASM</a> and some
+      other videos, I still have trouble understanding this language.
+      That is no surprise. In the worst case scenario that I do not
+      make sense of this language, I can always go back to C.</p>
+      <p>For example, the following is a <tt>Hello World</tt> program
+      written in <a href="/assembler.html#NASM" target="_self" rel=
+      "dofollow" title=
+      "What is Assembler — Netwide Assembler (NASM)?">NASM</a>, which
+      makes some sense to me after watching several videos and reading
+      some material on-line.</p>
+      <pre>
+        <!-- *spacer* -->
+        ; based on `Hello World` using Netwide Assembler (NASM),
+        ; courtesy of Ray Toal, Loyola Marymount University
+        ; https://cs.lmu.edu/~ray/notes/nasmtutorial/
+        <!-- *spacer* -->
+        global _start                   ; start of `global`
+                                        ;
+        section .text                   ; start of `text` section
+                                        ;   (program)
+                                        ;
+        _start: mov rax, 1              ; system call for write
+            mov rdi, 1                  ; file handle 1 is `stdout`
+            mov rsi, message            ; address of string to output
+            mov rdx, 13                 ; number of bytes
+            syscall                     ; invoking operating system to
+                                        ;   do the write
+            mov rax, 60                 ; system call for exit
+            xor rdi, rdi                ; exiting code 0
+            syscall                     ; invoking operating system to
+                                        ;   exit
+                                        ;
+        section .data                   ; start of the data section
+                                        ;   (variables)
+        message: db "Hello World!", 10  ; note the newline at the end
+      </pre>
+      <p>At the same time, the following is a similar program written
+      in <a href="/assembler.html#NASM" target="_self" rel="dofollow"
+      title=
+      "What is Assembler — Microsoft Macro Assembler (MASM)?">MASM</a>,
+      which I does not make too much sense to me as a beginner
+      (<em>noob</em>).</p>
+      <pre>
+        <!-- *spacer* -->
+        ; based on `How to print your name in assembly language using
+        ; DOSBox & MASM` using Microsoft Macro Assembler (MASM),
+        ; courtesy of https://www.youtube.com/watch?v=3FWqNVHuq60
+        <!-- *spacer* -->
+        .model small                    ; MASM assembly
+        .stack 100h                     ; starting memory allocation
+        .data                           ; data section
+        .code                           ; code section
+        main proc                       ; main section to write code
+            mov ah, 2                   ; to print output
+            mov dl, 'H'                 ; moving `H` to `stdout`,
+                                        ;   same for each character
+            int 21h                     ; making sure code worked okay;
+                                        ;   same after each character
+            mov dl, 'e'                 ; moving `e` to `stdout`
+            int 21h                     ; error check
+            mov dl, 'l'                 ; moving `l` to `stdout`
+            int 21h                     ; error check
+            mov dl, 'l'                 ; moving `l` to `stdout`
+            int 21h                     ; error check
+            mov dl, 'o'                 ; moving `o` to `stdout`
+            int 21h                     ; error check
+            mov dl, ' '                 ; moving space to `stdout`
+            int 21h                     ; error check
+            mov dl, 'W'                 ; moving `W` to `stdout`
+            int 21h                     ; error check
+            mov dl, 'o'                 ; moving `o` to `stdout`
+            int 21h                     ; error check
+            mov dl, 'r'                 ; moving `r` to `stdout`
+            int 21h                     ; error check
+            mov dl, 'l'                 ; moving `l` to `stdout`
+            int 21h                     ; error check
+            mov dl, 'd'                 ; moving `d` to `stdout`
+            int 21h                     ; error check
+            mov dl, '!'                 ; moving `!` to `stdout`
+            int 21h                     ; error check
+            mov ah, 4ch                 ; to return control to OS
+            int 21h                     ; error check
+        main endp                       ; end of `proc`
+        end main                        ; end of `main` block
+      </pre>
+      <p>If you have experience in assembler, you might be laughing at
+      me. Of course, if you have not had any experience with assembler
+      and/or similar languages as in my case, you might also be
+      scratching your head trying to make sense of the differences
+      between these two dialects.</p>
     </article>
   </main><!-- end of main body -->
   <article role="article">
@@ -442,8 +529,8 @@
     </article>
   </article><!-- beginning of Google Analytics -->
   <script src="http://google-analytics.com/urchin.js" type=
-  "text/javascript"></script> 
-  <script type="text/javascript"></script> 
+  "text/javascript"></script>
+  <script type="text/javascript"></script>
   <!-- end of Google Analytics -->
 </body>
 </html>

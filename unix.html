@@ -402,23 +402,23 @@
             package from the specific website (<tt>wget</tt>) as shown
             below.</p>
             <pre>
-          <!-- *spacer* -->
-          wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
-        </pre>
+              <!-- *spacer* -->
+              wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
+            </pre>
             <p>Then you need to change the mode (<tt>chmod</tt>) of
             <tt>apt-cyg</tt> package to executable (<tt>+x</tt>).</p>
             <pre>
-          <!-- *spacer* -->
-          chmod +x apt-cyg
-        </pre>
+              <!-- *spacer* -->
+              chmod +x apt-cyg
+            </pre>
             <p>As the last step, you need to move (<tt>mv</tt>) the
             <tt>apt-cyg</tt> package to <tt>/usr/local/bin</tt> so it
             can be accessible — included in the <tt>path</tt> system
             variable.</p>
             <pre>
-          <!-- *spacer* -->
-          mv apt-cyg /usr/local/bin
-        </pre>
+              <!-- *spacer* -->
+              mv apt-cyg /usr/local/bin
+            </pre>
             <p>Now that <tt>apt-cyg</tt> has been installed, made into
             an executable and made accessible in the <tt>path</tt>
             system variable, you can use it as any other <tt>apt</tt>
@@ -426,14 +426,16 @@
             "/linux.html" target="_self" rel="dofollow" title=
             "What is Linux?">Debian</a> and its derivatives.</p>
             <pre>
-          <!-- *spacer* -->
-          apt-cyg install git       # version control system
-          apt-cyg install lynx      # web browser
-          apt-cyg install nano      # text editor
-          apt-cyg install sqlite3   # relational database
-          apt-cyg install python    # language we all must to learn
-          apt-cyg install tidy      # utility to make HTML code tidy
-        </pre>
+              <!-- *spacer* -->
+              apt-cyg install gcc-core  # compiler collection from GNU
+              apt-cyg install git       # version control system
+              apt-cyg install lynx      # text-only web browser
+              apt-cyg install nano      # text editor
+              apt-cyg install nasm      # assembly language
+              apt-cyg install python3   # language we all must to learn
+              apt-cyg install sqlite3   # relational database
+              apt-cyg install tidy      # utility to clean up HTML code
+            </pre>
             <p align="center"><img src=
             "/img/640px-Cygwin_X11_rootless_WinXP.png" height="231"
             width="320" border="0" alt=

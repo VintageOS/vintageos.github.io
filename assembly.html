@@ -187,19 +187,23 @@
   <main role="main">
     <article role="article">
       <h1 id="main">What is Assembly?</h1>
+      <p>Assembly was developed by Kathleen (1922-2022) and Andrew
+      Booth (1918-2009) and released in 1947. It quickly became the
+      default programming language for many mainframes and their OSs
+      since the language allowed easier access to system calls
+      (<em>syscalls</em>) — requests to the OS kernel.</p>
       <p>The development of hobby OSs has caught my attention, but it
       seems that more new OSs are written in assembly than <a href=
       "/c.html" target="_self" rel="dofollow" title=
-      "What is the C programming language?">C</a> (for example,
-      <a href="/unix.html" target="_self" rel="dofollow" title=
-      "What are UNIX® and Unix?">Unix</a>, <a href="/linux.html"
-      target="_self" rel="dofollow" title="What is Linux?">Linux</a>
-      and derivatives) or any other language. This has started my
-      curiosity of learning assembly although fairly antiquated (1949)
-      given today's languages and programming standards, but I have no
-      idea which assembly dialect would be best (easiest) for me. After
-      all, there are various options in the market for any number of
-      processors.</p>
+      "What is the C?">C</a> (for example, <a href="/unix.html" target=
+      "_self" rel="dofollow" title="What are UNIX® and Unix?">Unix</a>,
+      <a href="/linux.html" target="_self" rel="dofollow" title=
+      "What is Linux?">Linux</a> and derivatives) or any other
+      language. This has started my curiosity of learning assembly
+      although fairly antiquated given today's languages and
+      programming standards, but I have no idea which assembly dialect
+      would be best (easiest) for me. After all, there are various
+      options in the market for any number of processors.</p>
       <p align="center"><img src=
       "/img/376px-Motorola_6800_Assembly_Language.png" height="510"
       width="320" border="0" class="boxes" alt=
@@ -428,7 +432,7 @@
       That is no surprise. In the worst case scenario that I do not
       make sense of this language, I can always go back to <a href=
       "/c.html" target="_self" rel="dofollow" title=
-      "What is the C programming language?">C</a>.</p>
+      "What is the C?">C</a>.</p>
       <p>For example, the following is a <tt>Hello World</tt> program
       written in <a href="/assembly.html#NASM" target="_self" rel=
       "dofollow" title=
@@ -530,6 +534,41 @@
       and/or similar languages as in my case, you might also be
       scratching your head trying to make sense of the differences
       between these two dialects.</p>
+    </article>
+    <article>
+      <!-- same text as in `c.html` -->
+      <h2 id="SafeLanguage">Not a safe language:</h2>
+      <p>The only problem with older languages like <a href="/c.html"
+      target="_self" rel="dofollow" title="What is C?">C</a>, including
+      <a href="/c.html#CPlusPlus" target="_self" rel="dofollow" title=
+      "What is C — C++?">C++</a> (one language extension I really
+      like), and assembly is that has come up as of the National
+      Security Agency (NSA) 11/10/2022 press release is that some
+      languages are not <em>"memory safe"</em> (chance of code being
+      exploited). Needless to say, C is not in this safe list.</p>
+      <blockquote>
+        Memory issues in software comprise a large portion of the
+        exploitable vulnerabilities in existence. NSA advises
+        organizations to consider making a strategic shift from
+        programming languages that provide little or no inherent memory
+        protection, such as C/C++, to a memory safe language when
+        possible. Some examples of memory safe languages are C#, Go,
+        Java, Ruby™, and Swift®. Memory safe languages provide
+        differing degrees of memory usage protections, so available
+        code hardening defenses, such as compiler options, tool
+        analysis, and operating system configurations, should be used
+        for their protections as well. By using memory safe languages
+        and available code hardening defenses, many memory
+        vulnerabilities can be prevented, mitigated, or made very
+        difficult for cyber actors to exploit.<br>
+        <a href=
+        "https://media.defense.gov/2022/Nov/10/2003112742/-1/-1/0/CSI_SOFTWARE_MEMORY_SAFETY.PDF"
+        target="_blank" rel="nofollow" title=
+        "CSI_SOFTWARE_MEMORY_SAFETY.PDF">https://media.defense.gov/2022/Nov/10/2003112742/-1/-1/0/CSI_SOFTWARE_MEMORY_SAFETY.PDF</a>
+      </blockquote>
+      <p>Although not listed in the quote above, <a href="/python.html"
+      target="_self" rel="dofollow" title="What is Python?">Python</a>,
+      a language I am interested in, is considered safe.</p>
     </article>
   </main><!-- end of main body -->
   <article role="article">

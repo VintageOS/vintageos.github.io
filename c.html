@@ -187,11 +187,11 @@
     <article role="article">
       <h1 id="main">What is C?</h1>
       <p>The C programming language was developed at Bell Labs by
-      Dennis Ritchie (picture below, right) for the development of
-      <a href="/unix.html" target="_self" rel="dofollow" title=
-      "What are UNIX® and Unix?">Unix</a>. As the story goes, C came
-      after A and B — two discarded languages. The third attempt named
-      after the third letter of the English alphabet (C) was the
+      Dennis Ritchie (1941-2011, right in picture below) for the
+      development of <a href="/unix.html" target="_self" rel="dofollow"
+      title="What are UNIX® and Unix?">Unix</a>. As the story goes, C
+      came after A and B — two discarded languages. The third attempt
+      named after the third letter of the English alphabet (C) was the
       winner. It takes system programmers to make a decision based only
       on the order of letters in the alphabet.</p>
       <p align="center"><img src="/img/220px-Ken_n_dennis.jpg" height=
@@ -238,22 +238,71 @@
       worked with, C remains the most intuitive to my thought process
       after <a href="/basic.html" target="_self" rel="dofollow" title=
       "What is Beginner's All-purpose Symbolic Instruction Code (BASIC)?">
-      BASIC</a> where simple commands like <tt>printf()</tt> can return
-      a simple output while closely interacting with the OS.</p><!--
-      <pre>
-        <! -- *spacer* -- >
-        #include <stdio.h>              // including standard input
-                                        // and output header file
-                                        // (library)
-        int main() {                    // initializing `main()`
-                                        // function
-          printf("Hello, World!");      // printing formatted string to
-                                        // `stdout` (standard out),
-                                        // part of `stdio.h`
-          return 0;                     // calling error verification
-        }
-      </pre>
-      -->
+      BASIC</a> where a simple command like <tt>printf("Hello,
+      World!")</tt> can return a simple output (<tt>"Hello,
+      World!"</tt>) while closely interacting with the OS
+      (<tt>stdout</tt>, standard out).</p>
+    </article>
+    <article>
+      <h2 id="OtherCs">What are C++, C#, HolyC, LPC and other Cs?</h2>
+      <p>There are languages derived from C as extensions of the
+      language, which most likely kept the <em>C</em> part of the name
+      for marketing purposes more than anything.</p>
+      <ul>
+        <li id="CPlusPlus">C++ — also known as <em>C with Classes</em>,
+        developed by Bjarne Stroustrup at Computer Science Research
+        Center of Bell Labs and released in 1985</li>
+        <li id="CSharp">C# — developed by Anders Hejlsberg for
+        Microsoft in 2005 as replacement for Java and part of the .NET
+        framework</li>
+        <li id="HolyC">HolyC — previously called C+, developed by Terry
+        Andrew Davis (1969-2018) for <a href="/others.html#TempleOS"
+        target="_self" rel="dofollow" title=
+        "What other operating systems are there — TempleOS?">TempleOS</a>,
+        under the name of J Operating System
+        </li>
+        <li id="LPC">LPC — developed by Lars Pensjö for LPMud (MUD
+        driver), which offers the logic to write a game, not the game
+        itself; originally designed to use <tt>telnet</tt> (text-only,
+        unsecured connections on port 23), but newer versions of LPMud
+        can use secure connections</li>
+        <li>maybe other C languages to come</li>
+      </ul>
+    </article>
+    <article>
+      <!-- same text as in `assembly.html` -->
+      <h2 id="SafeLanguage">Not a safe language:</h2>
+      <p>The only problem with older languages like C, including C++
+      (one language extension I really like), and <a href=
+      "/assembly.html" target="_self" rel="dofollow" title=
+      "What is Assembly?">assembly</a> is that has come up as of the
+      National Security Agency (NSA) 11/10/2022 press release is that
+      some languages are not <em>"memory safe"</em> (chance of code
+      being exploited). Needless to say, C is not in this safe
+      list.</p>
+      <blockquote>
+        Memory issues in software comprise a large portion of the
+        exploitable vulnerabilities in existence. NSA advises
+        organizations to consider making a strategic shift from
+        programming languages that provide little or no inherent memory
+        protection, such as C/C++, to a memory safe language when
+        possible. Some examples of memory safe languages are C#, Go,
+        Java, Ruby™, and Swift®. Memory safe languages provide
+        differing degrees of memory usage protections, so available
+        code hardening defenses, such as compiler options, tool
+        analysis, and operating system configurations, should be used
+        for their protections as well. By using memory safe languages
+        and available code hardening defenses, many memory
+        vulnerabilities can be prevented, mitigated, or made very
+        difficult for cyber actors to exploit.<br>
+        <a href=
+        "https://media.defense.gov/2022/Nov/10/2003112742/-1/-1/0/CSI_SOFTWARE_MEMORY_SAFETY.PDF"
+        target="_blank" rel="nofollow" title=
+        "CSI_SOFTWARE_MEMORY_SAFETY.PDF">https://media.defense.gov/2022/Nov/10/2003112742/-1/-1/0/CSI_SOFTWARE_MEMORY_SAFETY.PDF</a>
+      </blockquote>
+      <p>Although not listed in the quote above, <a href="/python.html"
+      target="_self" rel="dofollow" title="What is Python?">Python</a>,
+      a language I am interested in, is considered safe.</p>
     </article>
   </main><!-- end of main body -->
   <article role="article">

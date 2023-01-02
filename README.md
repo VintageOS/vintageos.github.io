@@ -1,5 +1,5 @@
                   FRN2000 & VintageOS v202210021045
-        frn2000.com · vintageos.org · all rights reserved, 1997-2022
+        frn2000.com · vintageos.org · all rights reserved, 1997-2023
 
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting
@@ -43,4 +43,4 @@ files and sub-directories;  instructions and information on how to code
 this file found in the
 [`robotstxt.html`](http://robotstxt.org/robotstxt.html) file.
 
-        frn2000.com · vintageos.org · all rights reserved, 1997-2022
+        frn2000.com · vintageos.org · all rights reserved, 1997-2023

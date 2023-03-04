@@ -10,13 +10,15 @@
 |  FRN2000 & VintageOS v202210021045,  all rights reserved, 1997-2023  |
 |                     frn2000.com · vintageos.org                      |
 |                                                                      |
-| 1.  over three (3) decades destroying various technologies, crashing |
-|     and hacking every operating system (OS) that I have ever touched |
-|     from KERNAL/BASIC on the C64 (https://vintageos.org/basic.html)  |
-|     to Linux (https://vintageos.org/linux.html) as well as teaching  |
-|     and advocating for the hacker mentality behind free and open     |
-|     source (https://vintageos.org/foss.html);  much more information |
-|     available at https://vintageos.org/frn2000.html                  |
+| 1.  over three (3) decades destroying various technologies as well   |
+|     as crashing, corrupting and hacking every operating system (OS)  |
+|     that I have ever touched from KERNAL with MS BASIC 2.0 on the    |
+|     Commodore 64 (https://vintageos.org/basic.html#C64) to Linux     |
+|     (https://vintageos.org/linux.html) as well as teaching and       |
+|     advocating for the hacker mentality behind free and open source  |
+|     (https://vintageos.org/foss.html);  over a quarter (1/4) of a    |
+|     century writing about OSs of the past half a century;  much more |
+|     information available at https://vintageos.org/frn2000.html      |
 |                                                                      |
 | 2.  disclaimer and terms of use for this site and/or related domains |
 |     found and explained at https://vintageos.org/disclaimer.html     |
@@ -24,11 +26,12 @@
 | 3.  website and related files completely coded by hand (no WYSIWYG)  |
 |     using -- in alphabetical order                                   |
 |                                                                      |
-|     3.1.  Caret (https://thomaswilburn.net/caret/) on Chrome OS      |
-|           (https://vintageos.org/chromeos.html)                      |
-|                                                                      |
-|     3.2.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     |
+|     3.1.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     |
 |           Windows (https://vintageos.org/windows.html)               |
+|                                                                      |
+|     3.2.  gedit (https://wiki.gnome.org/Apps/Gedit) on Linux         |
+|           (https://vintageos.org/linux.html) and/or macOS            |
+|           (https://vintageos.org/macos.html)                         |
 |                                                                      |
 |     3.3.  GNU nano (https://nano-editor.org/) on Linux               |
 |           (https://vintageos.org/linux.html) and/or Cygwin           |
@@ -36,7 +39,8 @@
 |                                                                      |
 |     3.4.  Tidy (http://html-tidy.org/) on Linux                      |
 |           (https://vintageos.org/linux.html) and/or Cygwin           |
-|           (https://vintageos.org/unix.html#Cygwin)                   |
+|           (https://vintageos.org/unix.html#Cygwin) with quick        |
+|           statement `tidy -i -w 72 -o some_page.html some_page.html` |
 |                                                                      |
 |     3.5.  Xed (https://community.linuxmint.com/software/view/xed) on |
 |           Linux (https://vintageos.org/linux.html)                   |

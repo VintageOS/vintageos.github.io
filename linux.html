@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Cygwin version 5.6.0">
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____        v202210021045 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -235,24 +235,25 @@
         <p>Depending on the distribution (<em>distro</em>), you might
         need to update your installation right away. If the
         <em>distro</em> is based on Debian and it has <tt>apt</tt> as
-        in the case of Ubuntu and its derivatives like Linux Mint (what
-        I currently use), you might want to run the following on the
-        console as root (<tt>sudo -i</tt>).</p>
+        in the case of Ubuntu and its derivatives like Linux Cinnamon
+        (what I currently use) , you might want to run the following on
+        the console as <tt>root</tt> (<tt>sudo -i</tt>).</p>
         <pre>
           <!-- *spacer* -->
-          apt-get update &amp;&
-          apt-get upgrade -y &amp;&
-          apt-get autoclean -y &amp;&
-          apt-get autoremove -y &amp;&
-          apt-get purge -y &amp;&
-          reboot now
+          apt-get update &amp;&           # to update repository list
+          apt-get upgrade -y &amp;&       # to upgrade local packages
+          apt-get autoclean -y &amp;&     # to clean leftover packages
+          apt-get autoremove -y &amp;&    # to remove leftover packages
+          apt-get purge -y &amp;&         # to purge old packages
+          reboot now                      # to reboot machine
         </pre>
         <p>The latter runs multiple commands — one after another using
         the <tt>&amp;&</tt> (and) operator and then reboot without
-        confirmation. Of course if you do not need to reboot exclude
-        the last <tt>&amp;&</tt> operator and the <tt>reboot now</tt>
-        command. I would recommend doing the latter on a daily basis to
-        make sure your system has the most up-to-date packages.</p>
+        confirmation using the <tt>-y</tt> attribute. Of course if you
+        do not need to reboot exclude the last <tt>&amp;&</tt> operator
+        and the <tt>reboot now</tt> command. I would recommend doing
+        the latter on a daily basis to make sure your system has the
+        most up-to-date packages and to avoid security risks.</p>
         <p>You can also install packages using <tt>apt-get</tt> calling
         the correct package name.</p>
         <pre>
@@ -262,21 +263,47 @@
           apt-get install build-essential # compiler collection from GNU
           apt-get install git             # version control system
           apt-get install lynx            # text-only web browser
-          apt-get install nano            # text editor
+          apt-get install nano            # command line text editor
           apt-get install nasm            # assembly language
+          apt-get install neofetch        # to get system information
           apt-get install pip             # package installer for Python
-          apt-get install python3         # language we all must to learn
+          apt-get install python3         # language we must to learn
           apt-get install sqlite3         # relational database
-          apt-get install tidy            # utility to clean up HTML code
+          apt-get install tidy            # utility to clean HTML code
+        </pre>
+        <p>If you do not want the system to ask you for confirmation,
+        you can include <tt>-y</tt> attribute before the name of the
+        package.</p>
+        <pre>
+          <!-- *spacer* -->
+          apt-get install -y <em>&lt;package_name&gt;</em>
+          <!-- *spacer* -->
+          apt-get install -y build-essential
+        </pre>
+        <p>If you are interested in installing multiple packages at the
+        same time, you would also need to use the double ampersand
+        operator (<tt>&amp;&</tt>) after each call.</p>
+        <pre>
+          <!-- *spacer* -->
+          apt-get install -y build-essential &amp;&
+          apt-get install -y git &amp;&      
+          apt-get install -y lynx &amp;&     
+          apt-get install -y nano &amp;&     
+          apt-get install -y nasm &amp;&     
+          apt-get install -y neofetch &amp;& 
+          apt-get install -y pip &amp;&      
+          apt-get install -y python3 &amp;&  
+          apt-get install -y sqlite3 &amp;&  
+          apt-get install -y tidy        
         </pre>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>
-        <p>Some vendors have started to offer single-board computer
-        (SBC) units. For example, the Raspberry Pi Foundation released
-        its Raspberry Pi 1 Model A in 02/2012. After several
-        generations with a price tag under $50, several projects have
-        used Raspberry Pi hardware.</p>
+        <p>Some vendors offer single-board computer (SBC) units. For
+        example, the Raspberry Pi Foundation released its Raspberry Pi
+        1 Model A in 02/2012. After several generations with a price
+        tag under $50, several projects have used Raspberry Pi
+        hardware.</p>
       </article>
       <article role="article">
         <h2 id="WSL">Windows Subsystem for Linux (WSL):</h2>
@@ -330,8 +357,8 @@
         CC BY-NC-ND 3.0</a> · <a href="/disclaimer.html" target="_self"
         rel="dofollow" title=
         "What is the disclaimer (my rights)?">disclaimer</a> · <a href=
-        "mailto:ec4n54g2@duck.com?subject=VintageOS%20Feedback"
-        target="_blank" rel="nofollow" title="email">email</a></p>
+        "mailto:ec4n54g2@duck.com?subject=VintageOS%20Feedback" target=
+        "_blank" rel="nofollow" title="email">email</a></p>
       </footer>
     </article>
   </article><!-- beginning of Google Analytics -->

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  "HTML Tidy for HTML5 for Cygwin version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____        v202210021045 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -214,15 +214,15 @@
         RHEL (paid subscription, enterprise licensing), Fedora
         (originally based on RHEL), Oracle (based on RHEL), Debian,
         Ubuntu (based on Debian), Mint (based on Ubuntu), openSUSE
-        (forked from SUSE), Slackware (based on the now-defaunct
+        (forked from SUSE), Slackware (based on the now-defunct
         Softlanding Linux System), Arch Linux (inspired by Slackware)
         and many others. For more information on <em>distros</em> and
         how popular they are, visit the DisroWatch website.</p>
         <p>When Linux became popular (c. 1995-99), you could buy disks
-        for any distribution from the developers or third-party
-        vendors. Nowadays you would most likely download the
-        distribution of your choice as an <tt>.ISO</tt> and copy
-        (<tt>dd) it to USB drive (</tt>/dev/sdb1).</p>
+        for any distribution (<em>distro</em>) from the developers or
+        third-party vendors. Nowadays you would most likely download
+        the <em>distro</em> of your choice as an <tt>.ISO</tt> and copy
+        (<tt>dd</tt>) it to USB drive (<tt>/dev/sdb1</tt>).</p>
         <pre>
           <!-- *spacer* -->
           dd if=linux_image.iso of=/dev/sdb1
@@ -241,13 +241,12 @@
         or share it with another OS as well as entering your
         credentials (<tt>roor</tt> access) and network information
         (802.11 if needed).</p>
-        <p>Depending on the distribution (<em>distro</em>), you might
-        need to update your installation right away. If the
-        <em>distro</em> is based on Debian and it has <tt>apt</tt> as
-        in the case of Ubuntu and its derivatives like Linux Cinnamon
-        (my currennt installation), you might want to run the following
-        commands on the console as superuser (<tt>sudo -i</tt>) for
-        <tt>root</tt> access.</p>
+        <p>Depending on the <em>distro</em>, you might need to update
+        your installation right away. If the <em>distro</em> is based
+        on Debian and it has <tt>apt</tt> as in the case of Ubuntu and
+        its derivatives like Linux Cinnamon (my current installation),
+        you might want to run the following commands on the console as
+        superuser (<tt>sudo -i</tt>) for <tt>root</tt> access.</p>
         <pre>
           <!-- *spacer* -->
           apt-get update &amp;&           # to update repository list
@@ -279,9 +278,9 @@
           apt-get install neofetch        # system information tool
           apt-get install pip             # package installer for Python
           apt-get install python3         # language that we must all learn
-          apt-get install sqlite3         # relational database
+          apt-get install sqlite3         # relational database with no GUI
           apt-get install tidy            # utility to tidy up HTML code
-          apt-get install whois           # access to the whois database (domain registration)
+          apt-get install whois           # access to the `whois` database (domain registration)
         </pre>
         <p>If you do not want the system to ask you for confirmation,
         you can include <tt>-y</tt> attribute before the name of the
@@ -294,7 +293,8 @@
         </pre>
         <p>If you are interested in installing multiple packages at the
         same time, you would also need to use the double ampersand
-        operator (<tt>&amp;&</tt>) after each call.</p>
+        operator (<tt>&amp;&</tt>) after each call. Note the latter can
+        be written in one line.</p>
         <pre>
           <!-- *spacer* -->
           apt-get install -y build-essential &amp;&

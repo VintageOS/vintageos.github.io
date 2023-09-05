@@ -248,12 +248,12 @@
         you might want to run the following commands on the console as
         superuser (<tt>sudo -i</tt>) for <tt>root</tt> access.</p>
         <pre>
-          <!-- *spacer* -->
-          apt-get update &amp;&           # to update repository list
-          apt-get upgrade -y &amp;&       # to upgrade local packages
-          apt-get autoclean -y &amp;&     # to clean leftover packages
-          apt-get autoremove -y &amp;&    # to remove leftover packages
-          apt-get purge -y &amp;&         # to purge old packages
+          <!-- *spacer* / compensation for `&amp;&` below -->
+          apt-get update &amp;&               # to update repository list
+          apt-get upgrade -y &amp;&           # to upgrade local packages
+          apt-get autoclean -y &amp;&         # to clean leftover packages
+          apt-get autoremove -y &amp;&        # to remove leftover packages
+          apt-get purge -y &amp;&             # to purge old packages
           reboot now                      # to reboot machine
         </pre>
         <p>The latter runs multiple commands — one after another using

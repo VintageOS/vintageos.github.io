@@ -1,24 +1,23 @@
-                  FRN2000 & VintageOS v202210021045
-        frn2000.com · vintageos.org · all rights reserved, 1997-2023
+# FRN2000 & VintageOS v202310221703
+## frn2000.com · frn2000.org · vintageos.org
+## all rights reserved, 1997-2023
 
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting
 services.  This website and and related files are completely coded by
 hand (no WYSIWYG) using -- in alphabetical order
 
-1. [Caret](https://thomaswilburn.net/caret/) on
-[Chrome OS](https://google.com/chromebook/),
-2. [Notepad++](http://notepad-plus-plus.org/) on
-[Microsoft Windows](https://vintageos.org/windows.html),
-3. [GNU nano](https://nano-editor.org/) on
+1. [GNU nano](https://nano-editor.org/) on
 [Linux](https://vintageos.org/linux.html) and
-[Cygwin](https://vintageos.org/unix.html#Cygwin),
+[Cygwin](https://vintageos.org/unix.html#Cygwin)
+2. [Mousepad](https://docs.xfce.org/apps/mousepad/start) on
+[Linux](https://vintageos.org/linux.html)
+3. [Notepad++](http://notepad-plus-plus.org/) on
+[Microsoft Windows](https://vintageos.org/windows.html)
 4. [Tidy](http://html-tidy.org/) on
 [Linux](https://vintageos.org/linux.html) and
 [Cygwin](https://vintageos.org/unix.html#Cygwin) with quick statement
-`tidy -i -w 72 -o some_page.html some_page.html`,
-5. [Xed](https://community.linuxmint.com/software/view/xed) on
-[Linux](https://vintageos.org/linux.html).
+`tidy -i -w 72 -o some_page.html some_page.html`
 
 [VintageOS](https://vintageos.org/) covers close to three (3) decades
 messing around with technology, crashing and hacking every operating
@@ -31,16 +30,9 @@ Refer to the disclaimer and terms of use for this site and/or related
 domains found and explained in the
 [`disclaimer.html`](https://vintageos.org/disclaimer.html) file.
 
-        Reference
-
-* The `README.md` and [`README2.md`](README2.md) files are written using
-the [Markdown](https://daringfireball.net/projects/markdown/) as
-specified by [GitHub Pages](https://pages.github.com/) in their
-[guide](https://guides.github.com/features/mastering-markdown/).
+## Reference
 
 * The `robots.txt` file blocks certain robots/spiders from accessing
 files and sub-directories;  instructions and information on how to code
 this file found in the
 [`robotstxt.html`](http://robotstxt.org/robotstxt.html) file.
-
-        frn2000.com · vintageos.org · all rights reserved, 1997-2023

@@ -246,9 +246,11 @@
         <p>Depending on the <em>distro</em>, you might need to update
         your installation right away. If the <em>distro</em> is based
         on Debian and it has <tt>apt</tt> as in the case of Ubuntu and
-        its derivatives like Xubuntu (my current installation), you
-        might want to run the following commands on the console as
-        superuser (<tt>sudo -i</tt>) for <tt>root</tt> access.</p>
+        its derivatives like Xubuntu (my current installation, which I
+        surprisingly like due to its simplicity and low memory
+        consumption), you might want to run the following commands on
+        the console as superuser (<tt>sudo -i</tt>) for <tt>root</tt>
+        access.</p>
         <pre>
           <!-- *spacer* / compensation for `&amp;&` below -->
           apt-get update &amp;&               # to update repository list
@@ -260,11 +262,12 @@
         </pre>
         <p>The latter runs multiple commands — one after another using
         the <tt>&amp;&</tt> (and) operator and then reboot without
-        confirmation using the <tt>-y</tt> attribute. Of course if you
-        do not need to reboot exclude the last <tt>&amp;&</tt> operator
-        and the <tt>reboot now</tt> command. I would recommend doing
-        the latter on a daily basis to make sure your system has the
-        most up-to-date packages and to avoid security risks.</p>
+        confirmation using the <tt>-y</tt> (<em>yes</em>) attribute. Of
+        course if you do not need to reboot exclude the last
+        <tt>&amp;&</tt> operator and the <tt>reboot now</tt> command. I
+        would recommend doing the latter on a daily basis to make sure
+        your system has the most up-to-date packages and to avoid
+        security risks.</p>
         <p>You can also install packages using <tt>apt-get</tt> calling
         the correct package name.</p>
         <pre>
@@ -273,6 +276,7 @@
           <!-- *spacer* -->
           apt-get install build-essential # compiler collection from GNU
           apt-get install ddgr            # DuckDuckGo via command line
+          apt-get install dosbox          # DOS emulator for games and applications
           apt-get install git             # version control system
           apt-get install lynx            # text-only web browser
           apt-get install nano            # command line text editor
@@ -285,8 +289,8 @@
           apt-get install whois           # access to the `whois` database (domain registration)
         </pre>
         <p>If you do not want the system to ask you for confirmation,
-        you can include <tt>-y</tt> attribute before the name of the
-        package.</p>
+        you can include <tt>-y</tt> (<em>yes</em>) attribute, before
+        the name of the package.</p>
         <pre>
           <!-- *spacer* -->
           apt-get install -y <em>&lt;package_name&gt;</em>
@@ -301,6 +305,7 @@
           <!-- *spacer* -->
           apt-get install -y build-essential &amp;&
           apt-get install -y ddgr &amp;&
+          apt-get install -y dosbox &amp;&
           apt-get install -y git &amp;&
           apt-get install -y lynx &amp;&
           apt-get install -y nano &amp;&
@@ -312,6 +317,15 @@
           apt-get install -y tidy &amp;&
           apt-get install -y whois
         </pre>
+        <p>Note that I started playing with Red Hat Linux 5.2 (1998)
+        and then 6.0 with GNOME (1999), but most of my experience since
+        2011 has been with Ubuntu <em>distros</em>, which is based on
+        Debian. Therefore most of what I cover in this page is related
+        to Ubuntu <em>distros</em>. I used to like KDE, but I no longer
+        do after version 3 (sorry, but no more Kubuntu for me). I have
+        also played with Unity (Ubuntu), GNOME (Ubuntu GNOME), LXQT
+        (Lubuntu), Cinnamon (Mint & Ubuntu Cinnamon) and now Xcfe
+        (Xubuntu).</p>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>

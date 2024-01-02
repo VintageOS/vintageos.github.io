@@ -1,6 +1,6 @@
 # FRN2000 & VintageOS v202310221703
-frn2000.com · frn2000.org · vintageos.org
-all rights reserved, 1997-2024
+frn2000.com · frn2000.org · vintageos.org · all rights reserved,
+1997-2024
 
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting

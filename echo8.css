@@ -1,6 +1,57 @@
-/* *********************************************************************
-  for `echo8.html` only as of 10/23/2023 - no changes other than date
-********************************************************************* */
+/* --------------------------------------------------------------------+
+|        _____ _     _               _____ _____         v202310221703 |
+|       |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___         |
+|       |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |        |
+|        \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |        |
+|                           |___|                         |___|        |
+|                                                                      |
+|                              « thanks to patorjk.com for ASCII art » |
+|                                                                      |
+|  FRN2000 & VintageOS v202310221703,  all rights reserved, 1997-2024  |
+|              frn2000.com · frn2000.org · vintageos.org               |
+|                                                                      |
+| 1.  over three (3) decades destroying various technologies as well   |
+|     as crashing, corrupting and hacking every operating system (OS)  |
+|     that I have ever touched from KERNAL with MS BASIC 2.0 on the    |
+|     Commodore 64 (https://vintageos.org/basic.html#C64) to Linux     |
+|     (https://vintageos.org/linux.html) as well as teaching and       |
+|     advocating for the hacker mentality behind free and open source  |
+|     (https://vintageos.org/foss.html);  over a quarter (1/4) of a    |
+|     century writing about OSs of the past half a century;  much more |
+|     information available at https://vintageos.org/frn2000.html      |
+|                                                                      |
+| 2.  disclaimer and terms of use for this site and/or related domains |
+|     found and explained at https://vintageos.org/disclaimer.html     |
+|                                                                      |
+| 3.  website and related files completely coded by hand (no WYSIWYG)  |
+|     using — in alphabetical order                                    |
+|                                                                      |
+|     3.1.  GNU nano (https://nano-editor.org/) on Linux               |
+|           (https://vintageos.org/linux.html) and/or Cygwin           |
+|           (https://vintageos.org/unix.html#Cygwin)                   |
+|                                                                      |
+|     3.2.  Mousepad (https://docs.xfce.org/apps/mousepad/start) on    |
+|           Linux (https://vintageos.org/linux.html)                   |
+|                                                                      |
+|     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     |
+|           Windows (https://vintageos.org/windows.html)               |
+|                                                                      |
+|     3.4.  Tidy (http://html-tidy.org/) on Linux                      |
+|           (https://vintageos.org/linux.html) and/or Cygwin           |
+|           (https://vintageos.org/unix.html#Cygwin) with quick        |
+|           statement `tidy -i -w 72 -o some_page.html some_page.html` |
+|                                                                      |
+| 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      |
+|     Markdown (https://daringfireball.net/projects/markdown/) as      |
+|     specified by GitHub Pages (https://pages.github.com/) in their   |
+|     guide (https://guides.github.com/features/mastering-markdown/)   |
+|                                                                      |
+| 5.  file `robots.txt` to block certain robots/spiders from accessing |
+|     files and sub-directories;  instructions and information on how  |
+|     to code this file found at http://robotstxt.org/robotstxt.html   |
+|                                                                      |
+| * for `echo8.html` only as of 01/02/2023, no changes other than date |
++-------------------------------------------------------------------- */
 
 .boxesEcho8
   {
@@ -39,6 +90,6 @@
     border: 1pt solid #C0C0C0;
   }
 
-/* ****************************************************************
-         vintageos.org v202310221703 by FRN2000, 1997-2023
-**************************************************************** */
+/* --------------------------------------------------------------------+
+|  FRN2000 & VintageOS v202310221703,  all rights reserved, 1997-2024  |
++-------------------------------------------------------------------- */

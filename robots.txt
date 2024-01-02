@@ -5,9 +5,9 @@
 #        \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |        #
 #                           |___|                         |___|        #
 #                                                                      #
-#                                » thanks to patorjk.com for ASCII art #
+#                              « thanks to patorjk.com for ASCII art » #
 #                                                                      #
-#  FRN2000 & VintageOS v202310221703,  all rights reserved, 1997-2023  #
+#  FRN2000 & VintageOS v202310221703,  all rights reserved, 1997-2024  #
 #              frn2000.com · frn2000.org · vintageos.org               #
 #                                                                      #
 # 1.  over three (3) decades destroying various technologies as well   #
@@ -24,7 +24,7 @@
 #     found and explained at https://vintageos.org/disclaimer.html     #
 #                                                                      #
 # 3.  website and related files completely coded by hand (no WYSIWYG)  #
-#     using -- in alphabetical order                                   #
+#     using — in alphabetical order                                    #
 #                                                                      #
 #     3.1.  GNU nano (https://nano-editor.org/) on Linux               #
 #           (https://vintageos.org/linux.html) and/or Cygwin           #

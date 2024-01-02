@@ -1,11 +1,11 @@
-# FRN2000 & VintageOS v202310221703
-## frn2000.com · frn2000.org · vintageos.org
-## all rights reserved, 1997-2023
+                  FRN2000 & VintageOS v202310221703
+              frn2000.com · frn2000.org · vintageos.org
+                    all rights reserved, 1997-2024
 
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting
 services.  This website and and related files are completely coded by
-hand (no WYSIWYG) using -- in alphabetical order
+hand (no WYSIWYG) using — in alphabetical order
 
 1. [GNU nano](https://nano-editor.org/) on
 [Linux](https://vintageos.org/linux.html) and
@@ -30,7 +30,7 @@ Refer to the disclaimer and terms of use for this site and/or related
 domains found and explained in the
 [`disclaimer.html`](https://vintageos.org/disclaimer.html) file.
 
-## Reference
+                              Reference
 
 * The `robots.txt` file blocks certain robots/spiders from accessing
 files and sub-directories;  instructions and information on how to code

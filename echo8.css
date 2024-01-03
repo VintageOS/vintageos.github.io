@@ -49,44 +49,49 @@
 | 5.  file `robots.txt` to block certain robots/spiders from accessing |
 |     files and sub-directories;  instructions and information on how  |
 |     to code this file found at http://robotstxt.org/robotstxt.html   |
-|                                                                      |
-| * for `echo8.html` only as of 01/02/2023, no changes other than date |
 +-------------------------------------------------------------------- */
 
 .boxesEcho8
   {
-
+    background-color: #FF0000;
+    color: #000000;
     padding: 5px 5px 5px 5px;
-
-    font-size: 18px;
-    line-height: 24px;
+    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
+    font-size: 16px;
+    line-height: 20px;
     border: 1pt solid #C0C0C0;
   }
- .boxesEcho8GREEN
-   {
+
+.boxesEcho8GREEN
+  {
     background-color: #008000;
     color: #FFFFFF;
     padding: 5px 5px 5px 5px;
-    font-size: 18px;
-    line-height: 24px;
+    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
+    font-size: 16px;
+    line-height: 20px;
     border: 1pt solid #C0C0C0;
   }
-  .boxesEcho8RED
-   {
+
+.boxesEcho8RED
+  {
     background-color: #FF0000;
     color: #FFFFFF;
     padding: 5px 5px 5px 5px;
-    font-size: 18px;
-    line-height: 24px;
+    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
+    font-size: 16px;
+    line-height: 20px;
     border: 1pt solid #C0C0C0;
   }
- .boxesEcho8YELLOW
-   {
+
+.boxesEcho8YELLOW
+  {
     background-color: #FFFF00;
     color: #000000;
     padding: 5px 5px 5px 5px;
-    font-size: 18px;
-    line-height: 24px;
+    font-family: 'Open Sans', sans-serif, arial, helvetica, monospace;
+    font-size: 16px;
+    line-height: 20px;
     border: 1pt solid #C0C0C0;
   }
 

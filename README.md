@@ -5,7 +5,7 @@ frn2000.com · frn2000.org · vintageos.org · all rights reserved,
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting
 services.  This website and and related files are completely coded by
-hand (no WYSIWYG) using — in alphabetical order
+hand (no WYSIWYG) using — in alphabetical order.
 
 1. [GNU nano](https://nano-editor.org/) on
 [Linux](https://vintageos.org/linux.html) and

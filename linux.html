@@ -15,7 +15,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="FRN2000 at VintageOS 2024.01.26.12.59.42">
+  <meta name="author" content=
+  "FRN2000 at VintageOS 2024.01.26.12.59.42">
   <meta name="description" content=
   "VintageOS 2024.01.26.12.59.42 is the source for information on different operating systems and also offers computer consulting services. This website is completely coded by hand using GNU nano, Mouse on Linux and/or Notepad++ on Windows with help from Tidy on Linux and Cygwin.">
   <meta name="keywords" content=
@@ -253,40 +254,40 @@
         access.</p>
         <pre>
           <!-- *spacer* / compensation for `&amp;&` below -->
-          apt-get update &amp;&               # to update repository list
-          apt-get upgrade -y &amp;&           # to upgrade local packages
-          apt-get autoclean -y &amp;&         # to clean leftover packages
-          apt-get autoremove -y &amp;&        # to remove leftover packages
-          apt-get purge -y &amp;&             # to purge old packages
-          reboot now                      # to reboot machine
+          apt-get update &amp;&                  # to update repository list
+          apt-get upgrade -y &amp;&              # to upgrade local packages
+          apt-get autoclean -y &amp;&            # to clean leftover packages
+          apt-get autoremove -y &amp;&           # to remove leftover packages
+          apt-get purge -y &amp;&                # to purge old packages
+          reboot -n                          # to reboot machine now
         </pre>
-        <p>The latter runs multiple commands — one after another using
-        the <tt>&amp;&</tt> (and) operator and then reboot without
-        confirmation using the <tt>-y</tt> (<em>yes</em>) attribute. Of
-        course if you do not need to reboot exclude the last
-        <tt>&amp;&</tt> operator and the <tt>reboot now</tt> command. I
-        would recommend doing the latter on a daily basis to make sure
-        your system has the most up-to-date packages and to avoid
-        security risks.</p>
+        <p>The latter runs multiple commands as a single statement —
+        one after another using the <tt>&amp;&</tt> (<em>and</em>)
+        operator and then reboot without confirmation using the
+        <tt>-y</tt> (<em>yes</em>) attribute. Of course if you do not
+        need to reboot exclude the last <tt>&amp;&</tt> operator and
+        the <tt>reboot -n</tt> command. I would recommend doing the
+        latter on a daily basis to make sure your system has the most
+        up-to-date packages and to avoid security risks.</p>
         <p>You can also install packages using <tt>apt-get</tt> calling
         the correct package name.</p>
         <pre>
           <!-- *spacer* -->
           apt-get install <em>&lt;package_name&gt;</em>
           <!-- *spacer* -->
-          apt-get install build-essential # compiler collection from GNU
-          apt-get install ddgr            # DuckDuckGo via command line
-          apt-get install dosbox          # DOS emulator for games and applications
-          apt-get install git             # version control system
-          apt-get install lynx            # text-only web browser
-          apt-get install nano            # command line text editor
-          apt-get install nasm            # assembly language
-          apt-get install neofetch        # system information tool
-          apt-get install pip             # package installer for Python
-          apt-get install python3         # language that we must all learn
-          apt-get install sqlite3         # relational database with no GUI
-          apt-get install tidy            # utility to tidy up HTML code
-          apt-get install whois           # access to the `whois` database (domain registration)
+          apt-get install -y build-essential # compiler collection from GNU
+          apt-get install -y ddgr            # DuckDuckGo via command line
+          apt-get install -y dosbox          # DOS emulator for games and applications
+          apt-get install -y git             # version control system
+          apt-get install -y lynx            # text-only web browser
+          apt-get install -y nano            # command line text editor
+          apt-get install -y nasm            # assembly language
+          apt-get install -y neofetch        # system information tool
+          apt-get install -y pip             # package installer for Python
+          apt-get install -y python3         # language that we must all learn
+          apt-get install -y sqlite3         # relational database with no GUI
+          apt-get install -y tidy            # utility to tidy up HTML code
+          apt-get install -y whois           # access to the `whois` database (domain registration)
         </pre>
         <p>If you do not want the system to ask you for confirmation,
         you can include <tt>-y</tt> (<em>yes</em>) attribute, before
@@ -300,7 +301,7 @@
         <p>If you are interested in installing multiple packages at the
         same time, you would also need to use the double ampersand
         operator (<tt>&amp;&</tt>) after each call. Note the latter can
-        be written in one line.</p>
+        be written as a single statement.</p>
         <pre>
           <!-- *spacer* -->
           apt-get install -y build-essential &amp;&
@@ -322,14 +323,14 @@
         developed by Canonical.</p>
         <pre>
           <!-- *spacer* -->
-          snap install bottom             # memory management
+          snap install bottom                # memory management
         </pre>
         <p>For documentation on how to use <tt>apt</tt>, <tt>snap</tt>
         or other program, refer to the <tt>man</tt> page (manual) for
         each program.</p>
         <pre>
           <!-- *spacer* -->
-          man man                         # manual for program `man`
+          man man                            # manual for program `man`
         </pre>
         <p>Note that I started playing with Red Hat Linux 5.2 (1998)
         and then 6.0 with GNOME (1999), but most of my experience since
@@ -383,9 +384,9 @@
     <footer role="contentinfo">
       <p align="center"><a href="/" target="_self" rel="dofollow"
       title="What is an operating system (OS)?">VintageOS
-      2024.01.26.12.59.42</a> by <a href="/frn2000.html" target="_self" rel=
-      "dofollow" title="What (or rather who) is FRN2000?">FRN2000</a>,
-      1997-2024<br>
+      2024.01.26.12.59.42</a> by <a href="/frn2000.html" target="_self"
+      rel="dofollow" title=
+      "What (or rather who) is FRN2000?">FRN2000</a>, 1997-2024<br>
       <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/"
       target="_blank" rel="nofollow" title=
       "Creative Commons — Attribution-NonCommercial-NoDerivs 3.0 Unported — CC BY-NC-ND 3.0">

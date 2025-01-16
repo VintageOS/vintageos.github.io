@@ -9,11 +9,11 @@
 #                                                                      #
 #               FRN2000 & VintageOS 2024.01.26.12.59.42                #
 #              frn2000.com · frn2000.org · vintageos.org               #
-#                    all rights reserved, 1997-2024                    #
+#                    all rights reserved, 1997-2025                    #
 #                                                                      #
 # 1.  over three (3) decades destroying various technologies as well   #
 #     as crashing, corrupting and hacking every operating system (OS)  #
-#     that I have ever touched from KERNAL with MS BASIC 2.0 on the    #
+#     that I have ever touched from KERNAL with MS BASIC 2.0 on my old #
 #     Commodore 64 (https://vintageos.org/basic.html#C64) to Linux     #
 #     (https://vintageos.org/linux.html) as well as teaching and       #
 #     advocating for the hacker mentality behind free and open source  #

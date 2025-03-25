@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.8.0">
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____  2024.01.26.12.59.42 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -137,7 +137,7 @@
       </option>
       <!-- section 02: programming languages + related technologies -->
       <option value="" target="_self" rel="dofollow" title=
-      "section 02: programming languages">
+      "section 02: programming languages + related technologies">
         Programming Languages + Related Technologies
       </option>
       <option value="/assembly.html" target="_self" rel="dofollow"
@@ -164,18 +164,20 @@
       "What is Python?">
         » Python
       </option>
+      <option title=
+      "section 03: other + consulting + disclaimer + `whoami`">
+        <!-- section 03: other + consulting + disclaimer + `whoami` -->
+      </option>
       <option value="/blocks.html" target="_self" rel="dofollow" title=
       "What is so special about construction blocks &amp; programming?">
-        &nbsp; » Construction Blocks & Programming
+        » Construction Blocks & Programming
       </option>
       <option value="/foss.html" target="_self" rel="dofollow" title=
       "What is Free and Open Source Software (FOSS)?">
-        &nbsp; » Free and Open Source
+        » Free and Open Source
       </option>
-      <option value="" target="_self" rel="dofollow" title="">
-      </option><!-- section 03: consulting + disclaimer + `whoami` -->
       <option value="" target="_self" rel="dofollow" title=
-      "section 03: consulting + disclaimer + `whoami`">
+      "consulting + disclaimer + `whoami`">
         Consulting + Disclaimer + `whoami`
       </option>
       <option value="/disclaimer.html" target="_self" rel="dofollow"
@@ -235,8 +237,7 @@
           directory structure.
           <ul>
             <li><tt>Host$</tt> to indicate the root of the file system
-            in the HDD (</li>
-            <li><tt>/</tt> as in most OSs.</li>
+            in the HDD (<tt>/</tt>) as in most OSs.</li>
             <li>Character <tt>.</tt> indicates the next sub-level in
             the tree structure instead of <tt>/</tt>.</li>
             <li>Character <tt>/</tt> separates the name of a file and
@@ -249,8 +250,8 @@
         that the file is an executable, but I am not sure if my
         assumption is correct.</li>
         <li>Middle button in a modern mouse for right click</li>
-        <li>programming in C rather than BASIC or ARM Assembly, good
-        excuse to go back to programming in C</li>
+        <!-- <li>programming in C rather than BASIC or ARM Assembly, good
+        excuse to go back to programming in C</li> -->
       </ul>
     </article>
     <article role="article">
@@ -278,9 +279,9 @@
             <li id="RPCEmu_wget">Get RPCEmu package (in my case,
             version 0.9.4)
               <pre>
-                  <!-- *spacer* -->
-                  wget https://www.marutan.net/rpcemu/cgi/download.php?sFName=0.9.4/rpcemu-0.9.4.tar.gz
-                </pre>
+                <!-- *spacer* -->
+                wget https://www.marutan.net/rpcemu/cgi/download.php?sFName=0.9.4/rpcemu-0.9.4.tar.gz
+              </pre>
             </li>
             <li id="RPCEmu_tar">Decompress RPCEmu. The best location is
             at <tt>home</tt> ()<tt>~</tt>). These instructions consider
@@ -301,7 +302,7 @@
                 cd rpcemu-0.9.4/src/qt5
              </pre>
             </li>
-            <li id="RPCEmu_CONFIG">edit
+            <li id="RPCEmu_CONFIG">Edit
             <tt>~/rpcemu0.9.4/src/qt5/rpcemu.pro</tt> from <tt>CONFIG
             += debug_and_release</tt> to <tt>CONFIG +=
             debug_and_release dynarec</tt>. I have no idea why file

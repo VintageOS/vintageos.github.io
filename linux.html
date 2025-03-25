@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.8.0">
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
   <!-- ----------------------------------------------------------------+
   |       _____ _     _               _____ _____  2024.01.26.12.59.42 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
@@ -137,7 +137,7 @@
       </option>
       <!-- section 02: programming languages + related technologies -->
       <option value="" target="_self" rel="dofollow" title=
-      "section 02: programming languages">
+      "section 02: programming languages + related technologies">
         Programming Languages + Related Technologies
       </option>
       <option value="/assembly.html" target="_self" rel="dofollow"
@@ -164,18 +164,20 @@
       "What is Python?">
         » Python
       </option>
+      <option title=
+      "section 03: other + consulting + disclaimer + `whoami`">
+        <!-- section 03: other + consulting + disclaimer + `whoami` -->
+      </option>
       <option value="/blocks.html" target="_self" rel="dofollow" title=
       "What is so special about construction blocks &amp; programming?">
-        &nbsp; » Construction Blocks & Programming
+        » Construction Blocks & Programming
       </option>
       <option value="/foss.html" target="_self" rel="dofollow" title=
       "What is Free and Open Source Software (FOSS)?">
-        &nbsp; » Free and Open Source
+        » Free and Open Source
       </option>
-      <option value="" target="_self" rel="dofollow" title="">
-      </option><!-- section 03: consulting + disclaimer + `whoami` -->
       <option value="" target="_self" rel="dofollow" title=
-      "section 03: consulting + disclaimer + `whoami`">
+      "consulting + disclaimer + `whoami`">
         Consulting + Disclaimer + `whoami`
       </option>
       <option value="/disclaimer.html" target="_self" rel="dofollow"
@@ -247,11 +249,9 @@
         <p>Depending on the <em>distro</em>, you might need to update
         your installation right away. If the <em>distro</em> is based
         on Debian and it has <tt>apt</tt> as in the case of Ubuntu and
-        its derivatives like Xubuntu (my current installation, which I
-        surprisingly like due to its simplicity and low memory
-        consumption), you might want to run the following commands on
-        the console as superuser (<tt>sudo -i</tt>) for <tt>root</tt>
-        access.</p>
+        its derivatives, you might want to run the following commands
+        on the console as superuser (<tt>sudo -i</tt>) for
+        <tt>root</tt> access.</p>
         <pre>
           <!-- *spacer* / compensation for `&amp;&` below -->
           apt-get update &amp;&                  # to update repository list
@@ -324,6 +324,23 @@
         <pre>
           <!-- *spacer* -->
           snap install bottom                # memory management
+        </pre>
+        <p>Note that <tt>snap</tt> might be blocked by default so you
+        might need to follow the proper steps provided for the
+        <tt>distro</tt>. For example, for Mint Linux, you would need to
+        rename <tt>/etc/apt/preferences.d/nosnap.pref</tt> or move it
+        to another location using <tt>sudo -i</tt>.</p>
+        <pre>
+          <!-- *spacer* -->
+          mv /etc/apt/preferences.d/nosnap.pref /etc/apt/preferences.d/nosnap.pref.old
+        </pre>
+<!-- https://snapcraft.io/docs/installing-snap-on-linux-mint -->
+        <p>Once <tt>snap</tt> is no longer blocked, you can install
+        it.</p>
+        <pre>
+          <!-- *spacer* / compensation for `&amp;&` below -->
+          apt-get update &amp;&                  # to update repository list
+          apt-get install -y snapd           # to install snap
         </pre>
         <p>For documentation on how to use <tt>apt</tt>, <tt>snap</tt>
         or other program, refer to the <tt>man</tt> (<em>manual</em>)

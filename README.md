@@ -1,6 +1,6 @@
-# FRN2000 & VintageOS 2024.01.26.12.59.42
+# FRN2000 & VintageOS 2025.12.31.10.56.06
 frn2000.com · frn2000.org · vintageos.org · all rights reserved,
-1997-2025
+1997-2026
 
 [VintageOS](https://vintageos.org/) is the source for information on
 different operating systems and also offers computer consulting

@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------+
-|        _____ _     _               _____ _____   2024.01.26.12.59.42 |
+|        _____ _     _               _____ _____   2025.12.31.10.56.06 |
 |       |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___         |
 |       |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |        |
 |        \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |        |
@@ -7,9 +7,10 @@
 |                                                                      |
 |                              « thanks to patorjk.com for ASCII art » |
 |                                                                      |
-|               FRN2000 & VintageOS 2024.01.26.12.59.42                |
+|               FRN2000 & VintageOS 2025.12.31.10.56.06                |
 |              frn2000.com · frn2000.org · vintageos.org               |
-|                    all rights reserved, 1997-2025                    |
+|                    all rights reserved, 1997-2026                    |
+|                         vosc.ptqw0@aleeas.com                        |
 |                                                                      |
 | 1.  over three (3) decades destroying various technologies as well   |
 |     as crashing, corrupting and hacking every operating system (OS)  |
@@ -17,9 +18,9 @@
 |     Commodore 64 (https://vintageos.org/basic.html#C64) to Linux     |
 |     (https://vintageos.org/linux.html) as well as teaching and       |
 |     advocating for the hacker mentality behind free and open source  |
-|     (https://vintageos.org/foss.html);  over a quarter (1/4) of a    |
-|     century writing about OSs of the past half a century;  much more |
-|     information available at https://vintageos.org/frn2000.html      |
+|     (https://vintageos.org/foss.html);  close to three (3) decades   |
+|     writing about OSs of the past half century;  more information    |
+|     available at https://vintageos.org/frn2000.html                  |
 |                                                                      |
 | 2.  disclaimer and terms of use for this site and/or related domains |
 |     found and explained at https://vintageos.org/disclaimer.html     |
@@ -32,15 +33,18 @@
 |           (https://vintageos.org/unix.html#Cygwin)                   |
 |                                                                      |
 |     3.2.  Mousepad (https://docs.xfce.org/apps/mousepad/start) on    |
-|           Linux (https://vintageos.org/linux.html)                   |
+|           Linux Xubuntu (https://vintageos.org/linux.html)           |
 |                                                                      |
 |     3.3.  Notepad++ (http://notepad-plus-plus.org/) on Microsoft     |
 |           Windows (https://vintageos.org/windows.html)               |
 |                                                                      |
 |     3.4.  Tidy (http://html-tidy.org/) on Linux                      |
 |           (https://vintageos.org/linux.html) and/or Cygwin           |
-|           (https://vintageos.org/unix.html#Cygwin) with quick        |
-|           statement `tidy -i -w 72 -o some_page.html some_page.html` |
+|           (https://vintageos.org/unix.html#Cygwin) with statement    |
+|           `tidy -i -w 72 -o <output_page.html> <input_page.html>`    |
+|                                                                      |
+|     3.5.  Xed (http://github.com/linuxmint/xed) on Linux Mint        |
+|           (https://vintageos.org/linux.html)                         |
 |                                                                      |
 | 4.  files `README.md`, `README2.md` and `LICENSE.md` written in      |
 |     Markdown (https://daringfireball.net/projects/markdown/) as      |

@@ -254,12 +254,13 @@
         <tt>root</tt> access.</p>
         <pre>
           <!-- *spacer* / compensation for `&amp;&` below -->
-          apt-get update &amp;&                  # to update repository list
-          apt-get upgrade -y &amp;&              # to upgrade local packages
-          apt-get autoclean -y &amp;&            # to clean leftover packages
-          apt-get autoremove -y &amp;&           # to remove leftover packages
-          apt-get purge -y &amp;&                # to purge old packages
-          reboot -n                          # to reboot machine now
+          <!-- *spacer* / compensation for `&amp;&` below -->
+          apt update &amp;&                           # to update repository list
+          apt upgrade -y &amp;&                       # to upgrade local packages
+          apt autoclean -y &amp;&                     # to clean leftover packages
+          apt autoremove -y &amp;&                    # to remove leftover packages
+          apt purge -y &amp;&                         # to purge old packages
+          reboot -n                                   # to reboot machine now
         </pre>
         <p>The latter runs multiple commands as a single statement —
         one after another using the <tt>&amp;&</tt> (<em>and</em>)
@@ -269,35 +270,35 @@
         the <tt>reboot -n</tt> command. I would recommend doing the
         latter on a daily basis to make sure your system has the most
         up-to-date packages and to avoid security risks.</p>
-        <p>You can also install packages using <tt>apt-get</tt> calling
-        the correct package name.</p>
+        <p>You can also install packages using <tt>apt</tt> calling the
+        correct package name.</p>
         <pre>
           <!-- *spacer* -->
-          apt-get install <em>&lt;package_name&gt;</em>
+          apt install <em>&lt;package_name&gt;</em>
           <!-- *spacer* -->
-          apt-get install -y build-essential # compiler collection from GNU
-          apt-get install -y ddgr            # DuckDuckGo via command line
-          apt-get install -y dosbox          # DOS emulator for games and applications
-          apt-get install -y git             # version control system
-          apt-get install -y lynx            # text-only web browser
-          apt-get install -y mc              # terminal file manager
-          apt-get install -y nano            # command line text editor
-          apt-get install -y nasm            # assembly language
-          apt-get install -y python3         # language that we should all learn
-          apt-get install -y python3-pip     # package manager for python3
-          apt-get install -y screenfetch     # system information tool
-          apt-get install -y sqlite3         # relational database with no GUI
-          apt-get install -y tidy            # utility to tidy up HTML code
-          apt-get install -y whois           # access to the `whois` database (domain registration)
+          apt install -y build-essential              # compiler collection from GNU
+          apt install -y ddgr                         # DuckDuckGo via command line
+          apt install -y dosbox                       # DOS emulator for games and applications
+          apt install -y git                          # version control system
+          apt install -y lynx                         # text-only web browser
+          apt install -y mc                           # terminal file manager
+          apt install -y nano                         # command line text editor
+          apt install -y nasm                         # assembly language
+          apt install -y python3                      # language that we should all learn
+          apt install -y python3-pip                  # package manager for python3
+          apt install -y screenfetch                  # system information tool
+          apt install -y sqlite3                      # relational database with no GUI
+          apt install -y tidy                         # utility to tidy up HTML code
+          apt install -y whois                        # access to the `whois` database (domain registration)
         </pre>
         <p>If you do not want the system to ask you for confirmation,
         you can include <tt>-y</tt> (<em>yes</em>) attribute, before
         the name of the package.</p>
         <pre>
           <!-- *spacer* -->
-          apt-get install -y <em>&lt;package_name&gt;</em>
+          apt install -y <em>&lt;package_name&gt;</em>
           <!-- *spacer* -->
-          apt-get install -y build-essential
+          apt install -y build-essential
         </pre>
         <p>If you are interested in installing multiple packages at the
         same time, you would also need to use the double ampersand
@@ -305,51 +306,98 @@
         be written as a single statement.</p>
         <pre>
           <!-- *spacer* -->
-          apt-get install -y build-essential &amp;&
-          apt-get install -y ddgr &amp;&
-          apt-get install -y dosbox &amp;&
-          apt-get install -y git &amp;&
-          apt-get install -y lynx &amp;&
-          apt-get install -y mc &amp;&
-          apt-get install -y nano &amp;&
-          apt-get install -y nasm &amp;&
-          apt-get install -y python3 &amp;&
-          apt-get install -y python3-pip &amp;&
-          apt-get install -y screenfetch &amp;&
-          apt-get install -y sqlite3 &amp;&
-          apt-get install -y tidy &amp;&
-          apt-get install -y whois
+          apt install -y build-essential &amp;&
+          apt install -y ddgr &amp;&
+          apt install -y dosbox &amp;&
+          apt install -y git &amp;&
+          apt install -y lynx &amp;&
+          apt install -y mc &amp;&
+          apt install -y nano &amp;&
+          apt install -y nasm &amp;&
+          apt install -y python3 &amp;&
+          apt install -y python3-pip &amp;&
+          apt install -y screenfetch &amp;&
+          apt install -y sqlite3 &amp;&
+          apt install -y tidy &amp;&
+          apt install -y whois
         </pre>
         <p>Aside from <tt>apt</tt>, another common package manager that
-        most <em>distros</em> can use is <tt>snap</tt>, which is
-        developed by Canonical.</p>
+        most <em>distros</em> include is Flatpak (<tt>flatpak</tt>),
+        which can install applications at the user level without the
+        need of <tt>root</tt> access.</p>
         <pre>
           <!-- *spacer* -->
-          snap install bottom                # memory management
+          flatpak install <em>&lt;repository&gt;&gt; &lt;package_name&gt;</em>
+        </pre>
+        <pre>
+          <!-- *spacer* -->
+          flatpak install flathub com.vscodium.codium # Visual Studio clone
+        </pre>
+        <p>To update Flatpak packages, the request is similar to that
+        of <tt>apt</tt>.</p>
+        <pre>
+          <!-- *spacer* -->
+          flatpak update -y
+        </pre>
+        <p>Flatpak also provides a means to repair damaged
+        packages.</p>
+        <pre>
+          <!-- *spacer* -->
+          flatpak repair
+        </pre>
+        <p>Flatpak also provides a list of its packages installed in
+        your machine.</p>
+        <pre>
+          <!-- *spacer* -->
+          flatpak list
+        </pre>
+        <p>The latter two commands other than getting the list of
+        Flatpak packages can be added to the <tt>apt</tt> script.</p>
+        <pre>
+          <!-- *spacer* / compensation for `&amp;&` below -->
+          apt update &amp;&                           # to update `apt` repo list
+          apt upgrade -y &amp;&                       # to upgrade local packages
+          apt autoclean -y &amp;&                     # to clean leftover packages
+          apt autoremove -y &amp;&                    # to remove leftover packages
+          apt purge -y &amp;&                         # to purge old packages
+          flatpak update -y &amp;&                    # to update Flatpak repo list
+          flatpak repair &amp;&                       # to repair Flatpak packages
+          reboot -n                                   # to reboot machine now
+        </pre>
+        <p>Aside from Flatpak and <tt>apt</tt>, another common package
+        manager that most <em>distros</em> can use is <tt>snap</tt>,
+        which is developed by Canonical.</p>
+        <pre>
+          <!-- *spacer* -->
+          snap install <em>&lt;package_name&gt;</em>
+        </pre>
+        <pre>
+          <!-- *spacer* -->
+          snap install bottom                         # memory management
         </pre>
         <p>Note that <tt>snap</tt> might be blocked by default so you
         might need to follow the proper steps provided for the
         <tt>distro</tt>. For example, for Mint Linux, you would need to
-        rename <tt>/etc/apt/preferences.d/nosnap.pref</tt> or move it
-        to another location using <tt>sudo -i</tt>.</p>
+        rename <tt title=
+        "https://snapcraft.io/docs/installing-snap-on-linux-mint">/etc/apt/preferences.d/nosnap.pref</tt>
+        or move it to another location using <tt>sudo -i</tt>.</p>
         <pre>
           <!-- *spacer* -->
           mv /etc/apt/preferences.d/nosnap.pref /etc/apt/preferences.d/nosnap.pref.old
         </pre>
-<!-- https://snapcraft.io/docs/installing-snap-on-linux-mint -->
         <p>Once <tt>snap</tt> is no longer blocked, you can install
         it.</p>
         <pre>
           <!-- *spacer* / compensation for `&amp;&` below -->
-          apt-get update &amp;&                  # to update repository list
-          apt-get install -y snapd           # to install snap
+          apt update &amp;&                               # to update repository list
+          apt install -y snapd                        # to install snap
         </pre>
         <p>For documentation on how to use <tt>apt</tt>, <tt>snap</tt>
         or other program, refer to the <tt>man</tt> (<em>manual</em>)
         page for each program.</p>
         <pre>
           <!-- *spacer* -->
-          man man                            # manual for program `man`
+          man man                                     # manual for program `man`
         </pre>
         <p>Note that I started playing with Red Hat Linux 5.2 (11/1998)
         and then 6.0 with GNOME (10/1999), but most of my experience
@@ -382,7 +430,7 @@
         "/windows.html" target="_self" rel="dofollow" title=
         "What is Microsoft Windows — winget?"><tt>winget</tt></a>,
         which searches for packages similarly to <tt>apt</tt> or rather
-        <tt>apt-get</tt> as used by Ubuntu. Personally I prefer to use
+        <tt>apt</tt> as used by Ubuntu. Personally I prefer to use
         <a href="/windows.html#Chocolatey" target="_self" rel=
         "dofollow" title=
         "What is Microsoft Windows — Chocolatey?">Chocolatey</a>

@@ -288,6 +288,7 @@
           apt install -y screenfetch              # system information tool
           apt install -y sqlite3                  # relational database with no GUI
           apt install -y tidy                     # utility to tidy up HTML code
+          apt install -y vlc                      # multimedia player
           apt install -y whois                    # access to the `whois` database (domain registration)
         </pre>
         <p>If you do not want the system to ask you for confirmation,
@@ -318,6 +319,7 @@
           apt install -y screenfetch &amp;&
           apt install -y sqlite3 &amp;&
           apt install -y tidy &amp;&
+          apt install -y vlc &amp;&
           apt install -y whois
         </pre>
         <p>Aside from <tt>apt</tt>, another common package manager that
@@ -420,8 +422,9 @@
         that the script is executed. I prefer to save these files in
         case I need to review errors or to make sure that a certain
         binary has been updated, especially at work. Note that
-        <em><tt>user_name</tt></em> is the user saving the log
-        files.</p>
+        <em><tt>user_name</tt></em> is the user saving the log files.
+        Also note that you do not have to reboot your machine, but it
+        is always a good idea after any major system change.</p>
         <pre>
           <!-- *spacer* -->
           #!/bin/bash                             # to call the `bash` shell

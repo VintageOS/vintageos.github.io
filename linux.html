@@ -387,14 +387,72 @@
         <pre>
           <!-- *spacer* / compensation for `&amp;&` below -->
           apt update &amp;&                           # to update repository list
-          apt install -y snapd                    # to install snap
+          apt install -y snapd                    # to install snap (`snapd`)
         </pre>
+        <p>Note that <tt>snap</tt> updates packages automatically
+        without user interaction four times a day.</p>
         <p>For documentation on how to use <tt>apt</tt>, <tt>snap</tt>
         or other program, refer to the <tt>man</tt> (<em>manual</em>)
         page for each program.</p>
         <pre>
           <!-- *spacer* -->
           man man                                 # manual for program `man`
+        </pre>
+        <p>If you prefer, you could have the same commands in a script.
+        For the code below, we will use <tt>update.sh</tt>.</p>
+        <pre>
+          <!-- *spacer* -->
+          #!/bin/bash                             # to call the `bash` shell
+          <!-- *spacer* -->
+          apt update                              # to update `apt` repo list
+          apt upgrade -y                          # to upgrade local packages
+          apt autoclean -y                        # to clean leftover packages
+          apt autoremove -y                       # to remove leftover packages
+          apt purge -y                            # to purge old packages
+          flatpak update -y                       # to update Flatpak repo list
+          flatpak repair                          # to repair Flatpak packages
+          reboot -n                               # to reboot machine now
+        </pre>
+        <p>If you prefer to write (<tt>tee</tt>) the output to the
+        terminal as well as to a file (<tt>update_"$run_date".log</tt>)
+        where <tt>&lt;$run_date&gt;</tt> is the date and time
+        (timestamp) that the script is executed. I prefer to save these
+        files in case I need to review errors or to make sure that a
+        certain binary has been updated, especially at work.</p>
+        <pre>
+          <!-- *spacer* -->
+          #!/bin/bash                             # to call the `bash` shell
+          <!-- *spacer* -->
+          run_date=$(date +%Y%m%d%H%M%S)          # to declare variable to hold the timestamp
+          <!-- *spacer* -->
+          if [ ! -d "/home/<em>user_name</em>/.update_log" ]; then
+            mkdir -p /home/<em>user_name</em>/.update_log
+            echo "created directory `/home/<em>user_name</em>/.update_log`"
+          fi                                      # to make subdirectory `.update_log` on first run
+          <!-- *spacer* -->
+          apt update        | tee /home/<em>user_name</em>/.update_log/update_"$run_date".log
+          apt upgrade    -y | tee /home/<em>user_name</em>/.update_log/update_"$run_date".log -a
+          apt autoclean  -y | tee /home/<em>user_name</em>/.update_log/update_"$run_date".log -a
+          apt autoremove -y | tee /home/<em>user_name</em>/.update_log/update_"$run_date".log -a
+          apt purge      -y | tee /home/<em>user_name</em>/.update_log/update_"$run_date".log -a
+          flatpak update -y | tee /home/<em>user_name</em>/.update_log/update_"$run_date".log -a
+          flatpak repair    | tee /home/<em>user_name</em>/.update_log/update_"$run_date".log -a
+                                                  # to write each output to console and output file
+          <!-- *spacer* -->
+          reboot -n                               # to reboot machine now
+        </pre>
+        <p>In order to run the script, we first need to change the mode
+        (<tt>chmod</tt>) of the script (<tt>update.sh</tt>).</p>
+        <pre>
+          <!-- *spacer* -->
+          chmod 777 update.sh
+        </pre>
+        <p>At this point, the script is an executable and it can be
+        executed as superuser (<tt>sudo -i</tt>) preceeded by
+        <tt>./</tt>, which tells the system to execute the script.</p>
+        <pre>
+          <!-- *spacer* -->
+          ./update.sh
         </pre>
         <p>Note that I started playing with Red Hat Linux 5.2 (11/1998)
         and then 6.0 with GNOME (10/1999), but most of my experience
@@ -407,7 +465,7 @@
         but I no longer do after version 3 (sorry, but no more Kubuntu
         for me). I have also played with Unity (Ubuntu), GNOME (Ubuntu
         GNOME), LXQt (Lubuntu), Cinnamon (Mint & Ubuntu Cinnamon) and
-        now Xcfe (Xubuntu).</p>
+        Xcfe (Xubuntu).</p>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>

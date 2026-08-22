@@ -414,11 +414,13 @@
           reboot -n                               # to reboot machine now
         </pre>
         <p>If you prefer to write (<tt>tee</tt>) the output to the
-        terminal as well as to a file (<tt>update_"$run_date".log</tt>)
-        where <tt>&lt;$run_date&gt;</tt> is the date and time
-        (timestamp) that the script is executed. I prefer to save these
-        files in case I need to review errors or to make sure that a
-        certain binary has been updated, especially at work.</p>
+        terminal as well as to a file (<tt>update_"$run_date".log</tt>
+        with argument <tt>--a</tt> to add each output to the same log
+        file) where <tt>$run_date</tt> is the date and time (timestamp)
+        that the script is executed. I prefer to save these files in
+        case I need to review errors or to make sure that a certain
+        binary has been updated, especially at work. Note that
+        <tt>user_name</tt> is your user name.</p>
         <pre>
           <!-- *spacer* -->
           #!/bin/bash                             # to call the `bash` shell
@@ -524,8 +526,8 @@
     </footer>
   </article><!-- beginning of Google Analytics -->
   <script src="http://google-analytics.com/urchin.js" type=
-  "text/javascript"></script>
-  <script type="text/javascript"></script>
+  "text/javascript"></script> 
+  <script type="text/javascript"></script> 
   <!-- end of Google Analytics -->
 </body>
 </html>

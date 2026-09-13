@@ -278,6 +278,8 @@
           apt install -y build-essential          # compiler collection from GNU
           apt install -y ddgr                     # DuckDuckGo via command line
           apt install -y dosbox                   # DOS emulator for games and applications
+          apt install -y fastfetch                # system information utility
+          apt install -y gimp                     # image manipulation program
           apt install -y git                      # version control system
           apt install -y lynx                     # text-only web browser
           apt install -y mc                       # terminal file manager
@@ -309,6 +311,8 @@
           apt install -y build-essential &amp;&
           apt install -y ddgr &amp;&
           apt install -y dosbox &amp;&
+          apt install -y fastfetch &amp;&
+          apt install -y gimp &amp;&
           apt install -y git &amp;&
           apt install -y lynx &amp;&
           apt install -y mc &amp;&
@@ -471,7 +475,56 @@
         but I no longer do after version 3 (sorry, but no more Kubuntu
         for me). I have also played with Unity (Ubuntu), GNOME (Ubuntu
         GNOME), LXQt (Lubuntu), Cinnamon (Mint & Ubuntu Cinnamon) and
-        Xcfe (Xubuntu).</p>
+        Xcfe (Mint Xcfe & Xubuntu).</p>
+      </article>
+      <article role="article">
+        <h2 id="MintXfce">Linux Mint Xfce, My Current Distro of
+        Choice:</h2>
+        <p>Linux Mint is based on Ubuntu, which is based on Debian.
+        Linux Mint offers three diffent desktop environments —
+        Cinammon, Xfce and Mate. I am currently using Linux Mint 22.3
+        Xfce (Zena), which has less animations and therefore uses less
+        resources than the Cinnamon version — not to mention the
+        old-school look and feel.</p><!-- installed on 09/11/2026 -->
+        <p>By default, the screen fades out when the system is idle or
+        locked — a simple, boring blank screen. Neither
+        <tt>xscreensaver</tt> nor <tt>xfce4-screensaver</tt> are part
+        of the image. If you decide to install a screensaver, you need
+        to disable the <tt>light-locker</tt> deamon (<tt>Screen
+        Locker</tt>) and add the screen saver package of your choice to
+        <tt>Application Autostart</tt> (<tt>Settings Manager &gt;
+        Session and Startup</tt>) to start the deamon on boot.</p>
+        <p>Although <tt>xscreensaver</tt> is the classic option, it
+        does not offer a clean integration. The login screen to stop
+        the screen saver is generic and looks somewhat out of date. If
+        this is your preference, run the following code.</p>
+        <pre>
+          <!-- *spacer* -->
+          apt install -y xscreensaver xscreensaver-data-extra
+        </pre>
+        <p>You will need to call <tt>xscreensaver</tt> in
+        <tt>Application Autostart</tt> to start the deamon on boot.</p>
+        <pre>
+          <!-- *spacer* -->
+          xscreensaver -nosplash
+        </pre><!-- installed on 09/12/2026 -->
+        <p>I prefer <tt>xfce4-screensaver</tt> as this version includes
+        the <tt>Floating Xfce</tt> screen saver with the Xfce mascot
+        named <em>Xue</em> and offers a cleaner integration with Linux
+        Mint Xfce. This is the screen saver included in Xubnutu and
+        other <em>distros</em> with Xfce. If this is your preference,
+        run the following code.</p>
+        <pre>
+          <!-- *spacer* -->
+          apt install -y xfce4-screensaver
+        </pre>
+        <p>You will need to call <tt>xfce4-screensaver</tt> in
+        <tt>Application Autostart</tt> to start the deamon on boot.</p>
+        <pre>
+          <!-- *spacer* -->
+          xfce4-screensaver -nosplash
+        </pre><!-- configured on 09/12/2026 -->
+        <p>After you make the changes, you will need to reboot.</p>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>

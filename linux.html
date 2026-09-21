@@ -270,12 +270,15 @@
         latter on a daily basis to make sure your system has the most
         up-to-date packages and to avoid security risks.</p>
         <p>You can also install packages using <tt>apt</tt> calling the
-        correct package name.</p>
+        correct package name after you have updated the data from the
+        repository in order to make sure that you are getting the
+        latest packages.</p>
         <pre>
           <!-- *spacer* -->
           apt install <em>&lt;package_name&gt;</em>
           <!-- *spacer* -->
-          apt install -y build-essential          # compiler collection from GNU
+          apt install -y build-essential          # compiler collection by GNU
+          apt install -y calibre                  # ebook manager, reader and creator
           apt install -y ddgr                     # DuckDuckGo via command line
           apt install -y dosbox                   # DOS emulator for games and applications
           apt install -y fastfetch                # system information utility
@@ -284,9 +287,9 @@
           apt install -y lynx                     # text-only web browser
           apt install -y mc                       # terminal file manager
           apt install -y nano                     # command line text editor
-          apt install -y nasm                     # assembly language
+          apt install -y nasm                     # assembly language by Netwide Assembler
           apt install -y python3                  # language that we should all learn
-          apt install -y python3-pip              # package manager for python3
+          apt install -y python3-pip              # package manager for `python3`
           apt install -y screenfetch              # system information tool
           apt install -y sqlite3                  # relational database with no GUI
           apt install -y tidy                     # utility to tidy up HTML code
@@ -309,6 +312,7 @@
         <pre>
           <!-- *spacer* -->
           apt install -y build-essential &amp;&
+          apt install -y calibre &amp;&
           apt install -y ddgr &amp;&
           apt install -y dosbox &amp;&
           apt install -y fastfetch &amp;&
@@ -501,19 +505,19 @@
         <pre>
           <!-- *spacer* -->
           apt install -y xscreensaver xscreensaver-data-extra
-        </pre>
+        </pre><!-- installed, configured & removed on 09/12/2026 -->
         <p>You will need to call <tt>xscreensaver</tt> in
         <tt>Application Autostart</tt> to start the deamon on boot.</p>
         <pre>
           <!-- *spacer* -->
           xscreensaver -nosplash
-        </pre><!-- installed on 09/12/2026 -->
+        </pre><!-- installed, configured & removed on 09/12/2026 -->
         <p>I prefer <tt>xfce4-screensaver</tt> as this version includes
         the <tt>Floating Xfce</tt> screen saver with the Xfce mascot
         named <em>Xue</em> and offers a cleaner integration with Linux
         Mint Xfce. This is the screen saver included in Xubnutu and
         other <em>distros</em> with Xfce. If this is your preference,
-        run the following code.</p>
+        run the following code.</p><!-- installed on 09/12/2026 -->
         <pre>
           <!-- *spacer* -->
           apt install -y xfce4-screensaver
@@ -525,6 +529,13 @@
           xfce4-screensaver -nosplash
         </pre><!-- configured on 09/12/2026 -->
         <p>After you make the changes, you will need to reboot.</p>
+        <p>Although many people seem to enjoy the latest and greatest
+        technologies, I prefer stable systems without too many bells
+        and whistles (fewer distractions, the better). This is why I
+        often opt for vintage technologies or, in the case of
+        computers, systems that look old. I am satisfied with my
+        current installation on a laptop running at 2.7 GHz with 4 GB
+        of RAM.</p>
       </article>
       <article role="article">
         <h2 id="SBC">Single-Board Computers:</h2>
@@ -583,8 +594,8 @@
     </footer>
   </article><!-- beginning of Google Analytics -->
   <script src="http://google-analytics.com/urchin.js" type=
-  "text/javascript"></script>
-  <script type="text/javascript"></script>
+  "text/javascript"></script> 
+  <script type="text/javascript"></script> 
   <!-- end of Google Analytics -->
 </body>
 </html>

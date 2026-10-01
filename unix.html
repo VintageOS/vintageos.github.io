@@ -4,7 +4,7 @@
   <meta name="generator" content=
   "HTML Tidy for HTML5 for Linux version 5.6.0">
   <!-- ----------------------------------------------------------------+
-  |       _____ _     _               _____ _____  2025.12.31.10.56.06 |
+  |       _____ _     _               _____ _____  2026.10.01.13.16.39 |
   |      |  |  |_|___| |_ ___ ___ ___|     |   __|  ___ ___ ___        |
   |      |  |  | |   |  _| .'| . | -_|  |  |__   |_| . |  _| . |       |
   |       \___/|_|_|_|_| |__,|_  |___|_____|_____|_|___|_| |_  |       |
@@ -16,9 +16,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content=
-  "FRN2000 at VintageOS 2025.12.31.10.56.06">
+  "FRN2000 at VintageOS 2026.10.01.13.16.39">
   <meta name="description" content=
-  "VintageOS 2025.12.31.10.56.06 is the source for information on different operating systems and also offers computer consulting services. This website is completely coded by hand using GNU nano, Mouse on Linux and/or Notepad++ on Windows with help from Tidy on Linux and Cygwin.">
+  "VintageOS 2026.10.01.13.16.39 is the source for information on different operating systems and also offers computer consulting services. This website is completely coded by hand using GNU nano, Mouse on Linux and/or Notepad++ on Windows with help from Tidy on Linux and Cygwin.">
   <meta name="keywords" content=
   "286, 386, 486, 586, 686, 80286, 80386, 80486, 80586, 80686, AMD, Android, Anime, Apache, Apple, AS/400, AS400, assembler, Assembly, BASIC, batch file, batch, batchfile, Be OS, BeOS, Blackberry, Bootstrap, BSD, BSDi, Buy, Calmira, Calypso, Cell Phone, Cell Tower, Cell, Cent OS, CentOS, Chrome OS, Chrome, chromeOS, ChromeOS, Cinnamon Linux, Cinnamon, Clone, Cloud Computing, Cloud, Consultant, Consulting, CP/M-86, CP/M, CPM-86, CPM, CPM86, Crackberry, Debian Linux, Debian, DOS C, DOS-C, DOS, DR DOS, DR-DOS, Feature Phone, Feature, Fediverse, FOSS, Free DOS, FreeBSD, FreeDOS, FRN, FRN$, FRN2000, FRN2000@VOSC, FTP, GNOME, Graphic Design, Graphic, Haiku, Hosting, HTTP, i286, i386, i486, i586, i686, IBM, Intel, Internet, Intranet, iOS, iPad, iPhone, iPod, iTunes, Java, JavaScript, Jokes, JQuery, JS, JScript, K6, K7, Kai OS, KaiOS, KDE, LAMP, LAMPP, Linux Mint, Linux, Lubuntu, Mac OS X, Mac OS, Mac X, Mac, Mac, Macintosh, macOS, Mainframe, Manga, Mastodon, Mate, Microsoft, Mint, Mobile Phone, Mobile, MS DOS, MS SQL, MS-DOS, MS-SQL, MSDOS, MVS, MySQL, NES, NetBSD, New DOS, New Technology, New York City, New York, New-DOS, NewDOS, Nintendo Entertainment System, Nintendo, NT, NY, NYC, OpenBSD, Operating System, Operating, OS, OS/2, OS/400, OS2, OS400, PC-BDS, PC-DOS, PCBSD, PCDOS, Pentium, Perl, Phone, PHP, PostgreSQL, Power Shell, PowerShell, PTS DOS, PTS-DOS, Python, Rails, RIM, RISC OS Open, RISC OS, RISCOS Open, RISCOS, Robot, ROM DOS, ROM-DOS, RoR, Ruby on Rails, Ruby, RX DOS, RX-DOS, RXDOS, Secure Slacker, Sell, SFTP, Shell, SHTML, SNES, Sockets Layer, SQL Server, SQL, SQLite, SQLite3, SSL, Super DOS, Super Nintendo Entertainment System, Super Nintendo, Super Robot, T-SQL, Transact SQL, Transact-SQL TSQL, Ubuntu Linux, Ubuntu, Unix, VDI, Vintage OS, VintageOS Consulting, VintageOS, VM, VOSC, WAMP, WAMPP, Web Design, Web Hosting, Web Platform, Web, Webhosting, Win31, Win3x, Win95, Win98, Win98SE, Windows 10, Windows NT, Windows, WinNT, Wintel, WWW, X Server, X, x86, XAMPP, Xfce, Xorg, Xubnutu">
   <link rel="icon" href="/img/favicon.ico">
@@ -36,8 +36,8 @@
   <header role="banner">
     <a href="/" target="_self" rel="dofollow"><img src="/img/vos14.png"
     width="75%" border="0" alt=
-    "VintageOS 2025.12.31.10.56.06 (vintageos.org)" title=
-    "VintageOS 2025.12.31.10.56.06 (vintageos.org)"></a>
+    "VintageOS 2026.10.01.13.16.39 (vintageos.org)" title=
+    "VintageOS 2026.10.01.13.16.39 (vintageos.org)"></a>
   </header>
   <nav>
     <select class="boxes" onchange="window.location.href=this.value">
@@ -438,16 +438,39 @@
             "What is Linux?">Debian</a> and its derivatives.</p>
             <pre>
               <!-- *spacer* -->
-              apt-cyg install gcc-core  # compiler collection from GNU
-              apt-cyg install git       # version control system
-              apt-cyg install lynx      # text-only web browser
-              apt-cyg install nano      # text editor
-              apt-cyg install nasm      # assembly language
-              apt-cyg install pip       # package installer for Python
-              apt-cyg install python3   # language we all must to learn
-              apt-cyg install sqlite3   # relational database
-              apt-cyg install tidy      # utility to clean up HTML code
+              apt-cyg install -y <em>&lt;package_name&gt;</em>
+              <!-- *spacer* -->
+              apt-cyg install -y gcc-core             # compiler collection by GNU (C, OpenMP)
+              apt-cyg install -y gcc-debuginfo        # compiler collection by GNU (debug info)
+              apt-cyg install -y gcc-g++              # compiler collection by GNU (C++)
+              apt-cyg install -y gcc-objc             # compiler collection by GNU (Objective C)
+              apt-cyg install -y gcc-objc++           # compiler collection by GNU (Objective C++)
+              apt-cyg install -y git                  # version control system
+              apt-cyg install -y lynx                 # text-only web browser
+              apt-cyg install -y mc                   # terminal file manager
+              apt-cyg install -y nano                 # command line text editor
+              apt-cyg install -y nasm                 # assembly language by Netwide Assembler
+              apt-cyg install -y python3              # language that we should all learn
+              apt-cyg install -y python3-pip          # package manager for `python3`
+              apt-cyg install -y sqlite3              # relational database with no GUI
+              apt-cyg install -y tidy                 # utility to tidy up HTML code
+              apt-cyg install -y whois                # access to the `whois` database (domain registration)
             </pre>
+            <p>My only complaint about <tt>apt-cyg</tt> is that it
+            cannot upgrade packages. You need to run the Cygwin
+            installer and select the new packages the installer finds.
+            There is also no way to automate upgrades.</p>
+            <p>Note that not all <a href="/linux.html" target="_self"
+            rel="dofollow" title="What is Linux?">Linux</a>
+            applications are ported to Cygwin. In some cases, like GNU
+            compilers (<tt>gcc-*</tt>), the applications are ported,
+            but they are not bundled as available for various <a href=
+            "/linux.html" target="_self" rel="dofollow" title=
+            "What is Linux?">Linux</a> <em>distros</em> (no
+            <tt>build-essential</tt>). You should refer to the Cygwin
+            installer and/or the Cygwin website for a complete list.
+            Third-party applications might also be available, which you
+            might need to compile or install at your discretion.</p>
             <p align="center"><img src=
             "/img/640px-Cygwin_X11_rootless_WinXP.png" height="231"
             width="320" border="0" alt=
@@ -457,16 +480,16 @@
           </li>
           <li id="GitForWindows">
             <p><a href="https://gitforwindows.org/" target="_blank"
-            rel="nofollow" title="Git for Windows&lt;">Git for
-            Windows</a> offers a limited <a href="/foss.html" target=
-            "_self" rel="dofollow" title=
+            rel="nofollow" title="Git for Windows">Git for Windows</a>
+            offers a limited <a href="/foss.html" target="_self" rel=
+            "dofollow" title=
             "What is Free and Open Source Software (FOSS)?">open
             source</a> <a href="/unix.html#sh" target="_blank" rel=
-            "nofollow" title="What is Unix — Bash? Bash">Bash</a>
-            emulator for <a href="/windows.html" target="_self" rel=
-            "dofollow" title="What is Microsoft Windows?">Windows</a>
-            in order to access the Git version control system based on
-            the MinGW-w64 (<tt>MINGW64</tt>) project. This emulator is
+            "nofollow" title="What is Unix — Bash?">Bash</a> emulator
+            for <a href="/windows.html" target="_self" rel="dofollow"
+            title="What is Microsoft Windows?">Windows</a> in order to
+            access the Git version control system based on the
+            MinGW-w64 (<tt>MINGW64</tt>) project. This emulator is
             often the choice of <a href="/foss.html" target="_self"
             rel="dofollow" title=
             "What is Free and Open Source Software (FOSS)?">open
@@ -475,9 +498,8 @@
             "What is Microsoft Windows?">Windows</a>. As of 2018,
             GitHub including the Octocat (its mascot) became part of
             Microsoft.</p>
-            <p>I have not found a package manager for <tt>MINGW64</tt>.
-            I guess installing <tt>apt-cyg</tt>, but I have not tried
-            it. As a purist, I would not do it.</p>
+            <p>I have not found a package manager for
+            <tt>MINGW64</tt>.</p>
             <p align="center"><img src="/img/gw1.png" height="244"
             width="320" border="0" alt=
             "Copyright (c) 2021 Git for Windows, All rights reserved.; By Source, Fair use, https://gitforwindows.org/img/gw1.png"
@@ -486,7 +508,7 @@
           </li>
           <li id="Termux">
             <p><a href="https://termux.dev/en/" target="_blank" rel=
-            "nofollow" title="Termux">Termux&lt;</a> is an <a href=
+            "nofollow" title="Termux">Termux</a> is an <a href=
             "/foss.html" target="_self" rel="dofollow" title=
             "What is Free and Open Source Software (FOSS)?">open
             source</a> emulator and <a href="/linux.html" target=
@@ -534,7 +556,7 @@
     <footer role="contentinfo">
       <p align="center"><a href="/" target="_self" rel="dofollow"
       title="What is an operating system (OS)?">VintageOS
-      2025.12.31.10.56.06</a> by <a href="/frn2000.html" target="_self"
+      2026.10.01.13.16.39</a> by <a href="/frn2000.html" target="_self"
       rel="dofollow" title=
       "What (or rather who) is FRN2000?">FRN2000</a>, 1997-2026<br>
       <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/"

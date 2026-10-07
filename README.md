@@ -1,4 +1,5 @@
-![VintageOS 2026.10.01.13.16.39 (vintageos.org)](https://vintageos.org/img/vos14.png "VintageOS 2026.10.01.13.16.39 (vintageos.org)")
+![VintageOS 2026.10.01.13.16.39 (vintageos.org)](https://vintageos.org/img/vos14.png
+"VintageOS 2026.10.01.13.16.39 (vintageos.org)")
 
 # FRN2000 & VintageOS 2026.10.01.13.16.39
 frn2000.com · vintageos.org · all rights reserved, 1997-2026

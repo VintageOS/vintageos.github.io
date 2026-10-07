@@ -36,7 +36,7 @@ domains found and explained in the
 
 ## Reference
 
-* The `robots.txt` file blocks certain robots/spiders from accessing
+* The `robots.txt` file blocks robots/spiders from accessing certain
 files and sub-directories;  instructions and information on how to code
 this file found in the
 [`robotstxt.html`](http://robotstxt.org/robotstxt.html) file.

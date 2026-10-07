@@ -1,3 +1,5 @@
+![VintageOS 2026.10.01.13.16.39 (vintageos.org)]("/img/vos14.png")
+
 # FRN2000 & VintageOS 2026.10.01.13.16.39
 frn2000.com · vintageos.org · all rights reserved, 1997-2026
 
@@ -17,7 +19,7 @@ hand (no WYSIWYG) using — in alphabetical order.
 [Linux](https://vintageos.org/linux.html) and
 [Cygwin](https://vintageos.org/unix.html#Cygwin) with quick statement
 `tidy -i -w 72 -o some_page.html some_page.html`
-5. Xed[http://github.com/linuxmint/xed] on
+5. [Xed](http://github.com/linuxmint/xed) on
 [Linux Mint](https://vintageos.org/linux.html)
 
 [VintageOS](https://vintageos.org/) covers close to three (3) decades

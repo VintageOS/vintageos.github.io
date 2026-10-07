@@ -41,7 +41,7 @@
 |     3.4.  Tidy (http://html-tidy.org/) on Linux                      |
 |           (https://vintageos.org/linux.html) and/or Cygwin           |
 |           (https://vintageos.org/unix.html#Cygwin) with statement    |
-|           `tidy -i -w 72 -o <output_page.html> <input_page.html>`    |
+|           `tidy -i -w 72 -o <output>.html <input>.html`              |
 |                                                                      |
 |     3.5.  Xed (http://github.com/linuxmint/xed) on Linux Mint        |
 |           (https://vintageos.org/linux.html)                         |

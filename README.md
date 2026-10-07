@@ -19,7 +19,7 @@ hand (no WYSIWYG) using — in alphabetical order.
 4. [Tidy](http://html-tidy.org/) on
 [Linux](https://vintageos.org/linux.html) and
 [Cygwin](https://vintageos.org/unix.html#Cygwin) with quick statement
-`tidy -i -w 72 -o some_page.html some_page.html`
+`tidy -i -w 72 -o <output>.html <input>.html`
 5. [Xed](http://github.com/linuxmint/xed) on
 [Linux Mint](https://vintageos.org/linux.html)
 

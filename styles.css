@@ -54,6 +54,12 @@
 | 5.  file `robots.txt` to block robots/spiders from accessing certain |
 |     files and sub-directories;  instructions and information on how  |
 |     to code this file found at http://robotstxt.org/robotstxt.html   |
+|                                                                      |
+| 6.  protocol Transport Layer Security (TLS) certificate provided by  |
+|     GitHub Pages (https://pages.github.com/)                         |
+|                                                                      |
+| 7.  email masking provided by SimpleLogi (https://simplelogin.io/),  |
+|     Proton AG (https://proton.me/)                                   |
 +-------------------------------------------------------------------- */
 
 body

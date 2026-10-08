@@ -40,3 +40,10 @@ domains found and explained in the
 files and sub-directories;  instructions and information on how to code
 this file found in the
 [`robotstxt.html`](http://robotstxt.org/robotstxt.html) file.
+
+---
+[VintageOS](https://vintageos.org/) by FRN2000, 1997-2026 ·
+[CC BY-NC-ND 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/) ·
+[GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.html) ·
+[disclaimer](https://vintageos.org/disclaimer.html) ·
+[email](mailto:vosc.ptqw0@aleeas.com?subject=VintageOS%20Feedback)
